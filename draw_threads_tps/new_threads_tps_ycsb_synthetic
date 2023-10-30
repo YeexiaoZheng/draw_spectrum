@@ -1,0 +1,44 @@
+
+zipf=1.1
+keys=100000
+synthetic=true
+two_partitions=false
+contract=11
+@ serial; threads=1
+average commit: 29364.4 abort: 0 (0/0/0), abort cascade: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 0 , partial revert 2:  0 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=6
+average commit: 129916 abort: 23105.4 (0/23105.4/0), abort cascade: 117.4, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 8430.8 , partial revert 2:  4397.4 , partial revert 3:  4640.8 , partial revert 4:  2225.4 , partial revert 5:  3047 , partial revert 6:  4.4 , partial revert 7:  3 , partial revert 8:  1 , partial revert 9:  3 , partial revert 10: 0.4 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=12
+average commit: 176596 abort: 140711 (0/140711/0), abort cascade: 4693.4, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 49024.6 , partial revert 2:  22235.2 , partial revert 3:  29231.6 , partial revert 4:  11945 , partial revert 5:  22220.8 , partial revert 6:  13.8 , partial revert 7:  21 , partial revert 8:  10.4 , partial revert 9:  13.6 , partial revert 10: 0.6 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=18
+average commit: 159097 abort: 282839 (0/282839/0), abort cascade: 16596.2, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 97127.8 , partial revert 2:  41638.6 , partial revert 3:  57484.6 , partial revert 4:  21704.2 , partial revert 5:  47665.8 , partial revert 6:  29.2 , partial revert 7:  31 , partial revert 8:  10.8 , partial revert 9:  20.2 , partial revert 10: 4 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=24
+average commit: 127852 abort: 368082 (0/368082/0), abort cascade: 27643.4, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 123114 , partial revert 2:  51954 , partial revert 3:  73802.8 , partial revert 4:  27968.6 , partial revert 5:  63467.4 , partial revert 6:  34.8 , partial revert 7:  37.6 , partial revert 8:  17.2 , partial revert 9:  26.4 , partial revert 10: 4.6 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=30
+average commit: 106284 abort: 416193 (0/416193/0), abort cascade: 34888.4, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 137013 , partial revert 2:  57662 , partial revert 3:  81708.4 , partial revert 4:  31724.4 , partial revert 5:  72307.2 , partial revert 6:  40.4 , partial revert 7:  44.4 , partial revert 8:  24.4 , partial revert 9:  31.2 , partial revert 10: 8.6 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ sparkle partial; threads=36
+average commit: 91317.6 abort: 443329 (0/443329/0), abort cascade: 40370.8, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 143100 , partial revert 2:  60523.4 , partial revert 3:  86124.8 , partial revert 4:  34121.6 , partial revert 5:  76823.8 , partial revert 6:  48 , partial revert 7:  48.2 , partial revert 8:  26.4 , partial revert 9:  41.2 , partial revert 10: 11.8 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+@ aria fb; threads=6
+average commit: 49186.2 abort: 43580.6 (0/43580.6/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ aria fb; threads=12
+average commit: 60480 abort: 53536.8 (0/53536.8/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ aria fb; threads=18
+average commit: 70899.8 abort: 100238 (0/100238/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ aria fb; threads=24
+average commit: 75444 abort: 106654 (0/106654/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ aria fb; threads=30
+average commit: 79757.2 abort: 130042 (0/130042/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ aria fb; threads=36
+average commit: 76443.4 abort: 124535 (0/124535/0), network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=6
+average commit: 101360 abort: 31645 (0/31645/0), abort cascade: 811, abort length: 158225, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=12
+average commit: 120414 abort: 111777 (0/111777/0), abort cascade: 7983, abort length: 558883, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=18
+average commit: 115874 abort: 212875 (0/212875/0), abort cascade: 23510.6, abort length: 1.06437e+06, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=24
+average commit: 101405 abort: 309728 (0/309728/0), abort cascade: 44342.4, abort length: 1.54864e+06, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=30
+average commit: 86876.4 abort: 388063 (0/388063/0), abort cascade: 64361.8, abort length: 1.94031e+06, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
+@ sparkle original; threads=36
+average commit: 74199.8 abort: 446561 (0/446561/0), abort cascade: 81768.8, abort length: 2.2328e+06, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %
