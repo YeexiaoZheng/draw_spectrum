@@ -42,7 +42,9 @@ def plot_by_protocol(
                 # records[records['protocol'] == protocol][y_].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
                 records[records['protocol'] == protocol][y_],
                 color=color, label=ylabel_,
-                width=0.4
+                width=0.4,
+                ec='black', ls='-', lw=1,
+                hatch='xx'
             )
             continue
 
@@ -51,7 +53,9 @@ def plot_by_protocol(
             # records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
             records[records['protocol'] == protocol][y],
             color=color, label="Partial Revert Length",
-            width=0.4
+            width=0.4,
+            ec='black', ls='-', lw=1,
+            hatch='xx'
         )
         tmp_max =  records[records['protocol'] == protocol][y].max() 
         if tmp_max > max_y: max_y = tmp_max
@@ -115,8 +119,10 @@ if __name__ == '__main__':
         [
             # 里面是 (协议名称, 颜色(RGB格式)的元组)
             # ('sparkle original' , 'orange'),
-            ('sparkle partial'  , 'black'),
-            ('sparkle partial'  , 'red'),
+            # ('sparkle partial'  , 'black'),
+            # ('sparkle partial'  , 'red'),
+            ('sparkle partial'  , '#8E5344'),
+            ('sparkle partial' , '#ED9F54'),
         ],
         savefig=True,
         savepath=args.log_file.strip('.').strip('\\') + ".png"

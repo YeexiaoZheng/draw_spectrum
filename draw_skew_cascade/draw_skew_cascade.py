@@ -52,7 +52,7 @@ def plot_by_protocol(
         weight='bold'
     )
 
-    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=None)
+    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.166))
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':

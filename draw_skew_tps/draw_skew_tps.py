@@ -57,7 +57,7 @@ def plot_by_protocol(
         [str(x)[:-3] if len(str(x)) > 4 else str(x) for x in range(0, max_y, step)]
     )
 
-    p.legend(ax, anchor=None, ncol=4)
+    p.legend(ax, anchor=(0.5, 1.16), ncol=3)
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
@@ -84,7 +84,8 @@ if __name__ == '__main__':
             # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
             ('sparkle partial'  , '#8E5344'    , None),
             ('sparkle original' , '#ED9F54'    , None),
-            ('aria fb'          , '#45C686'    , None),
+            # ('sparkle partial-sched'  , '#45C686'    , None),
+            # ('aria fb'          , '#45C686'    , None),
             ('serial'           , '#B9A89B'    , None),
         ],
         savefig=True,

@@ -41,14 +41,14 @@ def plot_by_protocol(
         tmp_max =  records[records['protocol'] == protocol.lower()][y].max() 
         if tmp_max > max_y: max_y = tmp_max
 
-    ax.set_ylim(0, None)
+    ax.set_ylim(200, None)
 
     # 自适应Y轴变化
     max_y = int(max_y)
     step = adaptive_y(max_y)
 
     ax.set_xticks(
-        range(6, 37, 6)
+        range(6, 43, 6)
     )
 
     ax.set_yticks(
@@ -61,6 +61,7 @@ if __name__ == '__main__':
     parser.add_argument("-f1", "--log_file1", type=str, required=True, help="which log file to parse")
     parser.add_argument("-f2", "--log_file2", type=str, required=True, help="which log file to parse")
     parser.add_argument("-f3", "--log_file3", type=str, required=True, help="which log file to parse")
+    parser.add_argument("-o", "--output", type=str, required=False, help="output file name")
 
     args = parser.parse_args()
 
@@ -80,7 +81,7 @@ if __name__ == '__main__':
         # 处理日志并生成一个data frame
         recs = parse_records_from_file(content)
         
-        recs = recs[recs['threads'] <= 36].reset_index(drop=True)
+        recs = recs[recs['threads'] <= 42].reset_index(drop=True)
         add_serial(recs, 'threads')
 
         print(idx, recs)
@@ -105,4 +106,8 @@ if __name__ == '__main__':
         )
 
     p.legend(ax, anchor=(-0.75, 1.20), ncol=4)
-    p.save("subplots" + ".pdf")
+
+    if args.output:
+        p.save(args.output + ".pdf")
+    else:
+        p.save("subplots" + ".pdf")

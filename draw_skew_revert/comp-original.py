@@ -5,7 +5,7 @@ HELP = 'python comp-original -f afilename'
 X = "zipf"
 XLABEL = "Skew"
 Y = "revert length"
-YLABEL = "Revert length"
+YLABEL = "Revert length / commit"
 
 from typing import List, Tuple
 import pandas as pd
@@ -27,7 +27,7 @@ def plot_by_protocol(
         ):
     x, xlabel = x
     y, ylabel = y
-    y_, ylabel_ = 'original revert length', 'original revert length'
+    y_, ylabel_ = 'original revert length', 'Expected Revert Length'
 
     p = MyPlot(1, 1)
     ax: plt.Axes = p.axes
@@ -41,8 +41,10 @@ def plot_by_protocol(
                 [_ + (idx-0.5) * 0.4 for _ in range(records[records['protocol'] == protocol][x].size)], 
                 records[records['protocol'] == protocol][y_].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
                 # records[records['protocol'] == protocol][y_],
-                color=color, label=to_fomat(protocol),
-                width=0.4
+                color=color, label=ylabel_,
+                width=0.4,
+                ec='black', ls='-', lw=1,
+                hatch='xx'
             )
             continue
 
@@ -50,8 +52,10 @@ def plot_by_protocol(
             [_ + (idx-0.5) * 0.4 for _ in range(records[records['protocol'] == protocol][x].size)], 
             records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
             # records[records['protocol'] == protocol][y],
-            color=color, label=to_fomat(protocol),
-            width=0.4
+            color=color, label="Partial Revert Length",
+            width=0.4,
+            ec='black', ls='-', lw=1,
+            hatch='xx'
         )
         tmp_max =  records[records['protocol'] == protocol][y].max() 
         if tmp_max > max_y: max_y = tmp_max
@@ -66,9 +70,9 @@ def plot_by_protocol(
     ax.set_xlabel(xlabel, fontdict=p.label_config_dic)
     ax.set_ylabel(ylabel, fontdict=p.label_config_dic)
 
-    ax.set_xticks(range(5), [0.2, 0.4, 0.6, 0.8, 1.0])
+    ax.set_xticks(range(11), [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1], rotation=45)
 
-    ax.set_yscale('symlog')
+    # ax.set_yscale('symlog')
 
     p.legend(ax, anchor=(0.5, 1.16))
     p.legend(ax2, anchor=(0.5, 1.25))
@@ -98,9 +102,11 @@ if __name__ == '__main__':
         (X, XLABEL), (Y, YLABEL), 
         [
             # 里面是 (协议名称, 颜色(RGB格式)的元组)
-            ('sparkle original' , 'black'),
-            ('sparkle partial'  , 'red'),
+            # ('sparkle original' , 'black'),
+            # ('sparkle partial'  , 'red'),
             # ('sparkle partial'  , '#fb8402'),
+            ('sparkle partial'  , '#8E5344'),
+            ('sparkle partial' , '#ED9F54'),
         ],
         savefig=True,
         savepath="comp-original-" + args.log_file.strip(".").strip("\\") + ".pdf"
