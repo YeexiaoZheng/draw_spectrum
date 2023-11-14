@@ -23,9 +23,12 @@ def to_fomat(s: str) -> str:
     if s.lower() == 'serial': return 'Serial'
     return s
 
-def add_serial(recs: pd.DataFrame, x: str):
+def add_serial(recs: pd.DataFrame, x: str, value: int):
     for _ in sorted(list(set(recs[x]))):
-        recs.loc[len(recs.index)] = { 'protocol': 'serial', x: _, 'average commit': 28606.4 } #25301.0 } # 24398
+        if value:
+            recs.loc[len(recs.index)] = { 'protocol': 'serial', x: _, 'average commit': value }
+        else:
+            recs.loc[len(recs.index)] = { 'protocol': 'serial', x: _, 'average commit': 28606.4 } #25301.0 } # 24398
         # recs.loc[len(recs.index)] = { 'protocol': 'serial', x: _, 'average commit': 73408.0 }
 
     recs.drop(index=recs[recs['threads'] == 1].index, inplace=True)

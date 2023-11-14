@@ -62,6 +62,7 @@ if __name__ == '__main__':
     parser.add_argument("-f2", "--log_file2", type=str, required=True, help="which log file to parse")
     parser.add_argument("-f3", "--log_file3", type=str, required=True, help="which log file to parse")
     parser.add_argument("-o", "--output", type=str, required=False, help="output file name")
+    parser.add_argument("-v", "--value", type=int, required=False, help="serial value")
 
     args = parser.parse_args()
 
@@ -82,7 +83,7 @@ if __name__ == '__main__':
         recs = parse_records_from_file(content)
         
         recs = recs[recs['threads'] <= 42].reset_index(drop=True)
-        add_serial(recs, 'threads')
+        add_serial(recs, 'threads', value=args.value if args.value else None)
 
         print(idx, recs)
 
