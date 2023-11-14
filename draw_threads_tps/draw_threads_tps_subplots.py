@@ -108,6 +108,6 @@ if __name__ == '__main__':
     p.legend(ax, anchor=(-0.75, 1.20), ncol=4)
 
     if args.output:
-        p.save(args.output + ".pdf")
+        p.save(args.output)
     else:
         p.save("subplots" + ".pdf")
