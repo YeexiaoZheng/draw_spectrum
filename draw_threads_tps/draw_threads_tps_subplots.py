@@ -67,7 +67,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     p = MyPlot(1, 3, (15, 4))
-    tag = ['(a)', '(b)', '(c)']
+    tag = ['(a)  Uniform', '(b)  Skewed', '(c)  Synthetic']
 
     for idx, file in enumerate([args.log_file1, args.log_file2, args.log_file3]):
         ax: plt.Axes = p.axes[idx]
@@ -90,7 +90,7 @@ if __name__ == '__main__':
         plot_by_protocol(
             p, ax,
             recs, 
-            (X, XLABEL + "\n" + tag[idx] + "  " + file.split("_")[-1].capitalize()), (Y, YLABEL if idx == 0 else ""), 
+            (X, XLABEL + "\n" + tag[idx]), (Y, YLABEL if idx == 0 else ""), 
             [
                 # 里面是 (协议名称, 颜色(RGB格式)的元组)
                 # ('sparkle original' , 'tab:blue'),

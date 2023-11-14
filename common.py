@@ -1,18 +1,25 @@
 import pandas as pd
 
-def adaptive_y(max_y, step_num=4):
-    max_y_str_length = len(str(max_y))
-    first_digital = int(str(max_y)[0])
-    if first_digital < 3:
-        step = 4 * 10 ** (max_y_str_length - 2)
-    elif first_digital < 5:
-        step = int(0.5*10 ** (max_y_str_length - 1))
-    elif first_digital < 7:
-        step = int(1 * 10 ** (max_y_str_length - 1))
-    elif first_digital < 9:
-        step = int(1.5 * 10 ** (max_y_str_length - 1))
-    else:
-        step = 1 * 10 ** (max_y_str_length - 1)
+def adaptive_y(max_y, step_num=5):
+    # max_y_str_length = len(str(max_y))
+    # first_digital = int(str(max_y)[0])
+    # if first_digital < 3:
+    #     step = 4 * 10 ** (max_y_str_length - 2)
+    # elif first_digital < 5:
+    #     step = int(0.5*10 ** (max_y_str_length - 1))
+    # elif first_digital < 7:
+    #     step = int(1 * 10 ** (max_y_str_length - 1))
+    # elif first_digital < 9:
+    #     step = int(1.5 * 10 ** (max_y_str_length - 1))
+    # else:
+    #     step = 1 * 10 ** (max_y_str_length - 1)
+    step = (max_y // step_num) 
+    step_length = len(str(step))
+    print(step)
+    step = step // (10 ** (step_length - 2))
+    print(step)
+    step = step * (10 ** (step_length - 2))
+    print(step)
     return step
 
 
