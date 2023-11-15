@@ -11,7 +11,8 @@ from typing import List, Tuple
 import pandas as pd
 import argparse
 import sys
-sys.path.extend(['.', '..'])
+import os
+sys.path.extend(['.', '..', '../../'])
 import matplotlib.pyplot as plt
 from parse import parse_meta, parse_record, parse_records_from_file
 from plot import MyPlot
@@ -48,7 +49,7 @@ def plot_by_protocol(
     step = adaptive_y(max_y)
 
     ax.set_xticks(
-        range(6, 43, 6)
+        range(6, 37, 6)
     )
 
     ax.set_yticks(
@@ -99,8 +100,8 @@ if __name__ == '__main__':
                 # ('Sparkle Original' , 'blue'),
                 # ('Sparkle Partial'  , 'r'),
                 # ('Aria FB'          , 'lime'),
-                ('sparkle partial'  , '#8E5344'    , None),
                 ('sparkle original' , '#ED9F54'    , None),
+                ('sparkle partial'  , '#8E5344'    , None),
                 ('aria fb'          , '#45C686'    , None),
                 ('serial'           , '#B9A89B'    , None),
             ],
@@ -108,6 +109,10 @@ if __name__ == '__main__':
 
     p.legend(ax, anchor=(-0.75, 1.20), ncol=4)
 
+    dir = "/".join(args.output.split("/")[:-1])
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    
     if args.output:
         p.save(args.output)
     else:
