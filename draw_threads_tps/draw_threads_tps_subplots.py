@@ -83,7 +83,7 @@ if __name__ == '__main__':
         # 处理日志并生成一个data frame
         recs = parse_records_from_file(content)
         
-        recs = recs[recs['threads'] <= 42].reset_index(drop=True)
+        recs = recs[recs['threads'] <= 36].reset_index(drop=True)
         add_serial(recs, 'threads', value=args.value if args.value else None)
 
         print(idx, recs)
