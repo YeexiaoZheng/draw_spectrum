@@ -63,7 +63,7 @@ if __name__ == '__main__':
     parser.add_argument("-f2", "--log_file2", type=str, required=True, help="which log file to parse")
     parser.add_argument("-f3", "--log_file3", type=str, required=True, help="which log file to parse")
     parser.add_argument("-o", "--output", type=str, required=False, help="output file name")
-    parser.add_argument("-v", "--value", type=int, required=False, help="serial value")
+    parser.add_argument("-v", "--value", type=float, required=False, help="serial value")
 
     args = parser.parse_args()
 

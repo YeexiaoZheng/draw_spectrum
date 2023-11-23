@@ -52,17 +52,23 @@ def plot_by_protocol(
     max_y = int(max_y)
     step = adaptive_y(max_y)
 
+    ax.set_xticks(
+        range(6, 37, 6)
+    )
+    
     ax.set_yticks(
         range(0, max_y, step), 
         [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     )
 
-    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=None)
+    p.legend(ax, loc="upper center", ncol=len(protocols) // 2, anchor=None)
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(HELP)
     parser.add_argument("-f", "--log_file", type=str, required=True, help="which log file to parse")
+    parser.add_argument("-o", "--output", type=str, required=False, help="output file name")
+    parser.add_argument("-v", "--value", type=float, required=False, help="serial value")
 
     args = parser.parse_args()
 
@@ -75,7 +81,7 @@ if __name__ == '__main__':
 
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
-    add_serial(recs, 'threads')
+    add_serial(recs, 'threads', value=args.value if args.value else None)
 
     # print(recs)
     # recs = recs[recs["threads"].isin([
@@ -88,11 +94,11 @@ if __name__ == '__main__':
         (X, XLABEL), (Y, YLABEL), 
         [
             # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
-            ('sparkle partial'  , '#8E5344'    , None),
             ('sparkle original' , '#ED9F54'    , None),
-            # ('aria fb'          , '#45C686'    , None),
+            ('sparkle partial'  , '#8E5344'    , None),
+            ('aria fb'          , '#45C686'    , None),
             ('serial'           , '#B9A89B'    , None),
         ],
         savefig=True,
-        savepath=args.log_file + ".png"
+        savepath=args.output if args.output else args.log_file + ".pdf"
     )
