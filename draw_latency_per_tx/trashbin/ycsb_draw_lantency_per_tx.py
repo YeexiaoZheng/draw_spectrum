@@ -60,7 +60,7 @@ def plot_by_protocol(
     #     [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     # )
 
-    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=None)
+    p.legend(ax, loc="upper center", ncol=len(protocols) // 2, anchor=None)
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
@@ -80,13 +80,23 @@ if __name__ == '__main__':
     # recs = parse_records_from_file(content)
     recs = pd.DataFrame(columns=['protocol', 'percentile', 'latency'])
 
-    data = {
-        'Serial': [36, 36, 37, 40],
-        'Sparkle Original': [846, 975, 1190, 1350],
-        'Sparkle Partial': [451, 580, 797, 972],
-        'Aria FB': [2780, 3842, 4770, 4890],
+    data_uniform = {
+        'Serial': [34, 35, 36, 60],
+        'Sparkle Original': [48, 53, 60, 77],
+        'Sparkle Partial': [49, 53, 62, 70],
+        'Aria FB': [159, 165, 174, 230],
         'Aria FB Worker 0': [492, 497, 508, 752]
     }
+
+    data_skewed = {
+        'Serial': [46, 50, 71, 99],
+        'Sparkle Original': [245, 340, 514, 663],
+        'Sparkle Partial': [200, 276, 418, 545],
+        'Aria FB': [380, 531, 728, 812],
+        'Aria FB Worker 0': [492, 497, 508, 752]
+    }
+
+    data=data_skewed
 
     for proto in data.keys():
         for idx, perc in enumerate(['50%', '75%', '95%', '99%']):

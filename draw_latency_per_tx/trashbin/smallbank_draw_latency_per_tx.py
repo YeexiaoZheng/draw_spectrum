@@ -55,12 +55,14 @@ def plot_by_protocol(
     # max_y = int(max_y)
     # step = adaptive_y(max_y)
 
-    # ax.set_yticks(
-    #     range(0, max_y, step), 
-    #     [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
-    # )
+    step=adaptive_y(int(max_y), 4)
 
-    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=None)
+    ax.set_yticks(
+        range(0, max_y, 80), 
+        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, 80)]
+    )
+
+    p.legend(ax, loc="upper center", ncol=len(protocols) // 2, anchor=None)
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
@@ -80,12 +82,23 @@ if __name__ == '__main__':
     # recs = parse_records_from_file(content)
     recs = pd.DataFrame(columns=['protocol', 'percentile', 'latency'])
 
-    data = {
-        'Serial': [12, 13, 14, 18],
-        'Sparkle Original': [28, 34, 54, 81],
-        'Sparkle Partial': [24, 30, 42, 66],
-        # 'Aria FB': [4426, 4590, 4590, 4590]
+    data_uniform = {
+        'Serial': [17, 19, 25, 34],
+        'Sparkle Original': [48, 53, 60, 77],
+        'Sparkle Partial': [30, 35, 45, 53],
+        'Aria FB': [110, 115, 125, 216],
+        'Aria FB Worker 0': [492, 497, 508, 752]
     }
+
+    data_skewed = {
+        'Serial': [17, 19, 25, 34],
+        'Sparkle Original': [72, 120, 226, 325],
+        'Sparkle Partial': [63, 102, 186, 265],
+        'Aria FB': [124, 180, 234, 289],
+        'Aria FB Worker 0': [492, 497, 508, 752]
+    }
+
+    data=data_uniform
 
     for proto in data.keys():
         for idx, perc in enumerate(['50%', '75%', '95%', '99%']):
@@ -104,7 +117,7 @@ if __name__ == '__main__':
             ('Serial'           , '#B9A89B'),
             ('Sparkle Partial'  , '#8E5344'),
             ('Sparkle Original' , '#ED9F54'),
-            # ('Aria FB'          , '#45C686'),
+            ('Aria FB'          , '#45C686'),
         ],
         savefig=True,
         savepath='smallbank' + ".png"

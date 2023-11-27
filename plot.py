@@ -16,7 +16,7 @@ class MyPlot:
     legend_word_size = 13   # 图例字体大小
 
     # 画布相关
-    figsize = (5, 4)        # 画布大小
+    figsize = (5.5, 4)        # 画布大小
     facecolor = 'white'     # 背景颜色
 
     # 边框相关
@@ -67,6 +67,7 @@ class MyPlot:
         nrows: int,     # 行数
         ncols: int,     # 列数
         figsize: tuple=None,
+        kwargs: dict=None
     ):
         plt.rcParams['font.sans-serif'] = [self.font]
         plt.rcParams['font.size'] = self.legend_word_size
@@ -77,7 +78,8 @@ class MyPlot:
             nrows=nrows, 
             ncols=ncols,
             figsize=figsize or self.figsize,
-            facecolor=self.facecolor
+            facecolor=self.facecolor,
+            **kwargs if kwargs else {}
         )
 
         if isinstance(self.axes, Iterable):
