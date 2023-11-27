@@ -17,6 +17,9 @@ from parse import parse_meta, parse_record, parse_records_from_file
 from plot import MyPlot
 from common import adaptive_y, to_fomat
 
+p = MyPlot(1, 1)
+ax: plt.Axes = p.axes
+
 def plot_by_protocol(
         records: pd.DataFrame, 
         x: tuple, y: tuple, 
@@ -28,8 +31,7 @@ def plot_by_protocol(
     x, xlabel = x
     y, ylabel = y
 
-    p = MyPlot(1, 1)
-    ax: plt.Axes = p.axes
+
 
     max_y = 0
     for idx, (protocol, color, marker) in enumerate(protocols):
@@ -46,44 +48,49 @@ def plot_by_protocol(
         tmp_max =  records[records['protocol'] == protocol.lower()][y].max() 
         if tmp_max > max_y: max_y = tmp_max
 
-    # 自适应Y轴变化
-    max_y = int(max_y)
-    step=adaptive_y(int(max_y), 4)
+    # # 自适应Y轴变化
+    # max_y = int(max_y)
+    # step=adaptive_y(int(max_y), 4)
 
-    ax.set_yticks(
-        range(0, max_y, step), 
-        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
-    )
+    # ax.set_yticks(
+    #     range(0, max_y, step), 
+    #     [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
+    # )
 
-    p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.166))
-    if savefig: p.save(savepath)
+    # p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.166))
+    # if savefig: p.save(savepath)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(HELP)
-    parser.add_argument("-f", "--log_file", type=str, required=True, help="which log file to parse")
-    
+    parser.add_argument("-f1", "--log_file1", type=str, required=True, help="which log file to parse")
+    parser.add_argument("-f2", "--log_file2", type=str, required=True, help="which log file to parse")
+
     args = parser.parse_args()
 
-    # 读取log
-    with open(args.log_file) as f:
-        content = f.read()
+    for file in [args.log_file1, args.log_file2]:
 
-    # 处理日志开始的实验参数, 目前只是打印了一下
-    meta = parse_meta(content.split("@")[0].strip())
+        # 读取log
+        with open(file) as f:
+            content = f.read()
 
-    # 处理日志并生成一个data frame
-    recs = parse_records_from_file(content)
-    recs = recs[recs['zipf'] >= 0.6].reset_index(drop=True)
-    recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
+        # 处理日志开始的实验参数, 目前只是打印了一下
+        meta = parse_meta(content.split("@")[0].strip())
 
-    plot_by_protocol(
-        recs, 
-        (X, XLABEL), (Y, YLABEL), 
-        [
-            # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
-            ('sparkle original' , '#ED9F54'    , 's'),
-            ('sparkle partial'  , '#8E5344'    , 'o'),
-        ],
-        savefig=True,
-        savepath=args.log_file.strip('.').strip('\\') + ".pdf"
-    )
+        # 处理日志并生成一个data frame
+        recs = parse_records_from_file(content)
+        recs = recs[recs['zipf'] >= 0.6].reset_index(drop=True)
+        recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
+
+        plot_by_protocol(
+            recs, 
+            (X, XLABEL), (Y, YLABEL), 
+            [
+                # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
+                ('sparkle original' , '#ED9F54'    , 's'),
+                ('sparkle partial'  , '#8E5344'    , 'o'),
+            ],
+            savefig=True,
+            savepath="cascade" + ".pdf"
+        )
+    
+    p.save("cascade.pdf")
