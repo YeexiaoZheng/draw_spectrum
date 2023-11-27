@@ -5,7 +5,7 @@ HELP = 'python comp-original -f afilename'
 X = "zipf"
 XLABEL = "Skew"
 Y = "revert length"
-YLABEL = "Revert length / commit"
+YLABEL = "Revert length / Commit"
 
 from typing import List, Tuple
 import pandas as pd
@@ -70,7 +70,7 @@ def plot_by_protocol(
     ax.set_xlabel(xlabel, fontdict=p.label_config_dic)
     ax.set_ylabel(ylabel, fontdict=p.label_config_dic)
 
-    ax.set_xticks(range(11), [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1], rotation=45)
+    ax.set_xticks(range(8), [i / 10 for i in range(6, 14, 1)], rotation=45)
 
     # ax.set_yscale('symlog')
 
@@ -93,6 +93,9 @@ if __name__ == '__main__':
 
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
+
+    recs = recs[recs['zipf'] >= 0.6].reset_index(drop=True)
+    recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
     # recs = recs[recs['zipf'].isin([0.00, 0.12, 0.24, 0.36, 0.48, 0.60, 0.72, 0.84, 0.96])]
     # recs = recs[recs['zipf'].isin([0.00, 0.24, 0.48, 0.72, 0.96])]
     print(recs)
