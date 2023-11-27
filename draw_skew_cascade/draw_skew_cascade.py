@@ -35,7 +35,7 @@ def plot_by_protocol(
     for idx, (protocol, color, marker) in enumerate(protocols):
         p.plot(
             ax,
-            records[records['protocol'] == protocol.lower()][x], 
+            [str(round(i, 1)) for i in records[records['protocol'] == protocol.lower()][x]], 
             xlabel,
             records[records['protocol'] == protocol.lower()][y], 
             ylabel,
@@ -46,10 +46,13 @@ def plot_by_protocol(
         tmp_max =  records[records['protocol'] == protocol.lower()][y].max() 
         if tmp_max > max_y: max_y = tmp_max
 
+    # 自适应Y轴变化
+    max_y = int(max_y)
+    step=adaptive_y(int(max_y), 4)
+
     ax.set_yticks(
-        [0, 20000, 40000, 60000, 80000, 100000], 
-        [0, 20, 40, 60, 80, 100],
-        weight='bold'
+        range(0, max_y, step), 
+        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     )
 
     p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.166))
@@ -70,6 +73,8 @@ if __name__ == '__main__':
 
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
+    recs = recs[recs['zipf'] >= 0.6].reset_index(drop=True)
+    recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
 
     plot_by_protocol(
         recs, 
@@ -80,5 +85,5 @@ if __name__ == '__main__':
             ('sparkle partial'  , '#8E5344'    , 'o'),
         ],
         savefig=True,
-        savepath=args.log_file.strip('.').strip('\\') + ".png"
+        savepath=args.log_file.strip('.').strip('\\') + ".pdf"
     )
