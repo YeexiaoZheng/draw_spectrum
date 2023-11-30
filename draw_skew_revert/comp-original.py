@@ -5,7 +5,7 @@ HELP = 'python comp-original -f afilename'
 X = "zipf"
 XLABEL = "Skew"
 Y = "revert length"
-YLABEL = "Revert length / Commit"
+YLABEL = "Rollback Length / Commit"
 
 from typing import List, Tuple
 import pandas as pd
@@ -27,12 +27,12 @@ def plot_by_protocol(
         ):
     x, xlabel = x
     y, ylabel = y
-    y_, ylabel_ = 'original revert length', 'Expected Revert Length'
+    y_, ylabel_ = 'original revert length', 'Expected Rollback Length'
 
     p = MyPlot(1, 1)
     ax: plt.Axes = p.axes
 
-    ax2 = ax.twinx()
+    # ax2 = ax.twinx()
 
     max_y = 0
     for idx, (protocol, color) in enumerate(protocols):
@@ -52,7 +52,7 @@ def plot_by_protocol(
             [_ + (idx-0.5) * 0.4 for _ in range(records[records['protocol'] == protocol][x].size)], 
             records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
             # records[records['protocol'] == protocol][y],
-            color=color, label="Partial Revert Length",
+            color=color, label="Partial Rollback Length",
             width=0.4,
             ec='black', ls='-', lw=1,
             hatch='xx'
@@ -60,22 +60,22 @@ def plot_by_protocol(
         tmp_max =  records[records['protocol'] == protocol][y].max() 
         if tmp_max > max_y: max_y = tmp_max
     
-    ax2.plot(
-        range(records[records['protocol'] == protocols[0][0]][x].size),
-        # records[records['protocol'] == protocols[0][0]][y].reset_index(drop=True).div(records[records['protocol'] == protocols[1][0]][y_].reset_index(drop=True)),
-        records[records['protocol'] == protocols[1][0]][y].reset_index(drop=True).div(records[records['protocol'] == protocols[1][0]]['average commit'].reset_index(drop=True)).reset_index(drop=True).div(records[records['protocol'] == protocols[0][0]][y_].reset_index(drop=True).div(records[records['protocol'] == protocols[0][0]]['average commit'].reset_index(drop=True)).reset_index(drop=True)),
-        color="grey", label="Rate", marker=p.marker_list[-1], markersize=p.marker_size, linewidth=p.line_width
-    )
+    # ax2.plot(
+    #     range(records[records['protocol'] == protocols[0][0]][x].size),
+    #     # records[records['protocol'] == protocols[0][0]][y].reset_index(drop=True).div(records[records['protocol'] == protocols[1][0]][y_].reset_index(drop=True)),
+    #     records[records['protocol'] == protocols[1][0]][y].reset_index(drop=True).div(records[records['protocol'] == protocols[1][0]]['average commit'].reset_index(drop=True)).reset_index(drop=True).div(records[records['protocol'] == protocols[0][0]][y_].reset_index(drop=True).div(records[records['protocol'] == protocols[0][0]]['average commit'].reset_index(drop=True)).reset_index(drop=True)),
+    #     color="grey", label="Rate", marker=p.marker_list[-1], markersize=p.marker_size, linewidth=p.line_width
+    # )
 
     ax.set_xlabel(xlabel, fontdict=p.label_config_dic)
     ax.set_ylabel(ylabel, fontdict=p.label_config_dic)
 
-    ax.set_xticks(range(8), [i / 10 for i in range(6, 14, 1)], rotation=45)
+    ax.set_xticks(range(5), [i / 10 for i in range(9, 14, 1)], rotation=45)
 
     # ax.set_yscale('symlog')
 
-    p.legend(ax, anchor=(0.5, 1.16))
-    p.legend(ax2, anchor=(0.5, 1.25))
+    p.legend(ax, anchor=(0.5, 1.2), ncol=1, loc="upper center")
+    # p.legend(ax2, anchor=(0.5, 1.25))
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
 
-    recs = recs[recs['zipf'] >= 0.6].reset_index(drop=True)
+    recs = recs[recs['zipf'] >= 0.9].reset_index(drop=True)
     recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
     # recs = recs[recs['zipf'].isin([0.00, 0.12, 0.24, 0.36, 0.48, 0.60, 0.72, 0.84, 0.96])]
     # recs = recs[recs['zipf'].isin([0.00, 0.24, 0.48, 0.72, 0.96])]

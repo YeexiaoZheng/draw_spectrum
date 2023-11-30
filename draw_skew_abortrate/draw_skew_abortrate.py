@@ -37,7 +37,8 @@ def plot_by_protocol(
             ax,
             records[records['protocol'] == protocol.lower()][x], 
             xlabel,
-            records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)), 
+            records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)) * 1000000, 
+            # records[records['protocol'] == protocol][y].reset_index(drop=True),
             ylabel,
             legend_label=to_fomat(protocol).replace(" ", "\n"),
             color=color, 
@@ -66,6 +67,8 @@ if __name__ == '__main__':
 
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
+    recs = recs[recs['zipf'] >= 0.9].reset_index(drop=True)
+    recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
 
     plot_by_protocol(
         recs, 
@@ -73,10 +76,10 @@ if __name__ == '__main__':
         [
             # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
             ('sparkle partial'  , '#8E5344'    , 'o'),
-            ('aria fb'          , '#45C686'    , 'v'),
+            # ('aria fb'          , '#45C686'    , 'v'),
             ('sparkle original' , '#ED9F54'    , 's'),
             
         ],
         savefig=True,
-        savepath=args.log_file.strip('.').strip('\\') + ".png"
+        savepath=args.log_file.strip('.').strip('\\') + ".pdf"
     )

@@ -19,6 +19,7 @@ def parse_record(record):
         'average commit': fetch_word_after("commit: ", float),
         'average abort': fetch_word_after("abort: ", float),
         'average cascade abort': fetch_word_after("abort cascade: ", float),
+        'average operations': fetch_word_after("average operations: ", float),
         'revert length': sum([
             i * fetch_word_after("partial revert " + str(i) + ": ", float)
             for i in range(0, 11) if fetch_word_after("partial revert " + str(i) + ": ", float)

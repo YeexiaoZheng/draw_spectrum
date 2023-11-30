@@ -3,9 +3,9 @@ HELP = 'python draw_skew_tps.py -f afilename'
 ##### run by cmd #####
 
 X = "zipf"
-XLABEL = "Skew"
+XLABEL = "Contention Degree (Zipf)"
 Y = "average commit"
-YLABEL = "Troughput(K tx/s)"
+YLABEL = "Troughput(KTxn/s)"
 
 from typing import List, Tuple
 import pandas as pd
@@ -39,7 +39,7 @@ def plot_by_protocol(
             xlabel,
             records[records['protocol'] == protocol][y], 
             ylabel,
-            legend_label=to_fomat(protocol).replace(" ", "\n"),
+            legend_label=to_fomat(protocol),
             color=color, 
             marker=marker
         )
@@ -57,7 +57,7 @@ def plot_by_protocol(
         [str(x)[:-3] if len(str(x)) > 4 else str(x) for x in range(0, max_y, step)]
     )
 
-    p.legend(ax, anchor=(0.5, 1.16), ncol=3)
+    p.legend(ax, anchor=None, ncol=2)
     if savefig: p.save(savepath)
 
 if __name__ == '__main__':
@@ -75,19 +75,23 @@ if __name__ == '__main__':
 
     # 处理日志并生成一个data frame
     recs = parse_records_from_file(content)
-    add_serial(recs, 'zipf')
+    add_serial(recs, 'zipf', 27543.8)
+
+    recs = recs[recs['zipf'] >= 0.9].reset_index(drop=True)
+    recs = recs[recs['zipf'] < 1.4].reset_index(drop=True)
 
     plot_by_protocol(
         recs, 
         (X, XLABEL), (Y, YLABEL), 
         [
             # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
-            ('sparkle partial'  , '#8E5344'    , None),
+            
             ('sparkle original' , '#ED9F54'    , None),
-            # ('sparkle partial-sched'  , '#45C686'    , None),
-            # ('aria fb'          , '#45C686'    , None),
-            ('serial'           , '#B9A89B'    , None),
+            ('sparkle partial'  , '#8E5344'    , None),
+            ('sparkle partial-v2'  , '#B8448D'    , 'p'),
+            ('aria fb'          , '#45C686'    , None),
+            # ('serial'           , '#B9A89B'    , None),
         ],
         savefig=True,
-        savepath=args.log_file + ".png"
+        savepath=args.log_file + ".pdf"
     )

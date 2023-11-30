@@ -1,3 +1,4 @@
+from typing import List
 import pandas as pd
 
 def adaptive_y(max_y, step_num=5):
@@ -25,10 +26,19 @@ def adaptive_y(max_y, step_num=5):
 
 def to_fomat(s: str) -> str:
     if s.lower() == 'sparkle original': return 'Sparkle'
-    if s.lower() == 'sparkle partial': return 'Spectrum'
+    if s.lower() == 'sparkle partial': return 'Spectrum$_{p}$'
+    if s.lower() == 'sparkle partial-v2': return 'Spectrum$_{pp}$'
     if s.lower() == 'aria fb': return 'AriaFB'
     if s.lower() == 'serial': return 'Serial'
+    if s.lower() == 'ycsb': return 'Y'
+    if s.lower() == 'smallbank': return 'S'
     return s
+
+def order_handles_labels(handles, labels: List):
+    label_order = labels
+    if 'Serial' in labels:  label_order = ['Spectrum', 'AriaFB', 'Sparkle', 'Serial']
+    if 'Spectrum$_{pp}$' in labels:  label_order = ['Spectrum$_{pp}$', 'Sparkle', 'Spectrum$_{p}$', 'AriaFB']
+    return [handles[i] for i in [labels.index(label) for label in label_order]], label_order
 
 def add_serial(recs: pd.DataFrame, x: str, value: int):
     for _ in sorted(list(set(recs[x]))):

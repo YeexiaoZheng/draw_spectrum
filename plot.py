@@ -2,6 +2,8 @@ from collections.abc import Iterable
 from typing import List
 import matplotlib.pyplot as plt
 
+from common import order_handles_labels
+
 class MyPlot:
     ##### 参数 #####
 
@@ -121,13 +123,22 @@ class MyPlot:
         loc="upper center", 
         ncol=3, 
         anchor=None,
-        frameon=False
+        frameon=False,
+        handles=None,
+        labels=None,
+        columnspacing=None
     ):
+        if not handles and not labels:
+            handles, labels = ax.get_legend_handles_labels()
+            handles, labels = order_handles_labels(handles, labels)
         ax.legend(
+            handles=handles,
+            labels=labels,
             loc=loc, 
             ncol=ncol, 
             bbox_to_anchor=anchor or self.anchor, 
             frameon=frameon,
+            columnspacing=columnspacing
         )
 
     def save(self, path, bbox_inches='tight'):
