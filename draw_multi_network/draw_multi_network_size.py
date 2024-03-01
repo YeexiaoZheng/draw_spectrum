@@ -85,7 +85,7 @@ if __name__ == '__main__':
         max_y = 0
         ax.bar(
             [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
-            (records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y]),
+            ((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx],
             width=0.4,
             ec='black', ls='-', lw=1,
@@ -94,8 +94,8 @@ if __name__ == '__main__':
 
         ax.bar(
             [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
-            records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y],
-            bottom=(records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y]),
+            (records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y]) * 100,
+            bottom=((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx + 2],
             width=0.4,
             ec='black', ls='-', lw=1,
@@ -111,13 +111,13 @@ if __name__ == '__main__':
 
     # uniform
     # ax.set_ylim(0, 540000)
-    # max_y = 540000
-    # step = 100000
+    max_y = 5400
+    step = 1000
 
-    # ax.set_yticks(
-    #     range(0, max_y, step), 
-    #     [str(x)[:-4] + 'w' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
-    # )
+    ax.set_yticks(
+        range(0, max_y, step), 
+        [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
+    )
 
     p.legend(ax, loc="upper center", ncol=2, anchor=None)
     p.save('./multi-network-{workload}-size.pdf'.format(workload=workload))

@@ -3,9 +3,9 @@ HELP = 'python draw_threads_tps.py -f afilename'
 ##### run by cmd #####
 
 X = "threads"
-XLABEL = "Execution Schemes"
+XLABEL = "执行方案"
 Y = "average commit"
-YLABEL = "Latency(us)"
+YLABEL = "延迟（微秒）"
 
 from typing import List, Tuple
 import pandas as pd
@@ -78,7 +78,7 @@ def plot_by_protocol(
     ax1.set_xticks([])
 
     ax1.set_ylim(3400, 3600)
-    ax2.set_ylim(0, 350)
+    ax2.set_ylim(0, 1200)
 
     # 创建轴断刻度线，d用于调节其偏转角度
     d = 0.5  # proportion of vertical to horizontal extent of the slanted line

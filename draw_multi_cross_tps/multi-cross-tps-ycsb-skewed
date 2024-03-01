@@ -1,0 +1,14 @@
+./no-batch-ycsb-zipf
+./batch-ycsb-zipf
+0    502262.0
+1    340046.0
+2    202524.0
+3    147556.6
+4     66819.6
+Name: average commit, dtype: float64
+0    565561.260
+1    445203.000
+2    234927.000
+3    108124.830
+4     33926.112
+Name: average commit, dtype: float64

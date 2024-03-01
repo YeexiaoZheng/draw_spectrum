@@ -3,9 +3,9 @@ HELP = 'python draw_latency_per_tx.py -f afilename'
 ##### run by cmd #####
 
 X = "percentile"
-XLABEL = "Percentile"
+XLABEL = "分位数"
 Y = "latency"
-YLABEL = "Latency(us)"
+YLABEL = "延迟（微秒）"
 
 from typing import List, Tuple
 import pandas as pd

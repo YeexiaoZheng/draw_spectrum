@@ -1,0 +1,14 @@
+./no-batch-smallbank-zipf
+./batch-smallbank-zipf
+0    773346.0
+1    451018.0
+2    230616.0
+3    163628.4
+4     87709.0
+Name: average commit, dtype: float64
+0    806735.160
+1    590287.500
+2    354637.800
+3    235909.080
+4     68721.246
+Name: average commit, dtype: float64

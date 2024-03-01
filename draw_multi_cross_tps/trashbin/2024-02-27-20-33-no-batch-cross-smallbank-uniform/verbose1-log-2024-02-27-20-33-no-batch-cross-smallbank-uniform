@@ -1,0 +1,472 @@
+run experiment! thread is changing!
+keys=100000
+zipf=0
+contract=10
+partition_num=2
+batch_size=100
+@ Spectrum; cross_ratio=0
+keys=100000
+zipf=0
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0227 20:33:50.005136 162851 Database.h:95] partition_num: 2
+I0227 20:33:50.008533 162851 Database.h:72] evm_bench initialization finished in 2 milliseconds.
+I0227 20:33:50.008885 162883 main.cpp:83] SpectrumServer 1 started at 53008!
+I0227 20:33:50.008947 162883 Server.h:52] Server 1 starts to run.
+I0227 20:33:50.508996 162892 main.cpp:73] SpectrumClient 0 started connect to 53007!
+I0227 20:33:50.509254 162892 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:44000 is UP
+I0227 20:33:51.008157 162883 Server.h:57] 127.0.0.1:50486 -> 127.0.0.1:53008 is UP
+I0227 20:33:51.009104 162898 main.cpp:73] SpectrumClient 1 started connect to 53008!
+I0227 20:33:51.009286 162883 Server.h:57] 127.0.0.1:50496 -> 127.0.0.1:53008 is UP
+I0227 20:33:51.009310 162898 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:50496 is UP
+I0227 20:33:51.508996 162851 main.cpp:180] 2 clients connected.
+I0227 20:33:51.509090 162851 SparkleManager.h:44] batch size: 100
+I0227 20:33:51.509136 162851 WorkerFactory.h:170] workers size (including manager): 16
+I0227 20:33:51.509174 162851 SerialManager.h:37] batch size: 100
+I0227 20:33:51.509193 162851 SerialExecutor.h:154] init tables for contracts
+I0227 20:33:51.509204 162851 SerialExecutor.h:192] init key_num: 200000
+I0227 20:33:54.607205 162851 SerialExecutor.h:203] init tables finished
+I0227 20:33:56.607347 162851 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0227 20:33:56.607457 162851 Coordinator.h:216] core_id: 84
+I0227 20:33:56.607574 162851 Coordinator.h:216] core_id: 85
+I0227 20:33:56.607674 162851 Coordinator.h:216] core_id: 86
+I0227 20:33:56.607908 162851 Coordinator.h:216] core_id: 87
+I0227 20:33:56.608104 162851 Coordinator.h:216] core_id: 88
+I0227 20:33:56.608093 162998 SparkleExecutor.h:97] SpectrumExecutor 0 started. 
+I0227 20:33:56.608283 162999 SparkleExecutor.h:97] SpectrumExecutor 1 started. 
+I0227 20:33:56.608322 162851 Coordinator.h:216] core_id: 89
+I0227 20:33:56.608440 163000 SparkleExecutor.h:97] SpectrumExecutor 2 started. 
+I0227 20:33:56.608501 162851 Coordinator.h:216] core_id: 90
+I0227 20:33:56.608719 162851 Coordinator.h:216] core_id: 91
+I0227 20:33:56.608714 163001 SparkleExecutor.h:97] SpectrumExecutor 3 started. 
+I0227 20:33:56.608865 162851 Coordinator.h:216] core_id: 92
+I0227 20:33:56.608943 163002 SparkleExecutor.h:97] SpectrumExecutor 4 started. 
+I0227 20:33:56.609061 162851 Coordinator.h:216] core_id: 93
+I0227 20:33:56.609156 163005 SparkleExecutor.h:97] SpectrumExecutor 7 started. 
+I0227 20:33:56.609217 162851 Coordinator.h:216] core_id: 94
+I0227 20:33:56.609371 162851 Coordinator.h:216] core_id: 95
+I0227 20:33:56.609360 163006 SparkleExecutor.h:97] SpectrumExecutor 8 started. 
+I0227 20:33:56.609510 162851 Coordinator.h:216] core_id: 96
+I0227 20:33:56.609618 163003 SparkleExecutor.h:97] SpectrumExecutor 5 started. 
+I0227 20:33:56.609717 162851 Coordinator.h:216] core_id: 97
+I0227 20:33:56.609846 162851 Coordinator.h:216] core_id: 98
+I0227 20:33:56.609993 163004 SparkleExecutor.h:97] SpectrumExecutor 6 started. 
+I0227 20:33:56.610013 162851 Coordinator.h:216] core_id: 99
+I0227 20:33:56.610134 163011 SparkleExecutor.h:97] SpectrumExecutor 13 started. 
+I0227 20:33:56.610276 163008 SparkleExecutor.h:97] SpectrumExecutor 10 started. 
+I0227 20:33:56.610342 163009 SparkleExecutor.h:97] SpectrumExecutor 11 started. 
+I0227 20:33:56.610515 163010 SparkleExecutor.h:97] SpectrumExecutor 12 started. 
+I0227 20:33:56.610597 163007 SparkleExecutor.h:97] SpectrumExecutor 9 started. 
+I0227 20:33:56.610723 163012 SparkleExecutor.h:97] SpectrumExecutor 14 started. 
+I0227 20:33:56.610838 163013 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0227 20:33:57.610152 162851 Coordinator.h:99] commit: 399951 abort: 6 (0/6/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 110187692, partial revert 0: 0, partial revert 1: 5, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:33:58.610332 162851 Coordinator.h:99] commit: 396683 abort: 3 (0/3/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 109292458, partial revert 0: 0, partial revert 1: 2, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:33:59.610502 162851 Coordinator.h:99] commit: 392646 abort: 1 (0/1/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 108181643, partial revert 0: 0, partial revert 1: 1, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:00.610653 162851 Coordinator.h:99] commit: 372030 abort: 6 (0/6/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 102511871, partial revert 0: 0, partial revert 1: 3, partial revert 2:  3, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:01.610802 162851 Coordinator.h:99] commit: 402037 abort: 5 (0/5/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 110725165, partial revert 0: 0, partial revert 1: 4, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:02.610965 162851 Coordinator.h:99] commit: 396747 abort: 6 (0/6/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 109293163, partial revert 0: 0, partial revert 1: 4, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:03.611138 162851 Coordinator.h:99] commit: 396560 abort: 8 (0/8/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 109246286, partial revert 0: 0, partial revert 1: 6, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:04.611295 162851 Coordinator.h:99] commit: 401997 abort: 5 (0/5/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 110732805, partial revert 0: 0, partial revert 1: 4, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:05.611477 162851 Coordinator.h:99] commit: 398412 abort: 3 (0/3/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 109757813, partial revert 0: 0, partial revert 1: 1, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:06.611639 162851 Coordinator.h:99] commit: 390551 abort: 2 (0/2/0), cascade abort: 0, network size: 0, avg network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 107598706, partial revert 0: 0, partial revert 1: 0, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:06.611692 162851 Coordinator.h:152] average commit: 394761 abort: 4.5 (0/4.5/0), abort cascade: 0, average operations: 108752760, network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 3 , partial revert 2:  1.5 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+I0227 20:34:06.611737 162999 SparkleExecutor.h:259] SparkleExecutor 1 exits. 
+I0227 20:34:06.611727 163004 SparkleExecutor.h:259] SparkleExecutor 6 exits. 
+I0227 20:34:06.611734 162998 SparkleExecutor.h:259] SparkleExecutor 0 exits. 
+I0227 20:34:06.611729 163005 SparkleExecutor.h:259] SparkleExecutor 7 exits. 
+I0227 20:34:06.611743 163003 SparkleExecutor.h:259] SparkleExecutor 5 exits. 
+I0227 20:34:06.611732 163009 SparkleExecutor.h:259] SparkleExecutor 11 exits. 
+I0227 20:34:06.611733 163010 SparkleExecutor.h:259] SparkleExecutor 12 exits. 
+I0227 20:34:06.611733 163011 SparkleExecutor.h:259] SparkleExecutor 13 exits. 
+I0227 20:34:06.611735 163000 SparkleExecutor.h:259] SparkleExecutor 2 exits. 
+I0227 20:34:06.611735 163012 SparkleExecutor.h:259] SparkleExecutor 14 exits. 
+I0227 20:34:06.611735 163001 SparkleExecutor.h:259] SparkleExecutor 3 exits. 
+I0227 20:34:06.611730 163007 SparkleExecutor.h:259] SparkleExecutor 9 exits. 
+I0227 20:34:06.611743 163002 SparkleExecutor.h:259] SparkleExecutor 4 exits. 
+I0227 20:34:06.611730 163008 SparkleExecutor.h:259] SparkleExecutor 10 exits. 
+I0227 20:34:06.611730 163006 SparkleExecutor.h:259] SparkleExecutor 8 exits. 
+I0227 20:34:06.611722 162851 SparkleExecutor.h:593] Worker 0 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+I0227 20:34:06.623711 162851 SparkleExecutor.h:593] Worker 1 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.635064 162851 SparkleExecutor.h:593] Worker 2 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+I0227 20:34:06.647064 162851 SparkleExecutor.h:593] Worker 3 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.655597 162851 SparkleExecutor.h:593] Worker 4 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+I0227 20:34:06.663867 162851 SparkleExecutor.h:593] Worker 5 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+I0227 20:34:06.672333 162851 SparkleExecutor.h:593] Worker 6 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+I0227 20:34:06.680837 162851 SparkleExecutor.h:593] Worker 7 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.689153 162851 SparkleExecutor.h:593] Worker 8 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.697582 162851 SparkleExecutor.h:593] Worker 9 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.705821 162851 SparkleExecutor.h:593] Worker 10 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.714002 162851 SparkleExecutor.h:593] Worker 11 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.722393 162851 SparkleExecutor.h:593] Worker 12 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.730908 162851 SparkleExecutor.h:593] Worker 13 latency: 18 us (50%) 20 us (75%) 25 us (95%) 29 us (99%).
+I0227 20:34:06.739261 162851 SparkleExecutor.h:593] Worker 14 latency: 18 us (50%) 20 us (75%) 24 us (95%) 29 us (99%).
+test_partition2.sh: line 43: 162851 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --batch_size=$batch_size --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10
+@ Spectrum; cross_ratio=1
+keys=100000
+zipf=0
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0227 20:34:20.092453 163212 Database.h:95] partition_num: 2
+I0227 20:34:20.096101 163212 Database.h:72] evm_bench initialization finished in 2 milliseconds.
+I0227 20:34:20.096443 163245 main.cpp:83] SpectrumServer 1 started at 53008!
+I0227 20:34:20.096504 163245 Server.h:52] Server 1 starts to run.
+I0227 20:34:20.596587 163256 main.cpp:73] SpectrumClient 0 started connect to 53007!
+I0227 20:34:20.596840 163256 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:41266 is UP
+I0227 20:34:21.094573 163245 Server.h:57] 127.0.0.1:55184 -> 127.0.0.1:53008 is UP
+I0227 20:34:21.096662 163262 main.cpp:73] SpectrumClient 1 started connect to 53008!
+I0227 20:34:21.096817 163245 Server.h:57] 127.0.0.1:55200 -> 127.0.0.1:53008 is UP
+I0227 20:34:21.096846 163262 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:55200 is UP
+I0227 20:34:21.596547 163212 main.cpp:180] 2 clients connected.
+I0227 20:34:21.596616 163212 SparkleManager.h:44] batch size: 100
+I0227 20:34:21.596662 163212 WorkerFactory.h:170] workers size (including manager): 16
+I0227 20:34:21.596699 163212 SerialManager.h:37] batch size: 100
+I0227 20:34:21.596724 163212 SerialExecutor.h:154] init tables for contracts
+I0227 20:34:21.596735 163212 SerialExecutor.h:192] init key_num: 200000
+I0227 20:34:24.710413 163212 SerialExecutor.h:203] init tables finished
+I0227 20:34:26.710566 163212 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0227 20:34:26.710752 163212 Coordinator.h:216] core_id: 84
+I0227 20:34:26.711104 163212 Coordinator.h:216] core_id: 85
+I0227 20:34:26.711115 163345 SparkleExecutor.h:97] SpectrumExecutor 0 started. 
+I0227 20:34:26.711342 163212 Coordinator.h:216] core_id: 86
+I0227 20:34:26.711414 163346 SparkleExecutor.h:97] SpectrumExecutor 1 started. 
+I0227 20:34:26.711593 163212 Coordinator.h:216] core_id: 87
+I0227 20:34:26.711614 163347 SparkleExecutor.h:97] SpectrumExecutor 2 started. 
+I0227 20:34:26.711923 163348 SparkleExecutor.h:97] SpectrumExecutor 3 started. 
+I0227 20:34:26.711961 163212 Coordinator.h:216] core_id: 88
+I0227 20:34:26.712226 163212 Coordinator.h:216] core_id: 89
+I0227 20:34:26.712226 163349 SparkleExecutor.h:97] SpectrumExecutor 4 started. 
+I0227 20:34:26.712518 163212 Coordinator.h:216] core_id: 90
+I0227 20:34:26.712558 163350 SparkleExecutor.h:97] SpectrumExecutor 5 started. 
+I0227 20:34:26.712765 163351 SparkleExecutor.h:97] SpectrumExecutor 6 started. 
+I0227 20:34:26.712821 163212 Coordinator.h:216] core_id: 91
+I0227 20:34:26.713140 163352 SparkleExecutor.h:97] SpectrumExecutor 7 started. 
+I0227 20:34:26.713153 163212 Coordinator.h:216] core_id: 92
+I0227 20:34:26.713354 163353 SparkleExecutor.h:97] SpectrumExecutor 8 started. 
+I0227 20:34:26.713408 163212 Coordinator.h:216] core_id: 93
+I0227 20:34:26.713761 163212 Coordinator.h:216] core_id: 94
+I0227 20:34:26.713778 163354 SparkleExecutor.h:97] SpectrumExecutor 9 started. 
+I0227 20:34:26.714037 163212 Coordinator.h:216] core_id: 95
+I0227 20:34:26.714038 163355 SparkleExecutor.h:97] SpectrumExecutor 10 started. 
+I0227 20:34:26.714332 163212 Coordinator.h:216] core_id: 96
+I0227 20:34:26.714365 163356 SparkleExecutor.h:97] SpectrumExecutor 11 started. 
+I0227 20:34:26.714586 163212 Coordinator.h:216] core_id: 97
+I0227 20:34:26.714589 163357 SparkleExecutor.h:97] SpectrumExecutor 12 started. 
+I0227 20:34:26.714895 163212 Coordinator.h:216] core_id: 98
+I0227 20:34:26.714913 163358 SparkleExecutor.h:97] SpectrumExecutor 13 started. 
+I0227 20:34:26.715143 163359 SparkleExecutor.h:97] SpectrumExecutor 14 started. 
+I0227 20:34:26.715202 163212 Coordinator.h:216] core_id: 99
+I0227 20:34:26.715507 163360 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0227 20:34:27.715371 163212 Coordinator.h:99] commit: 193800 abort: 1 (0/1/0), cascade abort: 0, network size: 14105, avg network size: 0.0727812, si_in_serializable: 0 0 %, local: 0 %, operations: 53403114, partial revert 0: 0, partial revert 1: 1, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:28.715562 163212 Coordinator.h:99] commit: 210363 abort: 2 (0/2/0), cascade abort: 0, network size: 15322, avg network size: 0.072836, si_in_serializable: 0 0 %, local: 0 %, operations: 57972171, partial revert 0: 0, partial revert 1: 1, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:29.715703 163212 Coordinator.h:99] commit: 211507 abort: 1 (0/1/0), cascade abort: 0, network size: 15259, avg network size: 0.0721442, si_in_serializable: 0 0 %, local: 0 %, operations: 58284291, partial revert 0: 0, partial revert 1: 1, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:30.715859 163212 Coordinator.h:99] commit: 211625 abort: 5 (0/5/0), cascade abort: 0, network size: 14978, avg network size: 0.0707761, si_in_serializable: 0 0 %, local: 0 %, operations: 58320474, partial revert 0: 0, partial revert 1: 4, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:31.716014 163212 Coordinator.h:99] commit: 205813 abort: 4 (0/4/0), cascade abort: 0, network size: 15298, avg network size: 0.0743296, si_in_serializable: 0 0 %, local: 0 %, operations: 56709333, partial revert 0: 0, partial revert 1: 2, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:32.716187 163212 Coordinator.h:99] commit: 210059 abort: 2 (0/2/0), cascade abort: 0, network size: 15160, avg network size: 0.0721702, si_in_serializable: 0 0 %, local: 0 %, operations: 57883719, partial revert 0: 0, partial revert 1: 2, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:33.716362 163212 Coordinator.h:99] commit: 209103 abort: 4 (0/4/0), cascade abort: 0, network size: 14900, avg network size: 0.0712567, si_in_serializable: 0 0 %, local: 0 %, operations: 57619224, partial revert 0: 0, partial revert 1: 2, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:34.716539 163212 Coordinator.h:99] commit: 210250 abort: 4 (0/4/0), cascade abort: 0, network size: 15232, avg network size: 0.0724471, si_in_serializable: 0 0 %, local: 0 %, operations: 57941937, partial revert 0: 0, partial revert 1: 4, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:35.716722 163212 Coordinator.h:99] commit: 211447 abort: 4 (0/4/0), cascade abort: 0, network size: 15736, avg network size: 0.0744205, si_in_serializable: 0 0 %, local: 0 %, operations: 58234087, partial revert 0: 0, partial revert 1: 0, partial revert 2:  4, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:36.716886 163212 Coordinator.h:99] commit: 207276 abort: 4 (0/4/0), cascade abort: 0, network size: 15430, avg network size: 0.0744418, si_in_serializable: 0 0 %, local: 0 %, operations: 57101695, partial revert 0: 0, partial revert 1: 2, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:36.716940 163212 Coordinator.h:152] average commit: 208124 abort: 3.1 (0/3.1/0), abort cascade: 0, average operations: 57347004, network size: 151420, avg network size: 0.0727546, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 1.9 , partial revert 2:  1.1 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+I0227 20:34:36.716977 163358 SparkleExecutor.h:259] SparkleExecutor 13 exits. 
+I0227 20:34:36.716977 163359 SparkleExecutor.h:259] SparkleExecutor 14 exits. 
+I0227 20:34:36.716984 163351 SparkleExecutor.h:259] SparkleExecutor 6 exits. 
+I0227 20:34:36.716979 163349 SparkleExecutor.h:259] SparkleExecutor 4 exits. 
+I0227 20:34:36.716985 163356 SparkleExecutor.h:259] SparkleExecutor 11 exits. 
+I0227 20:34:36.716977 163345 SparkleExecutor.h:259] SparkleExecutor 0 exits. 
+I0227 20:34:36.716979 163348 SparkleExecutor.h:259] SparkleExecutor 3 exits. 
+I0227 20:34:36.716984 163354 SparkleExecutor.h:259] SparkleExecutor 9 exits. 
+I0227 20:34:36.716984 163350 SparkleExecutor.h:259] SparkleExecutor 5 exits. 
+I0227 20:34:36.716984 163352 SparkleExecutor.h:259] SparkleExecutor 7 exits. 
+I0227 20:34:36.716984 163353 SparkleExecutor.h:259] SparkleExecutor 8 exits. 
+I0227 20:34:36.716984 163355 SparkleExecutor.h:259] SparkleExecutor 10 exits. 
+I0227 20:34:36.716979 163347 SparkleExecutor.h:259] SparkleExecutor 2 exits. 
+I0227 20:34:36.716977 163357 SparkleExecutor.h:259] SparkleExecutor 12 exits. 
+I0227 20:34:36.716979 163346 SparkleExecutor.h:259] SparkleExecutor 1 exits. 
+I0227 20:34:36.716966 163212 SparkleExecutor.h:593] Worker 0 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.723891 163212 SparkleExecutor.h:593] Worker 1 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.730741 163212 SparkleExecutor.h:593] Worker 2 latency: 20 us (50%) 24 us (75%) 134 us (95%) 165 us (99%).
+I0227 20:34:36.737401 163212 SparkleExecutor.h:593] Worker 3 latency: 20 us (50%) 24 us (75%) 134 us (95%) 165 us (99%).
+I0227 20:34:36.744153 163212 SparkleExecutor.h:593] Worker 4 latency: 20 us (50%) 24 us (75%) 133 us (95%) 166 us (99%).
+I0227 20:34:36.750995 163212 SparkleExecutor.h:593] Worker 5 latency: 20 us (50%) 24 us (75%) 133 us (95%) 166 us (99%).
+I0227 20:34:36.757767 163212 SparkleExecutor.h:593] Worker 6 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.764564 163212 SparkleExecutor.h:593] Worker 7 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.771281 163212 SparkleExecutor.h:593] Worker 8 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.778018 163212 SparkleExecutor.h:593] Worker 9 latency: 20 us (50%) 24 us (75%) 133 us (95%) 164 us (99%).
+I0227 20:34:36.784819 163212 SparkleExecutor.h:593] Worker 10 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.791512 163212 SparkleExecutor.h:593] Worker 11 latency: 20 us (50%) 24 us (75%) 133 us (95%) 164 us (99%).
+I0227 20:34:36.798247 163212 SparkleExecutor.h:593] Worker 12 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.805040 163212 SparkleExecutor.h:593] Worker 13 latency: 20 us (50%) 24 us (75%) 133 us (95%) 165 us (99%).
+I0227 20:34:36.811823 163212 SparkleExecutor.h:593] Worker 14 latency: 20 us (50%) 24 us (75%) 133 us (95%) 164 us (99%).
+test_partition2.sh: line 43: 163212 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --batch_size=$batch_size --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10
+@ Spectrum; cross_ratio=5
+keys=100000
+zipf=0
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0227 20:34:50.172493 163583 Database.h:95] partition_num: 2
+I0227 20:34:50.175809 163583 Database.h:72] evm_bench initialization finished in 2 milliseconds.
+I0227 20:34:50.176039 163614 main.cpp:83] SpectrumServer 1 started at 53008!
+I0227 20:34:50.176084 163614 Server.h:52] Server 1 starts to run.
+I0227 20:34:50.676262 163617 main.cpp:73] SpectrumClient 0 started connect to 53007!
+I0227 20:34:50.676591 163617 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:35678 is UP
+I0227 20:34:51.176388 163631 main.cpp:73] SpectrumClient 1 started connect to 53008!
+I0227 20:34:51.176649 163631 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:51816 is UP
+I0227 20:34:51.176679 163614 Server.h:57] 127.0.0.1:51816 -> 127.0.0.1:53008 is UP
+I0227 20:34:51.176949 163614 Server.h:57] 127.0.0.1:51832 -> 127.0.0.1:53008 is UP
+I0227 20:34:51.676231 163583 main.cpp:180] 2 clients connected.
+I0227 20:34:51.676335 163583 SparkleManager.h:44] batch size: 100
+I0227 20:34:51.676374 163583 WorkerFactory.h:170] workers size (including manager): 16
+I0227 20:34:51.676412 163583 SerialManager.h:37] batch size: 100
+I0227 20:34:51.676453 163583 SerialExecutor.h:154] init tables for contracts
+I0227 20:34:51.676465 163583 SerialExecutor.h:192] init key_num: 200000
+I0227 20:34:54.785598 163583 SerialExecutor.h:203] init tables finished
+I0227 20:34:56.785733 163583 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0227 20:34:56.785933 163583 Coordinator.h:216] core_id: 84
+I0227 20:34:56.786172 163710 SparkleExecutor.h:97] SpectrumExecutor 0 started. 
+I0227 20:34:56.786197 163583 Coordinator.h:216] core_id: 85
+I0227 20:34:56.786458 163711 SparkleExecutor.h:97] SpectrumExecutor 1 started. 
+I0227 20:34:56.786461 163583 Coordinator.h:216] core_id: 86
+I0227 20:34:56.786690 163712 SparkleExecutor.h:97] SpectrumExecutor 2 started. 
+I0227 20:34:56.786751 163583 Coordinator.h:216] core_id: 87
+I0227 20:34:56.786931 163713 SparkleExecutor.h:97] SpectrumExecutor 3 started. 
+I0227 20:34:56.786983 163583 Coordinator.h:216] core_id: 88
+I0227 20:34:56.787282 163714 SparkleExecutor.h:97] SpectrumExecutor 4 started. 
+I0227 20:34:56.787302 163583 Coordinator.h:216] core_id: 89
+I0227 20:34:56.787492 163715 SparkleExecutor.h:97] SpectrumExecutor 5 started. 
+I0227 20:34:56.787526 163583 Coordinator.h:216] core_id: 90
+I0227 20:34:56.787856 163583 Coordinator.h:216] core_id: 91
+I0227 20:34:56.787878 163716 SparkleExecutor.h:97] SpectrumExecutor 6 started. 
+I0227 20:34:56.788146 163583 Coordinator.h:216] core_id: 92
+I0227 20:34:56.788302 163717 SparkleExecutor.h:97] SpectrumExecutor 7 started. 
+I0227 20:34:56.788482 163583 Coordinator.h:216] core_id: 93
+I0227 20:34:56.788483 163718 SparkleExecutor.h:97] SpectrumExecutor 8 started. 
+I0227 20:34:56.788753 163583 Coordinator.h:216] core_id: 94
+I0227 20:34:56.788784 163719 SparkleExecutor.h:97] SpectrumExecutor 9 started. 
+I0227 20:34:56.788976 163583 Coordinator.h:216] core_id: 95
+I0227 20:34:56.789149 163720 SparkleExecutor.h:97] SpectrumExecutor 10 started. 
+I0227 20:34:56.789306 163583 Coordinator.h:216] core_id: 96
+I0227 20:34:56.789330 163721 SparkleExecutor.h:97] SpectrumExecutor 11 started. 
+I0227 20:34:56.789669 163583 Coordinator.h:216] core_id: 97
+I0227 20:34:56.789685 163722 SparkleExecutor.h:97] SpectrumExecutor 12 started. 
+I0227 20:34:56.789907 163723 SparkleExecutor.h:97] SpectrumExecutor 13 started. 
+I0227 20:34:56.789942 163583 Coordinator.h:216] core_id: 98
+I0227 20:34:56.790227 163583 Coordinator.h:216] core_id: 99
+I0227 20:34:56.790232 163724 SparkleExecutor.h:97] SpectrumExecutor 14 started. 
+I0227 20:34:56.790354 163725 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0227 20:34:57.790352 163583 Coordinator.h:99] commit: 101262 abort: 0 (0/0/0), cascade abort: 0, network size: 34646, avg network size: 0.342142, si_in_serializable: 0 0 %, local: 0 %, operations: 27913483, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:58.790531 163583 Coordinator.h:99] commit: 106355 abort: 0 (0/0/0), cascade abort: 0, network size: 36810, avg network size: 0.346105, si_in_serializable: 0 0 %, local: 0 %, operations: 29320050, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:34:59.790674 163583 Coordinator.h:99] commit: 107294 abort: 1 (0/1/0), cascade abort: 0, network size: 37241, avg network size: 0.347093, si_in_serializable: 0 0 %, local: 0 %, operations: 29590305, partial revert 0: 0, partial revert 1: 0, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:00.790807 163583 Coordinator.h:99] commit: 111334 abort: 1 (0/1/0), cascade abort: 0, network size: 38230, avg network size: 0.343381, si_in_serializable: 0 0 %, local: 0 %, operations: 30699141, partial revert 0: 0, partial revert 1: 1, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:01.790954 163583 Coordinator.h:99] commit: 104591 abort: 3 (0/3/0), cascade abort: 0, network size: 35767, avg network size: 0.34197, si_in_serializable: 0 0 %, local: 0 %, operations: 28842813, partial revert 0: 0, partial revert 1: 0, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:02.791085 163583 Coordinator.h:99] commit: 103114 abort: 1 (0/1/0), cascade abort: 0, network size: 36066, avg network size: 0.349768, si_in_serializable: 0 0 %, local: 0 %, operations: 28435918, partial revert 0: 0, partial revert 1: 0, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:03.791178 163583 Coordinator.h:99] commit: 106380 abort: 2 (0/2/0), cascade abort: 0, network size: 37008, avg network size: 0.347885, si_in_serializable: 0 0 %, local: 0 %, operations: 29347838, partial revert 0: 0, partial revert 1: 0, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:04.791334 163583 Coordinator.h:99] commit: 108381 abort: 3 (0/3/0), cascade abort: 0, network size: 37512, avg network size: 0.346112, si_in_serializable: 0 0 %, local: 0 %, operations: 29883814, partial revert 0: 0, partial revert 1: 1, partial revert 2:  2, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:05.791461 163583 Coordinator.h:99] commit: 109937 abort: 0 (0/0/0), cascade abort: 0, network size: 38138, avg network size: 0.346908, si_in_serializable: 0 0 %, local: 0 %, operations: 30307778, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:06.791597 163583 Coordinator.h:99] commit: 105805 abort: 2 (0/2/0), cascade abort: 0, network size: 36085, avg network size: 0.341052, si_in_serializable: 0 0 %, local: 0 %, operations: 29179820, partial revert 0: 0, partial revert 1: 1, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:06.791661 163583 Coordinator.h:152] average commit: 106445 abort: 1.3 (0/1.3/0), abort cascade: 0, average operations: 29352096, network size: 367503, avg network size: 0.345251, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 0.3 , partial revert 2:  0.8 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+I0227 20:35:06.791710 163719 SparkleExecutor.h:259] SparkleExecutor 9 exits. 
+I0227 20:35:06.791712 163722 SparkleExecutor.h:259] SparkleExecutor 12 exits. 
+I0227 20:35:06.791713 163710 SparkleExecutor.h:259] SparkleExecutor 0 exits. 
+I0227 20:35:06.791750 163714 SparkleExecutor.h:259] SparkleExecutor 4 exits. 
+I0227 20:35:06.791750 163715 SparkleExecutor.h:259] SparkleExecutor 5 exits. 
+I0227 20:35:06.791713 163723 SparkleExecutor.h:259] SparkleExecutor 13 exits. 
+I0227 20:35:06.791713 163712 SparkleExecutor.h:259] SparkleExecutor 2 exits. 
+I0227 20:35:06.791749 163716 SparkleExecutor.h:259] SparkleExecutor 6 exits. 
+I0227 20:35:06.791712 163724 SparkleExecutor.h:259] SparkleExecutor 14 exits. 
+I0227 20:35:06.791714 163713 SparkleExecutor.h:259] SparkleExecutor 3 exits. 
+I0227 20:35:06.791711 163721 SparkleExecutor.h:259] SparkleExecutor 11 exits. 
+I0227 20:35:06.791711 163718 SparkleExecutor.h:259] SparkleExecutor 8 exits. 
+I0227 20:35:06.791750 163717 SparkleExecutor.h:259] SparkleExecutor 7 exits. 
+I0227 20:35:06.791715 163711 SparkleExecutor.h:259] SparkleExecutor 1 exits. 
+I0227 20:35:06.791711 163720 SparkleExecutor.h:259] SparkleExecutor 10 exits. 
+I0227 20:35:06.791697 163583 SparkleExecutor.h:593] Worker 0 latency: 77 us (50%) 118 us (75%) 172 us (95%) 223 us (99%).
+I0227 20:35:06.795768 163583 SparkleExecutor.h:593] Worker 1 latency: 77 us (50%) 118 us (75%) 172 us (95%) 223 us (99%).
+I0227 20:35:06.799805 163583 SparkleExecutor.h:593] Worker 2 latency: 77 us (50%) 118 us (75%) 173 us (95%) 224 us (99%).
+I0227 20:35:06.803799 163583 SparkleExecutor.h:593] Worker 3 latency: 77 us (50%) 118 us (75%) 172 us (95%) 223 us (99%).
+I0227 20:35:06.807746 163583 SparkleExecutor.h:593] Worker 4 latency: 77 us (50%) 118 us (75%) 173 us (95%) 221 us (99%).
+I0227 20:35:06.811772 163583 SparkleExecutor.h:593] Worker 5 latency: 77 us (50%) 118 us (75%) 174 us (95%) 224 us (99%).
+I0227 20:35:06.815755 163583 SparkleExecutor.h:593] Worker 6 latency: 77 us (50%) 118 us (75%) 172 us (95%) 223 us (99%).
+I0227 20:35:06.819818 163583 SparkleExecutor.h:593] Worker 7 latency: 78 us (50%) 118 us (75%) 173 us (95%) 224 us (99%).
+I0227 20:35:06.823781 163583 SparkleExecutor.h:593] Worker 8 latency: 77 us (50%) 118 us (75%) 173 us (95%) 225 us (99%).
+I0227 20:35:06.827790 163583 SparkleExecutor.h:593] Worker 9 latency: 77 us (50%) 118 us (75%) 172 us (95%) 223 us (99%).
+I0227 20:35:06.831739 163583 SparkleExecutor.h:593] Worker 10 latency: 78 us (50%) 118 us (75%) 172 us (95%) 224 us (99%).
+I0227 20:35:06.835714 163583 SparkleExecutor.h:593] Worker 11 latency: 77 us (50%) 118 us (75%) 172 us (95%) 225 us (99%).
+I0227 20:35:06.839624 163583 SparkleExecutor.h:593] Worker 12 latency: 78 us (50%) 118 us (75%) 173 us (95%) 225 us (99%).
+I0227 20:35:06.843647 163583 SparkleExecutor.h:593] Worker 13 latency: 78 us (50%) 118 us (75%) 173 us (95%) 225 us (99%).
+I0227 20:35:06.847528 163583 SparkleExecutor.h:593] Worker 14 latency: 78 us (50%) 118 us (75%) 172 us (95%) 222 us (99%).
+test_partition2.sh: line 43: 163583 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --batch_size=$batch_size --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10
+@ Spectrum; cross_ratio=10
+keys=100000
+zipf=0
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0227 20:35:20.256130 163970 Database.h:95] partition_num: 2
+I0227 20:35:20.259768 163970 Database.h:72] evm_bench initialization finished in 2 milliseconds.
+I0227 20:35:20.260109 164001 main.cpp:83] SpectrumServer 1 started at 53008!
+I0227 20:35:20.260172 164001 Server.h:52] Server 1 starts to run.
+I0227 20:35:20.760229 164004 main.cpp:73] SpectrumClient 0 started connect to 53007!
+I0227 20:35:20.760568 164004 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:55418 is UP
+I0227 20:35:21.260366 164017 main.cpp:73] SpectrumClient 1 started connect to 53008!
+I0227 20:35:21.260637 164017 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:35634 is UP
+I0227 20:35:21.260661 164001 Server.h:57] 127.0.0.1:35634 -> 127.0.0.1:53008 is UP
+I0227 20:35:21.260730 164001 Server.h:57] 127.0.0.1:35646 -> 127.0.0.1:53008 is UP
+I0227 20:35:21.760246 163970 main.cpp:180] 2 clients connected.
+I0227 20:35:21.760335 163970 SparkleManager.h:44] batch size: 100
+I0227 20:35:21.760381 163970 WorkerFactory.h:170] workers size (including manager): 16
+I0227 20:35:21.760425 163970 SerialManager.h:37] batch size: 100
+I0227 20:35:21.760444 163970 SerialExecutor.h:154] init tables for contracts
+I0227 20:35:21.760454 163970 SerialExecutor.h:192] init key_num: 200000
+I0227 20:35:24.877427 163970 SerialExecutor.h:203] init tables finished
+I0227 20:35:26.877590 163970 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0227 20:35:26.877687 163970 Coordinator.h:216] core_id: 84
+I0227 20:35:26.877821 163970 Coordinator.h:216] core_id: 85
+I0227 20:35:26.877915 164115 SparkleExecutor.h:97] SpectrumExecutor 0 started. 
+I0227 20:35:26.877944 163970 Coordinator.h:216] core_id: 86
+I0227 20:35:26.878089 163970 Coordinator.h:216] core_id: 87
+I0227 20:35:26.878103 164116 SparkleExecutor.h:97] SpectrumExecutor 1 started. 
+I0227 20:35:26.878212 163970 Coordinator.h:216] core_id: 88
+I0227 20:35:26.878242 164117 SparkleExecutor.h:97] SpectrumExecutor 2 started. 
+I0227 20:35:26.878526 163970 Coordinator.h:216] core_id: 89
+I0227 20:35:26.878557 164118 SparkleExecutor.h:97] SpectrumExecutor 3 started. 
+I0227 20:35:26.878705 164119 SparkleExecutor.h:97] SpectrumExecutor 4 started. 
+I0227 20:35:26.878763 164120 SparkleExecutor.h:97] SpectrumExecutor 5 started. 
+I0227 20:35:26.878839 163970 Coordinator.h:216] core_id: 90
+I0227 20:35:26.879140 163970 Coordinator.h:216] core_id: 91
+I0227 20:35:26.879141 164121 SparkleExecutor.h:97] SpectrumExecutor 6 started. 
+I0227 20:35:26.879516 164122 SparkleExecutor.h:97] SpectrumExecutor 7 started. 
+I0227 20:35:26.879544 163970 Coordinator.h:216] core_id: 92
+I0227 20:35:26.879909 163970 Coordinator.h:216] core_id: 93
+I0227 20:35:26.879915 164123 SparkleExecutor.h:97] SpectrumExecutor 8 started. 
+I0227 20:35:26.880234 164124 SparkleExecutor.h:97] SpectrumExecutor 9 started. 
+I0227 20:35:26.880273 163970 Coordinator.h:216] core_id: 94
+I0227 20:35:26.880589 163970 Coordinator.h:216] core_id: 95
+I0227 20:35:26.880584 164125 SparkleExecutor.h:97] SpectrumExecutor 10 started. 
+I0227 20:35:26.880815 164126 SparkleExecutor.h:97] SpectrumExecutor 11 started. 
+I0227 20:35:26.880846 163970 Coordinator.h:216] core_id: 96
+I0227 20:35:26.881088 164127 SparkleExecutor.h:97] SpectrumExecutor 12 started. 
+I0227 20:35:26.881116 163970 Coordinator.h:216] core_id: 97
+I0227 20:35:26.881392 164128 SparkleExecutor.h:97] SpectrumExecutor 13 started. 
+I0227 20:35:26.881412 163970 Coordinator.h:216] core_id: 98
+I0227 20:35:26.881570 164129 SparkleExecutor.h:97] SpectrumExecutor 14 started. 
+I0227 20:35:26.881642 163970 Coordinator.h:216] core_id: 99
+I0227 20:35:26.881826 164130 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0227 20:35:27.881778 163970 Coordinator.h:99] commit: 70273 abort: 0 (0/0/0), cascade abort: 0, network size: 44931, avg network size: 0.639378, si_in_serializable: 0 0 %, local: 0 %, operations: 19384417, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:28.881960 163970 Coordinator.h:99] commit: 76035 abort: 0 (0/0/0), cascade abort: 0, network size: 48280, avg network size: 0.634971, si_in_serializable: 0 0 %, local: 0 %, operations: 20983649, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:29.882082 163970 Coordinator.h:99] commit: 75888 abort: 2 (0/2/0), cascade abort: 0, network size: 48910, avg network size: 0.644502, si_in_serializable: 0 0 %, local: 0 %, operations: 20941242, partial revert 0: 0, partial revert 1: 2, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:30.882225 163970 Coordinator.h:99] commit: 72833 abort: 0 (0/0/0), cascade abort: 0, network size: 47174, avg network size: 0.647701, si_in_serializable: 0 0 %, local: 0 %, operations: 20101804, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:31.882373 163970 Coordinator.h:99] commit: 76531 abort: 2 (0/2/0), cascade abort: 0, network size: 48966, avg network size: 0.639819, si_in_serializable: 0 0 %, local: 0 %, operations: 21124080, partial revert 0: 0, partial revert 1: 2, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:32.882550 163970 Coordinator.h:99] commit: 76239 abort: 5 (0/5/0), cascade abort: 0, network size: 48448, avg network size: 0.635475, si_in_serializable: 0 0 %, local: 0 %, operations: 21038093, partial revert 0: 0, partial revert 1: 2, partial revert 2:  3, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:33.882679 163970 Coordinator.h:99] commit: 73935 abort: 0 (0/0/0), cascade abort: 0, network size: 47398, avg network size: 0.641077, si_in_serializable: 0 0 %, local: 0 %, operations: 20398654, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:34.882853 163970 Coordinator.h:99] commit: 77848 abort: 0 (0/0/0), cascade abort: 0, network size: 49920, avg network size: 0.64125, si_in_serializable: 0 0 %, local: 0 %, operations: 21484226, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:35.883013 163970 Coordinator.h:99] commit: 78278 abort: 0 (0/0/0), cascade abort: 0, network size: 50478, avg network size: 0.644856, si_in_serializable: 0 0 %, local: 0 %, operations: 21598558, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:36.883170 163970 Coordinator.h:99] commit: 80765 abort: 3 (0/3/0), cascade abort: 0, network size: 52467, avg network size: 0.649625, si_in_serializable: 0 0 %, local: 0 %, operations: 22288520, partial revert 0: 0, partial revert 1: 1, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:36.883220 163970 Coordinator.h:152] average commit: 75862.5 abort: 1.2 (0/1.2/0), abort cascade: 0, average operations: 20934324, network size: 486972, avg network size: 0.641914, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 0.7 , partial revert 2:  0.4 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+I0227 20:35:36.883270 164124 SparkleExecutor.h:259] SparkleExecutor 9 exits. 
+I0227 20:35:36.883270 164125 SparkleExecutor.h:259] SparkleExecutor 10 exits. 
+I0227 20:35:36.883306 164127 SparkleExecutor.h:259] SparkleExecutor 12 exits. 
+I0227 20:35:36.883306 164129 SparkleExecutor.h:259] SparkleExecutor 14 exits. 
+I0227 20:35:36.883335 164115 SparkleExecutor.h:259] SparkleExecutor 0 exits. 
+I0227 20:35:36.883337 164119 SparkleExecutor.h:259] SparkleExecutor 4 exits. 
+I0227 20:35:36.883338 164120 SparkleExecutor.h:259] SparkleExecutor 5 exits. 
+I0227 20:35:36.883306 164128 SparkleExecutor.h:259] SparkleExecutor 13 exits. 
+I0227 20:35:36.883335 164117 SparkleExecutor.h:259] SparkleExecutor 2 exits. 
+I0227 20:35:36.883335 164116 SparkleExecutor.h:259] SparkleExecutor 1 exits. 
+I0227 20:35:36.883337 164118 SparkleExecutor.h:259] SparkleExecutor 3 exits. 
+I0227 20:35:36.883306 164126 SparkleExecutor.h:259] SparkleExecutor 11 exits. 
+I0227 20:35:36.883338 164123 SparkleExecutor.h:259] SparkleExecutor 8 exits. 
+I0227 20:35:36.883337 164122 SparkleExecutor.h:259] SparkleExecutor 7 exits. 
+I0227 20:35:36.883337 164121 SparkleExecutor.h:259] SparkleExecutor 6 exits. 
+I0227 20:35:36.883246 163970 SparkleExecutor.h:593] Worker 0 latency: 115 us (50%) 154 us (75%) 224 us (95%) 286 us (99%).
+I0227 20:35:36.886785 163970 SparkleExecutor.h:593] Worker 1 latency: 116 us (50%) 154 us (75%) 224 us (95%) 286 us (99%).
+I0227 20:35:36.889858 163970 SparkleExecutor.h:593] Worker 2 latency: 115 us (50%) 154 us (75%) 224 us (95%) 286 us (99%).
+I0227 20:35:36.893256 163970 SparkleExecutor.h:593] Worker 3 latency: 115 us (50%) 154 us (75%) 223 us (95%) 284 us (99%).
+I0227 20:35:36.896356 163970 SparkleExecutor.h:593] Worker 4 latency: 115 us (50%) 154 us (75%) 224 us (95%) 285 us (99%).
+I0227 20:35:36.899770 163970 SparkleExecutor.h:593] Worker 5 latency: 116 us (50%) 154 us (75%) 223 us (95%) 284 us (99%).
+I0227 20:35:36.902781 163970 SparkleExecutor.h:593] Worker 6 latency: 115 us (50%) 153 us (75%) 223 us (95%) 284 us (99%).
+I0227 20:35:36.906172 163970 SparkleExecutor.h:593] Worker 7 latency: 116 us (50%) 154 us (75%) 224 us (95%) 283 us (99%).
+I0227 20:35:36.909258 163970 SparkleExecutor.h:593] Worker 8 latency: 115 us (50%) 154 us (75%) 224 us (95%) 286 us (99%).
+I0227 20:35:36.912680 163970 SparkleExecutor.h:593] Worker 9 latency: 116 us (50%) 154 us (75%) 225 us (95%) 287 us (99%).
+I0227 20:35:36.915766 163970 SparkleExecutor.h:593] Worker 10 latency: 115 us (50%) 153 us (75%) 225 us (95%) 285 us (99%).
+I0227 20:35:36.919098 163970 SparkleExecutor.h:593] Worker 11 latency: 116 us (50%) 155 us (75%) 225 us (95%) 285 us (99%).
+I0227 20:35:36.922117 163970 SparkleExecutor.h:593] Worker 12 latency: 115 us (50%) 154 us (75%) 223 us (95%) 287 us (99%).
+I0227 20:35:36.925541 163970 SparkleExecutor.h:593] Worker 13 latency: 116 us (50%) 154 us (75%) 223 us (95%) 286 us (99%).
+I0227 20:35:36.928617 163970 SparkleExecutor.h:593] Worker 14 latency: 115 us (50%) 154 us (75%) 224 us (95%) 286 us (99%).
+test_partition2.sh: line 43: 163970 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --batch_size=$batch_size --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10
+@ Spectrum; cross_ratio=30
+keys=100000
+zipf=0
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0227 20:35:50.344156 164345 Database.h:95] partition_num: 2
+I0227 20:35:50.347826 164345 Database.h:72] evm_bench initialization finished in 2 milliseconds.
+I0227 20:35:50.348155 164377 main.cpp:83] SpectrumServer 1 started at 53008!
+I0227 20:35:50.348217 164377 Server.h:52] Server 1 starts to run.
+I0227 20:35:50.848307 164386 main.cpp:73] SpectrumClient 0 started connect to 53007!
+I0227 20:35:50.848541 164386 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:48060 is UP
+I0227 20:35:51.347683 164377 Server.h:57] 127.0.0.1:56354 -> 127.0.0.1:53008 is UP
+I0227 20:35:51.348389 164392 main.cpp:73] SpectrumClient 1 started connect to 53008!
+I0227 20:35:51.348551 164377 Server.h:57] 127.0.0.1:56358 -> 127.0.0.1:53008 is UP
+I0227 20:35:51.348583 164392 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:56358 is UP
+I0227 20:35:51.848260 164345 main.cpp:180] 2 clients connected.
+I0227 20:35:51.848345 164345 SparkleManager.h:44] batch size: 100
+I0227 20:35:51.848381 164345 WorkerFactory.h:170] workers size (including manager): 16
+I0227 20:35:51.848419 164345 SerialManager.h:37] batch size: 100
+I0227 20:35:51.848462 164345 SerialExecutor.h:154] init tables for contracts
+I0227 20:35:51.848475 164345 SerialExecutor.h:192] init key_num: 200000
+I0227 20:35:54.991602 164345 SerialExecutor.h:203] init tables finished
+I0227 20:35:56.991720 164345 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0227 20:35:56.991981 164345 Coordinator.h:216] core_id: 84
+I0227 20:35:56.992157 164493 SparkleExecutor.h:97] SpectrumExecutor 0 started. 
+I0227 20:35:56.992290 164345 Coordinator.h:216] core_id: 85
+I0227 20:35:56.992542 164345 Coordinator.h:216] core_id: 86
+I0227 20:35:56.992530 164494 SparkleExecutor.h:97] SpectrumExecutor 1 started. 
+I0227 20:35:56.992820 164345 Coordinator.h:216] core_id: 87
+I0227 20:35:56.992836 164495 SparkleExecutor.h:97] SpectrumExecutor 2 started. 
+I0227 20:35:56.993093 164496 SparkleExecutor.h:97] SpectrumExecutor 3 started. 
+I0227 20:35:56.993111 164345 Coordinator.h:216] core_id: 88
+I0227 20:35:56.993341 164497 SparkleExecutor.h:97] SpectrumExecutor 4 started. 
+I0227 20:35:56.993425 164345 Coordinator.h:216] core_id: 89
+I0227 20:35:56.993706 164345 Coordinator.h:216] core_id: 90
+I0227 20:35:56.993880 164498 SparkleExecutor.h:97] SpectrumExecutor 5 started. 
+I0227 20:35:56.993901 164499 SparkleExecutor.h:97] SpectrumExecutor 6 started. 
+I0227 20:35:56.993943 164345 Coordinator.h:216] core_id: 91
+I0227 20:35:56.994199 164345 Coordinator.h:216] core_id: 92
+I0227 20:35:56.994203 164500 SparkleExecutor.h:97] SpectrumExecutor 7 started. 
+I0227 20:35:56.994508 164345 Coordinator.h:216] core_id: 93
+I0227 20:35:56.994515 164501 SparkleExecutor.h:97] SpectrumExecutor 8 started. 
+I0227 20:35:56.994896 164345 Coordinator.h:216] core_id: 94
+I0227 20:35:56.994921 164502 SparkleExecutor.h:97] SpectrumExecutor 9 started. 
+I0227 20:35:56.995136 164503 SparkleExecutor.h:97] SpectrumExecutor 10 started. 
+I0227 20:35:56.995199 164345 Coordinator.h:216] core_id: 95
+I0227 20:35:56.995472 164504 SparkleExecutor.h:97] SpectrumExecutor 11 started. 
+I0227 20:35:56.995473 164345 Coordinator.h:216] core_id: 96
+I0227 20:35:56.995731 164505 SparkleExecutor.h:97] SpectrumExecutor 12 started. 
+I0227 20:35:56.995823 164345 Coordinator.h:216] core_id: 97
+I0227 20:35:56.996011 164506 SparkleExecutor.h:97] SpectrumExecutor 13 started. 
+I0227 20:35:56.996125 164345 Coordinator.h:216] core_id: 98
+I0227 20:35:56.996309 164507 SparkleExecutor.h:97] SpectrumExecutor 14 started. 
+I0227 20:35:56.996448 164345 Coordinator.h:216] core_id: 99
+I0227 20:35:56.996758 164508 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0227 20:35:57.996604 164345 Coordinator.h:99] commit: 38549 abort: 0 (0/0/0), cascade abort: 0, network size: 58119, avg network size: 1.50767, si_in_serializable: 0 0 %, local: 0 %, operations: 10652218, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:58.996809 164345 Coordinator.h:99] commit: 41344 abort: 0 (0/0/0), cascade abort: 0, network size: 62306, avg network size: 1.50701, si_in_serializable: 0 0 %, local: 0 %, operations: 11421381, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:35:59.996986 164345 Coordinator.h:99] commit: 40264 abort: 0 (0/0/0), cascade abort: 0, network size: 60400, avg network size: 1.5001, si_in_serializable: 0 0 %, local: 0 %, operations: 11129465, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:00.997207 164345 Coordinator.h:99] commit: 42907 abort: 0 (0/0/0), cascade abort: 0, network size: 64133, avg network size: 1.4947, si_in_serializable: 0 0 %, local: 0 %, operations: 11852536, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:01.997407 164345 Coordinator.h:99] commit: 42390 abort: 0 (0/0/0), cascade abort: 0, network size: 63394, avg network size: 1.49549, si_in_serializable: 0 0 %, local: 0 %, operations: 11716362, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:02.997614 164345 Coordinator.h:99] commit: 41773 abort: 0 (0/0/0), cascade abort: 0, network size: 63307, avg network size: 1.5155, si_in_serializable: 0 0 %, local: 0 %, operations: 11535914, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:03.997840 164345 Coordinator.h:99] commit: 40832 abort: 0 (0/0/0), cascade abort: 0, network size: 61680, avg network size: 1.51058, si_in_serializable: 0 0 %, local: 0 %, operations: 11285057, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:04.998059 164345 Coordinator.h:99] commit: 39609 abort: 0 (0/0/0), cascade abort: 0, network size: 60083, avg network size: 1.5169, si_in_serializable: 0 0 %, local: 0 %, operations: 10943641, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:05.998270 164345 Coordinator.h:99] commit: 43110 abort: 0 (0/0/0), cascade abort: 0, network size: 64842, avg network size: 1.50411, si_in_serializable: 0 0 %, local: 0 %, operations: 11911867, partial revert 0: 0, partial revert 1: 0, partial revert 2:  0, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:06.998437 164345 Coordinator.h:99] commit: 42985 abort: 2 (0/2/0), cascade abort: 0, network size: 64618, avg network size: 1.50327, si_in_serializable: 0 0 %, local: 0 %, operations: 11882801, partial revert 0: 0, partial revert 1: 0, partial revert 2:  1, partial revert 3:  0, partial revert 4:  0, partial revert 5:  0, partial revert 6:  0, partial revert 7:  0, partial revert 8:  0, partial revert 9:  0, partial revert 10: 0, partial revert 11: 0, partial revert 12: 0, partial revert 13: 0, partial revert 14: 0, partial revert 15: 0, partial revert 16: 0, partial revert 17: 0, partial revert 18: 0, partial revert 19: 0
+I0227 20:36:06.998486 164345 Coordinator.h:152] average commit: 41376.3 abort: 0.2 (0/0.2/0), abort cascade: 0, average operations: 11433124, network size: 622882, avg network size: 1.50541, si_in_serializable: 0 0 % , local: 0 % , partial revert 0: 0 , partial revert 1: 0 , partial revert 2:  0.1 , partial revert 3:  0 , partial revert 4:  0 , partial revert 5:  0 , partial revert 6:  0 , partial revert 7:  0 , partial revert 8:  0 , partial revert 9:  0 , partial revert 10: 0 , partial revert 11: 0 , partial revert 12: 0 , partial revert 13: 0 , partial revert 14: 0 , partial revert 15: 0 , partial revert 16: 0 , partial revert 17: 0 , partial revert 18: 0 , partial revert 19: 0
+I0227 20:36:06.998538 164345 SparkleExecutor.h:593] Worker 0 latency: 242 us (50%) 299 us (75%) 398 us (95%) 501 us (99%).
+test_partition2.sh: line 43: 164345 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --batch_size=$batch_size --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10

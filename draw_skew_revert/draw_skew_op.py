@@ -3,9 +3,9 @@ HELP = 'python comp-original -f afilename'
 ##### run by cmd #####
 
 X = "zipf"
-XLABEL = "Contention Degree (Zipf)"
+XLABEL = r"倾斜程度 ($\mathit{Zipf}$)"
 Y = "average operations"
-YLABEL = "Rollback OPs(K) / Commit"
+YLABEL = "回滚指令数"
 
 from typing import List, Tuple
 import pandas as pd
@@ -27,7 +27,7 @@ def plot_by_protocol(
         ):
     x, xlabel = x
     y, ylabel = y
-    y_, ylabel_ = 'original revert length', 'Complete Rollback OPs'
+    y_, ylabel_ = 'original revert length', '完全回滚'
 
     p = MyPlot(1, 1)
     ax: plt.Axes = p.axes
@@ -56,7 +56,7 @@ def plot_by_protocol(
         ax.bar(
             [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
             records[y],
-            color=color, label="Partial Rollback OPs",
+            color=color, label="部分回滚",
             width=0.4,
             ec='black', ls='-', lw=1,
             hatch='xx'
@@ -79,14 +79,14 @@ def plot_by_protocol(
     max_y = int(max_y)
     print(max_y)
     # step=adaptive_y(int(max_y), 5)
-    step=200
+    step=4000
 
     ax.set_yticks(
         range(0, max_y, step), 
-        [str(x / 1000) if x!= 0 else 0 for x in range(0, max_y, step)]
+        [str(x // 1000) + 'K' if x!= 0 else 0 for x in range(0, max_y, step)]
     )
 
-    p.legend(ax, anchor=None, ncol=1, loc="upper center")
+    p.legend(ax, anchor=(0.5, 1.15), ncol=2, loc="upper center")
     # p.legend(ax2, anchor=(0.5, 1.25))
     if savefig: p.save(savepath)
 

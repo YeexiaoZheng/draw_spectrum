@@ -82,7 +82,7 @@ if __name__ == '__main__':
         max_y = 0
         ax.bar(
             [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
-            (records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y]),
+            ((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx],
             width=0.4,
             ec='black', ls='-', lw=1,
@@ -91,8 +91,8 @@ if __name__ == '__main__':
 
         ax.bar(
             [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
-            records[y] / records['average commit'] if AVG else records[y],
-            bottom=(records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y]),
+            (records[y] / records['average commit'] if AVG else records[y]) * 100,
+            bottom=((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx + 2],
             width=0.4,
             ec='black', ls='-', lw=1,

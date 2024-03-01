@@ -1,0 +1,14 @@
+./no-batch-ycsb-uniform
+./batch-ycsb-uniform
+0    542120.0
+1    375676.0
+2    227666.0
+3    167288.4
+4     75293.4
+Name: average commit, dtype: float64
+0    701228.880
+1    534497.040
+2    317449.440
+3    186041.988
+4     32151.042
+Name: average commit, dtype: float64

@@ -3,9 +3,9 @@ HELP = 'python draw_skew_tps.py -f afilename'
 ##### run by cmd #####
 
 X = "threads"
-XLABEL = "Threads"
+XLABEL = "工作线程数"
 Y = "average abort"
-YLABEL = "Average Aborts"
+YLABEL = "平均中止数"
 
 from typing import List, Tuple
 import pandas as pd
@@ -42,7 +42,7 @@ def plot_by_protocol(
             [_ + (idx-1.5) * 0.2 for _ in range(records[x].size)], 
             records[y].div(records['average commit']) * 1000000,
             # records[y],
-            color=color, label=to_fomat(protocol),
+            color=color, label=to_fomat(protocol, True),
             width=0.2,
             ec='black', ls='-', lw=1,
             hatch=['++', r'\\', 'xx', '//'][idx]

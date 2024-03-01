@@ -2,11 +2,6 @@
 HELP = 'python draw_threads_tps.py -f afilename'
 ##### run by cmd #####
 
-X = "threads"
-XLABEL = "Threads"
-Y = "average commit"
-YLABEL = "Troughput(KTxn/s)"
-
 from typing import List, Tuple
 import pandas as pd
 import argparse
@@ -16,6 +11,15 @@ import matplotlib.pyplot as plt
 from parse import parse_meta, parse_record, parse_records_from_file
 from plot import MyPlot
 from common import adaptive_y, to_fomat, add_serial
+
+X = "threads"
+Y = "average commit"
+if MyPlot.language == 'chinese':
+    XLABEL = "工作线程数"
+    YLABEL = "吞吐（交易 / 秒）"
+else:
+    XLABEL = "Threads"
+    YLABEL = "Troughput(KTxn/s)"
 
 def plot_by_protocol(
         records: pd.DataFrame, 
@@ -39,7 +43,7 @@ def plot_by_protocol(
             xlabel,
             records[records['protocol'] == protocol.lower()][y], 
             ylabel,
-            legend_label=to_fomat(protocol),
+            legend_label=to_fomat(protocol, True if 'pre' in savepath else False),
             color=color, 
             marker=marker,
         )
@@ -58,7 +62,8 @@ def plot_by_protocol(
     
     ax.set_yticks(
         range(0, max_y, step), 
-        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
+        [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)] if MyPlot.language == 'chinese' \
+        else [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     )
 
     p.legend(ax, loc="upper center", ncol=2, anchor=None)
@@ -98,7 +103,15 @@ if __name__ == '__main__':
             # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
             ('sparkle original' , '#ED9F54'    , None),
             ('sparkle partial'  , '#8E5344'    , None),
-            # ('sparkle partial-v2'  , '#B8448D'    , 'p'),
+            ('sparkle partial-v2'  , '#B8448D'    , 'p'),
+            ('aria fb'          , '#45C686'    , None),
+            # ('serial'           , '#B9A89B'    , None),
+        ] if 'pre' in args.log_file else 
+        [
+            # 里面是 (协议名称, 颜色(RGB格式), 标记的元组)
+            ('sparkle original' , '#ED9F54'    , None),
+            ('sparkle partial'  , '#8E5344'    , None),
+            # ('sparkle partial-v2'  , '#B8448D'    , None),
             ('aria fb'          , '#45C686'    , None),
             ('serial'           , '#B9A89B'    , None),
         ],

@@ -3,9 +3,9 @@ HELP = 'python draw_skew_cascade.py -f afilename'
 ##### run by cmd #####
 
 X = "zipf"
-XLABEL = "Contention Degree (Zipf)"
+XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
 Y = "average abort"
-YLABEL = "Average Aborts(M)"
+YLABEL = "平均中止数"
 
 from typing import List, Tuple
 import pandas as pd
@@ -42,7 +42,7 @@ def plot_by_protocol(
             # records[records['protocol'] == protocol.lower()][y], 
             records[records['protocol'] == protocol][y].reset_index(drop=True).div(records[records['protocol'] == protocol]['average commit'].reset_index(drop=True)) * 1000000, 
             ylabel,
-            legend_label=('With Partial' if 'partial' in protocol.lower() else 'No Partial') + '(' + to_fomat(workload) + ')',
+            legend_label=('部分回滚' if 'partial' in protocol.lower() else '完全回滚') + '(' + to_fomat(workload) + ')',
             color=color,
             marker=marker
         )
@@ -55,7 +55,7 @@ def plot_by_protocol(
 
     ax.set_yticks(
         range(0, max_y, step), 
-        [str(x)[:-6] if len(str(x)) >6 else str(x) for x in range(0, max_y, step)]
+        [str(x)[:-6]+'M' if len(str(x)) >6 else str(x) for x in range(0, max_y, step)]
     )
 
     # p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.166))

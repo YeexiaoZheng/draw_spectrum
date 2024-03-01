@@ -3,9 +3,9 @@ HELP = 'python draw_sched_overhead -f afilename'
 ##### run by cmd #####
 
 X = "zipf"
-XLABEL = "Workload"
+XLABEL = "工作负载"
 Y = "average commit"
-YLABEL = "Thoughtput(K)"
+YLABEL = "吞吐(交易/秒)"
 
 from typing import List, Tuple
 import pandas as pd
@@ -50,7 +50,7 @@ def plot_by_protocol(
                 # records[records[records['protocol'] == protocol]['workload'] == workload][y], 
                 # records.loc[idx, 'average commit'],
                 records[records['protocol'] == protocol][y],
-                color=color, label='No Checkpointing' if to_fomat(protocol) == 'Sparkle' else 'Checkpointing',
+                color=color, label='不采用检查点' if to_fomat(protocol) == 'Sparkle' else '采用检查点',
                 width=0.18,
                 ec='black', ls='-', lw=1,
                 hatch='xx' if idx == 1 else '//'
@@ -74,7 +74,7 @@ def plot_by_protocol(
 
     ax.set_yticks(
         range(ystart, max_y, step), 
-        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(ystart, max_y, step)]
+        [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(ystart, max_y, step)]
     )
     
     p.legend(ax, loc="upper center", ncol=1, anchor=None)

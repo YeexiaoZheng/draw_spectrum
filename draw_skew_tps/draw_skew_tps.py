@@ -3,9 +3,9 @@ HELP = 'python draw_skew_tps.py -f afilename'
 ##### run by cmd #####
 
 X = "zipf"
-XLABEL = "Contention Degree (Zipf)"
+XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
 Y = "average commit"
-YLABEL = "Troughput(KTxn/s)"
+YLABEL = "吞吐（交易 / 秒）"
 
 from typing import List, Tuple
 import pandas as pd
@@ -39,7 +39,7 @@ def plot_by_protocol(
             xlabel,
             records[records['protocol'] == protocol][y], 
             ylabel,
-            legend_label=to_fomat(protocol),
+            legend_label=to_fomat(protocol, True),
             color=color, 
             marker=marker
         )
@@ -54,7 +54,7 @@ def plot_by_protocol(
 
     ax.set_yticks(
         range(0, max_y, step), 
-        [str(x)[:-3] if len(str(x)) > 4 else str(x) for x in range(0, max_y, step)]
+        [str(x)[:-3] + 'K' if len(str(x)) > 4 else str(x) for x in range(0, max_y, step)]
     )
 
     p.legend(ax, anchor=None, ncol=2)

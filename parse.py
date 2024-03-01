@@ -13,8 +13,11 @@ def parse_record(record):
             return None
     return {
         'protocol': record.split(';')[0].strip(),
+        'cross_ratio': fetch_word_after("cross_ratio=", int),
         'threads': fetch_word_after("threads=", int),
         "zipf": fetch_word_after("zipf=", float),
+        'network size': fetch_word_after("network size: ", int),
+        'multi commit network size': fetch_word_after("multi commit network size: ", int),
         'window size': fetch_word_after("windowSize=", int),
         'average commit': fetch_word_after("commit: ", float),
         'average abort': fetch_word_after("abort: ", float),

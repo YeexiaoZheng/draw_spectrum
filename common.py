@@ -24,10 +24,11 @@ def adaptive_y(max_y, step_num=5):
     return step
 
 
-def to_fomat(s: str) -> str:
+def to_fomat(s: str, pre: bool=False) -> str:
     if s.lower() == 'sparkle original': return 'Sparkle'
-    if s.lower() == 'sparkle partial': return 'Spectrum$_{p}$'
-    if s.lower() == 'sparkle partial-v2': return 'Spectrum$_{pp}$'
+    if s.lower() == 'sparkle partial' and not pre: return 'Spectrum'
+    if s.lower() == 'sparkle partial' and pre: return 'Spectrum$_\mathit{p}$'
+    if s.lower() == 'sparkle partial-v2': return 'Spectrum$_\mathit{pp}$'
     if s.lower() == 'aria fb': return 'AriaFB'
     if s.lower() == 'serial': return 'Serial'
     if s.lower() == 'ycsb': return 'Y'
@@ -37,7 +38,7 @@ def to_fomat(s: str) -> str:
 def order_handles_labels(handles, labels: List):
     label_order = labels
     if 'Serial' in labels:  label_order = ['Spectrum', 'AriaFB', 'Sparkle', 'Serial']
-    if 'Spectrum$_{pp}$' in labels:  label_order = ['Spectrum$_{pp}$', 'Sparkle', 'Spectrum$_{p}$', 'AriaFB']
+    if 'Spectrum$_\mathit{pp}$' in labels:  label_order = ['Spectrum$_\mathit{pp}$', 'Sparkle', 'Spectrum$_\mathit{p}$', 'AriaFB']
     return [handles[i] for i in [labels.index(label) for label in label_order]], label_order
 
 def add_serial(recs: pd.DataFrame, x: str, value: int):

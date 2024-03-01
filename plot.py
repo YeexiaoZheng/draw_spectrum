@@ -1,17 +1,35 @@
 from collections.abc import Iterable
 from typing import List
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
+from matplotlib import rcParams
 
 from common import order_handles_labels
 
 class MyPlot:
     ##### 参数 #####
+    language = 'chinese'
 
     # 全局
     # font = 'Arial'          # 字体
-    font = 'Microsoft YaHei'
+    # font = 'Microsoft YaHei'
+    # font = 'Times New Roman + SimSun'
+    # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    # 字体加载
+    font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    font_manager.fontManager.addfont(font_path)
+    prop = font_manager.FontProperties(fname=font_path)
+    # print(prop.get_name())  # 显示当前使用字体的名称
+
+    # 字体设置
+    rcParams['font.family'] = 'sans-serif' # 使用字体中的无衬线体
+    rcParams['font.sans-serif'] = prop.get_name()  # 根据名称设置字体
+    # rcParams['font.weight'] = 'bold' # 设置刻度标签粗细
+    # rcParams['font.size'] = 10 # 设置字体大小
+    rcParams['axes.unicode_minus'] = False # 使坐标轴刻度标签正常显示正负号
+
     dpi = 300
-    weight = 'bold'
+    weight = 'normal'
 
     # 图例相关
     anchor = (0.5, 1.23)    # 相对位置
@@ -33,7 +51,7 @@ class MyPlot:
 
     # label标签相关
     label_config_dic = {
-        'family': font,
+        # 'family': font,
         'weight': weight,       # 粗细：normal bold
         'size': 17,             # 大小
     }
@@ -71,7 +89,12 @@ class MyPlot:
         figsize: tuple=None,
         kwargs: dict=None
     ):
-        plt.rcParams['font.sans-serif'] = [self.font]
+        # plt.rcParams['font.sans-serif'] = [self.font]
+        # rcParams['font.sans-serif'] = self.prop.get_name()  # 根据名称设置字体
+        # 'dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom'
+        rcParams['mathtext.fontset'] = 'stix' # stix' if self.language == 'chinese' else 'dejavusans'
+        rcParams['mathtext.default'] = 'regular'
+        # rcParams['text.usetex'] = True
         plt.rcParams['font.size'] = self.legend_word_size
         plt.rcParams['font.weight'] = self.weight
         plt.rcParams ['savefig.dpi'] = 300
