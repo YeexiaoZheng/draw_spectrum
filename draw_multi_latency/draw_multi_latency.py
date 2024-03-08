@@ -24,8 +24,8 @@ parser = argparse.ArgumentParser(HELP)
 args = parser.parse_args()
 
 legend_labels = [
-    "Prophet$_{origin}$",
-    "Prophet$_{batch}$",
+    "No advance",
+    "Advance",
 ]
 
 
@@ -61,16 +61,16 @@ def plot_by_protocol(
             color=color, 
             width=0.3,
             ec='black', ls='-', lw=1,
-            hatch=['xx', '//'][idx]
+            hatch=['xx', '//'][1-idx]
         )
         tmp_max =  records[records['protocol'] == protocol][y].max() 
         if tmp_max > max_y: max_y = tmp_max
 
-    # ax.set_xlabel(xlabel, fontdict=p.label_config_dic)
+    ax.set_xlabel(xlabel, fontdict=p.label_config_dic)
     ax.set_ylabel(ylabel, fontdict=p.label_config_dic)
     # ax.set_ylim(-0.2, 1.2)
     # ax.set_xlim(-0.2, 1.2)
-    ax.set_xticks(range(3), ['50%', '99%', 'Batch'])
+    ax.set_xticks(range(3), ['50%', '95%', '99%'])
 
     # 自适应Y轴变化
     max_y = int(max_y)
@@ -79,7 +79,7 @@ def plot_by_protocol(
 
     ax.set_yticks(
         range(0, max_y, step), 
-        [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
+        # [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     )
 
     p.legend(ax, loc="upper center", ncol=len(protocols), anchor=(0.5, 1.15))
@@ -101,10 +101,14 @@ mean_values = {protocol: [] for protocol in protocols}
 # }
 
 data = {
-    'no-batch-smallbank':[124, 210, 622],
-    'batch-smallbank': [279, 536, 344],
-    'no-batch-ycsb': [119, 203, 649],
-    'batch-ycsb': [322, 593, 467]
+    # 'no-batch-smallbank':[124, 210, 622],
+    # 'batch-smallbank': [279, 536, 344],
+    # 'no-batch-ycsb': [119, 203, 649],
+    # 'batch-ycsb': [322, 593, 467],
+    'batch-no-advance-smallbank': [314, 640, 654],
+    'batch-advance-smallbank': [269, 444, 476],
+    'batch-no-advance-ycsb': [459, 903, 1017],
+    'batch-advance-ycsb': [395, 658, 722],
 }
 
 print(data)
@@ -112,7 +116,7 @@ print(data)
 recs = pd.DataFrame(columns=['protocol', 'percentile', 'latency'])
 
 for proto in data.keys():
-    for idx, perc in enumerate(['50%', '99%', 'batch']):
+    for idx, perc in enumerate(['50%', '95%', '99%']):
         recs.loc[len(recs.index)] = [proto, perc, data[proto][idx]]
 
 print(recs)
@@ -124,11 +128,11 @@ plot_by_protocol(
     (X, XLABEL), (Y, YLABEL), 
     [
         # 里面是 (协议名称, 颜色(RGB格式)的元组)
-        ('no-batch-smallbank'           , '#ED9F54'),
-        ('batch-smallbank'  , '#8E5344'),
+        ('batch-no-advance-smallbank'           , '#98B9C8'),
+        ('batch-advance-smallbank'  , '#A58ED1'),
         # ('Sparkle Original' , '#ED9F54'),
         # ('Aria FB'          , '#45C686'),
     ],
     savefig=True,
-    savepath="ycsb" + ".pdf"
+    savepath="smallbank" + ".pdf"
 )

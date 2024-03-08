@@ -12,3 +12,9 @@ Name: average commit, dtype: float64
 3    235909.080
 4     68721.246
 Name: average commit, dtype: float64
+0    93434.59
+1    77071.60
+2    44616.94
+3    30627.62
+4    13971.27
+Name: average commit, dtype: float64

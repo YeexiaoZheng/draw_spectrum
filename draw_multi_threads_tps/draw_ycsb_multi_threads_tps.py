@@ -31,15 +31,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        "./no-batch-ycsb-uniform",
-        "./batch-ycsb-uniform",
-        # "./no-batch-ycsb-skewed",
-        # "./batch-ycsb-skewed",
+        # "./no-batch-ycsb-uniform",
+        # "./batch-ycsb-uniform",
+        # "./calvin-ycsb-uniform",
+        "./no-batch-ycsb-skewed",
+        "./batch-ycsb-skewed",
+        "./calvin-ycsb-skewed",
     ]
 
     legend_labels = [
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
+        "Calvin",
     ]
 
     recses = []
@@ -98,14 +101,14 @@ if __name__ == '__main__':
         # step = 50000
 
         # cross 5 uniform
-        ax.set_ylim(0, 360000)
-        max_y = 360000
-        step = 80000
+        # ax.set_ylim(0, 360000)
+        # max_y = 360000
+        # step = 80000
 
         # cross 5 zipf
-        # ax.set_ylim(0, 280000)
-        # max_y = 280000
-        # step = 60000
+        ax.set_ylim(0, 280000)
+        max_y = 280000
+        step = 60000
 
         # ax.set_xticks(
         #     range(12, 37, 6)
@@ -116,7 +119,7 @@ if __name__ == '__main__':
             [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
         )
 
-        p.legend(ax, loc="upper center", ncol=2, anchor=(0.5, 1.15))
+        p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.15))
         p.save('./multi-threads-tps-ycsb-.pdf')
         # if savefig: p.save(savepath)
 

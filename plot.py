@@ -149,7 +149,8 @@ class MyPlot:
         frameon=False,
         handles=None,
         labels=None,
-        columnspacing=None
+        columnspacing=None,
+        kwargs=None
     ):
         if not handles and not labels:
             handles, labels = ax.get_legend_handles_labels()
@@ -161,7 +162,8 @@ class MyPlot:
             ncol=ncol, 
             bbox_to_anchor=anchor or self.anchor, 
             frameon=frameon,
-            columnspacing=columnspacing
+            columnspacing=columnspacing,
+            prop=kwargs
         )
 
     def save(self, path, bbox_inches='tight'):

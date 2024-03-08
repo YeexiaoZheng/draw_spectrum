@@ -1,0 +1,18 @@
+run experiment! thread is changing!
+keys=100000
+zipf=0
+contract=14
+partition_num=2
+batch_size=100
+@ Spectrum; threads=1
+average commit: 16044, average multi commit: 1516.5 abort: 0 (0/0/0), abort cascade: 0, average operations: 13380696, network size: 1516, multi commit network size: 0, avg network size: 0.0945213, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=5
+average commit: 33394.8, average multi commit: 3160.1 abort: 0 (0/0/0), abort cascade: 0, average operations: 27851263, network size: 3160, multi commit network size: 0, avg network size: 0.0946315, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=10
+average commit: 34342.4, average multi commit: 3246.8 abort: 0 (0/0/0), abort cascade: 0, average operations: 28641561, network size: 3246, multi commit network size: 0, avg network size: 0.094542, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=15
+average commit: 34434.5, average multi commit: 3255.4 abort: 0 (0/0/0), abort cascade: 0, average operations: 28718373, network size: 3255, multi commit network size: 0, avg network size: 0.0945534, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=20
+average commit: 33474.2, average multi commit: 3166.1 abort: 0 (0/0/0), abort cascade: 0, average operations: 27917482, network size: 3166, multi commit network size: 0, avg network size: 0.0945893, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=25
+average commit: 31496.5, average multi commit: 2978.9 abort: 0 (0/0/0), abort cascade: 0, average operations: 26268081, network size: 2980, multi commit network size: 0, avg network size: 0.09462, si_in_serializable: 0 0 % , local: 0 %

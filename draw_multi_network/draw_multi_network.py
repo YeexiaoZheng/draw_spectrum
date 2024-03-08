@@ -36,13 +36,16 @@ if __name__ == '__main__':
     log_files = [
         "./no-batch-{workload}-uniform".format(workload=workload),
         "./batch-{workload}-uniform".format(workload=workload),
+        "./calvin-{workload}-uniform".format(workload=workload),
     ]
 
     legend_labels = [
-        "Prophet$_{origin}$（读取）",
-        "Prophet$_{batch}$（读取）",
-        "Prophet$_{origin}$（提交）",
-        "Prophet$_{batch}$（提交）",
+        "Prophet$_\mathit{origin}$(读取)",
+        "Prophet$_\mathit{batch}$(读取)",
+        "Calvin(读取)",
+        "Prophet$_\mathit{origin}$(提交)",
+        "Prophet$_\mathit{batch}$(提交)",
+        ""
     ]
 
     recses = []
@@ -81,20 +84,20 @@ if __name__ == '__main__':
         
         max_y = 0
         ax.bar(
-            [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
+            [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
             ((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx],
-            width=0.4,
+            width=0.3,
             ec='black', ls='-', lw=1,
             # hatch=['xx', '//'][idx]
         )
 
         ax.bar(
-            [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
+            [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
             (records[y] / records['average commit'] if AVG else records[y]) * 100,
             bottom=((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
-            color=colors[idx], label=legend_labels[idx + 2],
-            width=0.4,
+            color=colors[idx], label=legend_labels[idx + 3],
+            width=0.3,
             ec='black', ls='-', lw=1,
             hatch='//'
         )
@@ -116,5 +119,5 @@ if __name__ == '__main__':
     #     [str(x)[:-4] + 'w' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
     # )
 
-    p.legend(ax, loc="upper center", ncol=2, anchor=None)
+    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20), kwargs={ 'size': 10 })
     p.save('./multi-network-{workload}.pdf'.format(workload=workload))

@@ -31,15 +31,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        # "./no-batch-ycsb-uniform",
-        # "./batch-ycsb-uniform",
-        "./no-batch-ycsb-zipf",
-        "./batch-ycsb-zipf",
+        "./no-batch-ycsb-uniform",
+        "./batch-ycsb-uniform",
+        "./calvin-ycsb-uniform",
+        # "./no-batch-ycsb-zipf",
+        # "./batch-ycsb-zipf",
+        # "./calvin-ycsb-skewed"
     ]
 
     legend_labels = [
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
+        "Calvin"
     ]
 
     recses = []
@@ -79,11 +82,11 @@ if __name__ == '__main__':
 
         max_y = 0
         ax.bar(
-            [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
+            [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
             records[y] * 2 - records[y] * cross[idx] * 2,
             # records[y],
             color=colors[idx], label=legend_labels[idx],
-            width=0.4,
+            width=0.3,
             ec='black', ls='-', lw=1,
             hatch=['//', r'\\', 'xx', '//'][idx]
         )
@@ -95,14 +98,14 @@ if __name__ == '__main__':
         ax.set_xticks(range(5), [0, 1, 5, 10, 30])
 
         # uniform
-        # ax.set_ylim(0, 370000 * 2)
-        # max_y = 380000 * 2
-        # step = 70000 * 2
+        ax.set_ylim(0, 370000 * 2)
+        max_y = 380000 * 2
+        step = 70000 * 2
 
         # zipf
-        ax.set_ylim(0, 315000 * 2)
-        max_y = 315000 * 2
-        step = 60000 * 2
+        # ax.set_ylim(0, 315000 * 2)
+        # max_y = 315000 * 2
+        # step = 60000 * 2
 
         # ax.set_xticks(
         #     range(12, 37, 6)
@@ -113,7 +116,7 @@ if __name__ == '__main__':
             [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
         )
 
-        p.legend(ax, loc="upper center", ncol=2, anchor=(0.5, 1.15))
+        p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.15))
         p.save('./multi-cross-tps-ycsb-.pdf')
         # if savefig: p.save(savepath)
 

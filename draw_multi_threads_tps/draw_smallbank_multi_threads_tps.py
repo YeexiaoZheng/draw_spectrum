@@ -31,15 +31,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        "./no-batch-smallbank-uniform",
-        "./batch-smallbank-uniform",
-        # "./no-batch-smallbank-skewed",
-        # "./batch-smallbank-skewed",
+        # "./no-batch-smallbank-uniform",
+        # "./batch-smallbank-uniform",
+        # "./calvin-smallbank-uniform",
+        "./no-batch-smallbank-skewed",
+        "./batch-smallbank-skewed",
+        "./calvin-smallbank-skewed",
     ]
 
     legend_labels = [
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
+        "Calvin",
     ]
 
     recses = []
@@ -98,14 +101,14 @@ if __name__ == '__main__':
         # step = 80000
 
         # cross 5 uniform
-        ax.set_ylim(0, 245000 * 2)
-        max_y = 245000 * 2
-        step = 45000 * 2
+        # ax.set_ylim(0, 245000 * 2)
+        # max_y = 245000 * 2
+        # step = 45000 * 2
 
-        # # cross 5 zipf
-        # ax.set_ylim(0, 195000 * 2)
-        # max_y = 195000 * 2
-        # step = 35000 * 2
+        # cross 5 zipf
+        ax.set_ylim(0, 195000 * 2)
+        max_y = 195000 * 2
+        step = 35000 * 2
 
         # ax.set_xticks(
         #     range(12, 37, 6)
@@ -116,7 +119,7 @@ if __name__ == '__main__':
             [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
         )
 
-        p.legend(ax, loc="upper center", ncol=2, anchor=(0.5, 1.15))
+        p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.15))
         p.save('./multi-threads-tps-smallbank-.pdf')
         # if savefig: p.save(savepath)
 

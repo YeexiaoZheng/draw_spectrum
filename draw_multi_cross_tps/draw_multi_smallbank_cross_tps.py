@@ -31,15 +31,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        # "./no-batch-smallbank-uniform",
-        # "./batch-smallbank-uniform",
-        "./no-batch-smallbank-zipf",
-        "./batch-smallbank-zipf",
+        "./no-batch-smallbank-uniform",
+        "./batch-smallbank-uniform",
+        "./calvin-smallbank-uniform",
+        # "./no-batch-smallbank-zipf",
+        # "./batch-smallbank-zipf",
+        # "./calvin-smallbank-skewed",
     ]
 
     legend_labels = [
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
+        "Calvin"
     ]
 
     recses = []
@@ -80,11 +83,11 @@ if __name__ == '__main__':
 
         max_y = 0
         ax.bar(
-            [_ + (idx-0.5) * 0.4 for _ in range(records[x].size)], 
+            [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
             records[y] * 2 - records[y] * cross[idx] * 2,
             # records[y],
             color=colors[idx], label=legend_labels[idx],
-            width=0.4,
+            width=0.3,
             ec='black', ls='-', lw=1,
             hatch=['//', r'\\', 'xx', ][idx]
         )
@@ -96,14 +99,14 @@ if __name__ == '__main__':
         ax.set_xticks(range(5), [0, 1, 5, 10, 30])
 
         # uniform
-        # ax.set_ylim(0, 540000 * 2)
-        # max_y = 540000 * 2
-        # step = 100000 * 2
+        ax.set_ylim(0, 540000 * 2)
+        max_y = 540000 * 2
+        step = 100000 * 2
 
         # ycsb
-        ax.set_ylim(0, 430000 * 2)
-        max_y = 430000 * 2
-        step = 80000 * 2
+        # ax.set_ylim(0, 430000 * 2)
+        # max_y = 430000 * 2
+        # step = 80000 * 2
 
         # ax.set_xticks(
         #     range(12, 37, 6)
@@ -114,7 +117,7 @@ if __name__ == '__main__':
             [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
         )
 
-        p.legend(ax, loc="upper center", ncol=2, anchor=(0.5, 1.15))
+        p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.15))
         p.save('./multi-cross-tps-smallbank-.pdf')
         # if savefig: p.save(savepath)
 
