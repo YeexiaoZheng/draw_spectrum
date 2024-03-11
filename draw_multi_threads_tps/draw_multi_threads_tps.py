@@ -1,12 +1,12 @@
 ##### run by cmd #####
-HELP = 'python draw_multi_cross_tps.py -w workload'
+HELP = 'python draw_multi_threads_tps.py -w workload -c contention'
 ##### run by cmd #####
 
-X = "cross_ratio"
-Y = "multi commit network size"
+X = "threads"
+Y = "average commit"
 # if MyPlot.language == 'chinese':
 XLABEL = "跨片率"
-YLABEL = "平均通信量（字节）"
+YLABEL = "吞吐（交易 / 秒）"
 # else:
 # XLABEL = "Threads"
 # YLABEL = "Troughput(KTxn/s)"
@@ -23,17 +23,20 @@ from plot import MyPlot
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
+parser.add_argument("-c", "--contention", type=str, required=True, help="contention: uniform or skewed")
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb']
 workload = args.workload
+assert args.contention in ['uniform', 'skewed']
+contention = args.contention
 
-savepath = 'multi-network-' + workload + '-size.pdf'
+savepath = 'multi-threads-tps-' + workload  + '-' + contention + '.pdf'
 
 #################### 数据准备 ####################
 log_files = [
-    "./data/calvin-{workload}-uniform".format(workload=workload),
-    "./data/no-batch-{workload}-uniform".format(workload=workload),
-    "./data/batch-{workload}-uniform".format(workload=workload),
+    "./data/calvin-{workload}-{contention}".format(workload=workload, contention=contention),
+    "./data/no-batch-{workload}-{contention}".format(workload=workload, contention=contention),
+    "./data/batch-{workload}-{contention}".format(workload=workload, contention=contention),
 ]
 schemas = [
     "Calvin-L",
@@ -51,7 +54,7 @@ for schema, file in zip(schemas, log_files):
         with open(file) as f:
             content = f.read()
         rec = parse_records_from_file(content)
-        rec = rec[rec['cross_ratio'] != 0]
+        rec = rec[rec['threads'] <= 20]
         rec['schema'] = schema
         recses.append(rec)
 
@@ -72,36 +75,27 @@ p.init(ax)
 
 for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['schema'] == schema]
-    p.bar(
+    print(records[Y] * 2 * 0.95)
+    p.plot(
         ax,
-        xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
-        ydata=(records[Y] * ((8 + 8 + 8 + 4) if "origin" in schema else (4 + 8 + 5 * 8 + 32)) / records['average commit']) * 100 + (((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100,
-        color=color, legend_label=schema + '(提交)',
-        width=0.3,
-        hatch='//'
+        xdata=records[X],
+        ydata=records[Y] * 2 * 0.95,
+        color=color, legend_label=schema,
+        marker=['v', 's', 'o'][idx]
     )
-    
-    p.bar(
-        ax,
-        xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
-        ydata=(((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100,
-        color=color, legend_label=schema + '(读取)',
-        width=0.3,
-        # hatch=['xx', '//', r'\\'][idx]
-    )
-    
 
 # 设置X轴标签
-ax.set_xticks(range(4), [1, 5, 10, 30])
+# ax.set_xticks(range(5), [0, 1, 5, 10, 30])
 
 # 自适应Y轴变化
 p.format_yticks(ax, suffix='K')
+ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
 p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.20), kwargs={ 'size': 10 })
+p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.15))
 
 # 保存
 p.save(savepath)

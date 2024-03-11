@@ -16,7 +16,7 @@ X = "cross_ratio"
 Y = "multi commit network size"
 # if MyPlot.language == 'chinese':
 XLABEL = "跨片率"
-YLABEL = "平均交互次数"
+YLABEL = "平均通信量（字节）"
 # else:
 # XLABEL = "Threads"
 # YLABEL = "Troughput(KTxn/s)"
@@ -81,11 +81,14 @@ if __name__ == '__main__':
     p.init(ax)
 
     for idx, records in enumerate(recses):
+
+        print((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y]))
+        print(records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y])
         
         max_y = 0
         ax.bar(
             [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
-            ((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
+            ((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx],
             width=0.3,
             ec='black', ls='-', lw=1,
@@ -94,8 +97,8 @@ if __name__ == '__main__':
 
         ax.bar(
             [_ + (idx-1) * 0.3 for _ in range(records[x].size)], 
-            (records[y] / records['average commit'] if AVG else records[y]) * 100,
-            bottom=((records['network size'] - records[y]) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
+            (records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y]) * 100,
+            bottom=((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100,
             color=colors[idx], label=legend_labels[idx + 3],
             width=0.3,
             ec='black', ls='-', lw=1,
@@ -111,13 +114,13 @@ if __name__ == '__main__':
 
     # uniform
     # ax.set_ylim(0, 540000)
-    # max_y = 540000
-    # step = 100000
+    max_y = 5400
+    step = 1000
 
-    # ax.set_yticks(
-    #     range(0, max_y, step), 
-    #     [str(x)[:-4] + 'w' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
-    # )
+    ax.set_yticks(
+        range(0, max_y, step), 
+        [str(x)[:-3] + 'K' if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
+    )
 
     p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20), kwargs={ 'size': 10 })
-    p.save('./multi-network-{workload}.pdf'.format(workload=workload))
+    p.save('./multi-network-{workload}-size.pdf'.format(workload=workload))

@@ -1,5 +1,6 @@
 from collections.abc import Iterable
 from typing import List
+import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 from matplotlib import rcParams
@@ -16,8 +17,8 @@ class MyPlot:
     # font = 'Times New Roman + SimSun'
     # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
     # 字体加载
-    # font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
-    font_path = r'D:\0-Spectrum/字体合并补全工具/Times+SimSun.ttf'
+    font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    # font_path = r'D:\0-Spectrum/字体合并补全工具/Times+SimSun.ttf'
     font_manager.fontManager.addfont(font_path)
     prop = font_manager.FontProperties(fname=font_path)
     # print(prop.get_name())  # 显示当前使用字体的名称
@@ -85,6 +86,7 @@ class MyPlot:
             labelsize=self.tick_word_size,
             direction=self.tick_toward,
         )
+        ax.set_axisbelow(True)
 
     def __init__(
         self,
@@ -150,6 +152,7 @@ class MyPlot:
         ydata: list,
         legend_label: str,
         color: str,
+        bottom: list=None,
         width: float=0.3,
         hatch: str=None,
         nogrid: bool=False
@@ -158,6 +161,7 @@ class MyPlot:
         ax.bar(
             xdata,
             ydata,
+            bottom=bottom,
             color=color,
             label=legend_label,
             hatch=hatch,
@@ -165,35 +169,7 @@ class MyPlot:
             ec='black', ls='-', lw=1
         )
         if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
-        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata)
-    
-    # def _bar(
-    #     ax: plt.Axes,
-    #     data_map: dict,
-    # ):
-    #     return
-
-    def overlap_bar(
-        self,
-        ax: plt.Axes,
-        xdata: list,
-        ydata: list,
-        legend_label: str,
-        color: str,
-        hatch: str=None,
-        nogrid: bool=False
-    ):
-        self.count += 1
-        ax.bar(
-            xdata,
-            ydata,
-            color=color,
-            label=legend_label,
-            hatch=hatch,
-            ec='black', ls='-', lw=1
-        )
-        if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
-        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata)
+        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata + bottom if bottom else ydata)
 
     def set_labels(
         self,
@@ -209,21 +185,32 @@ class MyPlot:
         ax: plt.Axes, 
         max_y_data: int=None,
         step: int=None, 
-        suffix: str='K' # ['K', 'W', 'M']
+        step_num: int=4,
+        suffix: str=None # [None, 'K', 'W', 'M']
     ):
-        suffix = suffix.upper()
-        if not max_y_data: max_y_data = self.max_y_data
-        suffix_map = {
-            'K': 1000,
-            'W': 10000,
-            'M': 1000000,
-        }
-        if not step: step = max_y_data // 5
-        if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
-        ax.set_yticks(
-            range(0, max_y_data, step), 
-            [str(x // suffix_map[suffix]) + suffix if x > suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]
-        )
+        if not max_y_data: max_y_data = int(self.max_y_data)
+        if not step: 
+            step = max_y_data // step_num
+            step = step // (10 ** (len(str(step))-1) // 2) * (10 ** (len(str(step))-1) // 2)
+            print(max_y_data, step)
+        if suffix: 
+            suffix = suffix.upper()
+            suffix_map = {
+                None: 1,
+                'K': 1000,
+                'W': 10000,
+                'M': 1000000,
+            }
+            if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
+            ax.set_yticks(
+                range(0, max_y_data, step), 
+                [str(x // suffix_map[suffix]) + suffix if x >= suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]
+            )
+        else:
+            ax.set_yticks(
+                range(0, max_y_data, step), 
+                [str(x) for x in range(0, max_y_data, step)]
+            )
 
     def legend(
         self, 

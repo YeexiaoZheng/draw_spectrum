@@ -13,7 +13,6 @@ import argparse
 import sys
 sys.path.extend(['.', '..'])
 import matplotlib.pyplot as plt
-from parse import parse_meta, parse_record, parse_records_from_file
 from plot import MyPlot
 from common import adaptive_y, to_fomat, add_serial
 
@@ -87,19 +86,6 @@ def plot_by_protocol(
                 linestyle="none", color='k', mec='k', mew=p.tick_width, clip_on=False)
     ax1.plot([0, 1], [0, 0], transform=ax1.transAxes, **kwargs)
     ax2.plot([0, 1], [1, 1], transform=ax2.transAxes, **kwargs)
-
-    # # 自适应Y轴变化
-    # max_y = int(max_y)
-    # step = adaptive_y(max_y)
-
-    # ax.set_xticks(
-    #     range(6, 37, 6)
-    # )
-    
-    # ax.set_yticks(
-    #     range(0, max_y, step), 
-    #     [str(x)[:-3] if len(str(x)) >3 else str(x) for x in range(0, max_y, step)]
-    # )
 
     ax2.set_yticks([2000, 4000, 10000], ['2K', '4K', '10K'])
 

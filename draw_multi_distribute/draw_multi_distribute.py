@@ -1,5 +1,5 @@
 ##### run by cmd #####
-HELP = 'python draw_latency_per_tx.py -w workload'
+HELP = 'python draw_multi_distribute.py -w workload'
 ##### run by cmd #####
 
 X = "partition_num"
@@ -24,12 +24,12 @@ workload = args.workload
 #################### 数据准备 ####################
 data = {
     'smallbank': {
-        'Calvin':                       [100988,	183022,	221884],
+        'Calvin-L':                       [100988,	183022,	221884],
         'Prophet$_\mathit{origin}$':    [194220,	220590,	276363],
         'Prophet$_\mathit{batch}$':     [288133,	459277,	538746],
     },
     'ycsb': {
-        'Calvin':                       [62840,	    103078,	113291],
+        'Calvin-L':                       [62840,	    103078,	113291],
         'Prophet$_\mathit{origin}$':    [90099,	    101326,	129336],
         'Prophet$_\mathit{batch}$':     [129777,	239767,	275238],
     }
@@ -43,7 +43,7 @@ for schema in data.keys():
 
 schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
-    ('Calvin'                       , '#45C686'),
+    ('Calvin-L'                     , '#45C686'),
     ('Prophet$_\mathit{origin}$'    , '#ED9F54'),
     ('Prophet$_\mathit{batch}$'     , '#8E5344'),
 ]

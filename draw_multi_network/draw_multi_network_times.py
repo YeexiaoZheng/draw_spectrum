@@ -6,7 +6,7 @@ X = "cross_ratio"
 Y = "multi commit network size"
 # if MyPlot.language == 'chinese':
 XLABEL = "跨片率"
-YLABEL = "平均通信量（字节）"
+YLABEL = "平均交互次数"
 # else:
 # XLABEL = "Threads"
 # YLABEL = "Troughput(KTxn/s)"
@@ -27,7 +27,7 @@ args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb']
 workload = args.workload
 
-savepath = 'multi-network-' + workload + '-size.pdf'
+savepath = 'multi-network-' + workload + '.pdf'
 
 #################### 数据准备 ####################
 log_files = [
@@ -75,16 +75,15 @@ for idx, (schema, color) in enumerate(schemas):
     p.bar(
         ax,
         xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
-        ydata=(records[Y] * ((8 + 8 + 8 + 4) if "origin" in schema else (4 + 8 + 5 * 8 + 32)) / records['average commit']) * 100 + (((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100,
+        ydata=(records['network size'] / records['average commit']) * 100,
         color=color, legend_label=schema + '(提交)',
         width=0.3,
         hatch='//'
     )
-    
     p.bar(
         ax,
         xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
-        ydata=(((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100,
+        ydata=((records['network size'] - records[Y]) / records['average commit']) * 100,
         color=color, legend_label=schema + '(读取)',
         width=0.3,
         # hatch=['xx', '//', r'\\'][idx]
@@ -95,7 +94,7 @@ for idx, (schema, color) in enumerate(schemas):
 ax.set_xticks(range(4), [1, 5, 10, 30])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='K')
+p.format_yticks(ax, suffix=None)
 
 # 设置label
 p.set_labels(ax, XLABEL, YLABEL)
