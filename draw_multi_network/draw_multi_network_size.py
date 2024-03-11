@@ -15,7 +15,7 @@ from common import adaptive_y, to_fomat, add_serial
 X = "cross_ratio"
 Y = "multi commit network size"
 # if MyPlot.language == 'chinese':
-XLABEL = "跨片率"
+XLABEL = "跨片率（%）"
 YLABEL = "平均通信量（字节）"
 # else:
 # XLABEL = "Threads"
@@ -34,22 +34,22 @@ if __name__ == '__main__':
     workload = args.workload
 
     log_files = [
+        "./calvin-{workload}-uniform".format(workload=workload),
         "./no-batch-{workload}-uniform".format(workload=workload),
         "./batch-{workload}-uniform".format(workload=workload),
-        "./calvin-{workload}-uniform".format(workload=workload),
     ]
 
     legend_labels = [
+        "Calvin(读取)",
         "Prophet$_\mathit{origin}$(读取)",
         "Prophet$_\mathit{batch}$(读取)",
-        "Calvin(读取)",
+        "Calvin(提交)",
         "Prophet$_\mathit{origin}$(提交)",
         "Prophet$_\mathit{batch}$(提交)",
-        ""
     ]
 
     recses = []
-    colors = ['#ED9F54', '#8E5344' , '#45C686', '#B9A89B']
+    colors = ['#45C686', '#ED9F54', '#8E5344' , '#B9A89B']
 
     for file in log_files:
         if not file:
@@ -82,8 +82,8 @@ if __name__ == '__main__':
 
     for idx, records in enumerate(recses):
 
-        print((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y]))
-        print(records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y])
+        print(((records['network size'] - records[y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'] if AVG else (records['network size'] - records[y])) * 100)
+        print((records[y] * ((8 + 8 + 8 + 4) if "no-batch" in log_files[idx] else (4 + 8 + 5 * 8 + 32)) / records['average commit'] if AVG else records[y]) * 100)
         
         max_y = 0
         ax.bar(

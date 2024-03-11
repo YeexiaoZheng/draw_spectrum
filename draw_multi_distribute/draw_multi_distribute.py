@@ -3,7 +3,7 @@ HELP = 'python draw_latency_per_tx.py -f afilename'
 ##### run by cmd #####
 
 X = "percentile"
-XLABEL = "节点数"
+XLABEL = "分片数"
 Y = "latency"
 YLABEL = "吞吐（交易 / 秒）"
 
@@ -24,9 +24,9 @@ parser = argparse.ArgumentParser(HELP)
 args = parser.parse_args()
 
 legend_labels = [
+    "Calvin",
     "Prophet$_\mathit{origin}$",
     "Prophet$_\mathit{batch}$",
-    "Calvin",
 ]
 
 
@@ -62,7 +62,7 @@ def plot_by_protocol(
             color=color, 
             width=0.3,
             ec='black', ls='-', lw=1,
-            hatch=['//', r'\\', 'xx'][idx]
+            hatch=[ 'xx', '//', r'\\',][idx]
         )
         tmp_max =  records[records['protocol'] == protocol][y].max() 
         if tmp_max > max_y: max_y = tmp_max
@@ -71,7 +71,7 @@ def plot_by_protocol(
     ax.set_ylabel(ylabel, fontdict=p.label_config_dic)
     # ax.set_ylim(-0.2, 1.2)
     # ax.set_xlim(-0.2, 1.2)
-    ax.set_xticks(range(3), ['2P', '4P', '8P'])
+    ax.set_xticks(range(3), ['2', '4', '8'])
 
     # 自适应Y轴变化
     max_y = int(max_y)
@@ -97,13 +97,13 @@ def plot_by_protocol(
 # data = {
 #     'no-batch-smallbank':   [194220,	220590,	276363],
 #     'batch-smallbank':      [288133,	459277,	538746],
-#     'calvin-smallbank':     [128445,	100706,	91957],
+#     'calvin-smallbank':     [100988,	183022,	221884],
 # }
 
 data = {
     'no-batch-ycsb': [90099,	101326,	129336],
     'batch-ycsb': [129777,	239767,	275238],
-    'calvin-ycsb': [66731,	61286,	45271],
+    'calvin-ycsb': [62840,	103078,	113291],
 }
 
 print(data)
@@ -125,12 +125,12 @@ plot_by_protocol(
     (X, XLABEL), (Y, YLABEL), 
     [
         # 里面是 (协议名称, 颜色(RGB格式)的元组)
+        # ('calvin-smallbank'     , colors[2]),
         # ('no-batch-smallbank'   , colors[0]),
         # ('batch-smallbank'      , colors[1]),
-        # ('calvin-smallbank'     , colors[2]),
+        ('calvin-ycsb'          , colors[2]),
         ('no-batch-ycsb'        , colors[0]),
         ('batch-ycsb'           , colors[1]),
-        ('calvin-ycsb'          , colors[2]),
         # ('Sparkle Original' , '#ED9F54'),
         # ('Aria FB'          , '#45C686'),
     ],

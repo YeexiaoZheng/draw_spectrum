@@ -16,7 +16,7 @@ class MyPlot:
     # font = 'Times New Roman + SimSun'
     # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
     # 字体加载
-    font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    font_path = r'D:\0-Spectrum\字体合并补全工具\times+simsun.ttf'
     font_manager.fontManager.addfont(font_path)
     prop = font_manager.FontProperties(fname=font_path)
     # print(prop.get_name())  # 显示当前使用字体的名称

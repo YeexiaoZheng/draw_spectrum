@@ -15,7 +15,7 @@ from common import adaptive_y, to_fomat, add_serial
 X = "cross_ratio"
 Y = "average commit"
 # if MyPlot.language == 'chinese':
-XLABEL = "跨片率"
+XLABEL = "跨片率（%）"
 YLABEL = "吞吐（交易 / 秒）"
 # else:
 # XLABEL = "Threads"
@@ -31,22 +31,22 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        "./no-batch-smallbank-uniform",
-        "./batch-smallbank-uniform",
-        "./calvin-smallbank-uniform",
-        # "./no-batch-smallbank-zipf",
-        # "./batch-smallbank-zipf",
-        # "./calvin-smallbank-skewed",
+        # "./calvin-smallbank-uniform",
+        # "./no-batch-smallbank-uniform",
+        # "./batch-smallbank-uniform",
+        "./calvin-smallbank-skewed",
+        "./no-batch-smallbank-zipf",
+        "./batch-smallbank-zipf",
     ]
 
     legend_labels = [
+        "Calvin",
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
-        "Calvin"
     ]
 
     recses = []
-    colors = ['#ED9F54', '#8E5344' , '#45C686', '#B9A89B']
+    colors = ['#45C686', '#ED9F54', '#8E5344' , '#B9A89B']
 
     for file in log_files:
         if not file:
@@ -89,7 +89,7 @@ if __name__ == '__main__':
             color=colors[idx], label=legend_labels[idx],
             width=0.3,
             ec='black', ls='-', lw=1,
-            hatch=['//', r'\\', 'xx', ][idx]
+            hatch=['xx', '//', r'\\', ][idx]
         )
         ax.set_xlabel(xlabel, p.label_config_dic)
         ax.set_ylabel(ylabel, p.label_config_dic)
@@ -99,14 +99,14 @@ if __name__ == '__main__':
         ax.set_xticks(range(5), [0, 1, 5, 10, 30])
 
         # uniform
-        ax.set_ylim(0, 540000 * 2)
-        max_y = 540000 * 2
-        step = 100000 * 2
+        # ax.set_ylim(0, 540000 * 2)
+        # max_y = 540000 * 2
+        # step = 100000 * 2
 
         # ycsb
-        # ax.set_ylim(0, 430000 * 2)
-        # max_y = 430000 * 2
-        # step = 80000 * 2
+        ax.set_ylim(0, 430000 * 2)
+        max_y = 430000 * 2
+        step = 80000 * 2
 
         # ax.set_xticks(
         #     range(12, 37, 6)

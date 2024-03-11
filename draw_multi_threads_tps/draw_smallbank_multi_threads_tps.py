@@ -31,22 +31,22 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
-        # "./no-batch-smallbank-uniform",
-        # "./batch-smallbank-uniform",
-        # "./calvin-smallbank-uniform",
-        "./no-batch-smallbank-skewed",
-        "./batch-smallbank-skewed",
-        "./calvin-smallbank-skewed",
+        "./calvin-smallbank-uniform",
+        "./no-batch-smallbank-uniform",
+        "./batch-smallbank-uniform",
+        # "./calvin-smallbank-skewed",
+        # "./no-batch-smallbank-skewed",
+        # "./batch-smallbank-skewed",
     ]
 
     legend_labels = [
+        "Calvin",
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
-        "Calvin",
     ]
 
     recses = []
-    colors = ['#ED9F54', '#8E5344' , '#45C686', '#B9A89B']
+    colors = ['#45C686', '#ED9F54', '#8E5344' , '#B9A89B']
 
     for file in log_files:
         if not file:
@@ -101,14 +101,14 @@ if __name__ == '__main__':
         # step = 80000
 
         # cross 5 uniform
-        # ax.set_ylim(0, 245000 * 2)
-        # max_y = 245000 * 2
-        # step = 45000 * 2
+        ax.set_ylim(0, 245000 * 2)
+        max_y = 245000 * 2
+        step = 45000 * 2
 
         # cross 5 zipf
-        ax.set_ylim(0, 195000 * 2)
-        max_y = 195000 * 2
-        step = 35000 * 2
+        # ax.set_ylim(0, 195000 * 2)
+        # max_y = 195000 * 2
+        # step = 35000 * 2
 
         # ax.set_xticks(
         #     range(12, 37, 6)

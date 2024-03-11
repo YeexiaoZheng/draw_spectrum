@@ -13,6 +13,6 @@ average commit: 148551, average multi commit: 7344.1 abort: 13.1 (0/13.1/0), abo
 @ Spectrum; threads=15
 average commit: 169815, average multi commit: 8441.8 abort: 19.9 (0/19.9/0), abort cascade: 0, average operations: 74400605, network size: 16887, multi commit network size: 8441, avg network size: 0.0994441, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; threads=20
-average commit: 159961, average multi commit: 7758.3 abort: 25.6 (0/25.6/0), abort cascade: 0, average operations: 68322142, network size: 15520, multi commit network size: 7758, avg network size: 0.0995139, si_in_serializable: 0 0 % , local: 0 %
+average commit: 185700, average multi commit: 9194.8 abort: 31.2 (0/31.2/0), abort cascade: 0, average operations: 81312283, network size: 18390, multi commit network size: 9194, avg network size: 0.0990323, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; threads=25
 average commit: 143265, average multi commit: 6629.7 abort: 27.1 (0/27.1/0), abort cascade: 0, average operations: 58319932, network size: 13281, multi commit network size: 6629, avg network size: 0.0996647, si_in_serializable: 0 0 % , local: 0 %

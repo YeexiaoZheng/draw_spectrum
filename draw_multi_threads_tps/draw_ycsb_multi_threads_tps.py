@@ -31,22 +31,22 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     log_files = [
+        # "./calvin-ycsb-uniform",
         # "./no-batch-ycsb-uniform",
         # "./batch-ycsb-uniform",
-        # "./calvin-ycsb-uniform",
+        "./calvin-ycsb-skewed",
         "./no-batch-ycsb-skewed",
         "./batch-ycsb-skewed",
-        "./calvin-ycsb-skewed",
     ]
 
     legend_labels = [
+        "Calvin",
         "Prophet$_\mathit{origin}$",
         "Prophet$_\mathit{batch}$",
-        "Calvin",
     ]
 
     recses = []
-    colors = ['#ED9F54', '#8E5344' , '#45C686', '#B9A89B']
+    colors = ['#45C686', '#ED9F54', '#8E5344' , '#B9A89B']
 
     for file in log_files:
         if not file:
@@ -101,8 +101,8 @@ if __name__ == '__main__':
         # step = 50000
 
         # cross 5 uniform
-        # ax.set_ylim(0, 360000)
-        # max_y = 360000
+        # ax.set_ylim(0, 380000)
+        # max_y = 380000
         # step = 80000
 
         # cross 5 zipf

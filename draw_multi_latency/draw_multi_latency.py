@@ -24,8 +24,8 @@ parser = argparse.ArgumentParser(HELP)
 args = parser.parse_args()
 
 legend_labels = [
-    "No advance",
-    "Advance",
+    "不采用复用策略",
+    "采用复用策略",
 ]
 
 
@@ -122,17 +122,17 @@ for proto in data.keys():
 print(recs)
 
 # '#', '#8E5344'
-
+# '#ED9F54', '#8E5344'
 plot_by_protocol(
     recs, 
     (X, XLABEL), (Y, YLABEL), 
     [
         # 里面是 (协议名称, 颜色(RGB格式)的元组)
-        ('batch-no-advance-smallbank'           , '#98B9C8'),
-        ('batch-advance-smallbank'  , '#A58ED1'),
+        ('batch-no-advance-ycsb'           , '#ED9F54'),
+        ('batch-advance-ycsb'  , '#8E5344'),
         # ('Sparkle Original' , '#ED9F54'),
         # ('Aria FB'          , '#45C686'),
     ],
     savefig=True,
-    savepath="smallbank" + ".pdf"
+    savepath="ycsb" + ".pdf"
 )
