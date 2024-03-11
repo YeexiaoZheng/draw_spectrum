@@ -125,7 +125,8 @@ class MyPlot:
         legend_label: str,
         color: str,
         marker: str=None,
-        nogrid: bool=False
+        nogrid: bool=False,
+        suffix: str='K' # [None, 'K', 'W', 'M']
     ):
         ax.plot(
             xdata,
@@ -139,6 +140,72 @@ class MyPlot:
         ax.set_xlabel(xlabel, self.label_config_dic)
         ax.set_ylabel(ylabel, self.label_config_dic)
         if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+
+    def bar(
+        self,
+        ax: plt.Axes,
+        xdata: list,
+        xlabel: str,
+        ydata: list,
+        ylabel: str,
+        legend_label: str,
+        color: str,
+        hatch: str=None,
+        nogrid: bool=False
+    ):
+        ax.bar(
+            xdata,
+            ydata,
+            color=color,
+            label=legend_label,
+            hatch=hatch,
+            ec='black', ls='-', lw=1
+        )
+        ax.set_xlabel(xlabel, self.label_config_dic)
+        ax.set_ylabel(ylabel, self.label_config_dic)
+        if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+    
+    def overlap_bar(
+        self,
+        ax: plt.Axes,
+        xdata: list,
+        xlabel: str,
+        ydata: list,
+        ylabel: str,
+        legend_label: str,
+        color: str,
+        hatch: str=None,
+        nogrid: bool=False
+    ):
+        ax.bar(
+            xdata,
+            ydata,
+            color=color,
+            label=legend_label,
+            hatch=hatch,
+            ec='black', ls='-', lw=1
+        )
+        ax.set_xlabel(xlabel, self.label_config_dic)
+        ax.set_ylabel(ylabel, self.label_config_dic)
+        if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+
+    def format_yticks(
+        self, 
+        ax: plt.Axes, 
+        maximum: int,
+        step: int=None, 
+        suffix: str='K' # ['K', 'W', 'M']
+    ):
+        suffix_map = {
+            'K': 1000,
+            'W': 10000,
+            'M': 1000000
+        }
+        if not step: step = maximum // 5
+        ax.set_yticks(
+            range(0, maximum, step), 
+            [str(x // suffix_map[suffix]) + 'w' if x > suffix_map[suffix] else str(x) for x in range(0, maximum, step)]
+        )
 
     def legend(
         self, 
