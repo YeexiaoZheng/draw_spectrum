@@ -16,7 +16,8 @@ class MyPlot:
     # font = 'Times New Roman + SimSun'
     # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
     # 字体加载
-    font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    # font_path = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
+    font_path = r'D:\0-Spectrum/字体合并补全工具/Times+SimSun.ttf'
     font_manager.fontManager.addfont(font_path)
     prop = font_manager.FontProperties(fname=font_path)
     # print(prop.get_name())  # 显示当前使用字体的名称
@@ -67,6 +68,9 @@ class MyPlot:
     ##### 变量 #####
     fig: plt.Figure = None
     axes: List[plt.Axes] = None
+
+    max_y_data = 0
+    count = 0
 
     def init(self, ax):
         ax: plt.Axes = ax
@@ -119,15 +123,14 @@ class MyPlot:
         self,
         ax: plt.Axes,
         xdata: list,
-        xlabel: str,
         ydata: list,
-        ylabel: str,
         legend_label: str,
         color: str,
         marker: str=None,
         nogrid: bool=False,
         suffix: str='K' # [None, 'K', 'W', 'M']
     ):
+        self.count += 1
         ax.plot(
             xdata,
             ydata,
@@ -137,46 +140,50 @@ class MyPlot:
             markersize=self.marker_size,
             linewidth=self.line_width
         )
-        ax.set_xlabel(xlabel, self.label_config_dic)
-        ax.set_ylabel(ylabel, self.label_config_dic)
         if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata)
 
     def bar(
         self,
         ax: plt.Axes,
         xdata: list,
-        xlabel: str,
         ydata: list,
-        ylabel: str,
         legend_label: str,
         color: str,
+        width: float=0.3,
         hatch: str=None,
         nogrid: bool=False
     ):
+        self.count += 1
         ax.bar(
             xdata,
             ydata,
             color=color,
             label=legend_label,
             hatch=hatch,
+            width=width,
             ec='black', ls='-', lw=1
         )
-        ax.set_xlabel(xlabel, self.label_config_dic)
-        ax.set_ylabel(ylabel, self.label_config_dic)
         if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata)
     
+    # def _bar(
+    #     ax: plt.Axes,
+    #     data_map: dict,
+    # ):
+    #     return
+
     def overlap_bar(
         self,
         ax: plt.Axes,
         xdata: list,
-        xlabel: str,
         ydata: list,
-        ylabel: str,
         legend_label: str,
         color: str,
         hatch: str=None,
         nogrid: bool=False
     ):
+        self.count += 1
         ax.bar(
             xdata,
             ydata,
@@ -185,26 +192,37 @@ class MyPlot:
             hatch=hatch,
             ec='black', ls='-', lw=1
         )
-        ax.set_xlabel(xlabel, self.label_config_dic)
-        ax.set_ylabel(ylabel, self.label_config_dic)
         if not nogrid: ax.grid(axis=self.grid, linewidth=self.border_width)
+        if max(ydata) > self.max_y_data: self.max_y_data = max(ydata)
+
+    def set_labels(
+        self,
+        ax: plt.Axes,
+        xlabel: str=None,
+        ylabel: str=None,
+    ):
+        if xlabel: ax.set_xlabel(xlabel, self.label_config_dic)
+        if ylabel: ax.set_ylabel(ylabel, self.label_config_dic)
 
     def format_yticks(
         self, 
         ax: plt.Axes, 
-        maximum: int,
+        max_y_data: int=None,
         step: int=None, 
         suffix: str='K' # ['K', 'W', 'M']
     ):
+        suffix = suffix.upper()
+        if not max_y_data: max_y_data = self.max_y_data
         suffix_map = {
             'K': 1000,
             'W': 10000,
-            'M': 1000000
+            'M': 1000000,
         }
-        if not step: step = maximum // 5
+        if not step: step = max_y_data // 5
+        if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
         ax.set_yticks(
-            range(0, maximum, step), 
-            [str(x // suffix_map[suffix]) + 'w' if x > suffix_map[suffix] else str(x) for x in range(0, maximum, step)]
+            range(0, max_y_data, step), 
+            [str(x // suffix_map[suffix]) + suffix if x > suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]
         )
 
     def legend(
