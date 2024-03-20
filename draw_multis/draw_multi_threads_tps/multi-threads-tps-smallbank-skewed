@@ -1,0 +1,20 @@
+./no-batch-smallbank-skewed
+./batch-smallbank-skewed
+0     72448.33
+1    139540.75
+2    185641.59
+3    224656.00
+4    242704.10
+Name: average commit, dtype: float64
+0    117648.38
+1    255426.50
+2    336461.50
+3    341293.20
+4    333782.50
+Name: average commit, dtype: float64
+0    29302.75
+1    37326.83
+2    42005.39
+3    44387.80
+4    47041.53
+Name: average commit, dtype: float64

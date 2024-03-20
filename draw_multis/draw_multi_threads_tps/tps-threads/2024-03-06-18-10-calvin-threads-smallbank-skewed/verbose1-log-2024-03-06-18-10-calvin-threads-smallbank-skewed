@@ -1,0 +1,515 @@
+run experiment! thread is changing!
+keys=100000
+zipf=1.3
+contract=10
+partition_num=2
+batch_size=100
+@ Spectrum; threads=1
+keys=100000
+zipf=1.3
+threads=2
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:10:38.524096 2089199 Database.h:95] partition_num: 2
+I0306 18:10:38.524957 2089199 Database.h:72] evm_bench initialization finished in 0 milliseconds.
+I0306 18:10:38.525264 2089204 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:10:38.525326 2089204 Server.h:52] Server 1 starts to run.
+I0306 18:10:39.025537 2089209 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:10:39.025827 2089209 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:47428 is UP
+I0306 18:10:39.525664 2089216 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:10:39.525884 2089216 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:34806 is UP
+I0306 18:10:39.525889 2089204 Server.h:57] 127.0.0.1:34790 -> 127.0.0.1:53008 is UP
+I0306 18:10:39.525959 2089204 Server.h:57] 127.0.0.1:34806 -> 127.0.0.1:53008 is UP
+I0306 18:10:40.025472 2089199 main.cpp:199] 2 clients connected.
+I0306 18:10:40.025566 2089199 SparkleManager.h:45] batch size: 100
+I0306 18:10:40.052861 2089199 WorkerFactory.h:179] workers size (including manager): 3
+I0306 18:10:40.052891 2089199 SerialManager.h:37] batch size: 100
+I0306 18:10:40.052897 2089199 SerialExecutor.h:154] init tables for contracts
+I0306 18:10:40.052902 2089199 SerialExecutor.h:192] init key_num: 200000
+I0306 18:10:43.147521 2089199 SerialExecutor.h:203] init tables finished
+I0306 18:10:45.147657 2089199 Coordinator.h:41] Coordinator starts to run 3 workers.
+I0306 18:10:45.147928 2089199 Coordinator.h:184] core_id: 84
+I0306 18:10:45.148171 2089199 Coordinator.h:184] core_id: 85
+I0306 18:10:45.148393 2089259 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:10:45.148458 2089260 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:10:45.148464 2089259 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:10:45.148494 2089199 Coordinator.h:184] core_id: 86
+I0306 18:10:45.148524 2089260 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:10:45.148718 2089261 Manager.h:210] Manager(worker id = 2) on the coordinator node started.
+I0306 18:10:46.148669 2089199 Coordinator.h:101] commit: 15135 abort: 0 (0/0/0), cascade abort: 0, network size: 481, avg network size: 0.0317806, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4174372
+I0306 18:10:47.148829 2089199 Coordinator.h:101] commit: 15752 abort: 0 (0/0/0), cascade abort: 0, network size: 497, avg network size: 0.0315515, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4343732
+I0306 18:10:48.148964 2089199 Coordinator.h:101] commit: 15633 abort: 0 (0/0/0), cascade abort: 0, network size: 494, avg network size: 0.0315998, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4311819
+I0306 18:10:49.149102 2089199 Coordinator.h:101] commit: 14526 abort: 0 (0/0/0), cascade abort: 0, network size: 496, avg network size: 0.0341457, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4008732
+I0306 18:10:50.149240 2089199 Coordinator.h:101] commit: 16806 abort: 0 (0/0/0), cascade abort: 0, network size: 475, avg network size: 0.0282637, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4633171
+I0306 18:10:51.149365 2089199 Coordinator.h:101] commit: 16135 abort: 0 (0/0/0), cascade abort: 0, network size: 485, avg network size: 0.0300589, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4452505
+I0306 18:10:52.149494 2089199 Coordinator.h:101] commit: 15024 abort: 0 (0/0/0), cascade abort: 0, network size: 511, avg network size: 0.0340122, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4142822
+I0306 18:10:53.149622 2089199 Coordinator.h:101] commit: 15377 abort: 0 (0/0/0), cascade abort: 0, network size: 498, avg network size: 0.032386, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4236818
+I0306 18:10:54.149770 2089199 Coordinator.h:101] commit: 14883 abort: 0 (0/0/0), cascade abort: 0, network size: 498, avg network size: 0.033461, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4107336
+I0306 18:10:55.149952 2089199 Coordinator.h:101] commit: 15335 abort: 0 (0/0/0), cascade abort: 0, network size: 494, avg network size: 0.0322139, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 4232532
+I0306 18:10:55.150034 2089199 Coordinator.h:137] average commit: 15460.6, average multi commit: 492.9 abort: 0 (0/0/0), abort cascade: 0, average operations: 4264383, network size: 492, multi commit network size: 0, avg network size: 0.031881, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:10:55.150067 2089199 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:10:55.150076 2089259 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:10:55.150081 2089199 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:10:55.151644 2089260 SparkleExecutor.h:126] SparkleExecutor 1 exits. 
+I0306 18:10:55.150252 2089199 SparkleExecutor.h:936] Worker 1 latency: 8763 us (50%) 12929 us (75%) 18186 us (95%) 22003 us (99%).
+I0306 18:10:55.166910 2089199 SparkleExecutor.h:941] Worker 1 multi latency: 519 us (1%) 8380 us (50%) 13048 us (75%) 18567 us (95%) 22003 us (99%).
+test_partition2.sh: line 43: 2089199 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1
+@ Spectrum; threads=5
+keys=100000
+zipf=1.3
+threads=5
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:11:08.640064 2089306 Database.h:95] partition_num: 2
+I0306 18:11:08.641352 2089306 Database.h:72] evm_bench initialization finished in 0 milliseconds.
+I0306 18:11:08.641666 2089321 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:11:08.641742 2089321 Server.h:52] Server 1 starts to run.
+I0306 18:11:09.141820 2089329 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:11:09.142084 2089329 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:59130 is UP
+I0306 18:11:09.638514 2089321 Server.h:57] 127.0.0.1:59288 -> 127.0.0.1:53008 is UP
+I0306 18:11:09.641940 2089335 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:11:09.642109 2089321 Server.h:57] 127.0.0.1:59294 -> 127.0.0.1:53008 is UP
+I0306 18:11:09.642165 2089335 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:59294 is UP
+I0306 18:11:10.141790 2089306 main.cpp:199] 2 clients connected.
+I0306 18:11:10.141883 2089306 SparkleManager.h:45] batch size: 100
+I0306 18:11:10.168774 2089306 WorkerFactory.h:179] workers size (including manager): 6
+I0306 18:11:10.168802 2089306 SerialManager.h:37] batch size: 100
+I0306 18:11:10.168809 2089306 SerialExecutor.h:154] init tables for contracts
+I0306 18:11:10.168814 2089306 SerialExecutor.h:192] init key_num: 200000
+I0306 18:11:13.268940 2089306 SerialExecutor.h:203] init tables finished
+I0306 18:11:15.269073 2089306 Coordinator.h:41] Coordinator starts to run 6 workers.
+I0306 18:11:15.269289 2089306 Coordinator.h:184] core_id: 84
+I0306 18:11:15.269534 2089306 Coordinator.h:184] core_id: 85
+I0306 18:11:15.269647 2089385 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:11:15.269713 2089385 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:11:15.269788 2089386 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:11:15.269819 2089306 Coordinator.h:184] core_id: 86
+I0306 18:11:15.269850 2089386 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:11:15.270090 2089387 SparkleExecutor.h:105] SparkleExecutor 2 started. 
+I0306 18:11:15.270112 2089306 Coordinator.h:184] core_id: 87
+I0306 18:11:15.270171 2089387 SparkleExecutor.h:121] worker 2 starts.
+I0306 18:11:15.270366 2089388 SparkleExecutor.h:105] SparkleExecutor 3 started. 
+I0306 18:11:15.270409 2089306 Coordinator.h:184] core_id: 88
+I0306 18:11:15.270421 2089388 SparkleExecutor.h:121] worker 3 starts.
+I0306 18:11:15.270676 2089389 SparkleExecutor.h:105] SparkleExecutor 4 started. 
+I0306 18:11:15.270706 2089306 Coordinator.h:184] core_id: 89
+I0306 18:11:15.270749 2089389 SparkleExecutor.h:121] worker 4 starts.
+I0306 18:11:15.270879 2089390 Manager.h:210] Manager(worker id = 5) on the coordinator node started.
+I0306 18:11:16.270865 2089306 Coordinator.h:101] commit: 19621 abort: 0 (0/0/0), cascade abort: 0, network size: 629, avg network size: 0.0320575, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5409154
+I0306 18:11:17.271026 2089306 Coordinator.h:101] commit: 20119 abort: 0 (0/0/0), cascade abort: 0, network size: 631, avg network size: 0.0313634, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5551681
+I0306 18:11:18.271162 2089306 Coordinator.h:101] commit: 19045 abort: 0 (0/0/0), cascade abort: 0, network size: 636, avg network size: 0.0333946, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5253400
+I0306 18:11:19.271274 2089306 Coordinator.h:101] commit: 21157 abort: 0 (0/0/0), cascade abort: 0, network size: 599, avg network size: 0.0283121, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5832483
+I0306 18:11:20.271423 2089306 Coordinator.h:101] commit: 20480 abort: 0 (0/0/0), cascade abort: 0, network size: 641, avg network size: 0.0312988, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5652472
+I0306 18:11:21.271564 2089306 Coordinator.h:101] commit: 19001 abort: 0 (0/0/0), cascade abort: 0, network size: 647, avg network size: 0.0340508, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5237559
+I0306 18:11:22.271708 2089306 Coordinator.h:101] commit: 19380 abort: 0 (0/0/0), cascade abort: 0, network size: 642, avg network size: 0.0331269, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5345742
+I0306 18:11:23.271847 2089306 Coordinator.h:101] commit: 19493 abort: 0 (0/0/0), cascade abort: 0, network size: 623, avg network size: 0.0319602, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5382159
+I0306 18:11:24.271984 2089306 Coordinator.h:101] commit: 19972 abort: 0 (0/0/0), cascade abort: 0, network size: 626, avg network size: 0.0313439, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5509114
+I0306 18:11:25.272116 2089306 Coordinator.h:101] commit: 18985 abort: 0 (0/0/0), cascade abort: 0, network size: 640, avg network size: 0.0337108, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5234815
+I0306 18:11:25.272150 2089306 Coordinator.h:137] average commit: 19725.3, average multi commit: 631.3 abort: 0 (0/0/0), abort cascade: 0, average operations: 5440857, network size: 631, multi commit network size: 0, avg network size: 0.0320097, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:11:25.272181 2089306 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:11:25.272186 2089385 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:11:25.272194 2089306 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:11:25.276963 2089388 SparkleExecutor.h:126] SparkleExecutor 3 exits. 
+I0306 18:11:25.276996 2089389 SparkleExecutor.h:126] SparkleExecutor 4 exits. 
+I0306 18:11:25.272395 2089306 SparkleExecutor.h:936] Worker 1 latency: 6469 us (50%) 10023 us (75%) 14497 us (95%) 17683 us (99%).
+I0306 18:11:25.283104 2089306 SparkleExecutor.h:941] Worker 1 multi latency: 380 us (1%) 6444 us (50%) 10100 us (75%) 14553 us (95%) 17683 us (99%).
+test_partition2.sh: line 43: 2089306 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1
+@ Spectrum; threads=10
+keys=100000
+zipf=1.3
+threads=11
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:11:38.750906 2089439 Database.h:95] partition_num: 2
+I0306 18:11:38.752720 2089439 Database.h:72] evm_bench initialization finished in 1 milliseconds.
+I0306 18:11:38.753054 2089453 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:11:38.753118 2089453 Server.h:52] Server 1 starts to run.
+I0306 18:11:39.253175 2089466 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:11:39.253443 2089466 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:53272 is UP
+I0306 18:11:39.753324 2089472 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:11:39.753582 2089472 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:38864 is UP
+I0306 18:11:39.753615 2089453 Server.h:57] 127.0.0.1:38864 -> 127.0.0.1:53008 is UP
+I0306 18:11:39.754236 2089453 Server.h:57] 127.0.0.1:38880 -> 127.0.0.1:53008 is UP
+I0306 18:11:40.253150 2089439 main.cpp:199] 2 clients connected.
+I0306 18:11:40.253259 2089439 SparkleManager.h:45] batch size: 100
+I0306 18:11:40.280695 2089439 WorkerFactory.h:179] workers size (including manager): 12
+I0306 18:11:40.280723 2089439 SerialManager.h:37] batch size: 100
+I0306 18:11:40.280731 2089439 SerialExecutor.h:154] init tables for contracts
+I0306 18:11:40.280736 2089439 SerialExecutor.h:192] init key_num: 200000
+I0306 18:11:43.371641 2089439 SerialExecutor.h:203] init tables finished
+I0306 18:11:45.371763 2089439 Coordinator.h:41] Coordinator starts to run 12 workers.
+I0306 18:11:45.371978 2089439 Coordinator.h:184] core_id: 84
+I0306 18:11:45.372367 2089439 Coordinator.h:184] core_id: 85
+I0306 18:11:45.372385 2089523 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:11:45.372445 2089523 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:11:45.372603 2089439 Coordinator.h:184] core_id: 86
+I0306 18:11:45.372632 2089526 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:11:45.372694 2089526 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:11:45.372931 2089528 SparkleExecutor.h:105] SparkleExecutor 2 started. 
+I0306 18:11:45.372953 2089439 Coordinator.h:184] core_id: 87
+I0306 18:11:45.372998 2089528 SparkleExecutor.h:121] worker 2 starts.
+I0306 18:11:45.373242 2089530 SparkleExecutor.h:105] SparkleExecutor 3 started. 
+I0306 18:11:45.373265 2089439 Coordinator.h:184] core_id: 88
+I0306 18:11:45.373308 2089530 SparkleExecutor.h:121] worker 3 starts.
+I0306 18:11:45.373476 2089532 SparkleExecutor.h:105] SparkleExecutor 4 started. 
+I0306 18:11:45.373531 2089532 SparkleExecutor.h:121] worker 4 starts.
+I0306 18:11:45.373541 2089439 Coordinator.h:184] core_id: 89
+I0306 18:11:45.373796 2089439 Coordinator.h:184] core_id: 90
+I0306 18:11:45.373797 2089534 SparkleExecutor.h:105] SparkleExecutor 5 started. 
+I0306 18:11:45.373857 2089534 SparkleExecutor.h:121] worker 5 starts.
+I0306 18:11:45.374029 2089535 SparkleExecutor.h:105] SparkleExecutor 6 started. 
+I0306 18:11:45.374055 2089439 Coordinator.h:184] core_id: 91
+I0306 18:11:45.374097 2089535 SparkleExecutor.h:121] worker 6 starts.
+I0306 18:11:45.374262 2089536 SparkleExecutor.h:105] SparkleExecutor 7 started. 
+I0306 18:11:45.374315 2089536 SparkleExecutor.h:121] worker 7 starts.
+I0306 18:11:45.374322 2089439 Coordinator.h:184] core_id: 92
+I0306 18:11:45.374585 2089439 Coordinator.h:184] core_id: 93
+I0306 18:11:45.374586 2089537 SparkleExecutor.h:105] SparkleExecutor 8 started. 
+I0306 18:11:45.374655 2089537 SparkleExecutor.h:121] worker 8 starts.
+I0306 18:11:45.374869 2089538 SparkleExecutor.h:105] SparkleExecutor 9 started. 
+I0306 18:11:45.374918 2089439 Coordinator.h:184] core_id: 94
+I0306 18:11:45.374920 2089538 SparkleExecutor.h:121] worker 9 starts.
+I0306 18:11:45.375190 2089539 SparkleExecutor.h:105] SparkleExecutor 10 started. 
+I0306 18:11:45.375250 2089539 SparkleExecutor.h:121] worker 10 starts.
+I0306 18:11:45.375293 2089439 Coordinator.h:184] core_id: 95
+I0306 18:11:45.375515 2089540 Manager.h:210] Manager(worker id = 11) on the coordinator node started.
+I0306 18:11:46.375427 2089439 Coordinator.h:101] commit: 22063 abort: 0 (0/0/0), cascade abort: 0, network size: 694, avg network size: 0.0314554, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6083491
+I0306 18:11:47.375558 2089439 Coordinator.h:101] commit: 22380 abort: 0 (0/0/0), cascade abort: 0, network size: 716, avg network size: 0.0319929, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6173973
+I0306 18:11:48.375660 2089439 Coordinator.h:101] commit: 22217 abort: 0 (0/0/0), cascade abort: 0, network size: 707, avg network size: 0.0318225, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6128697
+I0306 18:11:49.375761 2089439 Coordinator.h:101] commit: 23845 abort: 0 (0/0/0), cascade abort: 0, network size: 692, avg network size: 0.0290208, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6577461
+I0306 18:11:50.375862 2089439 Coordinator.h:101] commit: 21848 abort: 0 (0/0/0), cascade abort: 0, network size: 739, avg network size: 0.0338246, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6025097
+I0306 18:11:51.375963 2089439 Coordinator.h:101] commit: 21392 abort: 0 (0/0/0), cascade abort: 0, network size: 702, avg network size: 0.032816, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 5896917
+I0306 18:11:52.376063 2089439 Coordinator.h:101] commit: 22176 abort: 0 (0/0/0), cascade abort: 0, network size: 720, avg network size: 0.0324675, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6122256
+I0306 18:11:53.376173 2089439 Coordinator.h:101] commit: 22072 abort: 0 (0/0/0), cascade abort: 0, network size: 696, avg network size: 0.0315332, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6089886
+I0306 18:11:54.376287 2089439 Coordinator.h:101] commit: 21812 abort: 0 (0/0/0), cascade abort: 0, network size: 726, avg network size: 0.0332844, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6014054
+I0306 18:11:55.376425 2089439 Coordinator.h:101] commit: 21923 abort: 0 (0/0/0), cascade abort: 0, network size: 714, avg network size: 0.0325685, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6048293
+I0306 18:11:55.376457 2089439 Coordinator.h:137] average commit: 22172.8, average multi commit: 710.6 abort: 0 (0/0/0), abort cascade: 0, average operations: 6116012, network size: 710, multi commit network size: 0, avg network size: 0.0320483, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:11:55.376475 2089439 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:11:55.376483 2089439 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:11:55.376484 2089523 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:11:55.376673 2089439 SparkleExecutor.h:936] Worker 1 latency: 5885 us (50%) 8675 us (75%) 12731 us (95%) 15625 us (99%).
+I0306 18:11:55.378316 2089439 SparkleExecutor.h:941] Worker 1 multi latency: 203 us (1%) 5957 us (50%) 8979 us (75%) 12613 us (95%) 15625 us (99%).
+I0306 18:11:55.380838 2089538 SparkleExecutor.h:126] SparkleExecutor 9 exits. 
+I0306 18:11:55.380925 2089530 SparkleExecutor.h:126] SparkleExecutor 3 exits. 
+I0306 18:11:55.381841 2089539 SparkleExecutor.h:126] SparkleExecutor 10 exits. 
+test_partition2.sh: line 43: 2089439 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1
+@ Spectrum; threads=15
+keys=100000
+zipf=1.3
+threads=15
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:12:08.867867 2089582 Database.h:95] partition_num: 2
+I0306 18:12:08.869668 2089582 Database.h:72] evm_bench initialization finished in 1 milliseconds.
+I0306 18:12:08.869951 2089614 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:12:08.870016 2089614 Server.h:52] Server 1 starts to run.
+I0306 18:12:09.370100 2089618 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:12:09.370335 2089618 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:54728 is UP
+I0306 18:12:09.867551 2089614 Server.h:57] 127.0.0.1:54250 -> 127.0.0.1:53008 is UP
+I0306 18:12:09.870262 2089625 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:12:09.870474 2089614 Server.h:57] 127.0.0.1:54256 -> 127.0.0.1:53008 is UP
+I0306 18:12:09.870512 2089625 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:54256 is UP
+I0306 18:12:10.370093 2089582 main.cpp:199] 2 clients connected.
+I0306 18:12:10.370170 2089582 SparkleManager.h:45] batch size: 100
+I0306 18:12:10.396869 2089582 WorkerFactory.h:179] workers size (including manager): 16
+I0306 18:12:10.396895 2089582 SerialManager.h:37] batch size: 100
+I0306 18:12:10.396903 2089582 SerialExecutor.h:154] init tables for contracts
+I0306 18:12:10.396906 2089582 SerialExecutor.h:192] init key_num: 200000
+I0306 18:12:13.498404 2089582 SerialExecutor.h:203] init tables finished
+I0306 18:12:15.498546 2089582 Coordinator.h:41] Coordinator starts to run 16 workers.
+I0306 18:12:15.498777 2089582 Coordinator.h:184] core_id: 84
+I0306 18:12:15.499037 2089582 Coordinator.h:184] core_id: 85
+I0306 18:12:15.499115 2089669 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:12:15.499233 2089669 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:12:15.499389 2089582 Coordinator.h:184] core_id: 86
+I0306 18:12:15.499416 2089670 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:12:15.499495 2089670 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:12:15.499696 2089671 SparkleExecutor.h:105] SparkleExecutor 2 started. 
+I0306 18:12:15.499714 2089582 Coordinator.h:184] core_id: 87
+I0306 18:12:15.499763 2089671 SparkleExecutor.h:121] worker 2 starts.
+I0306 18:12:15.499919 2089672 SparkleExecutor.h:105] SparkleExecutor 3 started. 
+I0306 18:12:15.499969 2089582 Coordinator.h:184] core_id: 88
+I0306 18:12:15.499972 2089672 SparkleExecutor.h:121] worker 3 starts.
+I0306 18:12:15.500241 2089673 SparkleExecutor.h:105] SparkleExecutor 4 started. 
+I0306 18:12:15.500259 2089582 Coordinator.h:184] core_id: 89
+I0306 18:12:15.500308 2089673 SparkleExecutor.h:121] worker 4 starts.
+I0306 18:12:15.500470 2089674 SparkleExecutor.h:105] SparkleExecutor 5 started. 
+I0306 18:12:15.500522 2089674 SparkleExecutor.h:121] worker 5 starts.
+I0306 18:12:15.500576 2089582 Coordinator.h:184] core_id: 90
+I0306 18:12:15.500847 2089675 SparkleExecutor.h:105] SparkleExecutor 6 started. 
+I0306 18:12:15.500907 2089675 SparkleExecutor.h:121] worker 6 starts.
+I0306 18:12:15.500928 2089582 Coordinator.h:184] core_id: 91
+I0306 18:12:15.501111 2089676 SparkleExecutor.h:105] SparkleExecutor 7 started. 
+I0306 18:12:15.501165 2089676 SparkleExecutor.h:121] worker 7 starts.
+I0306 18:12:15.501215 2089582 Coordinator.h:184] core_id: 92
+I0306 18:12:15.501492 2089677 SparkleExecutor.h:105] SparkleExecutor 8 started. 
+I0306 18:12:15.501549 2089677 SparkleExecutor.h:121] worker 8 starts.
+I0306 18:12:15.501603 2089582 Coordinator.h:184] core_id: 93
+I0306 18:12:15.501895 2089678 SparkleExecutor.h:105] SparkleExecutor 9 started. 
+I0306 18:12:15.501945 2089678 SparkleExecutor.h:121] worker 9 starts.
+I0306 18:12:15.501976 2089582 Coordinator.h:184] core_id: 94
+I0306 18:12:15.502285 2089679 SparkleExecutor.h:105] SparkleExecutor 10 started. 
+I0306 18:12:15.502302 2089582 Coordinator.h:184] core_id: 95
+I0306 18:12:15.502353 2089679 SparkleExecutor.h:121] worker 10 starts.
+I0306 18:12:15.502561 2089680 SparkleExecutor.h:105] SparkleExecutor 11 started. 
+I0306 18:12:15.502624 2089680 SparkleExecutor.h:121] worker 11 starts.
+I0306 18:12:15.502642 2089582 Coordinator.h:184] core_id: 96
+I0306 18:12:15.502949 2089681 SparkleExecutor.h:105] SparkleExecutor 12 started. 
+I0306 18:12:15.503011 2089582 Coordinator.h:184] core_id: 97
+I0306 18:12:15.503017 2089681 SparkleExecutor.h:121] worker 12 starts.
+I0306 18:12:15.503651 2089682 SparkleExecutor.h:105] SparkleExecutor 13 started. 
+I0306 18:12:15.503715 2089682 SparkleExecutor.h:121] worker 13 starts.
+I0306 18:12:15.503774 2089582 Coordinator.h:184] core_id: 98
+I0306 18:12:15.504209 2089582 Coordinator.h:184] core_id: 99
+I0306 18:12:15.504272 2089683 SparkleExecutor.h:105] SparkleExecutor 14 started. 
+I0306 18:12:15.504324 2089683 SparkleExecutor.h:121] worker 14 starts.
+I0306 18:12:15.504417 2089684 Manager.h:210] Manager(worker id = 15) on the coordinator node started.
+I0306 18:12:16.504346 2089582 Coordinator.h:101] commit: 23282 abort: 0 (0/0/0), cascade abort: 0, network size: 732, avg network size: 0.0314406, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6419914
+I0306 18:12:17.504477 2089582 Coordinator.h:101] commit: 23909 abort: 0 (0/0/0), cascade abort: 0, network size: 760, avg network size: 0.0317872, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6595003
+I0306 18:12:18.504590 2089582 Coordinator.h:101] commit: 23326 abort: 0 (0/0/0), cascade abort: 0, network size: 731, avg network size: 0.0313384, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6435140
+I0306 18:12:19.504702 2089582 Coordinator.h:101] commit: 24541 abort: 0 (0/0/0), cascade abort: 0, network size: 749, avg network size: 0.0305204, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6770102
+I0306 18:12:20.504824 2089582 Coordinator.h:101] commit: 23488 abort: 0 (0/0/0), cascade abort: 0, network size: 777, avg network size: 0.0330807, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6475018
+I0306 18:12:21.504951 2089582 Coordinator.h:101] commit: 22684 abort: 0 (0/0/0), cascade abort: 0, network size: 759, avg network size: 0.0334597, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6256529
+I0306 18:12:22.505061 2089582 Coordinator.h:101] commit: 23397 abort: 0 (0/0/0), cascade abort: 0, network size: 729, avg network size: 0.0311578, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6458961
+I0306 18:12:23.505182 2089582 Coordinator.h:101] commit: 22868 abort: 0 (0/0/0), cascade abort: 0, network size: 755, avg network size: 0.0330156, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6305353
+I0306 18:12:24.505308 2089582 Coordinator.h:101] commit: 23857 abort: 0 (0/0/0), cascade abort: 0, network size: 741, avg network size: 0.0310601, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6583207
+I0306 18:12:25.505450 2089582 Coordinator.h:101] commit: 22864 abort: 0 (0/0/0), cascade abort: 0, network size: 769, avg network size: 0.0336337, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6306748
+I0306 18:12:25.505510 2089582 Coordinator.h:137] average commit: 23421.6, average multi commit: 750 abort: 0 (0/0/0), abort cascade: 0, average operations: 6460597, network size: 750, multi commit network size: 0, avg network size: 0.0320303, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:12:25.505530 2089582 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:12:25.505539 2089582 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:12:25.505538 2089669 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:12:25.505764 2089582 SparkleExecutor.h:936] Worker 1 latency: 5632 us (50%) 8252 us (75%) 11917 us (95%) 14632 us (99%).
+I0306 18:12:25.507046 2089582 SparkleExecutor.h:941] Worker 1 multi latency: 293 us (1%) 5349 us (50%) 8261 us (75%) 11668 us (95%) 14632 us (99%).
+I0306 18:12:25.507335 2089675 SparkleExecutor.h:126] SparkleExecutor 6 exits. 
+I0306 18:12:25.507364 2089683 SparkleExecutor.h:126] SparkleExecutor 14 exits. 
+test_partition2.sh: line 43: 2089582 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1
+@ Spectrum; threads=20
+keys=100000
+zipf=1.3
+threads=20
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:12:38.976990 2089746 Database.h:95] partition_num: 2
+I0306 18:12:38.979421 2089746 Database.h:72] evm_bench initialization finished in 1 milliseconds.
+I0306 18:12:38.979735 2089788 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:12:38.979799 2089788 Server.h:52] Server 1 starts to run.
+I0306 18:12:39.479887 2089800 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:12:39.480130 2089800 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:58790 is UP
+I0306 18:12:39.980043 2089806 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:12:39.980198 2089788 Server.h:57] 127.0.0.1:48876 -> 127.0.0.1:53008 is UP
+I0306 18:12:39.980271 2089788 Server.h:57] 127.0.0.1:48878 -> 127.0.0.1:53008 is UP
+I0306 18:12:39.980274 2089806 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:48878 is UP
+I0306 18:12:40.479926 2089746 main.cpp:199] 2 clients connected.
+I0306 18:12:40.480028 2089746 SparkleManager.h:45] batch size: 100
+I0306 18:12:40.508229 2089746 WorkerFactory.h:179] workers size (including manager): 21
+I0306 18:12:40.508258 2089746 SerialManager.h:37] batch size: 100
+I0306 18:12:40.508265 2089746 SerialExecutor.h:154] init tables for contracts
+I0306 18:12:40.508268 2089746 SerialExecutor.h:192] init key_num: 200000
+I0306 18:12:43.605484 2089746 SerialExecutor.h:203] init tables finished
+I0306 18:12:45.605631 2089746 Coordinator.h:41] Coordinator starts to run 21 workers.
+I0306 18:12:45.605854 2089746 Coordinator.h:184] core_id: 84
+I0306 18:12:45.606123 2089849 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:12:45.606154 2089746 Coordinator.h:184] core_id: 85
+I0306 18:12:45.606196 2089849 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:12:45.606446 2089850 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:12:45.606470 2089746 Coordinator.h:184] core_id: 86
+I0306 18:12:45.606536 2089850 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:12:45.606658 2089851 SparkleExecutor.h:105] SparkleExecutor 2 started. 
+I0306 18:12:45.606714 2089851 SparkleExecutor.h:121] worker 2 starts.
+I0306 18:12:45.606745 2089746 Coordinator.h:184] core_id: 87
+I0306 18:12:45.607038 2089746 Coordinator.h:184] core_id: 88
+I0306 18:12:45.607056 2089852 SparkleExecutor.h:105] SparkleExecutor 3 started. 
+I0306 18:12:45.607139 2089852 SparkleExecutor.h:121] worker 3 starts.
+I0306 18:12:45.607282 2089746 Coordinator.h:184] core_id: 89
+I0306 18:12:45.607301 2089853 SparkleExecutor.h:105] SparkleExecutor 4 started. 
+I0306 18:12:45.607364 2089853 SparkleExecutor.h:121] worker 4 starts.
+I0306 18:12:45.607518 2089746 Coordinator.h:184] core_id: 90
+I0306 18:12:45.607518 2089854 SparkleExecutor.h:105] SparkleExecutor 5 started. 
+I0306 18:12:45.607623 2089854 SparkleExecutor.h:121] worker 5 starts.
+I0306 18:12:45.607795 2089746 Coordinator.h:184] core_id: 91
+I0306 18:12:45.607815 2089855 SparkleExecutor.h:105] SparkleExecutor 6 started. 
+I0306 18:12:45.607874 2089855 SparkleExecutor.h:121] worker 6 starts.
+I0306 18:12:45.608037 2089856 SparkleExecutor.h:105] SparkleExecutor 7 started. 
+I0306 18:12:45.608040 2089746 Coordinator.h:184] core_id: 92
+I0306 18:12:45.608106 2089856 SparkleExecutor.h:121] worker 7 starts.
+I0306 18:12:45.608250 2089857 SparkleExecutor.h:105] SparkleExecutor 8 started. 
+I0306 18:12:45.608309 2089857 SparkleExecutor.h:121] worker 8 starts.
+I0306 18:12:45.608345 2089746 Coordinator.h:184] core_id: 93
+I0306 18:12:45.608644 2089746 Coordinator.h:184] core_id: 94
+I0306 18:12:45.608664 2089858 SparkleExecutor.h:105] SparkleExecutor 9 started. 
+I0306 18:12:45.608727 2089858 SparkleExecutor.h:121] worker 9 starts.
+I0306 18:12:45.608880 2089859 SparkleExecutor.h:105] SparkleExecutor 10 started. 
+I0306 18:12:45.608907 2089746 Coordinator.h:184] core_id: 95
+I0306 18:12:45.608947 2089859 SparkleExecutor.h:121] worker 10 starts.
+I0306 18:12:45.609136 2089746 Coordinator.h:184] core_id: 96
+I0306 18:12:45.609138 2089860 SparkleExecutor.h:105] SparkleExecutor 11 started. 
+I0306 18:12:45.609272 2089860 SparkleExecutor.h:121] worker 11 starts.
+I0306 18:12:45.609476 2089861 SparkleExecutor.h:105] SparkleExecutor 12 started. 
+I0306 18:12:45.609498 2089746 Coordinator.h:184] core_id: 97
+I0306 18:12:45.609560 2089861 SparkleExecutor.h:121] worker 12 starts.
+I0306 18:12:45.609804 2089746 Coordinator.h:184] core_id: 98
+I0306 18:12:45.609791 2089862 SparkleExecutor.h:105] SparkleExecutor 13 started. 
+I0306 18:12:45.609884 2089862 SparkleExecutor.h:121] worker 13 starts.
+I0306 18:12:45.610047 2089746 Coordinator.h:184] core_id: 99
+I0306 18:12:45.610049 2089863 SparkleExecutor.h:105] SparkleExecutor 14 started. 
+I0306 18:12:45.610133 2089863 SparkleExecutor.h:121] worker 14 starts.
+I0306 18:12:45.610236 2089864 SparkleExecutor.h:105] SparkleExecutor 15 started. 
+I0306 18:12:45.610282 2089746 Coordinator.h:184] core_id: 100
+I0306 18:12:45.610292 2089864 SparkleExecutor.h:121] worker 15 starts.
+I0306 18:12:45.610715 2089746 Coordinator.h:184] core_id: 101
+I0306 18:12:45.610946 2089865 SparkleExecutor.h:105] SparkleExecutor 16 started. 
+I0306 18:12:45.611004 2089865 SparkleExecutor.h:121] worker 16 starts.
+I0306 18:12:45.611276 2089746 Coordinator.h:184] core_id: 102
+I0306 18:12:45.611603 2089866 SparkleExecutor.h:105] SparkleExecutor 17 started. 
+I0306 18:12:45.611665 2089866 SparkleExecutor.h:121] worker 17 starts.
+I0306 18:12:45.611812 2089746 Coordinator.h:184] core_id: 103
+I0306 18:12:45.612017 2089867 SparkleExecutor.h:105] SparkleExecutor 18 started. 
+I0306 18:12:45.612085 2089867 SparkleExecutor.h:121] worker 18 starts.
+I0306 18:12:45.612210 2089868 SparkleExecutor.h:105] SparkleExecutor 19 started. 
+I0306 18:12:45.612250 2089746 Coordinator.h:184] core_id: 104
+I0306 18:12:45.612286 2089868 SparkleExecutor.h:121] worker 19 starts.
+I0306 18:12:45.612565 2089869 Manager.h:210] Manager(worker id = 20) on the coordinator node started.
+I0306 18:12:46.612396 2089746 Coordinator.h:101] commit: 24551 abort: 0 (0/0/0), cascade abort: 0, network size: 772, avg network size: 0.0314447, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6770272
+I0306 18:12:47.612567 2089746 Coordinator.h:101] commit: 24867 abort: 0 (0/0/0), cascade abort: 0, network size: 805, avg network size: 0.0323722, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6859213
+I0306 18:12:48.612711 2089746 Coordinator.h:101] commit: 25292 abort: 0 (0/0/0), cascade abort: 0, network size: 767, avg network size: 0.0303258, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6975371
+I0306 18:12:49.612859 2089746 Coordinator.h:101] commit: 25247 abort: 0 (0/0/0), cascade abort: 0, network size: 777, avg network size: 0.0307759, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6965782
+I0306 18:12:50.613003 2089746 Coordinator.h:101] commit: 24412 abort: 0 (0/0/0), cascade abort: 0, network size: 816, avg network size: 0.0334262, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6727991
+I0306 18:12:51.613157 2089746 Coordinator.h:101] commit: 24008 abort: 0 (0/0/0), cascade abort: 0, network size: 801, avg network size: 0.0333639, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6624063
+I0306 18:12:52.613301 2089746 Coordinator.h:101] commit: 25673 abort: 0 (0/0/0), cascade abort: 0, network size: 805, avg network size: 0.0313559, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7088470
+I0306 18:12:53.613458 2089746 Coordinator.h:101] commit: 24961 abort: 0 (0/0/0), cascade abort: 0, network size: 833, avg network size: 0.0333721, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6882412
+I0306 18:12:54.613619 2089746 Coordinator.h:101] commit: 24154 abort: 0 (0/0/0), cascade abort: 0, network size: 767, avg network size: 0.0317546, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6662651
+I0306 18:12:55.613780 2089746 Coordinator.h:101] commit: 24944 abort: 0 (0/0/0), cascade abort: 0, network size: 776, avg network size: 0.0311097, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 6877127
+I0306 18:12:55.613863 2089746 Coordinator.h:137] average commit: 24810.9, average multi commit: 791.9 abort: 0 (0/0/0), abort cascade: 0, average operations: 6843335, network size: 791, multi commit network size: 0, avg network size: 0.0319174, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:12:55.613885 2089746 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:12:55.613890 2089849 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:12:55.613893 2089746 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:12:55.614813 2089857 SparkleExecutor.h:126] SparkleExecutor 8 exits. 
+I0306 18:12:55.614944 2089851 SparkleExecutor.h:126] SparkleExecutor 2 exits. 
+I0306 18:12:55.614068 2089746 SparkleExecutor.h:936] Worker 1 latency: 5217 us (50%) 7734 us (75%) 11129 us (95%) 13491 us (99%).
+I0306 18:12:55.615118 2089746 SparkleExecutor.h:941] Worker 1 multi latency: 298 us (1%) 5520 us (50%) 8266 us (75%) 11266 us (95%) 13491 us (99%).
+test_partition2.sh: line 43: 2089746 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1
+@ Spectrum; threads=25
+keys=100000
+zipf=1.3
+threads=25
+contract=10
+partition_num=2
+batch_size=100
+I0306 18:13:09.088632 2089937 Database.h:95] partition_num: 2
+I0306 18:13:09.091197 2089937 Database.h:72] evm_bench initialization finished in 1 milliseconds.
+I0306 18:13:09.091540 2089985 main.cpp:89] SpectrumServer 1 started at 53008!
+I0306 18:13:09.091604 2089985 Server.h:52] Server 1 starts to run.
+I0306 18:13:09.591640 2089992 main.cpp:75] SpectrumClient 0 started connect to 53007!
+I0306 18:13:09.591892 2089992 Client.h:90] 127.0.0.1:53007 -> 127.0.0.1:55460 is UP
+I0306 18:13:10.091831 2089998 main.cpp:75] SpectrumClient 1 started connect to 53008!
+I0306 18:13:10.092080 2089998 Client.h:90] 127.0.0.1:53008 -> 127.0.0.1:45352 is UP
+I0306 18:13:10.092134 2089985 Server.h:57] 127.0.0.1:45352 -> 127.0.0.1:53008 is UP
+I0306 18:13:10.092442 2089985 Server.h:57] 127.0.0.1:45354 -> 127.0.0.1:53008 is UP
+I0306 18:13:10.591662 2089937 main.cpp:199] 2 clients connected.
+I0306 18:13:10.591785 2089937 SparkleManager.h:45] batch size: 100
+I0306 18:13:10.620049 2089937 WorkerFactory.h:179] workers size (including manager): 26
+I0306 18:13:10.620079 2089937 SerialManager.h:37] batch size: 100
+I0306 18:13:10.620085 2089937 SerialExecutor.h:154] init tables for contracts
+I0306 18:13:10.620090 2089937 SerialExecutor.h:192] init key_num: 200000
+I0306 18:13:13.778049 2089937 SerialExecutor.h:203] init tables finished
+I0306 18:13:15.778156 2089937 Coordinator.h:41] Coordinator starts to run 26 workers.
+I0306 18:13:15.778277 2089937 Coordinator.h:184] core_id: 84
+I0306 18:13:15.778414 2089937 Coordinator.h:184] core_id: 85
+I0306 18:13:15.778501 2090068 SparkleExecutor.h:105] SparkleExecutor 0 started. 
+I0306 18:13:15.778543 2089937 Coordinator.h:184] core_id: 86
+I0306 18:13:15.778560 2090068 SparkleExecutor.h:112] scheduler 0 starts.
+I0306 18:13:15.778717 2090069 SparkleExecutor.h:105] SparkleExecutor 1 started. 
+I0306 18:13:15.778779 2090069 SparkleExecutor.h:121] worker 1 starts.
+I0306 18:13:15.778784 2089937 Coordinator.h:184] core_id: 87
+I0306 18:13:15.778923 2090070 SparkleExecutor.h:105] SparkleExecutor 2 started. 
+I0306 18:13:15.778980 2090070 SparkleExecutor.h:121] worker 2 starts.
+I0306 18:13:15.778987 2089937 Coordinator.h:184] core_id: 88
+I0306 18:13:15.779083 2090071 SparkleExecutor.h:105] SparkleExecutor 3 started. 
+I0306 18:13:15.779174 2090071 SparkleExecutor.h:121] worker 3 starts.
+I0306 18:13:15.779214 2089937 Coordinator.h:184] core_id: 89
+I0306 18:13:15.779242 2090072 SparkleExecutor.h:105] SparkleExecutor 4 started. 
+I0306 18:13:15.779297 2090072 SparkleExecutor.h:121] worker 4 starts.
+I0306 18:13:15.779325 2089937 Coordinator.h:184] core_id: 90
+I0306 18:13:15.779531 2089937 Coordinator.h:184] core_id: 91
+I0306 18:13:15.779552 2090073 SparkleExecutor.h:105] SparkleExecutor 5 started. 
+I0306 18:13:15.779610 2090073 SparkleExecutor.h:121] worker 5 starts.
+I0306 18:13:15.779733 2089937 Coordinator.h:184] core_id: 92
+I0306 18:13:15.779882 2089937 Coordinator.h:184] core_id: 93
+I0306 18:13:15.780007 2090074 SparkleExecutor.h:105] SparkleExecutor 6 started. 
+I0306 18:13:15.780069 2090074 SparkleExecutor.h:121] worker 6 starts.
+I0306 18:13:15.780130 2089937 Coordinator.h:184] core_id: 94
+I0306 18:13:15.780221 2090076 SparkleExecutor.h:105] SparkleExecutor 8 started. 
+I0306 18:13:15.780320 2090076 SparkleExecutor.h:121] worker 8 starts.
+I0306 18:13:15.780369 2089937 Coordinator.h:184] core_id: 95
+I0306 18:13:15.780445 2090075 SparkleExecutor.h:105] SparkleExecutor 7 started. 
+I0306 18:13:15.780524 2090075 SparkleExecutor.h:121] worker 7 starts.
+I0306 18:13:15.780607 2089937 Coordinator.h:184] core_id: 96
+I0306 18:13:15.780629 2090077 SparkleExecutor.h:105] SparkleExecutor 9 started. 
+I0306 18:13:15.780687 2090077 SparkleExecutor.h:121] worker 9 starts.
+I0306 18:13:15.780884 2089937 Coordinator.h:184] core_id: 97
+I0306 18:13:15.780989 2090079 SparkleExecutor.h:105] SparkleExecutor 11 started. 
+I0306 18:13:15.781065 2090079 SparkleExecutor.h:121] worker 11 starts.
+I0306 18:13:15.781111 2089937 Coordinator.h:184] core_id: 98
+I0306 18:13:15.781227 2090078 SparkleExecutor.h:105] SparkleExecutor 10 started. 
+I0306 18:13:15.781306 2090078 SparkleExecutor.h:121] worker 10 starts.
+I0306 18:13:15.781329 2089937 Coordinator.h:184] core_id: 99
+I0306 18:13:15.781363 2090080 SparkleExecutor.h:105] SparkleExecutor 12 started. 
+I0306 18:13:15.781415 2090080 SparkleExecutor.h:121] worker 12 starts.
+I0306 18:13:15.781621 2089937 Coordinator.h:184] core_id: 100
+I0306 18:13:15.781616 2090081 SparkleExecutor.h:105] SparkleExecutor 13 started. 
+I0306 18:13:15.781720 2090081 SparkleExecutor.h:121] worker 13 starts.
+I0306 18:13:15.781859 2089937 Coordinator.h:184] core_id: 101
+I0306 18:13:15.781859 2090082 SparkleExecutor.h:105] SparkleExecutor 14 started. 
+I0306 18:13:15.781926 2090082 SparkleExecutor.h:121] worker 14 starts.
+I0306 18:13:15.782034 2090083 SparkleExecutor.h:105] SparkleExecutor 15 started. 
+I0306 18:13:15.782068 2089937 Coordinator.h:184] core_id: 102
+I0306 18:13:15.782097 2090083 SparkleExecutor.h:121] worker 15 starts.
+I0306 18:13:15.782233 2090084 SparkleExecutor.h:105] SparkleExecutor 16 started. 
+I0306 18:13:15.782292 2090084 SparkleExecutor.h:121] worker 16 starts.
+I0306 18:13:15.782342 2089937 Coordinator.h:184] core_id: 103
+I0306 18:13:15.782439 2090085 SparkleExecutor.h:105] SparkleExecutor 17 started. 
+I0306 18:13:15.782500 2090085 SparkleExecutor.h:121] worker 17 starts.
+I0306 18:13:15.782606 2089937 Coordinator.h:184] core_id: 104
+I0306 18:13:15.782608 2090086 SparkleExecutor.h:105] SparkleExecutor 18 started. 
+I0306 18:13:15.782696 2090086 SparkleExecutor.h:121] worker 18 starts.
+I0306 18:13:15.782802 2090087 SparkleExecutor.h:105] SparkleExecutor 19 started. 
+I0306 18:13:15.782825 2089937 Coordinator.h:184] core_id: 105
+I0306 18:13:15.782857 2090087 SparkleExecutor.h:121] worker 19 starts.
+I0306 18:13:15.782910 2090088 SparkleExecutor.h:105] SparkleExecutor 20 started. 
+I0306 18:13:15.782964 2090088 SparkleExecutor.h:121] worker 20 starts.
+I0306 18:13:15.783033 2089937 Coordinator.h:184] core_id: 106
+I0306 18:13:15.783222 2090089 SparkleExecutor.h:105] SparkleExecutor 21 started. 
+I0306 18:13:15.783282 2090089 SparkleExecutor.h:121] worker 21 starts.
+I0306 18:13:15.783305 2089937 Coordinator.h:184] core_id: 107
+I0306 18:13:15.783360 2090090 SparkleExecutor.h:105] SparkleExecutor 22 started. 
+I0306 18:13:15.783417 2090090 SparkleExecutor.h:121] worker 22 starts.
+I0306 18:13:15.783463 2089937 Coordinator.h:184] core_id: 108
+I0306 18:13:15.783594 2090091 SparkleExecutor.h:105] SparkleExecutor 23 started. 
+I0306 18:13:15.783660 2090091 SparkleExecutor.h:121] worker 23 starts.
+I0306 18:13:15.783682 2089937 Coordinator.h:184] core_id: 109
+I0306 18:13:15.783699 2090092 SparkleExecutor.h:105] SparkleExecutor 24 started. 
+I0306 18:13:15.783756 2090092 SparkleExecutor.h:121] worker 24 starts.
+I0306 18:13:15.783861 2090093 Manager.h:210] Manager(worker id = 25) on the coordinator node started.
+I0306 18:13:16.783802 2089937 Coordinator.h:101] commit: 26768 abort: 0 (0/0/0), cascade abort: 0, network size: 838, avg network size: 0.031306, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7382393
+I0306 18:13:17.783958 2089937 Coordinator.h:101] commit: 26176 abort: 0 (0/0/0), cascade abort: 0, network size: 864, avg network size: 0.0330073, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7218987
+I0306 18:13:18.784096 2089937 Coordinator.h:101] commit: 27329 abort: 0 (0/0/0), cascade abort: 0, network size: 807, avg network size: 0.0295291, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7536914
+I0306 18:13:19.784226 2089937 Coordinator.h:101] commit: 26735 abort: 0 (0/0/0), cascade abort: 0, network size: 857, avg network size: 0.0320554, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7376755
+I0306 18:13:20.784358 2089937 Coordinator.h:101] commit: 25548 abort: 0 (0/0/0), cascade abort: 0, network size: 850, avg network size: 0.0332707, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7042900
+I0306 18:13:21.784495 2089937 Coordinator.h:101] commit: 25774 abort: 0 (0/0/0), cascade abort: 0, network size: 835, avg network size: 0.032397, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7115995
+I0306 18:13:22.784643 2089937 Coordinator.h:101] commit: 26261 abort: 0 (0/0/0), cascade abort: 0, network size: 829, avg network size: 0.0315677, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7240836
+I0306 18:13:23.784775 2089937 Coordinator.h:101] commit: 26975 abort: 0 (0/0/0), cascade abort: 0, network size: 861, avg network size: 0.0319184, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7443758
+I0306 18:13:24.784911 2089937 Coordinator.h:101] commit: 25514 abort: 0 (0/0/0), cascade abort: 0, network size: 836, avg network size: 0.0327663, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7034667
+I0306 18:13:25.785058 2089937 Coordinator.h:101] commit: 26052 abort: 0 (0/0/0), cascade abort: 0, network size: 849, avg network size: 0.0325887, multi commit network size: 0, si_in_serializable: 0 0 %, local: 0 %, operations: 7180747
+I0306 18:13:25.785109 2089937 Coordinator.h:137] average commit: 26313.2, average multi commit: 842.6 abort: 0 (0/0/0), abort cascade: 0, average operations: 7257395, network size: 842, multi commit network size: 0, avg network size: 0.032022, si_in_serializable: 0 0 % , local: 0 %
+I0306 18:13:25.785128 2089937 SparkleExecutor.h:936] Worker 0 latency: 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:13:25.785135 2090068 SparkleExecutor.h:126] SparkleExecutor 0 exits. 
+I0306 18:13:25.785135 2089937 SparkleExecutor.h:941] Worker 0 multi latency: 0 us (1%) 0 us (50%) 0 us (75%) 0 us (95%) 0 us (99%).
+I0306 18:13:25.786026 2090090 SparkleExecutor.h:126] SparkleExecutor 22 exits. 
+I0306 18:13:25.785327 2089937 SparkleExecutor.h:936] Worker 1 latency: 4895 us (50%) 7176 us (75%) 10377 us (95%) 12668 us (99%).
+I0306 18:13:25.786255 2089937 SparkleExecutor.h:941] Worker 1 multi latency: 174 us (1%) 5212 us (50%) 7274 us (75%) 10292 us (95%) 12668 us (99%).
+test_partition2.sh: line 43: 2089937 Killed                  $execute --threads=$threads --protocol=Spectrum --keys=$keys --zipf=$zipf --contract_type=$contract_type --partition_num=$partition_num --global_key_space=false --global_partition_id=1 --cross_ratio=$cross_ratio --time_to_run=10 --sparkle_lock_manager=1

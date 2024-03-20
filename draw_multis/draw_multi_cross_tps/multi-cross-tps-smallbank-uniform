@@ -1,0 +1,20 @@
+./no-batch-smallbank-uniform
+./batch-smallbank-uniform
+0    809986.0
+1    469234.0
+2    247894.0
+3    177731.6
+4     98748.6
+Name: average commit, dtype: float64
+0    1016886.42
+1     726515.46
+2     431630.10
+3     281288.70
+4      80234.55
+Name: average commit, dtype: float64
+0    125056.10
+1    125149.77
+2    125118.80
+3    129735.61
+4     87305.19
+Name: average commit, dtype: float64

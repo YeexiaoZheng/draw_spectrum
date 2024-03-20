@@ -1,0 +1,20 @@
+./no-batch-ycsb-skewed
+./batch-ycsb-skewed
+0     43814.76
+1    111641.91
+2    163034.25
+3    195059.70
+4    212775.30
+Name: average commit, dtype: float64
+0     75318.85
+1    193539.70
+2    241499.50
+3    240456.40
+4    218937.00
+Name: average commit, dtype: float64
+0    13321.09
+1    15293.29
+2    18164.19
+3    20023.34
+4    22324.81
+Name: average commit, dtype: float64
