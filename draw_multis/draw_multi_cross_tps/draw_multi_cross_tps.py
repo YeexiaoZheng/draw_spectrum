@@ -16,9 +16,9 @@ import argparse
 import sys
 
 sys.path.extend(['.', '..'])
-from parse import parse_records_from_file
+from plot.parse import parse_records_from_file
 import matplotlib.pyplot as plt
-from plot import MyPlot
+from plot.plot import MyPlot
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)

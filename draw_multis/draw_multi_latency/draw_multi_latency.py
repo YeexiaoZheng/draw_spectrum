@@ -17,7 +17,7 @@ import sys
 
 sys.path.extend(['.', '..'])
 import matplotlib.pyplot as plt
-from plot import MyPlot
+from plot.plot import MyPlot
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
