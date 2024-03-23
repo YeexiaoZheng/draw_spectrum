@@ -10,9 +10,10 @@ YLABEL = "吞吐（交易 / 秒）"
 import pandas as pd
 import argparse
 import sys
-sys.path.extend(['.', '..'])
+sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
+from name import NAME
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
@@ -25,13 +26,13 @@ workload = args.workload
 data = {
     'smallbank': {
         'Calvin-L':                       [100988,	183022,	221884],
-        'Prophet$_\mathit{origin}$':    [194220,	220590,	276363],
-        'Prophet$_\mathit{batch}$':     [288133,	459277,	538746],
+        NAME + '$_\mathit{origin}$':    [194220,	220590,	276363],
+        NAME + '$_\mathit{batch}$':     [288133,	459277,	538746],
     },
     'ycsb': {
         'Calvin-L':                       [62840,	    103078,	113291],
-        'Prophet$_\mathit{origin}$':    [90099,	    101326,	129336],
-        'Prophet$_\mathit{batch}$':     [129777,	239767,	275238],
+        NAME + '$_\mathit{origin}$':    [90099,	    101326,	129336],
+        NAME + '$_\mathit{batch}$':     [129777,	239767,	275238],
     }
 }
 data = data[workload]
@@ -44,8 +45,8 @@ for schema in data.keys():
 schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Calvin-L'                     , '#45C686'),
-    ('Prophet$_\mathit{origin}$'    , '#ED9F54'),
-    ('Prophet$_\mathit{batch}$'     , '#8E5344'),
+    (NAME + '$_\mathit{origin}$'    , '#ED9F54'),
+    (NAME + '$_\mathit{batch}$'     , '#8E5344'),
 ]
 
 #################### 画图 ####################

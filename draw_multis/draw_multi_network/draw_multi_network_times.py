@@ -15,10 +15,11 @@ import pandas as pd
 import argparse
 import sys
 
-sys.path.extend(['.', '..'])
+sys.path.extend(['.', '..', '../..'])
 from plot.parse import parse_records_from_file
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
+from name import NAME
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
@@ -37,8 +38,8 @@ log_files = [
 ]
 schemas = [
     "Calvin-L",
-    "Prophet$_\mathit{origin}$",
-    "Prophet$_\mathit{batch}$",
+    NAME + "$_\mathit{origin}$",
+    NAME + "$_\mathit{batch}$",
 ]
 
 recses = []
@@ -60,8 +61,8 @@ recs = pd.concat(recses, ignore_index=True)
 schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Calvin-L'                     , '#45C686'),
-    ('Prophet$_\mathit{origin}$'    , '#ED9F54'),
-    ('Prophet$_\mathit{batch}$'     , '#8E5344'),
+    (NAME + '$_\mathit{origin}$'    , '#ED9F54'),
+    (NAME + '$_\mathit{batch}$'     , '#8E5344'),
 ]
 
 #################### 画图 ####################

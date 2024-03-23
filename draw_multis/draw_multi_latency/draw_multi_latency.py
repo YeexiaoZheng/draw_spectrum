@@ -15,7 +15,7 @@ import pandas as pd
 import argparse
 import sys
 
-sys.path.extend(['.', '..'])
+sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 
