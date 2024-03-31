@@ -3,3 +3,5 @@
 /trashbin
 
 /draw_multis/auto_results
+
+**/__pycache__
