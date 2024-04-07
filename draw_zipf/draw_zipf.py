@@ -5,7 +5,7 @@ HELP = 'python draw_zipf.py -f zipf'
 X = "keys"
 Y = "count"
 XLABEL = "Keys"
-YLABEL = "Count"
+YLABEL = "PMF"
 
 import pandas as pd
 import argparse
@@ -50,8 +50,8 @@ for idx, zipf in enumerate(dfs):
     p.plot(
         ax,
         xdata=records[X],
-        ydata=records[Y],
-        color=None, legend_label=zipf,
+        ydata=records[Y] / 1000000,
+        color=None, legend_label=r'$\mathit{Uniform}$' if str(zipf) == '0' else r"$\mathit{Zipf}_\mathit{" + zipf + r"}$",
         marker='None'
         # marker=['v', 's', 'o'][idx]
     )
@@ -59,16 +59,18 @@ for idx, zipf in enumerate(dfs):
 # 设置X轴标签
 # ax.set_xticks([int(t) for t in recs['threads'].unique()])
 ax.set_xscale('log')
+# ax.set_yscale('log')
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='K')
-ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
+# p.format_yticks(ax, suffix='K')
+# ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
 p.set_labels(ax, XLABEL, YLABEL)
+ax.set_xlabel(XLABEL, style='italic')
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25))
+p.legend(ax, loc="upper center", ncol=4, anchor=(0.5, 1.15), columnspacing=0.5, kwargs={ 'style' : 'italic'})
 
 # 保存
 p.save(savepath)

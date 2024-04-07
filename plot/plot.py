@@ -33,7 +33,7 @@ class MyPlot:
     rcParams['axes.unicode_minus'] = False # 使坐标轴刻度标签正常显示正负号
 
     dpi = 300
-    weight = 'normal'
+    weight = 'bold'
 
     # 图例相关
     anchor = (0.5, 1.23)    # 相对位置
@@ -101,7 +101,7 @@ class MyPlot:
         # rcParams['font.sans-serif'] = self.prop.get_name()  # 根据名称设置字体
         # 'dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom'
         rcParams['mathtext.fontset'] = 'stix' # stix' if self.language == 'chinese' else 'dejavusans'
-        rcParams['mathtext.default'] = 'regular'
+        # rcParams['mathtext.default'] = 'regular'
         # rcParams['text.usetex'] = True
         plt.rcParams['font.size'] = self.legend_word_size
         plt.rcParams['font.weight'] = self.weight
