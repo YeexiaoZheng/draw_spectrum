@@ -65,7 +65,7 @@ class MyPlot:
 
     # 点相关
     # marker_list = ['o', 's', 'v', '^', '<', '>', '1', '2', '3', '4']    # 点的形状
-    marker_list = ['>', '<', '^', 'v', 'o', 's']        # 点的形状 pop
+    marker_list = ['>', '<', '^', 'v', 's', 'o']        # 点的形状 pop
     marker_size = 7                                                      # 点大小
 
     ##### 变量 #####
@@ -226,9 +226,9 @@ class MyPlot:
         columnspacing=None,
         kwargs=None
     ):
-        if not handles and not labels:
-            handles, labels = ax.get_legend_handles_labels()
-            handles, labels = order_handles_labels(handles, labels)
+        # if not handles and not labels:
+        #     handles, labels = ax.get_legend_handles_labels()
+        #     handles, labels = order_handles_labels(handles, labels)
         ax.legend(
             handles=handles,
             labels=labels,

@@ -1,0 +1,1981 @@
+#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:6:9973:33../bench Calvin:6:9973:33 Smallbank:1000000:0 2s2024-04-07 09:37:25.031181870
+duration      2008ms
+commit        160924.3028 tx/s
+execution     160924.3028 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        160924.3028 tx/s
+latency(50%)  594us
+latency(75%)  625us
+latency(95%)  661us
+latency(99%)  769us2024-04-07 09:37:27.213047746
+duration      2009ms
+commit        160647.0881 tx/s
+execution     160647.0881 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        160647.0881 tx/s
+latency(50%)  594us
+latency(75%)  625us
+latency(95%)  667us
+latency(99%)  845us2024-04-07 09:37:29.394380263
+duration      2008ms
+commit        160529.8805 tx/s
+execution     160529.8805 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        160529.8805 tx/s
+latency(50%)  593us
+latency(75%)  626us
+latency(95%)  661us
+latency(99%)  809us2024-04-07 09:37:31.572172717
+duration      2009ms
+commit        160942.7576 tx/s
+execution     160942.7576 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        160942.7576 tx/s
+latency(50%)  592us
+latency(75%)  626us
+latency(95%)  662us
+latency(99%)  814us2024-04-07 09:37:33.754353664
+duration      2011ms
+commit        160881.1537 tx/s
+execution     160881.1537 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        160881.1537 tx/s
+latency(50%)  592us
+latency(75%)  625us
+latency(95%)  661us
+latency(99%)  759us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:6:9973:33:FALSE../bench Aria:6:9973:33:FALSE Smallbank:1000000:0 2s2024-04-07 09:37:35.945602016
+duration      2007ms
+commit        247524.6637 tx/s
+execution     247552.5660 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247524.6637 tx/s
+latency(50%)  670us
+latency(75%)  697us
+latency(95%)  746us
+latency(99%)  886us2024-04-07 09:37:38.093420482
+duration      2007ms
+commit        247426.0090 tx/s
+execution     247450.4235 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247426.0090 tx/s
+latency(50%)  668us
+latency(75%)  697us
+latency(95%)  747us
+latency(99%)  891us2024-04-07 09:37:40.236704889
+duration      2009ms
+commit        246982.5784 tx/s
+execution     247013.9373 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        246982.5784 tx/s
+latency(50%)  668us
+latency(75%)  696us
+latency(95%)  749us
+latency(99%)  921us2024-04-07 09:37:42.377705185
+duration      2007ms
+commit        247623.3184 tx/s
+execution     247649.2277 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247623.3184 tx/s
+latency(50%)  668us
+latency(75%)  700us
+latency(95%)  750us
+latency(99%)  1099us2024-04-07 09:37:44.522673465
+duration      2008ms
+commit        247500.0000 tx/s
+execution     247523.4064 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247500.0000 tx/s
+latency(50%)  667us
+latency(75%)  696us
+latency(95%)  748us
+latency(99%)  893us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:6:9973:33:TRUE../bench Aria:6:9973:33:TRUE Smallbank:1000000:0 2s2024-04-07 09:37:46.683050639
+duration      2007ms
+commit        247721.9731 tx/s
+execution     247732.4365 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247721.9731 tx/s
+latency(50%)  670us
+latency(75%)  701us
+latency(95%)  748us
+latency(99%)  942us2024-04-07 09:37:48.831875438
+duration      2007ms
+commit        247327.3543 tx/s
+execution     247335.3264 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247327.3543 tx/s
+latency(50%)  669us
+latency(75%)  695us
+latency(95%)  749us
+latency(99%)  1001us2024-04-07 09:37:50.976920540
+duration      2007ms
+commit        248511.2108 tx/s
+execution     248525.6602 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        248511.2108 tx/s
+latency(50%)  665us
+latency(75%)  694us
+latency(95%)  744us
+latency(99%)  1010us2024-04-07 09:37:53.114325401
+duration      2007ms
+commit        247820.6278 tx/s
+execution     247832.0877 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247820.6278 tx/s
+latency(50%)  670us
+latency(75%)  696us
+latency(95%)  749us
+latency(99%)  913us2024-04-07 09:37:55.259890383
+duration      2008ms
+commit        247598.6056 tx/s
+execution     247609.0637 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        247598.6056 tx/s
+latency(50%)  667us
+latency(75%)  696us
+latency(95%)  744us
+latency(99%)  922us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:6:9973../bench Sparkle:6:9973 Smallbank:1000000:0 2s2024-04-07 09:37:57.413918945
+duration      2001ms
+commit        292302.8486 tx/s
+execution     292304.8476 tx/s
+25us          282106.9465 tx/s
+50us          7813.0935 tx/s
+100us         2240.3798 tx/s
+>100us        142.4288 tx/s
+latency(50%)  14us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  54us2024-04-07 09:37:59.644083929
+duration      2001ms
+commit        293412.7936 tx/s
+execution     293414.7926 tx/s
+25us          283289.8551 tx/s
+50us          7606.6967 tx/s
+100us         2399.8001 tx/s
+>100us        116.4418 tx/s
+latency(50%)  14us
+latency(75%)  18us
+latency(95%)  23us
+latency(99%)  38us2024-04-07 09:38:01.870623361
+duration      2001ms
+commit        292866.0670 tx/s
+execution     292868.5657 tx/s
+25us          282546.2269 tx/s
+50us          7826.0870 tx/s
+100us         2360.8196 tx/s
+>100us        132.9335 tx/s
+latency(50%)  14us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  54us2024-04-07 09:38:04.101889163
+duration      2001ms
+commit        293651.1744 tx/s
+execution     293651.6742 tx/s
+25us          283586.2069 tx/s
+50us          7513.7431 tx/s
+100us         2410.7946 tx/s
+>100us        140.4298 tx/s
+latency(50%)  14us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  45us2024-04-07 09:38:06.329919213
+duration      2001ms
+commit        294575.2124 tx/s
+execution     294577.7111 tx/s
+25us          284304.3478 tx/s
+50us          7692.1539 tx/s
+100us         2438.7806 tx/s
+>100us        139.9300 tx/s
+latency(50%)  14us
+latency(75%)  19us
+latency(95%)  24us
+latency(99%)  36us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:6:9973:COPYONWRITE../bench Spectrum:6:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:38:08.575940566
+duration      2001ms
+commit        279729.6352 tx/s
+execution     279730.1349 tx/s
+25us          269281.3593 tx/s
+50us          8607.6962 tx/s
+100us         1697.6512 tx/s
+>100us        142.9285 tx/s
+latency(50%)  15us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  31us2024-04-07 09:38:10.796434568
+duration      2001ms
+commit        278838.5807 tx/s
+execution     278840.5797 tx/s
+25us          268225.8871 tx/s
+50us          8667.6662 tx/s
+100us         1826.0870 tx/s
+>100us        118.9405 tx/s
+latency(50%)  15us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  33us2024-04-07 09:38:13.014878276
+duration      2000ms
+commit        279453.0000 tx/s
+execution     279453.0000 tx/s
+25us          269038.0000 tx/s
+50us          8485.0000 tx/s
+100us         1797.0000 tx/s
+>100us        133.0000 tx/s
+latency(50%)  15us
+latency(75%)  19us
+latency(95%)  23us
+latency(99%)  31us2024-04-07 09:38:15.238013352
+duration      2000ms
+commit        280130.5000 tx/s
+execution     280132.0000 tx/s
+25us          269511.0000 tx/s
+50us          8739.5000 tx/s
+100us         1745.5000 tx/s
+>100us        134.5000 tx/s
+latency(50%)  15us
+latency(75%)  19us
+latency(95%)  24us
+latency(99%)  33us2024-04-07 09:38:17.456278378
+duration      2001ms
+commit        279236.8816 tx/s
+execution     279236.8816 tx/s
+25us          268802.5987 tx/s
+50us          8569.2154 tx/s
+100us         1720.1399 tx/s
+>100us        144.9275 tx/s
+latency(50%)  15us
+latency(75%)  20us
+latency(95%)  24us
+latency(99%)  42us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:38:19.696040985
+duration      2000ms
+commit        66905.0000 tx/s
+execution     66905.0000 tx/s
+25us          66806.5000 tx/s
+50us          47.5000 tx/s
+100us         47.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:38:21.723866534
+duration      2000ms
+commit        66599.0000 tx/s
+execution     66599.0000 tx/s
+25us          66357.0000 tx/s
+50us          189.0000 tx/s
+100us         49.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us2024-04-07 09:38:23.753431868
+duration      2000ms
+commit        66952.5000 tx/s
+execution     66952.5000 tx/s
+25us          66711.5000 tx/s
+50us          188.5000 tx/s
+100us         49.0000 tx/s
+>100us        3.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  15us2024-04-07 09:38:25.783270113
+duration      2000ms
+commit        66964.5000 tx/s
+execution     66964.5000 tx/s
+25us          66869.5000 tx/s
+50us          47.0000 tx/s
+100us         44.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:38:27.810223509
+duration      2000ms
+commit        66701.0000 tx/s
+execution     66701.0000 tx/s
+25us          66467.5000 tx/s
+50us          180.0000 tx/s
+100us         49.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:12:9973:16../bench Calvin:12:9973:16 Smallbank:1000000:0 2s2024-04-07 09:38:29.866200962
+duration      2010ms
+commit        298029.8507 tx/s
+execution     298029.8507 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        298029.8507 tx/s
+latency(50%)  312us
+latency(75%)  328us
+latency(95%)  352us
+latency(99%)  418us2024-04-07 09:38:32.179075578
+duration      2009ms
+commit        297987.0582 tx/s
+execution     297987.0582 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        297987.0582 tx/s
+latency(50%)  312us
+latency(75%)  328us
+latency(95%)  352us
+latency(99%)  539us2024-04-07 09:38:34.491561147
+duration      2010ms
+commit        297743.2836 tx/s
+execution     297743.2836 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        297743.2836 tx/s
+latency(50%)  313us
+latency(75%)  329us
+latency(95%)  352us
+latency(99%)  503us2024-04-07 09:38:36.802354119
+duration      2010ms
+commit        297647.7612 tx/s
+execution     297647.7612 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        297647.7612 tx/s
+latency(50%)  313us
+latency(75%)  327us
+latency(95%)  355us
+latency(99%)  516us2024-04-07 09:38:39.113916995
+duration      2009ms
+commit        298464.9079 tx/s
+execution     298464.9079 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        298464.9079 tx/s
+latency(50%)  311us
+latency(75%)  327us
+latency(95%)  352us
+latency(99%)  584us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:12:9973:16:FALSE../bench Aria:12:9973:16:FALSE Smallbank:1000000:0 2s2024-04-07 09:38:41.441546686
+duration      2007ms
+commit        461297.4589 tx/s
+execution     461342.8002 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        461297.4589 tx/s
+latency(50%)  331us
+latency(75%)  350us
+latency(95%)  399us
+latency(99%)  441us2024-04-07 09:38:43.683651257
+duration      2007ms
+commit        460245.1420 tx/s
+execution     460287.4938 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        460245.1420 tx/s
+latency(50%)  333us
+latency(75%)  355us
+latency(95%)  400us
+latency(99%)  438us2024-04-07 09:38:45.923805079
+duration      2007ms
+commit        460532.1375 tx/s
+execution     460568.5102 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        460532.1375 tx/s
+latency(50%)  332us
+latency(75%)  351us
+latency(95%)  402us
+latency(99%)  456us2024-04-07 09:38:48.157421847
+duration      2007ms
+commit        460819.1330 tx/s
+execution     460860.4883 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        460819.1330 tx/s
+latency(50%)  334us
+latency(75%)  355us
+latency(95%)  404us
+latency(99%)  436us2024-04-07 09:38:50.396353264
+duration      2006ms
+commit        462197.4078 tx/s
+execution     462233.3001 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        462197.4078 tx/s
+latency(50%)  330us
+latency(75%)  351us
+latency(95%)  399us
+latency(99%)  455us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:12:9973:16:TRUE../bench Aria:12:9973:16:TRUE Smallbank:1000000:0 2s2024-04-07 09:38:52.649223389
+duration      2007ms
+commit        461106.1286 tx/s
+execution     461121.5745 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        461106.1286 tx/s
+latency(50%)  334us
+latency(75%)  353us
+latency(95%)  402us
+latency(99%)  451us2024-04-07 09:38:54.889392235
+duration      2007ms
+commit        461106.1286 tx/s
+execution     461116.5919 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        461106.1286 tx/s
+latency(50%)  332us
+latency(75%)  353us
+latency(95%)  399us
+latency(99%)  459us2024-04-07 09:38:57.120757476
+duration      2007ms
+commit        460245.1420 tx/s
+execution     460262.0827 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        460245.1420 tx/s
+latency(50%)  331us
+latency(75%)  350us
+latency(95%)  403us
+latency(99%)  500us2024-04-07 09:38:59.356495954
+duration      2007ms
+commit        458618.8341 tx/s
+execution     458633.7818 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        458618.8341 tx/s
+latency(50%)  333us
+latency(75%)  353us
+latency(95%)  402us
+latency(99%)  431us2024-04-07 09:39:01.588206117
+duration      2006ms
+commit        459900.2991 tx/s
+execution     459917.7468 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        459900.2991 tx/s
+latency(50%)  333us
+latency(75%)  353us
+latency(95%)  399us
+latency(99%)  435us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:12:9973../bench Sparkle:12:9973 Smallbank:1000000:0 2s2024-04-07 09:39:03.844088059
+duration      2002ms
+commit        535806.1938 tx/s
+execution     535812.1878 tx/s
+25us          509234.7652 tx/s
+50us          17663.3367 tx/s
+100us         7882.1179 tx/s
+>100us        1025.9740 tx/s
+latency(50%)  18us
+latency(75%)  19us
+latency(95%)  24us
+latency(99%)  71us2024-04-07 09:39:06.210521183
+duration      2002ms
+commit        534160.8392 tx/s
+execution     534167.3327 tx/s
+25us          507856.6434 tx/s
+50us          17506.9930 tx/s
+100us         7799.7003 tx/s
+>100us        997.5025 tx/s
+latency(50%)  17us
+latency(75%)  19us
+latency(95%)  24us
+latency(99%)  67us2024-04-07 09:39:08.603187361
+duration      2002ms
+commit        534637.3626 tx/s
+execution     534643.8561 tx/s
+25us          508187.3127 tx/s
+50us          17592.9071 tx/s
+100us         7841.6583 tx/s
+>100us        1015.4845 tx/s
+latency(50%)  17us
+latency(75%)  19us
+latency(95%)  26us
+latency(99%)  68us2024-04-07 09:39:10.970233279
+duration      2002ms
+commit        533678.3217 tx/s
+execution     533684.3157 tx/s
+25us          506854.6454 tx/s
+50us          17970.0300 tx/s
+100us         7879.6204 tx/s
+>100us        974.0260 tx/s
+latency(50%)  17us
+latency(75%)  19us
+latency(95%)  24us
+latency(99%)  62us2024-04-07 09:39:13.335353740
+duration      2001ms
+commit        534741.6292 tx/s
+execution     534743.6282 tx/s
+25us          508312.3438 tx/s
+50us          17450.7746 tx/s
+100us         8031.9840 tx/s
+>100us        946.5267 tx/s
+latency(50%)  17us
+latency(75%)  19us
+latency(95%)  25us
+latency(99%)  65us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:12:9973:COPYONWRITE../bench Spectrum:12:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:39:15.723772338
+duration      2002ms
+commit        508893.6064 tx/s
+execution     508899.1009 tx/s
+25us          482038.4615 tx/s
+50us          19850.6494 tx/s
+100us         5896.1039 tx/s
+>100us        1108.3916 tx/s
+latency(50%)  18us
+latency(75%)  20us
+latency(95%)  25us
+latency(99%)  62us2024-04-07 09:39:18.079275499
+duration      2003ms
+commit        514297.5537 tx/s
+execution     514303.0454 tx/s
+25us          488111.3330 tx/s
+50us          19428.3575 tx/s
+100us         5690.4643 tx/s
+>100us        1067.3989 tx/s
+latency(50%)  18us
+latency(75%)  20us
+latency(95%)  25us
+latency(99%)  50us2024-04-07 09:39:20.442204685
+duration      2002ms
+commit        514763.2368 tx/s
+execution     514766.7333 tx/s
+25us          488775.2248 tx/s
+50us          19219.7802 tx/s
+100us         5704.2957 tx/s
+>100us        1063.9361 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  27us
+latency(99%)  65us2024-04-07 09:39:22.800292894
+duration      2002ms
+commit        512171.3287 tx/s
+execution     512175.3247 tx/s
+25us          484210.7892 tx/s
+50us          20956.5435 tx/s
+100us         5851.1489 tx/s
+>100us        1152.8472 tx/s
+latency(50%)  18us
+latency(75%)  20us
+latency(95%)  25us
+latency(99%)  67us2024-04-07 09:39:25.163029225
+duration      2002ms
+commit        515852.6474 tx/s
+execution     515858.1419 tx/s
+25us          490020.9790 tx/s
+50us          18903.0969 tx/s
+100us         5839.1608 tx/s
+>100us        1089.4106 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  25us
+latency(99%)  64us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:39:27.538573257
+duration      2000ms
+commit        66809.0000 tx/s
+execution     66809.0000 tx/s
+25us          66575.5000 tx/s
+50us          182.5000 tx/s
+100us         47.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:39:29.572312163
+duration      2000ms
+commit        66819.5000 tx/s
+execution     66819.5000 tx/s
+25us          66705.0000 tx/s
+50us          62.5000 tx/s
+100us         48.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us2024-04-07 09:39:31.593732028
+duration      2000ms
+commit        66911.0000 tx/s
+execution     66911.0000 tx/s
+25us          66815.0000 tx/s
+50us          44.5000 tx/s
+100us         46.5000 tx/s
+>100us        5.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:39:33.629517733
+duration      2000ms
+commit        66973.5000 tx/s
+execution     66973.5000 tx/s
+25us          66841.0000 tx/s
+50us          83.5000 tx/s
+100us         45.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us2024-04-07 09:39:35.659390712
+duration      2000ms
+commit        67377.0000 tx/s
+execution     67377.0000 tx/s
+25us          67278.5000 tx/s
+50us          48.5000 tx/s
+100us         45.5000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:18:9973:11../bench Calvin:18:9973:11 Smallbank:1000000:0 2s2024-04-07 09:39:37.716540275
+duration      2010ms
+commit        419543.2836 tx/s
+execution     419543.2836 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        419543.2836 tx/s
+latency(50%)  232us
+latency(75%)  241us
+latency(95%)  260us
+latency(99%)  311us2024-04-07 09:39:40.143218809
+duration      2011ms
+commit        417562.4068 tx/s
+execution     417562.4068 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        417562.4068 tx/s
+latency(50%)  231us
+latency(75%)  242us
+latency(95%)  260us
+latency(99%)  333us2024-04-07 09:39:42.566257687
+duration      2011ms
+commit        415297.8618 tx/s
+execution     415297.8618 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        415297.8618 tx/s
+latency(50%)  232us
+latency(75%)  243us
+latency(95%)  264us
+latency(99%)  326us2024-04-07 09:39:44.985620486
+duration      2011ms
+commit        417660.8652 tx/s
+execution     417660.8652 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        417660.8652 tx/s
+latency(50%)  231us
+latency(75%)  241us
+latency(95%)  264us
+latency(99%)  359us2024-04-07 09:39:47.412251791
+duration      2011ms
+commit        417857.7822 tx/s
+execution     417857.7822 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        417857.7822 tx/s
+latency(50%)  231us
+latency(75%)  242us
+latency(95%)  263us
+latency(99%)  349us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:18:9973:11:FALSE../bench Aria:18:9973:11:FALSE Smallbank:1000000:0 2s2024-04-07 09:39:49.850049709
+duration      2007ms
+commit        642044.8430 tx/s
+execution     642107.1251 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        642044.8430 tx/s
+latency(50%)  234us
+latency(75%)  255us
+latency(95%)  307us
+latency(99%)  400us2024-04-07 09:39:52.148667126
+duration      2007ms
+commit        646286.9955 tx/s
+execution     646345.2915 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        646286.9955 tx/s
+latency(50%)  234us
+latency(75%)  253us
+latency(95%)  307us
+latency(99%)  448us2024-04-07 09:39:54.440961340
+duration      2008ms
+commit        645274.9004 tx/s
+execution     645339.1434 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        645274.9004 tx/s
+latency(50%)  234us
+latency(75%)  251us
+latency(95%)  299us
+latency(99%)  426us2024-04-07 09:39:56.739622203
+duration      2008ms
+commit        645570.7171 tx/s
+execution     645633.4661 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        645570.7171 tx/s
+latency(50%)  234us
+latency(75%)  252us
+latency(95%)  305us
+latency(99%)  384us2024-04-07 09:39:59.043760474
+duration      2008ms
+commit        644190.2390 tx/s
+execution     644249.0040 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        644190.2390 tx/s
+latency(50%)  235us
+latency(75%)  251us
+latency(95%)  302us
+latency(99%)  414us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:18:9973:11:TRUE../bench Aria:18:9973:11:TRUE Smallbank:1000000:0 2s2024-04-07 09:40:01.358568708
+duration      2009ms
+commit        646629.1687 tx/s
+execution     646658.0388 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        646629.1687 tx/s
+latency(50%)  234us
+latency(75%)  251us
+latency(95%)  303us
+latency(99%)  403us2024-04-07 09:40:03.661924191
+duration      2008ms
+commit        640739.0438 tx/s
+execution     640767.4303 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        640739.0438 tx/s
+latency(50%)  235us
+latency(75%)  253us
+latency(95%)  301us
+latency(99%)  382us2024-04-07 09:40:05.948843054
+duration      2008ms
+commit        646556.7729 tx/s
+execution     646578.1873 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        646556.7729 tx/s
+latency(50%)  233us
+latency(75%)  250us
+latency(95%)  304us
+latency(99%)  376us2024-04-07 09:40:08.236205318
+duration      2008ms
+commit        644288.8446 tx/s
+execution     644311.2550 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        644288.8446 tx/s
+latency(50%)  235us
+latency(75%)  256us
+latency(95%)  301us
+latency(99%)  401us2024-04-07 09:40:10.534539114
+duration      2008ms
+commit        645866.5339 tx/s
+execution     645890.4382 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        645866.5339 tx/s
+latency(50%)  233us
+latency(75%)  251us
+latency(95%)  304us
+latency(99%)  376us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:18:9973../bench Sparkle:18:9973 Smallbank:1000000:0 2s2024-04-07 09:40:12.841438680
+duration      2003ms
+commit        737202.6960 tx/s
+execution     737210.1847 tx/s
+25us          664849.7254 tx/s
+50us          58811.7823 tx/s
+100us         13183.2252 tx/s
+>100us        357.9631 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  34us
+latency(99%)  69us2024-04-07 09:40:15.312112786
+duration      2003ms
+commit        742853.7194 tx/s
+execution     742862.7059 tx/s
+25us          670945.0824 tx/s
+50us          58333.0005 tx/s
+100us         13215.1772 tx/s
+>100us        360.4593 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  34us
+latency(99%)  74us2024-04-07 09:40:17.777660630
+duration      2003ms
+commit        742450.3245 tx/s
+execution     742460.3095 tx/s
+25us          670258.1128 tx/s
+50us          58411.3829 tx/s
+100us         13420.3694 tx/s
+>100us        360.4593 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  33us
+latency(99%)  60us2024-04-07 09:40:20.251366177
+duration      2003ms
+commit        743763.8542 tx/s
+execution     743770.3445 tx/s
+25us          671765.3520 tx/s
+50us          58067.3989 tx/s
+100us         13597.6036 tx/s
+>100us        333.4998 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  35us
+latency(99%)  71us2024-04-07 09:40:22.719287635
+duration      2003ms
+commit        740558.6620 tx/s
+execution     740570.1448 tx/s
+25us          668446.8298 tx/s
+50us          57990.0150 tx/s
+100us         13705.4418 tx/s
+>100us        416.3754 tx/s
+latency(50%)  19us
+latency(75%)  20us
+latency(95%)  34us
+latency(99%)  62us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:18:9973:COPYONWRITE../bench Spectrum:18:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:40:25.213138337
+duration      2003ms
+commit        721129.8053 tx/s
+execution     721141.2881 tx/s
+25us          650992.0120 tx/s
+50us          60322.5162 tx/s
+100us         9448.8268 tx/s
+>100us        366.4503 tx/s
+latency(50%)  20us
+latency(75%)  21us
+latency(95%)  34us
+latency(99%)  67us2024-04-07 09:40:27.674537955
+duration      2003ms
+commit        717305.5417 tx/s
+execution     717311.5327 tx/s
+25us          646443.8342 tx/s
+50us          60810.7838 tx/s
+100us         9691.9621 tx/s
+>100us        358.9616 tx/s
+latency(50%)  20us
+latency(75%)  21us
+latency(95%)  34us
+latency(99%)  67us2024-04-07 09:40:30.141874970
+duration      2003ms
+commit        722448.8268 tx/s
+execution     722459.3110 tx/s
+25us          653557.6635 tx/s
+50us          59429.3560 tx/s
+100us         9115.3270 tx/s
+>100us        346.4803 tx/s
+latency(50%)  20us
+latency(75%)  21us
+latency(95%)  34us
+latency(99%)  62us2024-04-07 09:40:32.599705400
+duration      2004ms
+commit        721426.1477 tx/s
+execution     721436.1277 tx/s
+25us          650947.6048 tx/s
+50us          60544.9102 tx/s
+100us         9564.8703 tx/s
+>100us        368.7625 tx/s
+latency(50%)  20us
+latency(75%)  21us
+latency(95%)  34us
+latency(99%)  67us2024-04-07 09:40:35.069215406
+duration      2003ms
+commit        721256.6151 tx/s
+execution     721261.6076 tx/s
+25us          650724.4134 tx/s
+50us          60384.4234 tx/s
+100us         9774.8377 tx/s
+>100us        372.9406 tx/s
+latency(50%)  20us
+latency(75%)  21us
+latency(95%)  34us
+latency(99%)  72us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:40:37.546394979
+duration      2000ms
+commit        66979.0000 tx/s
+execution     66979.0000 tx/s
+25us          66729.0000 tx/s
+50us          199.5000 tx/s
+100us         46.0000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us2024-04-07 09:40:39.580806119
+duration      2000ms
+commit        66846.5000 tx/s
+execution     66846.5000 tx/s
+25us          66638.5000 tx/s
+50us          153.5000 tx/s
+100us         50.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:40:41.602137288
+duration      2000ms
+commit        66686.0000 tx/s
+execution     66686.0000 tx/s
+25us          66550.5000 tx/s
+50us          79.5000 tx/s
+100us         51.5000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  18us2024-04-07 09:40:43.631459800
+duration      2000ms
+commit        66871.5000 tx/s
+execution     66871.5000 tx/s
+25us          66755.0000 tx/s
+50us          64.0000 tx/s
+100us         48.0000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  20us2024-04-07 09:40:45.660280812
+duration      2000ms
+commit        67183.0000 tx/s
+execution     67183.0000 tx/s
+25us          67124.0000 tx/s
+50us          9.5000 tx/s
+100us         45.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:24:9973:8../bench Calvin:24:9973:8 Smallbank:1000000:0 2s2024-04-07 09:40:47.717562433
+duration      2011ms
+commit        518237.6927 tx/s
+execution     518237.6927 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        518237.6927 tx/s
+latency(50%)  183us
+latency(75%)  193us
+latency(95%)  213us
+latency(99%)  270us2024-04-07 09:40:50.220295162
+duration      2011ms
+commit        517473.8936 tx/s
+execution     517473.8936 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        517473.8936 tx/s
+latency(50%)  184us
+latency(75%)  192us
+latency(95%)  210us
+latency(99%)  323us2024-04-07 09:40:52.728532868
+duration      2012ms
+commit        518648.1113 tx/s
+execution     518648.1113 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        518648.1113 tx/s
+latency(50%)  183us
+latency(75%)  193us
+latency(95%)  211us
+latency(99%)  277us2024-04-07 09:40:55.226071094
+duration      2012ms
+commit        517884.6918 tx/s
+execution     517884.6918 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        517884.6918 tx/s
+latency(50%)  183us
+latency(75%)  191us
+latency(95%)  206us
+latency(99%)  327us2024-04-07 09:40:57.735788572
+duration      2011ms
+commit        517282.9438 tx/s
+execution     517282.9438 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        517282.9438 tx/s
+latency(50%)  183us
+latency(75%)  193us
+latency(95%)  211us
+latency(99%)  292us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:24:9973:8:FALSE../bench Aria:24:9973:8:FALSE Smallbank:1000000:0 2s2024-04-07 09:41:00.252971630
+duration      2009ms
+commit        777079.1439 tx/s
+execution     777158.7855 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        777079.1439 tx/s
+latency(50%)  174us
+latency(75%)  191us
+latency(95%)  241us
+latency(99%)  289us2024-04-07 09:41:02.595629608
+duration      2009ms
+commit        769720.2588 tx/s
+execution     769787.4564 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        769720.2588 tx/s
+latency(50%)  176us
+latency(75%)  195us
+latency(95%)  245us
+latency(99%)  329us2024-04-07 09:41:04.937058844
+duration      2011ms
+commit        773919.4431 tx/s
+execution     773989.5574 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        773919.4431 tx/s
+latency(50%)  175us
+latency(75%)  191us
+latency(95%)  239us
+latency(99%)  350us2024-04-07 09:41:07.278784807
+duration      2010ms
+commit        772202.9851 tx/s
+execution     772268.6567 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        772202.9851 tx/s
+latency(50%)  175us
+latency(75%)  192us
+latency(95%)  242us
+latency(99%)  277us2024-04-07 09:41:09.612068703
+duration      2009ms
+commit        774116.4759 tx/s
+execution     774199.6018 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        774116.4759 tx/s
+latency(50%)  175us
+latency(75%)  190us
+latency(95%)  245us
+latency(99%)  291us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:24:9973:8:TRUE../bench Aria:24:9973:8:TRUE Smallbank:1000000:0 2s2024-04-07 09:41:11.973152674
+duration      2010ms
+commit        777552.2388 tx/s
+execution     777580.5970 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        777552.2388 tx/s
+latency(50%)  176us
+latency(75%)  195us
+latency(95%)  244us
+latency(99%)  281us2024-04-07 09:41:14.297502245
+duration      2009ms
+commit        774116.4759 tx/s
+execution     774143.3549 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        774116.4759 tx/s
+latency(50%)  175us
+latency(75%)  192us
+latency(95%)  246us
+latency(99%)  289us2024-04-07 09:41:16.633983905
+duration      2010ms
+commit        769910.4478 tx/s
+execution     769940.7960 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        769910.4478 tx/s
+latency(50%)  175us
+latency(75%)  191us
+latency(95%)  250us
+latency(99%)  317us2024-04-07 09:41:18.969340995
+duration      2010ms
+commit        776692.5373 tx/s
+execution     776729.8507 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        776692.5373 tx/s
+latency(50%)  174us
+latency(75%)  190us
+latency(95%)  243us
+latency(99%)  287us2024-04-07 09:41:21.308059148
+duration      2010ms
+commit        775737.3134 tx/s
+execution     775763.6816 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        775737.3134 tx/s
+latency(50%)  174us
+latency(75%)  191us
+latency(95%)  242us
+latency(99%)  280us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:24:9973../bench Sparkle:24:9973 Smallbank:1000000:0 2s2024-04-07 09:41:23.654421163
+duration      2005ms
+commit        930049.8753 tx/s
+execution     930062.3441 tx/s
+25us          806332.6683 tx/s
+50us          104314.2145 tx/s
+100us         18938.1546 tx/s
+>100us        464.8379 tx/s
+latency(50%)  19us
+latency(75%)  21us
+latency(95%)  36us
+latency(99%)  65us2024-04-07 09:41:26.197778636
+duration      2005ms
+commit        928472.8180 tx/s
+execution     928489.7756 tx/s
+25us          805517.7057 tx/s
+50us          102898.7531 tx/s
+100us         19420.9476 tx/s
+>100us        635.4115 tx/s
+latency(50%)  19us
+latency(75%)  21us
+latency(95%)  37us
+latency(99%)  68us2024-04-07 09:41:28.741989338
+duration      2005ms
+commit        934253.8653 tx/s
+execution     934267.8304 tx/s
+25us          811711.2219 tx/s
+50us          102583.0424 tx/s
+100us         19457.3566 tx/s
+>100us        502.2444 tx/s
+latency(50%)  19us
+latency(75%)  21us
+latency(95%)  36us
+latency(99%)  74us2024-04-07 09:41:31.293769213
+duration      2004ms
+commit        932831.3373 tx/s
+execution     932848.8024 tx/s
+25us          811261.4770 tx/s
+50us          102032.4351 tx/s
+100us         18840.8184 tx/s
+>100us        696.6068 tx/s
+latency(50%)  19us
+latency(75%)  21us
+latency(95%)  35us
+latency(99%)  69us2024-04-07 09:41:33.839449854
+duration      2005ms
+commit        929779.0524 tx/s
+execution     929795.0125 tx/s
+25us          807862.8429 tx/s
+50us          101717.7057 tx/s
+100us         19655.3616 tx/s
+>100us        543.1421 tx/s
+latency(50%)  19us
+latency(75%)  21us
+latency(95%)  37us
+latency(99%)  75us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:24:9973:COPYONWRITE../bench Spectrum:24:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:41:36.409940907
+duration      2004ms
+commit        908880.2395 tx/s
+execution     908894.7106 tx/s
+25us          784502.9940 tx/s
+50us          110689.1218 tx/s
+100us         13128.2435 tx/s
+>100us        559.8802 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  35us
+latency(99%)  63us2024-04-07 09:41:38.952718402
+duration      2005ms
+commit        907289.7756 tx/s
+execution     907304.7382 tx/s
+25us          782071.3217 tx/s
+50us          111286.2843 tx/s
+100us         13366.5835 tx/s
+>100us        565.5860 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  37us
+latency(99%)  65us2024-04-07 09:41:41.506204179
+duration      2004ms
+commit        900712.0758 tx/s
+execution     900722.0559 tx/s
+25us          773300.3992 tx/s
+50us          113068.3633 tx/s
+100us         13733.5329 tx/s
+>100us        609.7804 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  38us
+latency(99%)  74us2024-04-07 09:41:44.045001522
+duration      2006ms
+commit        912126.6201 tx/s
+execution     912141.0768 tx/s
+25us          789677.4676 tx/s
+50us          108798.6042 tx/s
+100us         13030.9073 tx/s
+>100us        619.6411 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  37us
+latency(99%)  69us2024-04-07 09:41:46.589826922
+duration      2004ms
+commit        901253.9920 tx/s
+execution     901269.4611 tx/s
+25us          775130.2395 tx/s
+50us          111782.4351 tx/s
+100us         13759.9800 tx/s
+>100us        581.3373 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  37us
+latency(99%)  71us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:41:49.149798838
+duration      2000ms
+commit        67006.5000 tx/s
+execution     67006.5000 tx/s
+25us          66762.0000 tx/s
+50us          192.0000 tx/s
+100us         48.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:41:51.179480685
+duration      2000ms
+commit        66946.0000 tx/s
+execution     66946.0000 tx/s
+25us          66849.0000 tx/s
+50us          48.5000 tx/s
+100us         44.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:41:53.204022975
+duration      2000ms
+commit        66477.5000 tx/s
+execution     66477.5000 tx/s
+25us          66264.5000 tx/s
+50us          159.0000 tx/s
+100us         49.0000 tx/s
+>100us        5.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:41:55.232118339
+duration      2000ms
+commit        67162.5000 tx/s
+execution     67162.5000 tx/s
+25us          67110.5000 tx/s
+50us          8.0000 tx/s
+100us         40.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:41:57.253344677
+duration      2000ms
+commit        66600.5000 tx/s
+execution     66600.5000 tx/s
+25us          66456.5000 tx/s
+50us          90.0000 tx/s
+100us         50.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:30:9973:6../bench Calvin:30:9973:6 Smallbank:1000000:0 2s2024-04-07 09:41:59.315155213
+duration      2013ms
+commit        561907.6006 tx/s
+execution     561907.6006 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        561907.6006 tx/s
+latency(50%)  161us
+latency(75%)  170us
+latency(95%)  188us
+latency(99%)  272us2024-04-07 09:42:01.860986183
+duration      2012ms
+commit        567912.5249 tx/s
+execution     567912.5249 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        567912.5249 tx/s
+latency(50%)  161us
+latency(75%)  169us
+latency(95%)  187us
+latency(99%)  242us2024-04-07 09:42:04.406547364
+duration      2013ms
+commit        565216.0954 tx/s
+execution     565216.0954 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        565216.0954 tx/s
+latency(50%)  161us
+latency(75%)  169us
+latency(95%)  186us
+latency(99%)  264us2024-04-07 09:42:06.953441014
+duration      2013ms
+commit        567809.2399 tx/s
+execution     567809.2399 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        567809.2399 tx/s
+latency(50%)  160us
+latency(75%)  169us
+latency(95%)  185us
+latency(99%)  239us2024-04-07 09:42:09.498193659
+duration      2013ms
+commit        565305.5142 tx/s
+execution     565305.5142 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        565305.5142 tx/s
+latency(50%)  160us
+latency(75%)  169us
+latency(95%)  187us
+latency(99%)  242us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:30:9973:6:FALSE../bench Aria:30:9973:6:FALSE Smallbank:1000000:0 2s2024-04-07 09:42:12.070023571
+duration      2011ms
+commit        822217.8021 tx/s
+execution     822294.8782 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         141.2233 tx/s
+>100us        822076.5788 tx/s
+latency(50%)  144us
+latency(75%)  161us
+latency(95%)  218us
+latency(99%)  340us2024-04-07 09:42:14.425232281
+duration      2012ms
+commit        825119.2843 tx/s
+execution     825191.3519 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         157.5547 tx/s
+>100us        824961.7296 tx/s
+latency(50%)  144us
+latency(75%)  160us
+latency(95%)  214us
+latency(99%)  276us2024-04-07 09:42:16.779896277
+duration      2011ms
+commit        821501.7404 tx/s
+execution     821567.8767 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         159.6221 tx/s
+>100us        821342.1183 tx/s
+latency(50%)  145us
+latency(75%)  160us
+latency(95%)  219us
+latency(99%)  305us2024-04-07 09:42:19.133333617
+duration      2011ms
+commit        822038.7867 tx/s
+execution     822111.3874 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         119.3436 tx/s
+>100us        821919.4431 tx/s
+latency(50%)  144us
+latency(75%)  161us
+latency(95%)  214us
+latency(99%)  307us2024-04-07 09:42:21.487798548
+duration      2012ms
+commit        815725.6461 tx/s
+execution     815803.6779 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         198.8072 tx/s
+>100us        815526.8390 tx/s
+latency(50%)  145us
+latency(75%)  162us
+latency(95%)  218us
+latency(99%)  357us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:30:9973:6:TRUE../bench Aria:30:9973:6:TRUE Smallbank:1000000:0 2s2024-04-07 09:42:23.868918101
+duration      2011ms
+commit        818279.4630 tx/s
+execution     818307.3098 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         117.3545 tx/s
+>100us        818162.1084 tx/s
+latency(50%)  146us
+latency(75%)  164us
+latency(95%)  218us
+latency(99%)  343us2024-04-07 09:42:26.213284299
+duration      2011ms
+commit        826782.6952 tx/s
+execution     826814.5201 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         151.6658 tx/s
+>100us        826631.0293 tx/s
+latency(50%)  143us
+latency(75%)  157us
+latency(95%)  215us
+latency(99%)  337us2024-04-07 09:42:28.565183266
+duration      2011ms
+commit        822844.3560 tx/s
+execution     822871.2084 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         126.8026 tx/s
+>100us        822717.5535 tx/s
+latency(50%)  144us
+latency(75%)  158us
+latency(95%)  212us
+latency(99%)  354us2024-04-07 09:42:30.912063259
+duration      2011ms
+commit        826693.1875 tx/s
+execution     826722.5261 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         154.1522 tx/s
+>100us        826539.0353 tx/s
+latency(50%)  144us
+latency(75%)  158us
+latency(95%)  219us
+latency(99%)  324us2024-04-07 09:42:33.261573203
+duration      2011ms
+commit        822754.8483 tx/s
+execution     822786.6733 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         137.2452 tx/s
+>100us        822617.6032 tx/s
+latency(50%)  145us
+latency(75%)  163us
+latency(95%)  225us
+latency(99%)  359us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:30:9973../bench Sparkle:30:9973 Smallbank:1000000:0 2s2024-04-07 09:42:35.622932076
+duration      2006ms
+commit        1086278.6640 tx/s
+execution     1086296.6102 tx/s
+25us          912245.7627 tx/s
+50us          142282.6520 tx/s
+100us         29457.6271 tx/s
+>100us        2292.6221 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  39us
+latency(99%)  78us2024-04-07 09:42:38.230276687
+duration      2005ms
+commit        1090190.5237 tx/s
+execution     1090210.4738 tx/s
+25us          919093.7656 tx/s
+50us          140221.9451 tx/s
+100us         28645.3865 tx/s
+>100us        2229.4264 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  38us
+latency(99%)  72us2024-04-07 09:42:40.838436568
+duration      2005ms
+commit        1095533.1671 tx/s
+execution     1095551.1222 tx/s
+25us          925923.6908 tx/s
+50us          138053.3666 tx/s
+100us         29119.2020 tx/s
+>100us        2436.9077 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  41us
+latency(99%)  78us2024-04-07 09:42:43.451462456
+duration      2007ms
+commit        1087238.1664 tx/s
+execution     1087255.1071 tx/s
+25us          913544.0957 tx/s
+50us          142383.6572 tx/s
+100us         29101.6442 tx/s
+>100us        2208.7693 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  39us
+latency(99%)  73us2024-04-07 09:42:46.054205824
+duration      2006ms
+commit        1088645.0648 tx/s
+execution     1088666.5005 tx/s
+25us          917070.2891 tx/s
+50us          140504.9850 tx/s
+100us         28879.3619 tx/s
+>100us        2190.4287 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  40us
+latency(99%)  80us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:30:9973:COPYONWRITE../bench Spectrum:30:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:42:48.680368606
+duration      2008ms
+commit        1079627.4900 tx/s
+execution     1079642.9283 tx/s
+25us          909190.2390 tx/s
+50us          147095.1195 tx/s
+100us         20792.8287 tx/s
+>100us        2549.3028 tx/s
+latency(50%)  21us
+latency(75%)  22us
+latency(95%)  37us
+latency(99%)  77us2024-04-07 09:42:51.289449117
+duration      2006ms
+commit        1068059.8205 tx/s
+execution     1068076.2712 tx/s
+25us          891623.6291 tx/s
+50us          152241.2762 tx/s
+100us         21838.9831 tx/s
+>100us        2355.9322 tx/s
+latency(50%)  21us
+latency(75%)  22us
+latency(95%)  39us
+latency(99%)  76us2024-04-07 09:42:53.898759556
+duration      2005ms
+commit        1069521.6958 tx/s
+execution     1069538.1546 tx/s
+25us          893321.6958 tx/s
+50us          152618.9526 tx/s
+100us         21460.8479 tx/s
+>100us        2120.1995 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  40us
+latency(99%)  76us2024-04-07 09:42:56.503878754
+duration      2005ms
+commit        1074114.7132 tx/s
+execution     1074132.6683 tx/s
+25us          903683.7905 tx/s
+50us          147574.5636 tx/s
+100us         20470.3242 tx/s
+>100us        2386.0349 tx/s
+latency(50%)  21us
+latency(75%)  22us
+latency(95%)  39us
+latency(99%)  74us2024-04-07 09:42:59.125090337
+duration      2006ms
+commit        1078378.3649 tx/s
+execution     1078390.8275 tx/s
+25us          906298.6042 tx/s
+50us          148455.6331 tx/s
+100us         21172.9811 tx/s
+>100us        2451.1466 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  38us
+latency(99%)  79us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:43:01.754876168
+duration      2000ms
+commit        66774.0000 tx/s
+execution     66774.0000 tx/s
+25us          66536.5000 tx/s
+50us          184.0000 tx/s
+100us         49.0000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  17us2024-04-07 09:43:03.786507560
+duration      2000ms
+commit        67068.0000 tx/s
+execution     67068.0000 tx/s
+25us          67013.5000 tx/s
+50us          8.0000 tx/s
+100us         42.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:43:05.812438888
+duration      2000ms
+commit        67092.0000 tx/s
+execution     67092.0000 tx/s
+25us          66897.5000 tx/s
+50us          149.5000 tx/s
+100us         40.5000 tx/s
+>100us        4.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:43:07.838749675
+duration      2000ms
+commit        67062.5000 tx/s
+execution     67062.5000 tx/s
+25us          67002.5000 tx/s
+50us          11.0000 tx/s
+100us         45.5000 tx/s
+>100us        3.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:43:09.868678889
+duration      2000ms
+commit        67205.0000 tx/s
+execution     67205.0000 tx/s
+25us          67000.0000 tx/s
+50us          153.0000 tx/s
+100us         48.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Calvin:36:9973:5../bench Calvin:36:9973:5 Smallbank:1000000:0 2s2024-04-07 09:43:11.933618160
+duration      2015ms
+commit        588684.8635 tx/s
+execution     588684.8635 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        588684.8635 tx/s
+latency(50%)  156us
+latency(75%)  165us
+latency(95%)  181us
+latency(99%)  203us2024-04-07 09:43:14.507308233
+duration      2015ms
+commit        586451.6129 tx/s
+execution     586451.6129 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        586451.6129 tx/s
+latency(50%)  156us
+latency(75%)  164us
+latency(95%)  178us
+latency(99%)  196us2024-04-07 09:43:17.075725658
+duration      2015ms
+commit        584486.3524 tx/s
+execution     584486.3524 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        584486.3524 tx/s
+latency(50%)  156us
+latency(75%)  165us
+latency(95%)  178us
+latency(99%)  217us2024-04-07 09:43:19.646312791
+duration      2015ms
+commit        585379.6526 tx/s
+execution     585379.6526 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        585379.6526 tx/s
+latency(50%)  156us
+latency(75%)  164us
+latency(95%)  177us
+latency(99%)  215us2024-04-07 09:43:22.214058292
+duration      2015ms
+commit        571265.5087 tx/s
+execution     571265.5087 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        571265.5087 tx/s
+latency(50%)  156us
+latency(75%)  165us
+latency(95%)  189us
+latency(99%)  287us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:36:9973:5:FALSE../bench Aria:36:9973:5:FALSE Smallbank:1000000:0 2s2024-04-07 09:43:24.798046454
+duration      2012ms
+commit        839075.5467 tx/s
+execution     839154.5726 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4085.9841 tx/s
+>100us        834989.5626 tx/s
+latency(50%)  134us
+latency(75%)  150us
+latency(95%)  209us
+latency(99%)  372us2024-04-07 09:43:27.170085289
+duration      2013ms
+commit        834366.6170 tx/s
+execution     834439.6423 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4291.6046 tx/s
+>100us        830075.0124 tx/s
+latency(50%)  135us
+latency(75%)  150us
+latency(95%)  208us
+latency(99%)  428us2024-04-07 09:43:29.533362055
+duration      2013ms
+commit        837675.1118 tx/s
+execution     837749.1307 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         3935.4198 tx/s
+>100us        833739.6920 tx/s
+latency(50%)  134us
+latency(75%)  150us
+latency(95%)  209us
+latency(99%)  528us2024-04-07 09:43:31.889598492
+duration      2013ms
+commit        832935.9165 tx/s
+execution     833000.9935 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4458.0229 tx/s
+>100us        828477.8937 tx/s
+latency(50%)  133us
+latency(75%)  148us
+latency(95%)  209us
+latency(99%)  360us2024-04-07 09:43:34.270624473
+duration      2013ms
+commit        833651.2668 tx/s
+execution     833724.7889 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4304.5206 tx/s
+>100us        829346.7462 tx/s
+latency(50%)  134us
+latency(75%)  147us
+latency(95%)  207us
+latency(99%)  440us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Aria:36:9973:5:TRUE../bench Aria:36:9973:5:TRUE Smallbank:1000000:0 2s2024-04-07 09:43:36.655380284
+duration      2013ms
+commit        836691.5052 tx/s
+execution     836722.3050 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4012.9160 tx/s
+>100us        832678.5892 tx/s
+latency(50%)  134us
+latency(75%)  150us
+latency(95%)  210us
+latency(99%)  443us2024-04-07 09:43:39.012348891
+duration      2014ms
+commit        836007.9444 tx/s
+execution     836038.7289 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         3917.5770 tx/s
+>100us        832090.3674 tx/s
+latency(50%)  135us
+latency(75%)  151us
+latency(95%)  205us
+latency(99%)  432us2024-04-07 09:43:41.370729018
+duration      2013ms
+commit        836512.6677 tx/s
+execution     836540.4868 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         3861.8977 tx/s
+>100us        832650.7700 tx/s
+latency(50%)  134us
+latency(75%)  147us
+latency(95%)  213us
+latency(99%)  415us2024-04-07 09:43:43.728066440
+duration      2013ms
+commit        830968.7034 tx/s
+execution     830996.5226 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         4076.5027 tx/s
+>100us        826892.2007 tx/s
+latency(50%)  133us
+latency(75%)  149us
+latency(95%)  208us
+latency(99%)  326us2024-04-07 09:43:46.083644790
+duration      2013ms
+commit        843308.4948 tx/s
+execution     843336.8107 tx/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         3961.7486 tx/s
+>100us        839346.7462 tx/s
+latency(50%)  133us
+latency(75%)  147us
+latency(95%)  209us
+latency(99%)  344us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Sparkle:36:9973../bench Sparkle:36:9973 Smallbank:1000000:0 2s2024-04-07 09:43:48.452052230
+duration      2007ms
+commit        1279325.8595 tx/s
+execution     1279350.7723 tx/s
+25us          1075828.1016 tx/s
+50us          164214.7484 tx/s
+100us         36328.3508 tx/s
+>100us        2954.6587 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  42us
+latency(99%)  78us2024-04-07 09:43:51.132394787
+duration      2006ms
+commit        1257034.8953 tx/s
+execution     1257060.8175 tx/s
+25us          1043844.4666 tx/s
+50us          174977.5673 tx/s
+100us         35576.2712 tx/s
+>100us        2636.5902 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  39us
+latency(99%)  78us2024-04-07 09:43:53.796664190
+duration      2006ms
+commit        1258458.6241 tx/s
+execution     1258483.5494 tx/s
+25us          1045127.6171 tx/s
+50us          173965.6032 tx/s
+100us         36811.5653 tx/s
+>100us        2553.8385 tx/s
+latency(50%)  21us
+latency(75%)  22us
+latency(95%)  41us
+latency(99%)  80us2024-04-07 09:43:56.464170009
+duration      2006ms
+commit        1267516.4506 tx/s
+execution     1267540.3789 tx/s
+25us          1057721.8345 tx/s
+50us          170591.7248 tx/s
+100us         36510.9671 tx/s
+>100us        2691.9242 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  40us
+latency(99%)  77us2024-04-07 09:43:59.127875785
+duration      2007ms
+commit        1266765.8196 tx/s
+execution     1266788.7394 tx/s
+25us          1058488.7892 tx/s
+50us          169186.8460 tx/s
+100us         36510.2143 tx/s
+>100us        2579.9701 tx/s
+latency(50%)  20us
+latency(75%)  22us
+latency(95%)  40us
+latency(99%)  75us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Spectrum:36:9973:COPYONWRITE../bench Spectrum:36:9973:COPYONWRITE Smallbank:1000000:0 2s2024-04-07 09:44:01.820933402
+duration      2006ms
+commit        1244871.8843 tx/s
+execution     1244891.8245 tx/s
+25us          1031011.4656 tx/s
+50us          184386.3410 tx/s
+100us         26727.8166 tx/s
+>100us        2746.2612 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  41us
+latency(99%)  81us2024-04-07 09:44:04.483080712
+duration      2006ms
+commit        1248616.1515 tx/s
+execution     1248640.0798 tx/s
+25us          1034847.9561 tx/s
+50us          184950.1496 tx/s
+100us         26323.0309 tx/s
+>100us        2495.0150 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  40us
+latency(99%)  81us2024-04-07 09:44:07.148660008
+duration      2006ms
+commit        1251423.7288 tx/s
+execution     1251445.6630 tx/s
+25us          1038224.8255 tx/s
+50us          183592.2233 tx/s
+100us         26737.2881 tx/s
+>100us        2869.3918 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  41us
+latency(99%)  85us2024-04-07 09:44:09.812583843
+duration      2006ms
+commit        1248426.7198 tx/s
+execution     1248449.1525 tx/s
+25us          1036817.0489 tx/s
+50us          184063.3101 tx/s
+100us         24914.7557 tx/s
+>100us        2631.6052 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  41us
+latency(99%)  82us2024-04-07 09:44:12.490076323
+duration      2006ms
+commit        1258767.6969 tx/s
+execution     1258788.1356 tx/s
+25us          1050786.6401 tx/s
+50us          178802.5922 tx/s
+100us         26415.2542 tx/s
+>100us        2763.2104 tx/s
+latency(50%)  21us
+latency(75%)  23us
+latency(95%)  41us
+latency(99%)  77us#COMMIT-2f268fca9f260c24827833e8fa32313f5a96d394 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 Smallbank:1000000:0 2s2024-04-07 09:44:15.164496885
+duration      2000ms
+commit        67071.0000 tx/s
+execution     67071.0000 tx/s
+25us          66866.0000 tx/s
+50us          154.0000 tx/s
+100us         47.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:44:17.191676039
+duration      2000ms
+commit        67059.0000 tx/s
+execution     67059.0000 tx/s
+25us          67002.0000 tx/s
+50us          8.0000 tx/s
+100us         45.5000 tx/s
+>100us        3.5000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:44:19.214376047
+duration      2000ms
+commit        67204.5000 tx/s
+execution     67204.5000 tx/s
+25us          67017.0000 tx/s
+50us          134.0000 tx/s
+100us         48.5000 tx/s
+>100us        5.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:44:21.240392215
+duration      2000ms
+commit        66958.5000 tx/s
+execution     66958.5000 tx/s
+25us          66750.0000 tx/s
+50us          157.0000 tx/s
+100us         47.5000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us2024-04-07 09:44:23.268090674
+duration      2000ms
+commit        66499.0000 tx/s
+execution     66499.0000 tx/s
+25us          66441.5000 tx/s
+50us          7.5000 tx/s
+100us         46.0000 tx/s
+>100us        4.0000 tx/s
+latency(50%)  10us
+latency(75%)  10us
+latency(95%)  15us
+latency(99%)  16us
