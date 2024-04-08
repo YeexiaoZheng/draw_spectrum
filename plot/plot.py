@@ -203,7 +203,7 @@ class MyPlot:
                 'W': 10000,
                 'M': 1000000,
             }
-            if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
+            # if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
             ax.set_yticks(
                 range(0, max_y_data, step), 
                 [str(x // suffix_map[suffix]) + suffix if x >= suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]

@@ -1,5 +1,5 @@
 ##### run by cmd #####
-HELP = 'python draw_threads_tps.py -w workload -c contention -t threads'
+HELP = 'python draw_latency.py -w workload -c contention -t threads'
 ##### run by cmd #####
 
 X = "threads"
