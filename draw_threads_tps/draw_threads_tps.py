@@ -14,13 +14,14 @@ import sys
 sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
+from Schemas import schemas
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
 parser.add_argument("-c", "--contention", type=str, required=True, help="contention: uniform or skewed")
 args = parser.parse_args()
-assert args.workload in ['smallbank', 'ycsb']
+assert args.workload in ['smallbank', 'ycsb', 'tpcc']
 workload = args.workload
 assert args.contention in ['uniform', 'skewed']
 contention = args.contention
@@ -29,18 +30,8 @@ savepath = f'threads-tps-{workload}-{contention}.pdf'
 
 #################### 数据准备 ####################
 recs = pd.read_csv(f'./data/{workload}_{contention}.csv')
-schemas = recs['protocol'].unique()
-print(schemas)
-
-schemas = [
-    # 里面是 (协议名称, 颜色(RGB格式)的元组)
-    ('Spectrum'         ,       '#A00000'),
-    ('Sparkle'          ,       '#B06030'),
-    ('Aria'             ,       '#B0B030'),
-    ('AriaFB'           ,       '#30B060'),
-    ('Calvin'           ,       '#3060B0'),
-    ('Serial'           ,       '#6030B0')
-]
+inner_schemas = recs['protocol'].unique()
+print(inner_schemas)
 
 #################### 画图 ####################
 p = MyPlot(1, 1)
@@ -59,22 +50,12 @@ for idx, (schema, color) in enumerate(schemas):
         # marker=['v', 's', 'o'][idx]
     )
 
-# schema, color = ('Spectrum', '#C04848')
-# records = recs[recs['protocol'] == schema]
-# p.plot(
-#     ax,
-#     xdata=records[X],
-#     ydata=records[Y],
-#     color=color, legend_label=schema,
-#     marker='o'
-# )
-
 print(type(recs['threads'].unique()), recs['threads'].unique())
 # 设置X轴标签
 ax.set_xticks([int(t) for t in recs['threads'].unique()])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='K')
+p.format_yticks(ax, suffix='K', step=140000 if workload == 'smallbank' and contention == 'skewed' else None)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
