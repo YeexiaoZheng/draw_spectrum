@@ -31,10 +31,10 @@ if workload == 'tpcc':
 
 threads = args.threads
 
-savepath = f'-skew-op-{workload}-{threads}.pdf'
+savepath = f'skew-op-{workload}-{threads}.pdf'
 
 #################### 数据准备 ####################
-recs = pd.read_csv(f'./data/_{workload}_{threads}.csv')
+recs = pd.read_csv(f'./data/{workload}_{threads}.csv')
 # recs = recs[recs['zipf'] >= 0.9].reset_index(drop=True)
 # recs = recs[recs['zipf'] <= 1.3].reset_index(drop=True)
 inner_schemas = recs['protocol'].unique()
