@@ -64,7 +64,12 @@ p.format_yticks(ax, suffix='K', step=step)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
-p.set_labels(ax, XLABEL, YLABEL, labelpad=6)
+p.set_labels(ax, XLABEL, YLABEL, labelpad=None)
+# ax.set_ylabel(YLABEL, labelpad=-10)
+box1: plt.Bbox = ax.get_window_extent()
+box2: plt.Bbox = ax.get_tightbbox()
+
+
 
 # 设置图例
 p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25))

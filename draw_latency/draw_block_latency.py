@@ -68,7 +68,7 @@ ax_bottom.plot([0, 1], [1, 1], transform=ax_bottom.transAxes, **kwargs)
 for idx, (schema, color) in enumerate(schemas):
     # if schema in ['Serial', 'Calvin']: continue
     records = recs[recs['protocol'] == schema]
-    # print(records[Y])
+    # print(schema, '\t', (1000000 / records[Y] * 100).max())
     p.bar(
         ax_bottom,
         xdata=[schema],

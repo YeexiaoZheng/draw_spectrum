@@ -178,7 +178,7 @@ class MyPlot:
         ax: plt.Axes,
         xlabel: str=None,
         ylabel: str=None,
-        labelpad: int=None,
+        labelpad: float=None,
         fontdict: dict=None,
     ):
         if xlabel: ax.set_xlabel(xlabel, labelpad=labelpad, fontdict=fontdict if fontdict else self.label_config_dic)

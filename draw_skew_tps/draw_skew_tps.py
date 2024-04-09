@@ -64,7 +64,7 @@ print(type(recs['zipf'].unique()), recs['zipf'].unique())
 # ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='M' if workload == 'smallbank' else 'K')
+p.format_yticks(ax, suffix='M' if workload == 'smallbank' else 'K', step=14000 if workload == 'tpcc' else None)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
