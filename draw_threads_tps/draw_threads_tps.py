@@ -23,7 +23,7 @@ parser.add_argument("-c", "--contention", type=str, required=True, help="content
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc']
 workload = args.workload
-assert args.contention in ['uniform', 'skewed', '5orderlines', '10orderlines', '20orderlines']
+assert args.contention in ['uniform', 'skewed', '5orderlines', '10orderlines', '20orderlines', 'compare']
 contention = args.contention
 
 savepath = f'threads-tps-{workload}-{contention}.pdf'
@@ -39,6 +39,19 @@ ax: plt.Axes = p.axes
 ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
 
+schemas_dict = None
+if contention == 'compare':
+    schemas = [
+        ('SpectrumCOPYONWRITE'      ,   '#D62728'),
+        ('SpectrumSTRAWMAN'         ,   '#3A5FAD'),
+        ('SpectrumNoPartialBASIC'   ,   '#595959'),
+    ]
+    schemas_dict = {
+        'SpectrumCOPYONWRITE'       :   'EVMCoW\n (Partial)',
+        'SpectrumSTRAWMAN'          :   'Strawman\n (Partial)',
+        'SpectrumNoPartialBASIC'    :   '     EVM\n(Complete)',
+    }
+
 for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['protocol'] == schema]
     # print(records[Y])
@@ -46,7 +59,7 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=records[X],
         ydata=records[Y],
-        color=color, legend_label=schema,
+        color=color, legend_label=schemas_dict[schema] if schemas_dict else schema,
         # marker=['v', 's', 'o'][idx]
     )
 
@@ -64,15 +77,19 @@ p.format_yticks(ax, suffix='K', step=step)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
-p.set_labels(ax, XLABEL, YLABEL, labelpad=None)
+p.set_labels(ax, XLABEL, YLABEL)
 # ax.set_ylabel(YLABEL, labelpad=-10)
-box1: plt.Bbox = ax.get_window_extent()
-box2: plt.Bbox = ax.get_tightbbox()
-
-
+# box1: plt.Bbox = ax.get_window_extent()
+# box2: plt.Bbox = ax.get_tightbbox()
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25))
+p.legend(
+    ax, 
+    loc="upper center", 
+    ncol=3, 
+    anchor=(0.5, 1.18) if contention == 'compare' else (0.5, 1.25), 
+    kwargs={ 'size': 11 } if contention == 'compare' else None
+)
 
 # 保存
 p.save(savepath)

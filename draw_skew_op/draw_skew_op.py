@@ -18,6 +18,10 @@ sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 from Schemas import schemas
+schemas = [
+    ('Sparkle'      ,   '#595959'),
+    ('Spectrum'     ,   '#D95353')
+]
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
@@ -39,11 +43,6 @@ recs = pd.read_csv(f'./data/{workload}_{threads}.csv')
 # recs = recs[recs['zipf'] <= 1.3].reset_index(drop=True)
 inner_schemas = recs['protocol'].unique()
 print(inner_schemas)
-
-schemas = [
-    ('Sparkle'      ,   '#595959'),
-    ('Spectrum'     ,   '#D95353')
-]
 
 #################### 画图 ####################
 p = MyPlot(1, 1)

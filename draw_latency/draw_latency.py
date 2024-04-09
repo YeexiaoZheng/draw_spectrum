@@ -14,16 +14,8 @@ import sys
 sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
-from Schemas import schemas
-schemas = [
-    # 里面是 (协议名称, 颜色(RGB格式)的元组)
-    ('Spectrum'         ,       '#c85a59'),  # 红色，饱和度提高
-    ('Sparkle'          ,       '#8d7876'),  # 棕色，饱和度提高
-    ('Aria'             ,       '#db9e67'),  # 橙色，饱和度提高
-    ('AriaFB'           ,       '#7ab77a'),  # 绿色，饱和度提高
-    ('Calvin'           ,       '#7a93c1'),  # 蓝色，饱和度提高
-    ('Serial'           ,       '#9b8bb9')   # 紫色，饱和度提高
-]
+from Schemas import schemas_for_bar
+schemas = schemas_for_bar
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
