@@ -19,9 +19,14 @@ import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 from Schemas import schemas
 schemas = [
-    ('Sparkle'      ,   '#595959'),
-    ('Spectrum'     ,   '#D95353')
+    ('SpectrumNoPartial'    ,   '#595959'),
+    ('Spectrum'             ,   '#D95353')
 ]
+
+schemas_dict = {
+    'SpectrumNoPartial'     :   'Spectrum-C',
+    'Spectrum'              :   'Spectrum-P'
+}
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
@@ -57,9 +62,9 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=[_ + (idx-0.5) * 0.4 for _ in range(records[X].size)],
         ydata=records[Y] / records['commit'],
-        color=color, legend_label=schema,
+        color=color, legend_label=schemas_dict[schema],
         width=0.4,
-        hatch={'Sparkle': '\\\\', 'Spectrum': '//'}[schema],
+        hatch={'SpectrumNoPartial': '\\\\', 'Spectrum': '//'}[schema],
     )
 
 print(type(recs['zipf'].unique()), recs['zipf'].unique())
@@ -67,7 +72,7 @@ print(type(recs['zipf'].unique()), recs['zipf'].unique())
 ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='K', step_num=4)
+p.format_yticks(ax, suffix='K', step=180 if workload == 'smallbank' else None)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label

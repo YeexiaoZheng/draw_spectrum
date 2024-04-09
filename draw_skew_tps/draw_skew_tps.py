@@ -16,9 +16,14 @@ import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 from Schemas import schemas
 schemas = [
-    ('Sparkle'      ,   '#595959'),
-    ('Spectrum'     ,   '#D95353'),
+    ('SpectrumNoPartial'    ,   '#595959'),
+    ('Spectrum'             ,   '#D95353')
 ]
+
+schemas_dict = {
+    'SpectrumNoPartial'     :   'Spectrum-C',
+    'Spectrum'              :   'Spectrum-P'
+}
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
@@ -54,7 +59,7 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=records[X],
         ydata=records[Y],
-        color=color, legend_label=schema,
+        color=color, legend_label=schemas_dict[schema],
         marker=['s', 'o'][idx]
     )
 
