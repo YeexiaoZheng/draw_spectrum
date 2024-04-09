@@ -178,9 +178,11 @@ class MyPlot:
         ax: plt.Axes,
         xlabel: str=None,
         ylabel: str=None,
+        labelpad: int=None,
+        fontdict: dict=None,
     ):
-        if xlabel: ax.set_xlabel(xlabel, self.label_config_dic)
-        if ylabel: ax.set_ylabel(ylabel, self.label_config_dic)
+        if xlabel: ax.set_xlabel(xlabel, labelpad=labelpad, fontdict=fontdict if fontdict else self.label_config_dic)
+        if ylabel: ax.set_ylabel(ylabel, labelpad=labelpad, fontdict=fontdict if fontdict else self.label_config_dic)
 
     def format_yticks(
         self, 

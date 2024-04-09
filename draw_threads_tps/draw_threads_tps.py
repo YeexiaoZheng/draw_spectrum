@@ -23,7 +23,7 @@ parser.add_argument("-c", "--contention", type=str, required=True, help="content
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc']
 workload = args.workload
-assert args.contention in ['uniform', 'skewed']
+assert args.contention in ['uniform', 'skewed', '5orderlines', '10orderlines', '20orderlines']
 contention = args.contention
 
 savepath = f'threads-tps-{workload}-{contention}.pdf'
@@ -55,11 +55,16 @@ print(type(recs['threads'].unique()), recs['threads'].unique())
 ax.set_xticks([int(t) for t in recs['threads'].unique()])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='K', step=140000 if workload == 'smallbank' and contention == 'skewed' else None)
+step = None
+if workload == 'smallbank' and contention == 'skewed':
+    step = 140000
+elif workload == 'tpcc' and contention == '10orderlines':
+    step = 11000
+p.format_yticks(ax, suffix='K', step=step)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
-p.set_labels(ax, XLABEL, YLABEL)
+p.set_labels(ax, XLABEL, YLABEL, labelpad=6)
 
 # 设置图例
 p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25))

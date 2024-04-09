@@ -53,14 +53,14 @@ p.init(ax)
 
 for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['protocol'] == schema]
-    print(records[Y])
+    # print(records[Y])
     p.bar(
         ax,
         xdata=[_ + (idx-0.5) * 0.4 for _ in range(records[X].size)],
         ydata=records[Y] / records['commit'],
         color=color, legend_label=schema,
         width=0.4,
-        hatch=['\\\\', '//'][idx],
+        hatch={'Sparkle': '\\\\', 'Spectrum': '//'}[schema],
     )
 
 print(type(recs['zipf'].unique()), recs['zipf'].unique())

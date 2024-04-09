@@ -1,0 +1,4321 @@
+#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:6:9973:16../bench Calvin:6:9973:16 TPCC:1000000:10 2s2024-04-09 05:13:45.479329078
+duration      2047ms
+commit        14772.8383 tx/s
+execution     14772.8383 tx/s
+operation     108140331.7049 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14772.8383 tx/s
+latency(50%)  2664us
+latency(75%)  3554us
+latency(95%)  4957us
+latency(99%)  6305us2024-04-09 05:13:47.642233542
+duration      2052ms
+commit        14877.1930 tx/s
+execution     14877.1930 tx/s
+operation     108213857.2125 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14877.1930 tx/s
+latency(50%)  2624us
+latency(75%)  3666us
+latency(95%)  4928us
+latency(99%)  6246us2024-04-09 05:13:49.794696790
+duration      2036ms
+commit        14946.9548 tx/s
+execution     14946.9548 tx/s
+operation     108638213.6542 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14946.9548 tx/s
+latency(50%)  2683us
+latency(75%)  3595us
+latency(95%)  5055us
+latency(99%)  6268us2024-04-09 05:13:51.938001091
+duration      2033ms
+commit        14780.1279 tx/s
+execution     14780.1279 tx/s
+operation     106967811.6085 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14780.1279 tx/s
+latency(50%)  2659us
+latency(75%)  3577us
+latency(95%)  4811us
+latency(99%)  6065us2024-04-09 05:13:54.080247051
+duration      2040ms
+commit        14588.2353 tx/s
+execution     14588.2353 tx/s
+operation     106771495.5882 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14588.2353 tx/s
+latency(50%)  2724us
+latency(75%)  3617us
+latency(95%)  4941us
+latency(99%)  6692us2024-04-09 05:13:56.234525343
+duration      2046ms
+commit        15061.5836 tx/s
+execution     15061.5836 tx/s
+operation     108067971.6520 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        15061.5836 tx/s
+latency(50%)  2589us
+latency(75%)  3567us
+latency(95%)  4909us
+latency(99%)  6184us2024-04-09 05:13:58.382445127
+duration      2038ms
+commit        14885.1816 tx/s
+execution     14885.1816 tx/s
+operation     107359365.5545 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14885.1816 tx/s
+latency(50%)  2646us
+latency(75%)  3620us
+latency(95%)  5043us
+latency(99%)  5995us2024-04-09 05:14:00.521892344
+duration      2030ms
+commit        14943.8424 tx/s
+execution     14943.8424 tx/s
+operation     108167239.9015 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14943.8424 tx/s
+latency(50%)  2621us
+latency(75%)  3534us
+latency(95%)  4973us
+latency(99%)  5997us2024-04-09 05:14:02.664975102
+duration      2032ms
+commit        14881.8898 tx/s
+execution     14881.8898 tx/s
+operation     108935645.6693 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14881.8898 tx/s
+latency(50%)  2634us
+latency(75%)  3564us
+latency(95%)  4970us
+latency(99%)  5881us2024-04-09 05:14:04.818828332
+duration      2046ms
+commit        14873.9003 tx/s
+execution     14873.9003 tx/s
+operation     107410653.9589 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        14873.9003 tx/s
+latency(50%)  2678us
+latency(75%)  3625us
+latency(95%)  4898us
+latency(99%)  6322us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:6:9973:16:FALSE../bench Aria:6:9973:16:FALSE TPCC:1000000:10 2s2024-04-09 05:14:06.989534512
+duration      2048ms
+commit        12421.8750 tx/s
+execution     14538.0859 tx/s
+operation     90353067.8711 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12421.8750 tx/s
+latency(50%)  6254us
+latency(75%)  6926us
+latency(95%)  8661us
+latency(99%)  10970us2024-04-09 05:14:09.198202334
+duration      2040ms
+commit        12658.8235 tx/s
+execution     14823.5294 tx/s
+operation     91768575.9804 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12658.8235 tx/s
+latency(50%)  6238us
+latency(75%)  6893us
+latency(95%)  8268us
+latency(99%)  10325us2024-04-09 05:14:11.401870194
+duration      2039ms
+commit        12617.9500 tx/s
+execution     14778.3227 tx/s
+operation     91803210.3973 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12617.9500 tx/s
+latency(50%)  6136us
+latency(75%)  6781us
+latency(95%)  8476us
+latency(99%)  12374us2024-04-09 05:14:13.608816648
+duration      2048ms
+commit        11953.1250 tx/s
+execution     14095.7031 tx/s
+operation     88562356.4453 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        11953.1250 tx/s
+latency(50%)  6535us
+latency(75%)  7279us
+latency(95%)  8737us
+latency(99%)  12098us2024-04-09 05:14:15.835937476
+duration      2066ms
+commit        12267.1830 tx/s
+execution     14396.9022 tx/s
+operation     89299836.3988 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12267.1830 tx/s
+latency(50%)  6284us
+latency(75%)  7123us
+latency(95%)  9201us
+latency(99%)  11595us2024-04-09 05:14:18.043747035
+duration      2046ms
+commit        12340.1760 tx/s
+execution     14433.5288 tx/s
+operation     90203509.7752 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12340.1760 tx/s
+latency(50%)  6356us
+latency(75%)  7039us
+latency(95%)  8407us
+latency(99%)  11187us2024-04-09 05:14:20.259614236
+duration      2053ms
+commit        12204.5787 tx/s
+execution     14342.4257 tx/s
+operation     90509249.8782 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12204.5787 tx/s
+latency(50%)  6257us
+latency(75%)  7008us
+latency(95%)  8958us
+latency(99%)  13139us2024-04-09 05:14:22.461892316
+duration      2044ms
+commit        12070.4501 tx/s
+execution     14162.9159 tx/s
+operation     88460189.8239 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12070.4501 tx/s
+latency(50%)  6393us
+latency(75%)  7061us
+latency(95%)  9076us
+latency(99%)  13829us2024-04-09 05:14:24.655143547
+duration      2040ms
+commit        12423.5294 tx/s
+execution     14561.7647 tx/s
+operation     91178092.6471 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12423.5294 tx/s
+latency(50%)  6307us
+latency(75%)  7034us
+latency(95%)  8647us
+latency(99%)  11527us2024-04-09 05:14:26.849225893
+duration      2037ms
+commit        12206.1856 tx/s
+execution     14373.0977 tx/s
+operation     90479006.3819 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12206.1856 tx/s
+latency(50%)  6390us
+latency(75%)  7076us
+latency(95%)  8512us
+latency(99%)  10654us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:6:9973:16:TRUE../bench Aria:6:9973:16:TRUE TPCC:1000000:10 2s2024-04-09 05:14:29.070833629
+duration      2041ms
+commit        12135.2278 tx/s
+execution     14244.4880 tx/s
+operation     88900350.3185 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12135.2278 tx/s
+latency(50%)  6379us
+latency(75%)  7205us
+latency(95%)  8942us
+latency(99%)  13175us2024-04-09 05:14:31.284396102
+duration      2054ms
+commit        12338.8510 tx/s
+execution     14394.8393 tx/s
+operation     89189798.9289 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12338.8510 tx/s
+latency(50%)  6248us
+latency(75%)  7132us
+latency(95%)  8974us
+latency(99%)  13513us2024-04-09 05:14:33.487973832
+duration      2042ms
+commit        12364.3487 tx/s
+execution     14540.1567 tx/s
+operation     90497586.1900 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12364.3487 tx/s
+latency(50%)  6392us
+latency(75%)  7083us
+latency(95%)  8425us
+latency(99%)  12036us2024-04-09 05:14:35.692764639
+duration      2043ms
+commit        12405.2863 tx/s
+execution     14469.4077 tx/s
+operation     90232641.2139 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12405.2863 tx/s
+latency(50%)  6273us
+latency(75%)  6990us
+latency(95%)  8147us
+latency(99%)  13563us2024-04-09 05:14:37.897260060
+duration      2043ms
+commit        12170.3377 tx/s
+execution     14202.1537 tx/s
+operation     88762400.3916 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12170.3377 tx/s
+latency(50%)  6415us
+latency(75%)  7273us
+latency(95%)  8935us
+latency(99%)  13606us2024-04-09 05:14:40.099783265
+duration      2041ms
+commit        12511.5140 tx/s
+execution     14647.7217 tx/s
+operation     91279650.1715 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12511.5140 tx/s
+latency(50%)  6172us
+latency(75%)  6867us
+latency(95%)  8526us
+latency(99%)  11805us2024-04-09 05:14:42.299813222
+duration      2035ms
+commit        12501.2285 tx/s
+execution     14630.9582 tx/s
+operation     91858789.1892 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12501.2285 tx/s
+latency(50%)  6159us
+latency(75%)  6902us
+latency(95%)  8285us
+latency(99%)  10299us2024-04-09 05:14:44.521947252
+duration      2056ms
+commit        12466.9261 tx/s
+execution     14587.0623 tx/s
+operation     91645468.3852 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12466.9261 tx/s
+latency(50%)  6258us
+latency(75%)  6984us
+latency(95%)  8396us
+latency(99%)  11284us2024-04-09 05:14:46.741404295
+duration      2054ms
+commit        12338.8510 tx/s
+execution     14528.7244 tx/s
+operation     90648167.4781 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12338.8510 tx/s
+latency(50%)  6294us
+latency(75%)  6968us
+latency(95%)  8321us
+latency(99%)  11525us2024-04-09 05:14:48.940613416
+duration      2041ms
+commit        12276.3351 tx/s
+execution     14434.5909 tx/s
+operation     90355925.0367 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        12276.3351 tx/s
+latency(50%)  6307us
+latency(75%)  7072us
+latency(95%)  8845us
+latency(99%)  12017us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:6:9973../bench Sparkle:6:9973 TPCC:1000000:10 2s2024-04-09 05:14:51.115013532
+duration      2001ms
+commit        13927.5362 tx/s
+execution     14204.8976 tx/s
+operation     105816237.8811 op/s
+25us          1614.1929 tx/s
+50us          522.7386 tx/s
+100us         444.7776 tx/s
+>100us        11345.8271 tx/s
+latency(50%)  492us
+latency(75%)  509us
+latency(95%)  544us
+latency(99%)  970us2024-04-09 05:14:53.244048056
+duration      2001ms
+commit        14007.9960 tx/s
+execution     14265.3673 tx/s
+operation     104934800.1000 op/s
+25us          1598.2009 tx/s
+50us          548.7256 tx/s
+100us         447.7761 tx/s
+>100us        11413.2934 tx/s
+latency(50%)  490us
+latency(75%)  508us
+latency(95%)  541us
+latency(99%)  967us2024-04-09 05:14:55.371506203
+duration      2002ms
+commit        14008.9910 tx/s
+execution     14276.7233 tx/s
+operation     104655649.8501 op/s
+25us          1665.3347 tx/s
+50us          554.4456 tx/s
+100us         453.5465 tx/s
+>100us        11335.6643 tx/s
+latency(50%)  491us
+latency(75%)  509us
+latency(95%)  592us
+latency(99%)  993us2024-04-09 05:14:57.499140472
+duration      2001ms
+commit        14133.9330 tx/s
+execution     14385.3073 tx/s
+operation     105150441.7791 op/s
+25us          1758.1209 tx/s
+50us          553.2234 tx/s
+100us         447.7761 tx/s
+>100us        11374.8126 tx/s
+latency(50%)  490us
+latency(75%)  507us
+latency(95%)  554us
+latency(99%)  999us2024-04-09 05:14:59.626376845
+duration      2001ms
+commit        14094.4528 tx/s
+execution     14347.3263 tx/s
+operation     105242155.4223 op/s
+25us          1705.6472 tx/s
+50us          564.2179 tx/s
+100us         467.2664 tx/s
+>100us        11357.3213 tx/s
+latency(50%)  490us
+latency(75%)  506us
+latency(95%)  562us
+latency(99%)  983us2024-04-09 05:15:01.752008310
+duration      2001ms
+commit        14052.4738 tx/s
+execution     14327.3363 tx/s
+operation     104611230.8846 op/s
+25us          1704.6477 tx/s
+50us          528.2359 tx/s
+100us         462.7686 tx/s
+>100us        11356.8216 tx/s
+latency(50%)  486us
+latency(75%)  507us
+latency(95%)  543us
+latency(99%)  955us2024-04-09 05:15:03.878979570
+duration      2001ms
+commit        14052.9735 tx/s
+execution     14324.3378 tx/s
+operation     104725075.9620 op/s
+25us          1735.1324 tx/s
+50us          562.2189 tx/s
+100us         437.7811 tx/s
+>100us        11317.8411 tx/s
+latency(50%)  491us
+latency(75%)  508us
+latency(95%)  536us
+latency(99%)  942us2024-04-09 05:15:05.999951600
+duration      2001ms
+commit        14061.9690 tx/s
+execution     14345.8271 tx/s
+operation     104824019.4903 op/s
+25us          1739.1304 tx/s
+50us          575.2124 tx/s
+100us         409.2954 tx/s
+>100us        11338.3308 tx/s
+latency(50%)  490us
+latency(75%)  508us
+latency(95%)  544us
+latency(99%)  968us2024-04-09 05:15:08.126695763
+duration      2001ms
+commit        14044.4778 tx/s
+execution     14323.3383 tx/s
+operation     104628243.8781 op/s
+25us          1735.1324 tx/s
+50us          582.2089 tx/s
+100us         421.7891 tx/s
+>100us        11305.3473 tx/s
+latency(50%)  489us
+latency(75%)  509us
+latency(95%)  631us
+latency(99%)  986us2024-04-09 05:15:10.255031303
+duration      2002ms
+commit        13964.0360 tx/s
+execution     14232.2677 tx/s
+operation     104382746.2537 op/s
+25us          1602.8971 tx/s
+50us          573.4266 tx/s
+100us         496.5035 tx/s
+>100us        11291.2088 tx/s
+latency(50%)  489us
+latency(75%)  508us
+latency(95%)  544us
+latency(99%)  962us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:6:9973:COPYONWRITE../bench Spectrum:6:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:15:12.398832378
+duration      2001ms
+commit        12996.5017 tx/s
+execution     13174.4128 tx/s
+operation     95018037.9810 op/s
+25us          1354.3228 tx/s
+50us          375.8121 tx/s
+100us         353.8231 tx/s
+>100us        10912.5437 tx/s
+latency(50%)  539us
+latency(75%)  557us
+latency(95%)  638us
+latency(99%)  875us2024-04-09 05:15:14.517349668
+duration      2001ms
+commit        13033.9830 tx/s
+execution     13198.9005 tx/s
+operation     95021708.1459 op/s
+25us          1358.3208 tx/s
+50us          337.8311 tx/s
+100us         340.3298 tx/s
+>100us        10997.5012 tx/s
+latency(50%)  537us
+latency(75%)  556us
+latency(95%)  635us
+latency(99%)  921us2024-04-09 05:15:16.637159432
+duration      2001ms
+commit        12907.5462 tx/s
+execution     13094.9525 tx/s
+operation     94460537.7311 op/s
+25us          1235.8821 tx/s
+50us          341.3293 tx/s
+100us         349.3253 tx/s
+>100us        10981.0095 tx/s
+latency(50%)  536us
+latency(75%)  557us
+latency(95%)  634us
+latency(99%)  853us2024-04-09 05:15:18.756086716
+duration      2001ms
+commit        13019.9900 tx/s
+execution     13206.8966 tx/s
+operation     95001398.3008 op/s
+25us          1296.8516 tx/s
+50us          322.8386 tx/s
+100us         395.3023 tx/s
+>100us        11004.9975 tx/s
+latency(50%)  533us
+latency(75%)  554us
+latency(95%)  633us
+latency(99%)  869us2024-04-09 05:15:20.869015776
+duration      2001ms
+commit        13012.9935 tx/s
+execution     13197.9010 tx/s
+operation     94964307.3463 op/s
+25us          1337.8311 tx/s
+50us          324.8376 tx/s
+100us         337.3313 tx/s
+>100us        11012.9935 tx/s
+latency(50%)  536us
+latency(75%)  557us
+latency(95%)  636us
+latency(99%)  868us2024-04-09 05:15:22.981612030
+duration      2001ms
+commit        12941.5292 tx/s
+execution     13129.4353 tx/s
+operation     94314576.2119 op/s
+25us          1359.8201 tx/s
+50us          318.3408 tx/s
+100us         308.3458 tx/s
+>100us        10955.0225 tx/s
+latency(50%)  540us
+latency(75%)  561us
+latency(95%)  646us
+latency(99%)  865us2024-04-09 05:15:25.093728677
+duration      2001ms
+commit        12918.5407 tx/s
+execution     13099.4503 tx/s
+operation     94025693.1534 op/s
+25us          1263.8681 tx/s
+50us          320.3398 tx/s
+100us         341.3293 tx/s
+>100us        10993.0035 tx/s
+latency(50%)  537us
+latency(75%)  558us
+latency(95%)  623us
+latency(99%)  803us2024-04-09 05:15:27.214681521
+duration      2001ms
+commit        12949.0255 tx/s
+execution     13126.4368 tx/s
+operation     94842876.5617 op/s
+25us          1253.8731 tx/s
+50us          324.8376 tx/s
+100us         388.8056 tx/s
+>100us        10981.5092 tx/s
+latency(50%)  538us
+latency(75%)  559us
+latency(95%)  634us
+latency(99%)  905us2024-04-09 05:15:29.344569423
+duration      2001ms
+commit        13030.4848 tx/s
+execution     13209.8951 tx/s
+operation     95308015.4923 op/s
+25us          1342.3288 tx/s
+50us          347.8261 tx/s
+100us         382.8086 tx/s
+>100us        10957.5212 tx/s
+latency(50%)  537us
+latency(75%)  556us
+latency(95%)  654us
+latency(99%)  886us2024-04-09 05:15:31.463543769
+duration      2001ms
+commit        13048.9755 tx/s
+execution     13229.8851 tx/s
+operation     95113654.6727 op/s
+25us          1376.3118 tx/s
+50us          311.8441 tx/s
+100us         373.3133 tx/s
+>100us        10987.5062 tx/s
+latency(50%)  537us
+latency(75%)  558us
+latency(95%)  650us
+latency(99%)  921us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:15:33.597625024
+duration      2000ms
+commit        4506.5000 tx/s
+execution     4506.5000 tx/s
+operation     33110422.0000 op/s
+25us          2257.5000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2248.0000 tx/s
+latency(50%)  393us
+latency(75%)  411us
+latency(95%)  433us
+latency(99%)  442us2024-04-09 05:15:35.619032146
+duration      2000ms
+commit        4487.0000 tx/s
+execution     4487.0000 tx/s
+operation     33198896.5000 op/s
+25us          2232.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2254.5000 tx/s
+latency(50%)  387us
+latency(75%)  411us
+latency(95%)  430us
+latency(99%)  442us2024-04-09 05:15:37.638902684
+duration      2000ms
+commit        4429.0000 tx/s
+execution     4429.0000 tx/s
+operation     33168299.0000 op/s
+25us          2174.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2255.0000 tx/s
+latency(50%)  396us
+latency(75%)  412us
+latency(95%)  432us
+latency(99%)  444us2024-04-09 05:15:39.658397962
+duration      2000ms
+commit        4471.5000 tx/s
+execution     4471.5000 tx/s
+operation     33155915.0000 op/s
+25us          2215.0000 tx/s
+50us          4.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  393us
+latency(75%)  412us
+latency(95%)  429us
+latency(99%)  442us2024-04-09 05:15:41.678605198
+duration      2000ms
+commit        4566.0000 tx/s
+execution     4566.0000 tx/s
+operation     33171640.5000 op/s
+25us          2314.0000 tx/s
+50us          2.0000 tx/s
+100us         0.0000 tx/s
+>100us        2250.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  428us
+latency(99%)  440us2024-04-09 05:15:43.702919816
+duration      2000ms
+commit        4513.0000 tx/s
+execution     4513.0000 tx/s
+operation     33074197.5000 op/s
+25us          2264.5000 tx/s
+50us          4.0000 tx/s
+100us         0.0000 tx/s
+>100us        2244.5000 tx/s
+latency(50%)  390us
+latency(75%)  411us
+latency(95%)  432us
+latency(99%)  443us2024-04-09 05:15:45.728814613
+duration      2000ms
+commit        4490.5000 tx/s
+execution     4490.5000 tx/s
+operation     33220979.5000 op/s
+25us          2233.5000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2256.5000 tx/s
+latency(50%)  394us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  451us2024-04-09 05:15:47.747064588
+duration      2000ms
+commit        4507.0000 tx/s
+execution     4507.0000 tx/s
+operation     33170753.5000 op/s
+25us          2252.0000 tx/s
+50us          2.5000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  393us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  442us2024-04-09 05:15:49.766157386
+duration      2000ms
+commit        4474.0000 tx/s
+execution     4474.0000 tx/s
+operation     33166214.0000 op/s
+25us          2218.0000 tx/s
+50us          3.0000 tx/s
+100us         0.0000 tx/s
+>100us        2253.0000 tx/s
+latency(50%)  394us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  444us2024-04-09 05:15:51.790370673
+duration      2000ms
+commit        4503.5000 tx/s
+execution     4503.5000 tx/s
+operation     33082728.5000 op/s
+25us          2253.5000 tx/s
+50us          4.0000 tx/s
+100us         0.5000 tx/s
+>100us        2245.5000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:12:9973:8../bench Calvin:12:9973:8 TPCC:1000000:10 2s2024-04-09 05:15:53.880994874
+duration      2055ms
+commit        21956.2044 tx/s
+execution     21956.2044 tx/s
+operation     156903844.7689 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21956.2044 tx/s
+latency(50%)  1617us
+latency(75%)  2164us
+latency(95%)  3238us
+latency(99%)  4084us2024-04-09 05:15:56.088183240
+duration      2053ms
+commit        21790.5504 tx/s
+execution     21790.5504 tx/s
+operation     157884412.5670 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21790.5504 tx/s
+latency(50%)  1660us
+latency(75%)  2191us
+latency(95%)  3156us
+latency(99%)  3997us2024-04-09 05:15:58.303846243
+duration      2057ms
+commit        21748.1770 tx/s
+execution     21748.1770 tx/s
+operation     157343231.4050 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21748.1770 tx/s
+latency(50%)  1608us
+latency(75%)  2183us
+latency(95%)  3195us
+latency(99%)  4040us2024-04-09 05:16:00.512050468
+duration      2052ms
+commit        22643.2749 tx/s
+execution     22643.2749 tx/s
+operation     163231513.6452 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        22643.2749 tx/s
+latency(50%)  1558us
+latency(75%)  2120us
+latency(95%)  3134us
+latency(99%)  4153us2024-04-09 05:16:02.720528413
+duration      2049ms
+commit        22489.0190 tx/s
+execution     22489.0190 tx/s
+operation     163034175.6955 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        22489.0190 tx/s
+latency(50%)  1601us
+latency(75%)  2168us
+latency(95%)  3143us
+latency(99%)  4159us2024-04-09 05:16:04.935779303
+duration      2050ms
+commit        22056.5854 tx/s
+execution     22056.5854 tx/s
+operation     158914868.7805 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        22056.5854 tx/s
+latency(50%)  1633us
+latency(75%)  2182us
+latency(95%)  3156us
+latency(99%)  4056us2024-04-09 05:16:07.142864339
+duration      2042ms
+commit        21766.8952 tx/s
+execution     21766.8952 tx/s
+operation     157002377.5710 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21766.8952 tx/s
+latency(50%)  1616us
+latency(75%)  2214us
+latency(95%)  3172us
+latency(99%)  4140us2024-04-09 05:16:09.350996273
+duration      2049ms
+commit        22207.9063 tx/s
+execution     22207.9063 tx/s
+operation     160078284.0410 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        22207.9063 tx/s
+latency(50%)  1608us
+latency(75%)  2209us
+latency(95%)  3146us
+latency(99%)  3839us2024-04-09 05:16:11.569281236
+duration      2051ms
+commit        22279.8635 tx/s
+execution     22279.8635 tx/s
+operation     160999533.3983 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        22279.8635 tx/s
+latency(50%)  1648us
+latency(75%)  2205us
+latency(95%)  3087us
+latency(99%)  3926us2024-04-09 05:16:13.788472805
+duration      2051ms
+commit        21577.7669 tx/s
+execution     21577.7669 tx/s
+operation     156110467.0892 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21577.7669 tx/s
+latency(50%)  1654us
+latency(75%)  2205us
+latency(95%)  3172us
+latency(99%)  4409us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:12:9973:8:FALSE../bench Aria:12:9973:8:FALSE TPCC:1000000:10 2s2024-04-09 05:16:16.031644650
+duration      2065ms
+commit        17386.9249 tx/s
+execution     20363.1961 tx/s
+operation     127252695.8838 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17386.9249 tx/s
+latency(50%)  4398us
+latency(75%)  4928us
+latency(95%)  6380us
+latency(99%)  7361us2024-04-09 05:16:18.316841635
+duration      2060ms
+commit        17335.9223 tx/s
+execution     20344.1748 tx/s
+operation     126730822.3301 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17335.9223 tx/s
+latency(50%)  4477us
+latency(75%)  5066us
+latency(95%)  6297us
+latency(99%)  7797us2024-04-09 05:16:20.612506665
+duration      2072ms
+commit        17003.8610 tx/s
+execution     19892.8571 tx/s
+operation     123999561.2934 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17003.8610 tx/s
+latency(50%)  4575us
+latency(75%)  5238us
+latency(95%)  6514us
+latency(99%)  9434us2024-04-09 05:16:22.897574786
+duration      2065ms
+commit        17665.8596 tx/s
+execution     20649.3947 tx/s
+operation     129292158.8378 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17665.8596 tx/s
+latency(50%)  4315us
+latency(75%)  4893us
+latency(95%)  6026us
+latency(99%)  9344us2024-04-09 05:16:25.190124370
+duration      2063ms
+commit        17450.3151 tx/s
+execution     20460.4944 tx/s
+operation     126645982.0650 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17450.3151 tx/s
+latency(50%)  4427us
+latency(75%)  5006us
+latency(95%)  6019us
+latency(99%)  7304us2024-04-09 05:16:27.471357489
+duration      2057ms
+commit        17594.5552 tx/s
+execution     20678.6582 tx/s
+operation     129005239.6694 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17594.5552 tx/s
+latency(50%)  4329us
+latency(75%)  4892us
+latency(95%)  6038us
+latency(99%)  7755us2024-04-09 05:16:29.766489168
+duration      2066ms
+commit        17564.3756 tx/s
+execution     20643.2720 tx/s
+operation     129578830.5905 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17564.3756 tx/s
+latency(50%)  4348us
+latency(75%)  4935us
+latency(95%)  6039us
+latency(99%)  7937us2024-04-09 05:16:32.039179094
+duration      2046ms
+commit        17736.0704 tx/s
+execution     20808.8954 tx/s
+operation     130008751.2219 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17736.0704 tx/s
+latency(50%)  4344us
+latency(75%)  4928us
+latency(95%)  6000us
+latency(99%)  8566us2024-04-09 05:16:34.331334780
+duration      2064ms
+commit        17302.3256 tx/s
+execution     20233.5271 tx/s
+operation     125320630.8140 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17302.3256 tx/s
+latency(50%)  4474us
+latency(75%)  4926us
+latency(95%)  6081us
+latency(99%)  8173us2024-04-09 05:16:36.629042431
+duration      2075ms
+commit        17904.5783 tx/s
+execution     20887.2289 tx/s
+operation     130402320.4819 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17904.5783 tx/s
+latency(50%)  4249us
+latency(75%)  4868us
+latency(95%)  6116us
+latency(99%)  10050us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:12:9973:8:TRUE../bench Aria:12:9973:8:TRUE TPCC:1000000:10 2s2024-04-09 05:16:38.952194851
+duration      2079ms
+commit        17593.0736 tx/s
+execution     20612.3136 tx/s
+operation     128159892.2559 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17593.0736 tx/s
+latency(50%)  4343us
+latency(75%)  4968us
+latency(95%)  5962us
+latency(99%)  7979us2024-04-09 05:16:41.244475260
+duration      2064ms
+commit        17860.4651 tx/s
+execution     20977.2287 tx/s
+operation     130249858.5271 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17860.4651 tx/s
+latency(50%)  4228us
+latency(75%)  4829us
+latency(95%)  6073us
+latency(99%)  7843us2024-04-09 05:16:43.539419579
+duration      2066ms
+commit        17657.3088 tx/s
+execution     20645.2081 tx/s
+operation     127809028.0736 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17657.3088 tx/s
+latency(50%)  4337us
+latency(75%)  4881us
+latency(95%)  6419us
+latency(99%)  9030us2024-04-09 05:16:45.839600748
+duration      2072ms
+commit        18162.1622 tx/s
+execution     21230.2124 tx/s
+operation     131384445.9459 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        18162.1622 tx/s
+latency(50%)  4253us
+latency(75%)  4737us
+latency(95%)  5672us
+latency(99%)  6848us2024-04-09 05:16:48.136350590
+duration      2064ms
+commit        17767.4419 tx/s
+execution     20755.8140 tx/s
+operation     128438307.6550 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17767.4419 tx/s
+latency(50%)  4222us
+latency(75%)  4959us
+latency(95%)  6070us
+latency(99%)  8083us2024-04-09 05:16:50.436805112
+duration      2072ms
+commit        17420.8494 tx/s
+execution     20447.8764 tx/s
+operation     127402577.7027 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17420.8494 tx/s
+latency(50%)  4436us
+latency(75%)  4942us
+latency(95%)  5984us
+latency(99%)  7658us2024-04-09 05:16:52.734272811
+duration      2071ms
+commit        17753.7422 tx/s
+execution     20759.5365 tx/s
+operation     128955605.5046 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17753.7422 tx/s
+latency(50%)  4331us
+latency(75%)  4834us
+latency(95%)  6201us
+latency(99%)  8710us2024-04-09 05:16:55.037518447
+duration      2073ms
+commit        17180.8973 tx/s
+execution     20044.8625 tx/s
+operation     124473972.9860 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17180.8973 tx/s
+latency(50%)  4493us
+latency(75%)  5079us
+latency(95%)  6419us
+latency(99%)  8270us2024-04-09 05:16:57.329863045
+duration      2070ms
+commit        17530.4348 tx/s
+execution     20513.0435 tx/s
+operation     127363260.3865 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17530.4348 tx/s
+latency(50%)  4488us
+latency(75%)  5114us
+latency(95%)  6251us
+latency(99%)  9032us2024-04-09 05:16:59.623857338
+duration      2067ms
+commit        17509.4340 tx/s
+execution     20577.1650 tx/s
+operation     128645462.5060 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        17509.4340 tx/s
+latency(50%)  4400us
+latency(75%)  4975us
+latency(95%)  5940us
+latency(99%)  7201us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:12:9973../bench Sparkle:12:9973 TPCC:1000000:10 2s2024-04-09 05:17:01.867405825
+duration      2001ms
+commit        23726.1369 tx/s
+execution     24646.1769 tx/s
+operation     181613463.7681 op/s
+25us          576.2119 tx/s
+50us          724.1379 tx/s
+100us         962.5187 tx/s
+>100us        21463.2684 tx/s
+latency(50%)  495us
+latency(75%)  517us
+latency(95%)  928us
+latency(99%)  979us2024-04-09 05:17:04.063739277
+duration      2002ms
+commit        23917.0829 tx/s
+execution     24810.1898 tx/s
+operation     180940723.2767 op/s
+25us          630.3696 tx/s
+50us          777.7223 tx/s
+100us         960.5395 tx/s
+>100us        21548.4515 tx/s
+latency(50%)  496us
+latency(75%)  517us
+latency(95%)  922us
+latency(99%)  1065us2024-04-09 05:17:06.260924403
+duration      2002ms
+commit        24014.9850 tx/s
+execution     24909.5904 tx/s
+operation     181332518.9810 op/s
+25us          639.3606 tx/s
+50us          709.2907 tx/s
+100us         967.5325 tx/s
+>100us        21698.8012 tx/s
+latency(50%)  496us
+latency(75%)  516us
+latency(95%)  943us
+latency(99%)  1276us2024-04-09 05:17:08.458424287
+duration      2002ms
+commit        24046.4535 tx/s
+execution     24861.1389 tx/s
+operation     182597570.4296 op/s
+25us          507.4925 tx/s
+50us          725.7742 tx/s
+100us         999.5005 tx/s
+>100us        21813.6863 tx/s
+latency(50%)  496us
+latency(75%)  516us
+latency(95%)  929us
+latency(99%)  1028us2024-04-09 05:17:10.659200937
+duration      2002ms
+commit        23848.6513 tx/s
+execution     24769.2308 tx/s
+operation     183118041.9580 op/s
+25us          564.4356 tx/s
+50us          615.8841 tx/s
+100us         946.5534 tx/s
+>100us        21721.7782 tx/s
+latency(50%)  497us
+latency(75%)  518us
+latency(95%)  942us
+latency(99%)  1042us2024-04-09 05:17:12.859502376
+duration      2003ms
+commit        23878.6820 tx/s
+execution     24796.8048 tx/s
+operation     182203948.5771 op/s
+25us          618.5721 tx/s
+50us          806.2906 tx/s
+100us         928.1078 tx/s
+>100us        21525.7114 tx/s
+latency(50%)  499us
+latency(75%)  517us
+latency(95%)  948us
+latency(99%)  1311us2024-04-09 05:17:15.057167425
+duration      2002ms
+commit        23838.1618 tx/s
+execution     24722.7772 tx/s
+operation     182476146.3536 op/s
+25us          545.4545 tx/s
+50us          694.3057 tx/s
+100us         933.5664 tx/s
+>100us        21664.8352 tx/s
+latency(50%)  497us
+latency(75%)  518us
+latency(95%)  938us
+latency(99%)  1341us2024-04-09 05:17:17.254360865
+duration      2002ms
+commit        23908.5914 tx/s
+execution     24813.1868 tx/s
+operation     182257666.3337 op/s
+25us          610.8891 tx/s
+50us          734.2657 tx/s
+100us         935.5644 tx/s
+>100us        21627.8721 tx/s
+latency(50%)  496us
+latency(75%)  519us
+latency(95%)  953us
+latency(99%)  1452us2024-04-09 05:17:19.451682563
+duration      2001ms
+commit        23952.5237 tx/s
+execution     24827.0865 tx/s
+operation     182335944.5277 op/s
+25us          614.6927 tx/s
+50us          689.6552 tx/s
+100us         867.0665 tx/s
+>100us        21781.1094 tx/s
+latency(50%)  497us
+latency(75%)  516us
+latency(95%)  938us
+latency(99%)  1080us2024-04-09 05:17:21.651086956
+duration      2002ms
+commit        23821.6783 tx/s
+execution     24670.8292 tx/s
+operation     180510695.8042 op/s
+25us          570.4296 tx/s
+50us          696.8032 tx/s
+100us         969.5305 tx/s
+>100us        21584.9151 tx/s
+latency(50%)  499us
+latency(75%)  518us
+latency(95%)  946us
+latency(99%)  1354us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:12:9973:COPYONWRITE../bench Spectrum:12:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:17:23.866598579
+duration      2003ms
+commit        23104.3435 tx/s
+execution     23692.4613 tx/s
+operation     166784331.5027 op/s
+25us          184.7229 tx/s
+50us          123.8143 tx/s
+100us         279.0814 tx/s
+>100us        22516.7249 tx/s
+latency(50%)  543us
+latency(75%)  564us
+latency(95%)  728us
+latency(99%)  948us2024-04-09 05:17:26.058813930
+duration      2002ms
+commit        23135.8641 tx/s
+execution     23710.7892 tx/s
+operation     168011745.7542 op/s
+25us          233.7662 tx/s
+50us          160.3397 tx/s
+100us         305.1948 tx/s
+>100us        22436.5634 tx/s
+latency(50%)  543us
+latency(75%)  562us
+latency(95%)  726us
+latency(99%)  957us2024-04-09 05:17:28.250244597
+duration      2002ms
+commit        23136.8631 tx/s
+execution     23741.2587 tx/s
+operation     168388299.7003 op/s
+25us          182.3177 tx/s
+50us          104.8951 tx/s
+100us         246.7532 tx/s
+>100us        22602.8971 tx/s
+latency(50%)  541us
+latency(75%)  560us
+latency(95%)  657us
+latency(99%)  972us2024-04-09 05:17:30.443523824
+duration      2003ms
+commit        23054.4184 tx/s
+execution     23681.9770 tx/s
+operation     168660437.8432 op/s
+25us          199.7004 tx/s
+50us          108.3375 tx/s
+100us         248.1278 tx/s
+>100us        22498.2526 tx/s
+latency(50%)  541us
+latency(75%)  564us
+latency(95%)  730us
+latency(99%)  979us2024-04-09 05:17:32.635945891
+duration      2002ms
+commit        23180.8192 tx/s
+execution     23796.2038 tx/s
+operation     168640579.9201 op/s
+25us          233.7662 tx/s
+50us          84.9151 tx/s
+100us         234.2657 tx/s
+>100us        22627.8721 tx/s
+latency(50%)  538us
+latency(75%)  562us
+latency(95%)  732us
+latency(99%)  1061us2024-04-09 05:17:34.827592021
+duration      2002ms
+commit        23183.8162 tx/s
+execution     23793.2068 tx/s
+operation     168563134.8651 op/s
+25us          219.2807 tx/s
+50us          107.3926 tx/s
+100us         248.2517 tx/s
+>100us        22608.8911 tx/s
+latency(50%)  540us
+latency(75%)  560us
+latency(95%)  698us
+latency(99%)  915us2024-04-09 05:17:37.020644582
+duration      2002ms
+commit        23238.2617 tx/s
+execution     23840.6593 tx/s
+operation     168076790.7093 op/s
+25us          234.2657 tx/s
+50us          123.3766 tx/s
+100us         253.2468 tx/s
+>100us        22627.3726 tx/s
+latency(50%)  540us
+latency(75%)  562us
+latency(95%)  699us
+latency(99%)  969us2024-04-09 05:17:39.211668228
+duration      2002ms
+commit        23054.9451 tx/s
+execution     23664.8352 tx/s
+operation     169826239.7602 op/s
+25us          187.8122 tx/s
+50us          118.3816 tx/s
+100us         291.7083 tx/s
+>100us        22457.0430 tx/s
+latency(50%)  542us
+latency(75%)  563us
+latency(95%)  716us
+latency(99%)  959us2024-04-09 05:17:41.405817658
+duration      2002ms
+commit        23090.4096 tx/s
+execution     23721.2787 tx/s
+operation     167426436.0639 op/s
+25us          190.3097 tx/s
+50us          104.3956 tx/s
+100us         233.7662 tx/s
+>100us        22561.9381 tx/s
+latency(50%)  542us
+latency(75%)  561us
+latency(95%)  705us
+latency(99%)  958us2024-04-09 05:17:43.599185912
+duration      2003ms
+commit        23023.9641 tx/s
+execution     23625.5617 tx/s
+operation     168044321.5177 op/s
+25us          224.1638 tx/s
+50us          125.3120 tx/s
+100us         252.1218 tx/s
+>100us        22422.3665 tx/s
+latency(50%)  541us
+latency(75%)  562us
+latency(95%)  711us
+latency(99%)  930us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:17:45.806291748
+duration      2000ms
+commit        4434.0000 tx/s
+execution     4434.0000 tx/s
+operation     33097354.0000 op/s
+25us          2183.0000 tx/s
+50us          2.0000 tx/s
+100us         0.0000 tx/s
+>100us        2249.0000 tx/s
+latency(50%)  394us
+latency(75%)  412us
+latency(95%)  432us
+latency(99%)  445us2024-04-09 05:17:47.833947596
+duration      2000ms
+commit        4503.5000 tx/s
+execution     4503.5000 tx/s
+operation     33141873.5000 op/s
+25us          2253.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2250.5000 tx/s
+latency(50%)  393us
+latency(75%)  412us
+latency(95%)  433us
+latency(99%)  443us2024-04-09 05:17:49.854698869
+duration      2000ms
+commit        4503.0000 tx/s
+execution     4503.0000 tx/s
+operation     33111167.5000 op/s
+25us          2251.0000 tx/s
+50us          3.0000 tx/s
+100us         0.0000 tx/s
+>100us        2249.0000 tx/s
+latency(50%)  12us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:17:51.874977530
+duration      2000ms
+commit        4503.5000 tx/s
+execution     4503.5000 tx/s
+operation     33125113.5000 op/s
+25us          2251.0000 tx/s
+50us          4.0000 tx/s
+100us         0.0000 tx/s
+>100us        2248.5000 tx/s
+latency(50%)  17us
+latency(75%)  412us
+latency(95%)  431us
+latency(99%)  441us2024-04-09 05:17:53.898170743
+duration      2000ms
+commit        4495.0000 tx/s
+execution     4495.0000 tx/s
+operation     33106373.5000 op/s
+25us          2241.0000 tx/s
+50us          6.5000 tx/s
+100us         0.0000 tx/s
+>100us        2247.5000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  429us
+latency(99%)  443us2024-04-09 05:17:55.924828357
+duration      2000ms
+commit        4518.0000 tx/s
+execution     4518.0000 tx/s
+operation     33154818.0000 op/s
+25us          2267.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2250.5000 tx/s
+latency(50%)  11us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  439us2024-04-09 05:17:57.948164494
+duration      2000ms
+commit        4468.5000 tx/s
+execution     4468.5000 tx/s
+operation     33118149.5000 op/s
+25us          2218.5000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2249.0000 tx/s
+latency(50%)  13us
+latency(75%)  411us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:17:59.972959299
+duration      2000ms
+commit        4520.0000 tx/s
+execution     4520.0000 tx/s
+operation     33145289.0000 op/s
+25us          2270.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2249.5000 tx/s
+latency(50%)  14us
+latency(75%)  411us
+latency(95%)  433us
+latency(99%)  443us2024-04-09 05:18:01.995745324
+duration      2000ms
+commit        4421.5000 tx/s
+execution     4421.5000 tx/s
+operation     33128272.5000 op/s
+25us          2169.0000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2251.5000 tx/s
+latency(50%)  17us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  445us2024-04-09 05:18:04.019834938
+duration      2000ms
+commit        4530.0000 tx/s
+execution     4530.0000 tx/s
+operation     33190339.5000 op/s
+25us          2277.5000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  17us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  442us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:18:9973:5../bench Calvin:18:9973:5 TPCC:1000000:10 2s2024-04-09 05:18:06.123803983
+duration      2061ms
+commit        26331.8777 tx/s
+execution     26331.8777 tx/s
+operation     189912201.8438 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26331.8777 tx/s
+latency(50%)  1199us
+latency(75%)  1639us
+latency(95%)  2390us
+latency(99%)  3060us2024-04-09 05:18:08.396885824
+duration      2068ms
+commit        24893.6170 tx/s
+execution     24893.6170 tx/s
+operation     180647849.6132 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24893.6170 tx/s
+latency(50%)  1232us
+latency(75%)  1732us
+latency(95%)  2558us
+latency(99%)  3315us2024-04-09 05:18:10.657614984
+duration      2071ms
+commit        25552.8730 tx/s
+execution     25552.8730 tx/s
+operation     183622057.4602 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25552.8730 tx/s
+latency(50%)  1190us
+latency(75%)  1644us
+latency(95%)  2471us
+latency(99%)  3114us2024-04-09 05:18:12.923221835
+duration      2066ms
+commit        26006.7764 tx/s
+execution     26006.7764 tx/s
+operation     186706030.0097 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26006.7764 tx/s
+latency(50%)  1206us
+latency(75%)  1620us
+latency(95%)  2449us
+latency(99%)  3230us2024-04-09 05:18:15.186649334
+duration      2063ms
+commit        25259.3311 tx/s
+execution     25259.3311 tx/s
+operation     181388978.6718 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25259.3311 tx/s
+latency(50%)  1275us
+latency(75%)  1736us
+latency(95%)  2568us
+latency(99%)  3098us2024-04-09 05:18:17.438560509
+duration      2063ms
+commit        25346.5826 tx/s
+execution     25346.5826 tx/s
+operation     182767662.1425 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25346.5826 tx/s
+latency(50%)  1233us
+latency(75%)  1639us
+latency(95%)  2462us
+latency(99%)  3190us2024-04-09 05:18:19.695495846
+duration      2065ms
+commit        25888.6199 tx/s
+execution     25888.6199 tx/s
+operation     186770752.5424 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25888.6199 tx/s
+latency(50%)  1197us
+latency(75%)  1659us
+latency(95%)  2456us
+latency(99%)  3195us2024-04-09 05:18:21.963494232
+duration      2070ms
+commit        25956.5217 tx/s
+execution     25956.5217 tx/s
+operation     187055837.6812 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25956.5217 tx/s
+latency(50%)  1181us
+latency(75%)  1636us
+latency(95%)  2488us
+latency(99%)  3258us2024-04-09 05:18:24.231768800
+duration      2068ms
+commit        25415.8607 tx/s
+execution     25415.8607 tx/s
+operation     184407068.1818 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25415.8607 tx/s
+latency(50%)  1191us
+latency(75%)  1662us
+latency(95%)  2530us
+latency(99%)  3267us2024-04-09 05:18:26.493634943
+duration      2069ms
+commit        25795.0701 tx/s
+execution     25795.0701 tx/s
+operation     186778936.6844 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25795.0701 tx/s
+latency(50%)  1211us
+latency(75%)  1669us
+latency(95%)  2451us
+latency(99%)  3082us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:18:9973:5:FALSE../bench Aria:18:9973:5:FALSE TPCC:1000000:10 2s2024-04-09 05:18:28.797336555
+duration      2087ms
+commit        20872.0652 tx/s
+execution     24271.6818 tx/s
+operation     151531402.4916 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        20872.0652 tx/s
+latency(50%)  3410us
+latency(75%)  3933us
+latency(95%)  4691us
+latency(99%)  5852us2024-04-09 05:18:31.151011416
+duration      2080ms
+commit        21201.9231 tx/s
+execution     24691.3462 tx/s
+operation     154712091.3462 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21201.9231 tx/s
+latency(50%)  3365us
+latency(75%)  3753us
+latency(95%)  4638us
+latency(99%)  7556us2024-04-09 05:18:33.507920032
+duration      2082ms
+commit        21051.8732 tx/s
+execution     24453.4102 tx/s
+operation     151601360.2305 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21051.8732 tx/s
+latency(50%)  3406us
+latency(75%)  3821us
+latency(95%)  4834us
+latency(99%)  6937us2024-04-09 05:18:35.846228291
+duration      2070ms
+commit        21347.8261 tx/s
+execution     24899.0338 tx/s
+operation     155308518.8406 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21347.8261 tx/s
+latency(50%)  3326us
+latency(75%)  3791us
+latency(95%)  4702us
+latency(99%)  6825us2024-04-09 05:18:38.207421011
+duration      2085ms
+commit        20892.0863 tx/s
+execution     24294.4844 tx/s
+operation     151932633.0935 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        20892.0863 tx/s
+latency(50%)  3424us
+latency(75%)  3884us
+latency(95%)  4816us
+latency(99%)  6125us2024-04-09 05:18:40.551833054
+duration      2073ms
+commit        21534.0087 tx/s
+execution     25065.6054 tx/s
+operation     156689119.1510 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21534.0087 tx/s
+latency(50%)  3344us
+latency(75%)  3715us
+latency(95%)  4608us
+latency(99%)  7201us2024-04-09 05:18:42.911430918
+duration      2084ms
+commit        21204.4146 tx/s
+execution     24571.9770 tx/s
+operation     152944850.7678 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21204.4146 tx/s
+latency(50%)  3347us
+latency(75%)  3790us
+latency(95%)  4761us
+latency(99%)  6948us2024-04-09 05:18:45.255427504
+duration      2071ms
+commit        21294.0608 tx/s
+execution     24761.9507 tx/s
+operation     154195124.0946 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21294.0608 tx/s
+latency(50%)  3368us
+latency(75%)  3806us
+latency(95%)  4643us
+latency(99%)  6028us2024-04-09 05:18:47.606564124
+duration      2080ms
+commit        21288.4615 tx/s
+execution     24808.6538 tx/s
+operation     155689579.3269 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21288.4615 tx/s
+latency(50%)  3360us
+latency(75%)  3759us
+latency(95%)  4611us
+latency(99%)  6490us2024-04-09 05:18:49.960092248
+duration      2078ms
+commit        21222.3292 tx/s
+execution     24712.2233 tx/s
+operation     153953833.9750 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21222.3292 tx/s
+latency(50%)  3360us
+latency(75%)  3796us
+latency(95%)  4757us
+latency(99%)  7709us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:18:9973:5:TRUE../bench Aria:18:9973:5:TRUE TPCC:1000000:10 2s2024-04-09 05:18:52.324766461
+duration      2077ms
+commit        20712.5662 tx/s
+execution     24119.8844 tx/s
+operation     150833182.9562 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        20712.5662 tx/s
+latency(50%)  3424us
+latency(75%)  3885us
+latency(95%)  4893us
+latency(99%)  6514us2024-04-09 05:18:54.664475118
+duration      2077ms
+commit        21492.5373 tx/s
+execution     25004.3332 tx/s
+operation     155849482.9080 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21492.5373 tx/s
+latency(50%)  3310us
+latency(75%)  3745us
+latency(95%)  4594us
+latency(99%)  6404us2024-04-09 05:18:57.020120131
+duration      2079ms
+commit        21341.9913 tx/s
+execution     24794.6128 tx/s
+operation     154216575.7576 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21341.9913 tx/s
+latency(50%)  3319us
+latency(75%)  3791us
+latency(95%)  4573us
+latency(99%)  7102us2024-04-09 05:18:59.360506401
+duration      2075ms
+commit        21253.0120 tx/s
+execution     24732.5301 tx/s
+operation     154864945.5422 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21253.0120 tx/s
+latency(50%)  3346us
+latency(75%)  3808us
+latency(95%)  4671us
+latency(99%)  5842us2024-04-09 05:19:01.706474494
+duration      2076ms
+commit        21329.4798 tx/s
+execution     24864.6435 tx/s
+operation     155944965.3179 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21329.4798 tx/s
+latency(50%)  3379us
+latency(75%)  3784us
+latency(95%)  4619us
+latency(99%)  6285us2024-04-09 05:19:04.064085274
+duration      2086ms
+commit        21486.0978 tx/s
+execution     24985.1390 tx/s
+operation     154614745.9252 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21486.0978 tx/s
+latency(50%)  3362us
+latency(75%)  3736us
+latency(95%)  4692us
+latency(99%)  7769us2024-04-09 05:19:06.405511640
+duration      2077ms
+commit        20885.8931 tx/s
+execution     24202.6962 tx/s
+operation     151102730.3804 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        20885.8931 tx/s
+latency(50%)  3435us
+latency(75%)  3887us
+latency(95%)  4815us
+latency(99%)  6116us2024-04-09 05:19:08.742838461
+duration      2072ms
+commit        21327.2201 tx/s
+execution     24872.5869 tx/s
+operation     154809273.6486 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21327.2201 tx/s
+latency(50%)  3326us
+latency(75%)  3788us
+latency(95%)  4665us
+latency(99%)  6433us2024-04-09 05:19:11.099673563
+duration      2084ms
+commit        20858.9251 tx/s
+execution     24225.5278 tx/s
+operation     151593042.7063 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        20858.9251 tx/s
+latency(50%)  3433us
+latency(75%)  3866us
+latency(95%)  4562us
+latency(99%)  6611us2024-04-09 05:19:13.449552005
+duration      2080ms
+commit        21375.0000 tx/s
+execution     24826.4423 tx/s
+operation     155691854.3269 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        21375.0000 tx/s
+latency(50%)  3352us
+latency(75%)  3736us
+latency(95%)  4440us
+latency(99%)  6970us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:18:9973../bench Sparkle:18:9973 TPCC:1000000:10 2s2024-04-09 05:19:15.748990900
+duration      2003ms
+commit        31999.0015 tx/s
+execution     33788.3175 tx/s
+operation     249667725.4119 op/s
+25us          506.2406 tx/s
+50us          786.8198 tx/s
+100us         943.0854 tx/s
+>100us        29762.8557 tx/s
+latency(50%)  507us
+latency(75%)  537us
+latency(95%)  969us
+latency(99%)  1392us2024-04-09 05:19:18.003828791
+duration      2002ms
+commit        31924.0759 tx/s
+execution     33721.7782 tx/s
+operation     247796475.5245 op/s
+25us          466.0340 tx/s
+50us          804.6953 tx/s
+100us         918.0819 tx/s
+>100us        29735.2647 tx/s
+latency(50%)  507us
+latency(75%)  544us
+latency(95%)  964us
+latency(99%)  1344us2024-04-09 05:19:20.252879651
+duration      2003ms
+commit        31930.6041 tx/s
+execution     33728.4074 tx/s
+operation     248148780.8288 op/s
+25us          539.1912 tx/s
+50us          759.3610 tx/s
+100us         931.6026 tx/s
+>100us        29700.4493 tx/s
+latency(50%)  505us
+latency(75%)  546us
+latency(95%)  971us
+latency(99%)  1387us2024-04-09 05:19:22.503259894
+duration      2002ms
+commit        32109.8901 tx/s
+execution     33882.6174 tx/s
+operation     247390323.1768 op/s
+25us          506.4935 tx/s
+50us          784.2158 tx/s
+100us         939.0609 tx/s
+>100us        29880.1199 tx/s
+latency(50%)  503us
+latency(75%)  531us
+latency(95%)  980us
+latency(99%)  1434us2024-04-09 05:19:24.756210368
+duration      2004ms
+commit        31620.7585 tx/s
+execution     33457.5848 tx/s
+operation     248388868.7625 op/s
+25us          422.1557 tx/s
+50us          677.1457 tx/s
+100us         937.1257 tx/s
+>100us        29584.3313 tx/s
+latency(50%)  508us
+latency(75%)  558us
+latency(95%)  982us
+latency(99%)  1449us2024-04-09 05:19:27.004740271
+duration      2003ms
+commit        32021.9670 tx/s
+execution     33790.3145 tx/s
+operation     246909380.4294 op/s
+25us          484.2736 tx/s
+50us          837.2441 tx/s
+100us         948.5771 tx/s
+>100us        29751.8722 tx/s
+latency(50%)  503us
+latency(75%)  541us
+latency(95%)  976us
+latency(99%)  1398us2024-04-09 05:19:29.256207666
+duration      2004ms
+commit        32206.0878 tx/s
+execution     33910.1796 tx/s
+operation     249072769.4611 op/s
+25us          423.6527 tx/s
+50us          734.5309 tx/s
+100us         1016.4671 tx/s
+>100us        30031.4371 tx/s
+latency(50%)  505us
+latency(75%)  542us
+latency(95%)  967us
+latency(99%)  1396us2024-04-09 05:19:31.512175606
+duration      2003ms
+commit        31960.5592 tx/s
+execution     33766.8497 tx/s
+operation     249832305.0424 op/s
+25us          513.2302 tx/s
+50us          770.8437 tx/s
+100us         998.5022 tx/s
+>100us        29677.9830 tx/s
+latency(50%)  503us
+latency(75%)  536us
+latency(95%)  974us
+latency(99%)  1379us2024-04-09 05:19:33.764802705
+duration      2003ms
+commit        32109.3360 tx/s
+execution     33883.1752 tx/s
+operation     248881393.4099 op/s
+25us          551.1732 tx/s
+50us          784.8228 tx/s
+100us         922.6161 tx/s
+>100us        29850.7239 tx/s
+latency(50%)  504us
+latency(75%)  539us
+latency(95%)  969us
+latency(99%)  1385us2024-04-09 05:19:36.020042799
+duration      2003ms
+commit        31897.6535 tx/s
+execution     33694.4583 tx/s
+operation     248291347.9780 op/s
+25us          511.2332 tx/s
+50us          725.9111 tx/s
+100us         1010.4843 tx/s
+>100us        29650.0250 tx/s
+latency(50%)  507us
+latency(75%)  603us
+latency(95%)  978us
+latency(99%)  1419us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:18:9973:COPYONWRITE../bench Spectrum:18:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:19:38.288019158
+duration      2004ms
+commit        32697.1058 tx/s
+execution     33912.1756 tx/s
+operation     237448609.2814 op/s
+25us          95.3094 tx/s
+50us          23.4531 tx/s
+100us         122.7545 tx/s
+>100us        32455.5888 tx/s
+latency(50%)  545us
+latency(75%)  573us
+latency(95%)  800us
+latency(99%)  936us2024-04-09 05:19:40.544087689
+duration      2003ms
+commit        32625.0624 tx/s
+execution     33894.1588 tx/s
+operation     238334760.3595 op/s
+25us          46.4304 tx/s
+50us          28.4573 tx/s
+100us         89.3660 tx/s
+>100us        32460.8088 tx/s
+latency(50%)  546us
+latency(75%)  574us
+latency(95%)  809us
+latency(99%)  954us2024-04-09 05:19:42.800103293
+duration      2004ms
+commit        32456.5868 tx/s
+execution     33730.5389 tx/s
+operation     236902161.1776 op/s
+25us          94.3114 tx/s
+50us          49.9002 tx/s
+100us         118.7625 tx/s
+>100us        32193.6128 tx/s
+latency(50%)  545us
+latency(75%)  575us
+latency(95%)  790us
+latency(99%)  1089us2024-04-09 05:19:45.058542222
+duration      2004ms
+commit        32538.9222 tx/s
+execution     33819.3613 tx/s
+operation     237958953.0938 op/s
+25us          78.8423 tx/s
+50us          13.4731 tx/s
+100us         100.2994 tx/s
+>100us        32346.3074 tx/s
+latency(50%)  548us
+latency(75%)  580us
+latency(95%)  793us
+latency(99%)  975us2024-04-09 05:19:47.313029052
+duration      2003ms
+commit        32540.1897 tx/s
+execution     33823.7644 tx/s
+operation     236558653.0205 op/s
+25us          103.3450 tx/s
+50us          48.9266 tx/s
+100us         96.3555 tx/s
+>100us        32291.5627 tx/s
+latency(50%)  546us
+latency(75%)  578us
+latency(95%)  840us
+latency(99%)  1007us2024-04-09 05:19:49.571592612
+duration      2004ms
+commit        32671.1577 tx/s
+execution     33893.2136 tx/s
+operation     237374466.5669 op/s
+25us          86.8263 tx/s
+50us          49.4012 tx/s
+100us         93.3134 tx/s
+>100us        32441.6168 tx/s
+latency(50%)  545us
+latency(75%)  574us
+latency(95%)  787us
+latency(99%)  999us2024-04-09 05:19:51.826331046
+duration      2003ms
+commit        32688.9666 tx/s
+execution     33908.1378 tx/s
+operation     238062428.8567 op/s
+25us          63.4049 tx/s
+50us          67.3989 tx/s
+100us         103.8442 tx/s
+>100us        32454.3185 tx/s
+latency(50%)  545us
+latency(75%)  578us
+latency(95%)  776us
+latency(99%)  966us2024-04-09 05:19:54.085054955
+duration      2004ms
+commit        32485.0299 tx/s
+execution     33746.5070 tx/s
+operation     237746004.4910 op/s
+25us          99.3014 tx/s
+50us          33.9321 tx/s
+100us         82.8343 tx/s
+>100us        32268.9621 tx/s
+latency(50%)  542us
+latency(75%)  570us
+latency(95%)  806us
+latency(99%)  934us2024-04-09 05:19:56.341376194
+duration      2003ms
+commit        32572.1418 tx/s
+execution     33808.2876 tx/s
+operation     237297345.4818 op/s
+25us          60.9086 tx/s
+50us          24.9626 tx/s
+100us         94.8577 tx/s
+>100us        32391.4129 tx/s
+latency(50%)  542us
+latency(75%)  573us
+latency(95%)  810us
+latency(99%)  1081us2024-04-09 05:19:58.601196843
+duration      2003ms
+commit        32686.9695 tx/s
+execution     33918.6221 tx/s
+operation     236060246.1308 op/s
+25us          47.4289 tx/s
+50us          39.4408 tx/s
+100us         85.3719 tx/s
+>100us        32514.7279 tx/s
+latency(50%)  545us
+latency(75%)  577us
+latency(95%)  792us
+latency(99%)  977us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:20:00.876620265
+duration      2000ms
+commit        4464.5000 tx/s
+execution     4464.5000 tx/s
+operation     33082145.0000 op/s
+25us          2217.0000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2246.5000 tx/s
+latency(50%)  16us
+latency(75%)  412us
+latency(95%)  431us
+latency(99%)  441us2024-04-09 05:20:02.900382088
+duration      2000ms
+commit        4513.0000 tx/s
+execution     4513.0000 tx/s
+operation     33172611.0000 op/s
+25us          2257.5000 tx/s
+50us          3.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  389us
+latency(75%)  410us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:20:04.926472246
+duration      2000ms
+commit        4489.0000 tx/s
+execution     4489.0000 tx/s
+operation     33192804.0000 op/s
+25us          2234.0000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2254.0000 tx/s
+latency(50%)  11us
+latency(75%)  410us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:20:06.950757819
+duration      2000ms
+commit        4497.5000 tx/s
+execution     4497.5000 tx/s
+operation     33105272.5000 op/s
+25us          2240.5000 tx/s
+50us          8.5000 tx/s
+100us         0.5000 tx/s
+>100us        2248.0000 tx/s
+latency(50%)  390us
+latency(75%)  410us
+latency(95%)  431us
+latency(99%)  442us2024-04-09 05:20:08.977091875
+duration      2000ms
+commit        4579.0000 tx/s
+execution     4579.0000 tx/s
+operation     33130177.5000 op/s
+25us          2331.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2248.0000 tx/s
+latency(50%)  12us
+latency(75%)  412us
+latency(95%)  432us
+latency(99%)  443us2024-04-09 05:20:10.999951066
+duration      2000ms
+commit        4478.5000 tx/s
+execution     4478.5000 tx/s
+operation     33115271.5000 op/s
+25us          2226.5000 tx/s
+50us          3.5000 tx/s
+100us         0.0000 tx/s
+>100us        2248.5000 tx/s
+latency(50%)  395us
+latency(75%)  412us
+latency(95%)  431us
+latency(99%)  440us2024-04-09 05:20:13.025503921
+duration      2000ms
+commit        4506.0000 tx/s
+execution     4506.0000 tx/s
+operation     33157128.5000 op/s
+25us          2255.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2251.0000 tx/s
+latency(50%)  11us
+latency(75%)  412us
+latency(95%)  431us
+latency(99%)  441us2024-04-09 05:20:15.045811525
+duration      2000ms
+commit        4477.0000 tx/s
+execution     4477.0000 tx/s
+operation     33157729.0000 op/s
+25us          2223.0000 tx/s
+50us          2.5000 tx/s
+100us         0.0000 tx/s
+>100us        2251.5000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  432us
+latency(99%)  443us2024-04-09 05:20:17.066197012
+duration      2000ms
+commit        4478.5000 tx/s
+execution     4478.5000 tx/s
+operation     33165781.0000 op/s
+25us          2225.5000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.0000 tx/s
+latency(50%)  394us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  442us2024-04-09 05:20:19.085859317
+duration      2000ms
+commit        4437.5000 tx/s
+execution     4437.5000 tx/s
+operation     33145637.0000 op/s
+25us          2180.5000 tx/s
+50us          4.5000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  395us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  442us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:24:9973:4../bench Calvin:24:9973:4 TPCC:1000000:10 2s2024-04-09 05:20:21.227306218
+duration      2097ms
+commit        26048.6409 tx/s
+execution     26048.6409 tx/s
+operation     188377362.8994 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26048.6409 tx/s
+latency(50%)  1390us
+latency(75%)  1818us
+latency(95%)  2562us
+latency(99%)  3378us2024-04-09 05:20:23.526017426
+duration      2088ms
+commit        29517.2414 tx/s
+execution     29517.2414 tx/s
+operation     213054916.6667 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29517.2414 tx/s
+latency(50%)  1097us
+latency(75%)  1494us
+latency(95%)  2254us
+latency(99%)  2947us2024-04-09 05:20:25.876788164
+duration      2116ms
+commit        25905.4820 tx/s
+execution     25905.4820 tx/s
+operation     187853489.6030 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25905.4820 tx/s
+latency(50%)  1324us
+latency(75%)  1802us
+latency(95%)  2612us
+latency(99%)  3162us2024-04-09 05:20:28.176006775
+duration      2088ms
+commit        29609.1954 tx/s
+execution     29609.1954 tx/s
+operation     212869488.0268 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29609.1954 tx/s
+latency(50%)  1106us
+latency(75%)  1504us
+latency(95%)  2195us
+latency(99%)  2981us2024-04-09 05:20:30.495173745
+duration      2085ms
+commit        29882.0144 tx/s
+execution     29882.0144 tx/s
+operation     215574025.4197 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29882.0144 tx/s
+latency(50%)  1088us
+latency(75%)  1510us
+latency(95%)  2169us
+latency(99%)  2921us2024-04-09 05:20:32.826429072
+duration      2098ms
+commit        25670.1621 tx/s
+execution     25670.1621 tx/s
+operation     184982844.1373 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25670.1621 tx/s
+latency(50%)  1385us
+latency(75%)  1827us
+latency(95%)  2736us
+latency(99%)  3408us2024-04-09 05:20:35.135202422
+duration      2103ms
+commit        28758.9158 tx/s
+execution     28758.9158 tx/s
+operation     208195026.6286 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        28758.9158 tx/s
+latency(50%)  1132us
+latency(75%)  1564us
+latency(95%)  2315us
+latency(99%)  2973us2024-04-09 05:20:37.466882294
+duration      2105ms
+commit        25995.2494 tx/s
+execution     25995.2494 tx/s
+operation     187390461.2827 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25995.2494 tx/s
+latency(50%)  1383us
+latency(75%)  1820us
+latency(95%)  2563us
+latency(99%)  3227us2024-04-09 05:20:39.764137177
+duration      2089ms
+commit        29824.7966 tx/s
+execution     29824.7966 tx/s
+operation     215456358.5448 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29824.7966 tx/s
+latency(50%)  1098us
+latency(75%)  1516us
+latency(95%)  2208us
+latency(99%)  2962us2024-04-09 05:20:42.093891632
+duration      2093ms
+commit        26832.2981 tx/s
+execution     26832.2981 tx/s
+operation     193624783.5643 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26832.2981 tx/s
+latency(50%)  1297us
+latency(75%)  1707us
+latency(95%)  2572us
+latency(99%)  3252us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:24:9973:4:FALSE../bench Aria:24:9973:4:FALSE TPCC:1000000:10 2s2024-04-09 05:20:44.462882807
+duration      2133ms
+commit        24168.7764 tx/s
+execution     28393.8115 tx/s
+operation     176344990.1547 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24168.7764 tx/s
+latency(50%)  3098us
+latency(75%)  3504us
+latency(95%)  4218us
+latency(99%)  5747us2024-04-09 05:20:46.931173358
+duration      2131ms
+commit        24191.4594 tx/s
+execution     28352.8860 tx/s
+operation     175641076.0206 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24191.4594 tx/s
+latency(50%)  3149us
+latency(75%)  3534us
+latency(95%)  4405us
+latency(99%)  6087us2024-04-09 05:20:49.383246376
+duration      2117ms
+commit        24442.1351 tx/s
+execution     28594.2371 tx/s
+operation     177238883.3255 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24442.1351 tx/s
+latency(50%)  3112us
+latency(75%)  3502us
+latency(95%)  4289us
+latency(99%)  5118us2024-04-09 05:20:51.903782740
+duration      2143ms
+commit        24100.7933 tx/s
+execution     28254.3164 tx/s
+operation     175183816.1456 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24100.7933 tx/s
+latency(50%)  3113us
+latency(75%)  3512us
+latency(95%)  4321us
+latency(99%)  6242us2024-04-09 05:20:54.353604219
+duration      2121ms
+commit        24441.3013 tx/s
+execution     28573.3145 tx/s
+operation     175348524.7525 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24441.3013 tx/s
+latency(50%)  3102us
+latency(75%)  3499us
+latency(95%)  4167us
+latency(99%)  5977us2024-04-09 05:20:56.840630832
+duration      2136ms
+commit        24179.7753 tx/s
+execution     28369.8502 tx/s
+operation     176135335.6742 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24179.7753 tx/s
+latency(50%)  3106us
+latency(75%)  3540us
+latency(95%)  4440us
+latency(99%)  5939us2024-04-09 05:20:59.289709730
+duration      2117ms
+commit        24215.3991 tx/s
+execution     28252.2437 tx/s
+operation     174799001.8895 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24215.3991 tx/s
+latency(50%)  3127us
+latency(75%)  3525us
+latency(95%)  4186us
+latency(99%)  4869us2024-04-09 05:21:01.774617362
+duration      2134ms
+commit        24337.3946 tx/s
+execution     28486.4105 tx/s
+operation     175405648.0787 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24337.3946 tx/s
+latency(50%)  3118us
+latency(75%)  3486us
+latency(95%)  4326us
+latency(99%)  6781us2024-04-09 05:21:04.240433824
+duration      2142ms
+commit        24156.8627 tx/s
+execution     28356.6760 tx/s
+operation     176006143.3240 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24156.8627 tx/s
+latency(50%)  3122us
+latency(75%)  3501us
+latency(95%)  4517us
+latency(99%)  5277us2024-04-09 05:21:06.701999675
+duration      2127ms
+commit        24507.7574 tx/s
+execution     28699.1067 tx/s
+operation     177784415.1387 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24507.7574 tx/s
+latency(50%)  3053us
+latency(75%)  3472us
+latency(95%)  4209us
+latency(99%)  5462us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:24:9973:4:TRUE../bench Aria:24:9973:4:TRUE TPCC:1000000:10 2s2024-04-09 05:21:09.187394697
+duration      2135ms
+commit        24191.1007 tx/s
+execution     28341.9204 tx/s
+operation     175686858.0796 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24191.1007 tx/s
+latency(50%)  3101us
+latency(75%)  3524us
+latency(95%)  4302us
+latency(99%)  5219us2024-04-09 05:21:11.647415775
+duration      2135ms
+commit        24281.0304 tx/s
+execution     28396.2529 tx/s
+operation     175559454.8009 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24281.0304 tx/s
+latency(50%)  3115us
+latency(75%)  3544us
+latency(95%)  4335us
+latency(99%)  6338us2024-04-09 05:21:14.110345217
+duration      2136ms
+commit        24539.3258 tx/s
+execution     28720.5056 tx/s
+operation     178166938.6704 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24539.3258 tx/s
+latency(50%)  3075us
+latency(75%)  3422us
+latency(95%)  4158us
+latency(99%)  5169us2024-04-09 05:21:16.560266826
+duration      2131ms
+commit        24641.9521 tx/s
+execution     28814.6410 tx/s
+operation     177861168.4655 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24641.9521 tx/s
+latency(50%)  3015us
+latency(75%)  3436us
+latency(95%)  4216us
+latency(99%)  5156us2024-04-09 05:21:19.015176800
+duration      2128ms
+commit        24451.1278 tx/s
+execution     28591.1654 tx/s
+operation     177125752.8195 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24451.1278 tx/s
+latency(50%)  3076us
+latency(75%)  3450us
+latency(95%)  4294us
+latency(99%)  6474us2024-04-09 05:21:21.503196307
+duration      2161ms
+commit        23988.8940 tx/s
+execution     28088.3850 tx/s
+operation     173516485.8862 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        23988.8940 tx/s
+latency(50%)  3099us
+latency(75%)  3497us
+latency(95%)  4273us
+latency(99%)  5112us2024-04-09 05:21:23.969227042
+duration      2139ms
+commit        24280.5049 tx/s
+execution     28446.0028 tx/s
+operation     176818597.9430 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24280.5049 tx/s
+latency(50%)  3060us
+latency(75%)  3490us
+latency(95%)  4424us
+latency(99%)  5407us2024-04-09 05:21:26.426299446
+duration      2132ms
+commit        24225.1407 tx/s
+execution     28394.9343 tx/s
+operation     176464235.4597 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24225.1407 tx/s
+latency(50%)  3112us
+latency(75%)  3511us
+latency(95%)  4233us
+latency(99%)  5679us2024-04-09 05:21:28.887054993
+duration      2133ms
+commit        24663.8537 tx/s
+execution     28840.6001 tx/s
+operation     177674260.1969 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24663.8537 tx/s
+latency(50%)  3054us
+latency(75%)  3401us
+latency(95%)  4151us
+latency(99%)  5286us2024-04-09 05:21:31.341442361
+duration      2135ms
+commit        24370.9602 tx/s
+execution     28507.2600 tx/s
+operation     175659853.8642 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        24370.9602 tx/s
+latency(50%)  3054us
+latency(75%)  3486us
+latency(95%)  4374us
+latency(99%)  5163us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:24:9973../bench Sparkle:24:9973 TPCC:1000000:10 2s2024-04-09 05:21:33.697994822
+duration      2004ms
+commit        38674.6507 tx/s
+execution     41440.6188 tx/s
+operation     305490540.4192 op/s
+25us          461.0778 tx/s
+50us          872.2555 tx/s
+100us         946.6068 tx/s
+>100us        36394.7106 tx/s
+latency(50%)  514us
+latency(75%)  819us
+latency(95%)  997us
+latency(99%)  1470us2024-04-09 05:21:36.002702235
+duration      2004ms
+commit        38340.3194 tx/s
+execution     41206.0878 tx/s
+operation     303322362.7745 op/s
+25us          506.4870 tx/s
+50us          761.9760 tx/s
+100us         891.7166 tx/s
+>100us        36180.1397 tx/s
+latency(50%)  514us
+latency(75%)  802us
+latency(95%)  1000us
+latency(99%)  1468us2024-04-09 05:21:38.305344674
+duration      2005ms
+commit        38542.1446 tx/s
+execution     41426.4339 tx/s
+operation     305921503.7406 op/s
+25us          499.7506 tx/s
+50us          883.7905 tx/s
+100us         908.2294 tx/s
+>100us        36250.3741 tx/s
+latency(50%)  513us
+latency(75%)  851us
+latency(95%)  997us
+latency(99%)  1443us2024-04-09 05:21:40.611071258
+duration      2006ms
+commit        38521.4357 tx/s
+execution     41419.7408 tx/s
+operation     306904027.4177 op/s
+25us          490.0299 tx/s
+50us          764.7059 tx/s
+100us         855.9322 tx/s
+>100us        36410.7677 tx/s
+latency(50%)  513us
+latency(75%)  858us
+latency(95%)  1011us
+latency(99%)  1460us2024-04-09 05:21:42.915789411
+duration      2004ms
+commit        38750.9980 tx/s
+execution     41529.4411 tx/s
+operation     306404967.0659 op/s
+25us          453.0938 tx/s
+50us          827.8443 tx/s
+100us         901.6966 tx/s
+>100us        36568.3633 tx/s
+latency(50%)  514us
+latency(75%)  862us
+latency(95%)  1009us
+latency(99%)  1468us2024-04-09 05:21:45.212059765
+duration      2004ms
+commit        38648.2036 tx/s
+execution     41504.9900 tx/s
+operation     307284132.2355 op/s
+25us          433.6327 tx/s
+50us          809.8802 tx/s
+100us         802.3952 tx/s
+>100us        36602.2954 tx/s
+latency(50%)  512us
+latency(75%)  854us
+latency(95%)  1022us
+latency(99%)  1481us2024-04-09 05:21:47.509933931
+duration      2004ms
+commit        38377.7445 tx/s
+execution     41281.9361 tx/s
+operation     305334182.1357 op/s
+25us          531.9361 tx/s
+50us          767.9641 tx/s
+100us         871.7565 tx/s
+>100us        36206.0878 tx/s
+latency(50%)  513us
+latency(75%)  859us
+latency(95%)  997us
+latency(99%)  1443us2024-04-09 05:21:49.804787571
+duration      2004ms
+commit        38622.7545 tx/s
+execution     41522.9541 tx/s
+operation     307963135.2295 op/s
+25us          491.0180 tx/s
+50us          821.8563 tx/s
+100us         874.2515 tx/s
+>100us        36435.6287 tx/s
+latency(50%)  516us
+latency(75%)  882us
+latency(95%)  994us
+latency(99%)  1446us2024-04-09 05:21:52.101319790
+duration      2003ms
+commit        38793.8093 tx/s
+execution     41601.5976 tx/s
+operation     307938476.7848 op/s
+25us          526.2107 tx/s
+50us          817.7733 tx/s
+100us         952.0719 tx/s
+>100us        36497.7534 tx/s
+latency(50%)  513us
+latency(75%)  854us
+latency(95%)  982us
+latency(99%)  1444us2024-04-09 05:21:54.399927340
+duration      2004ms
+commit        38312.3752 tx/s
+execution     41167.6647 tx/s
+operation     303815542.9142 op/s
+25us          415.6687 tx/s
+50us          820.3593 tx/s
+100us         912.6747 tx/s
+>100us        36163.6727 tx/s
+latency(50%)  515us
+latency(75%)  881us
+latency(95%)  994us
+latency(99%)  1479us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:24:9973:COPYONWRITE../bench Spectrum:24:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:21:56.714866214
+duration      2004ms
+commit        41474.0519 tx/s
+execution     43529.9401 tx/s
+operation     301781014.9701 op/s
+25us          88.3234 tx/s
+50us          18.9621 tx/s
+100us         59.3812 tx/s
+>100us        41307.3852 tx/s
+latency(50%)  550us
+latency(75%)  613us
+latency(95%)  874us
+latency(99%)  1320us2024-04-09 05:21:59.029606301
+duration      2005ms
+commit        41704.2394 tx/s
+execution     43778.0549 tx/s
+operation     302715728.6783 op/s
+25us          53.3666 tx/s
+50us          20.9476 tx/s
+100us         63.3416 tx/s
+>100us        41566.5835 tx/s
+latency(50%)  550us
+latency(75%)  612us
+latency(95%)  864us
+latency(99%)  1155us2024-04-09 05:22:01.344326417
+duration      2004ms
+commit        41536.4271 tx/s
+execution     43568.3633 tx/s
+operation     304472663.1737 op/s
+25us          47.4052 tx/s
+50us          17.9641 tx/s
+100us         72.8543 tx/s
+>100us        41398.2036 tx/s
+latency(50%)  551us
+latency(75%)  607us
+latency(95%)  866us
+latency(99%)  1045us2024-04-09 05:22:03.668534808
+duration      2005ms
+commit        41605.9850 tx/s
+execution     43655.8603 tx/s
+operation     302566465.8354 op/s
+25us          60.3491 tx/s
+50us          16.4589 tx/s
+100us         47.3815 tx/s
+>100us        41481.7955 tx/s
+latency(50%)  549us
+latency(75%)  600us
+latency(95%)  831us
+latency(99%)  1035us2024-04-09 05:22:05.989336746
+duration      2004ms
+commit        41533.9321 tx/s
+execution     43600.7984 tx/s
+operation     303052045.4092 op/s
+25us          43.4132 tx/s
+50us          23.9521 tx/s
+100us         63.3733 tx/s
+>100us        41403.1936 tx/s
+latency(50%)  552us
+latency(75%)  613us
+latency(95%)  843us
+latency(99%)  1020us2024-04-09 05:22:08.309635556
+duration      2004ms
+commit        41730.0399 tx/s
+execution     43755.9880 tx/s
+operation     302732515.9681 op/s
+25us          91.3174 tx/s
+50us          29.9401 tx/s
+100us         55.8882 tx/s
+>100us        41552.8942 tx/s
+latency(50%)  551us
+latency(75%)  601us
+latency(95%)  831us
+latency(99%)  1003us2024-04-09 05:22:10.629631699
+duration      2004ms
+commit        41554.8902 tx/s
+execution     43605.2894 tx/s
+operation     301338147.7046 op/s
+25us          25.4491 tx/s
+50us          8.9820 tx/s
+100us         50.3992 tx/s
+>100us        41470.0599 tx/s
+latency(50%)  551us
+latency(75%)  610us
+latency(95%)  867us
+latency(99%)  1199us2024-04-09 05:22:12.949505834
+duration      2004ms
+commit        41631.2375 tx/s
+execution     43673.1537 tx/s
+operation     303175176.6467 op/s
+25us          55.8882 tx/s
+50us          31.9361 tx/s
+100us         58.8822 tx/s
+>100us        41484.5309 tx/s
+latency(50%)  550us
+latency(75%)  608us
+latency(95%)  869us
+latency(99%)  1058us2024-04-09 05:22:15.269312560
+duration      2004ms
+commit        41583.3333 tx/s
+execution     43602.7944 tx/s
+operation     302114827.3453 op/s
+25us          55.8882 tx/s
+50us          21.4571 tx/s
+100us         66.8663 tx/s
+>100us        41439.1218 tx/s
+latency(50%)  553us
+latency(75%)  613us
+latency(95%)  841us
+latency(99%)  1021us2024-04-09 05:22:17.589227700
+duration      2005ms
+commit        41520.6983 tx/s
+execution     43561.0973 tx/s
+operation     304632848.3791 op/s
+25us          53.3666 tx/s
+50us          27.9302 tx/s
+100us         44.3890 tx/s
+>100us        41395.0125 tx/s
+latency(50%)  553us
+latency(75%)  605us
+latency(95%)  848us
+latency(99%)  1055us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:22:19.926700941
+duration      2000ms
+commit        4463.0000 tx/s
+execution     4463.0000 tx/s
+operation     33067602.0000 op/s
+25us          2216.5000 tx/s
+50us          1.0000 tx/s
+100us         0.0000 tx/s
+>100us        2245.5000 tx/s
+latency(50%)  16us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:22:21.952561456
+duration      2000ms
+commit        4524.0000 tx/s
+execution     4524.0000 tx/s
+operation     33152381.5000 op/s
+25us          2273.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2250.5000 tx/s
+latency(50%)  20us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  442us2024-04-09 05:22:23.976515801
+duration      2000ms
+commit        4471.5000 tx/s
+execution     4471.5000 tx/s
+operation     33120671.5000 op/s
+25us          2216.0000 tx/s
+50us          5.5000 tx/s
+100us         0.5000 tx/s
+>100us        2249.5000 tx/s
+latency(50%)  396us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:22:26.002495909
+duration      2000ms
+commit        4567.0000 tx/s
+execution     4567.0000 tx/s
+operation     33171728.0000 op/s
+25us          2314.0000 tx/s
+50us          2.0000 tx/s
+100us         0.0000 tx/s
+>100us        2251.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  430us
+latency(99%)  442us2024-04-09 05:22:28.022521708
+duration      2000ms
+commit        4533.0000 tx/s
+execution     4533.0000 tx/s
+operation     33143809.5000 op/s
+25us          2281.5000 tx/s
+50us          1.5000 tx/s
+100us         0.0000 tx/s
+>100us        2250.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  429us
+latency(99%)  441us2024-04-09 05:22:30.044146120
+duration      2000ms
+commit        4472.5000 tx/s
+execution     4472.5000 tx/s
+operation     32784521.5000 op/s
+25us          2237.5000 tx/s
+50us          9.5000 tx/s
+100us         0.5000 tx/s
+>100us        2225.0000 tx/s
+latency(50%)  16us
+latency(75%)  413us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:22:32.072417313
+duration      2000ms
+commit        4501.5000 tx/s
+execution     4501.5000 tx/s
+operation     33072088.0000 op/s
+25us          2250.0000 tx/s
+50us          5.0000 tx/s
+100us         0.5000 tx/s
+>100us        2246.0000 tx/s
+latency(50%)  390us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:22:34.091650109
+duration      2000ms
+commit        4521.5000 tx/s
+execution     4521.5000 tx/s
+operation     33166787.5000 op/s
+25us          2270.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2251.0000 tx/s
+latency(50%)  15us
+latency(75%)  411us
+latency(95%)  432us
+latency(99%)  442us2024-04-09 05:22:36.111194688
+duration      2000ms
+commit        4439.0000 tx/s
+execution     4439.0000 tx/s
+operation     33142295.5000 op/s
+25us          2184.5000 tx/s
+50us          2.5000 tx/s
+100us         0.0000 tx/s
+>100us        2252.0000 tx/s
+latency(50%)  392us
+latency(75%)  412us
+latency(95%)  428us
+latency(99%)  440us2024-04-09 05:22:38.125052381
+duration      2000ms
+commit        4458.0000 tx/s
+execution     4458.0000 tx/s
+operation     33168218.0000 op/s
+25us          2203.5000 tx/s
+50us          1.5000 tx/s
+100us         0.0000 tx/s
+>100us        2253.0000 tx/s
+latency(50%)  391us
+latency(75%)  412us
+latency(95%)  432us
+latency(99%)  443us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:30:9973:3../bench Calvin:30:9973:3 TPCC:1000000:10 2s2024-04-09 05:22:40.243621829
+duration      2085ms
+commit        31856.1151 tx/s
+execution     31856.1151 tx/s
+operation     228612841.2470 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31856.1151 tx/s
+latency(50%)  1007us
+latency(75%)  1255us
+latency(95%)  1968us
+latency(99%)  2746us2024-04-09 05:22:42.572590679
+duration      2082ms
+commit        31599.4236 tx/s
+execution     31599.4236 tx/s
+operation     227702610.9510 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31599.4236 tx/s
+latency(50%)  1013us
+latency(75%)  1280us
+latency(95%)  2020us
+latency(99%)  2696us2024-04-09 05:22:44.923533445
+duration      2106ms
+commit        27264.9573 tx/s
+execution     27264.9573 tx/s
+operation     198048619.6581 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        27264.9573 tx/s
+latency(50%)  1210us
+latency(75%)  1578us
+latency(95%)  2311us
+latency(99%)  2952us2024-04-09 05:22:47.223111614
+duration      2082ms
+commit        32118.1556 tx/s
+execution     32118.1556 tx/s
+operation     230901813.6407 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        32118.1556 tx/s
+latency(50%)  987us
+latency(75%)  1245us
+latency(95%)  1939us
+latency(99%)  2588us2024-04-09 05:22:49.549555236
+duration      2076ms
+commit        31994.2197 tx/s
+execution     31994.2197 tx/s
+operation     229971513.4875 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31994.2197 tx/s
+latency(50%)  998us
+latency(75%)  1289us
+latency(95%)  1951us
+latency(99%)  2548us2024-04-09 05:22:51.904852262
+duration      2103ms
+commit        27988.5877 tx/s
+execution     27988.5877 tx/s
+operation     201079972.8959 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        27988.5877 tx/s
+latency(50%)  1179us
+latency(75%)  1552us
+latency(95%)  2260us
+latency(99%)  2892us2024-04-09 05:22:54.210746653
+duration      2087ms
+commit        30273.1193 tx/s
+execution     30273.1193 tx/s
+operation     217454082.4149 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        30273.1193 tx/s
+latency(50%)  1061us
+latency(75%)  1411us
+latency(95%)  2139us
+latency(99%)  2662us2024-04-09 05:22:56.538819273
+duration      2089ms
+commit        29985.6391 tx/s
+execution     29985.6391 tx/s
+operation     215092048.8272 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.4787 tx/s
+>100us        29985.1604 tx/s
+latency(50%)  1053us
+latency(75%)  1420us
+latency(95%)  2072us
+latency(99%)  2695us2024-04-09 05:22:58.864571804
+duration      2090ms
+commit        31736.8421 tx/s
+execution     31736.8421 tx/s
+operation     229059368.8995 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31736.8421 tx/s
+latency(50%)  1008us
+latency(75%)  1288us
+latency(95%)  2010us
+latency(99%)  2639us2024-04-09 05:23:01.203932298
+duration      2091ms
+commit        31463.4146 tx/s
+execution     31463.4146 tx/s
+operation     227468228.5988 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31463.4146 tx/s
+latency(50%)  1024us
+latency(75%)  1277us
+latency(95%)  2015us
+latency(99%)  2573us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:30:9973:3:FALSE../bench Aria:30:9973:3:FALSE TPCC:1000000:10 2s2024-04-09 05:23:03.578176146
+duration      2107ms
+commit        26184.1481 tx/s
+execution     30457.0479 tx/s
+operation     189106000.9492 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26184.1481 tx/s
+latency(50%)  2715us
+latency(75%)  3068us
+latency(95%)  3555us
+latency(99%)  4591us2024-04-09 05:23:06.009187963
+duration      2094ms
+commit        26518.6246 tx/s
+execution     30850.0478 tx/s
+operation     191148149.9522 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26518.6246 tx/s
+latency(50%)  2690us
+latency(75%)  3013us
+latency(95%)  3502us
+latency(99%)  4161us2024-04-09 05:23:08.455382116
+duration      2108ms
+commit        26171.7268 tx/s
+execution     30386.1480 tx/s
+operation     189669779.4118 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26171.7268 tx/s
+latency(50%)  2734us
+latency(75%)  3029us
+latency(95%)  3581us
+latency(99%)  4187us2024-04-09 05:23:10.907916996
+duration      2112ms
+commit        26548.2955 tx/s
+execution     30938.4470 tx/s
+operation     193147765.1515 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26548.2955 tx/s
+latency(50%)  2655us
+latency(75%)  2941us
+latency(95%)  3599us
+latency(99%)  4687us2024-04-09 05:23:13.357311690
+duration      2109ms
+commit        25689.9004 tx/s
+execution     29882.4087 tx/s
+operation     187076108.5823 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25689.9004 tx/s
+latency(50%)  2730us
+latency(75%)  3087us
+latency(95%)  3713us
+latency(99%)  4375us2024-04-09 05:23:15.796618482
+duration      2104ms
+commit        26178.7072 tx/s
+execution     30413.0228 tx/s
+operation     188781224.8099 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26178.7072 tx/s
+latency(50%)  2743us
+latency(75%)  3063us
+latency(95%)  3726us
+latency(99%)  4281us2024-04-09 05:23:18.243638126
+duration      2105ms
+commit        26038.0048 tx/s
+execution     30307.8385 tx/s
+operation     189137475.0594 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26038.0048 tx/s
+latency(50%)  2740us
+latency(75%)  3035us
+latency(95%)  3664us
+latency(99%)  4314us2024-04-09 05:23:20.683095453
+duration      2104ms
+commit        26093.1559 tx/s
+execution     30405.8935 tx/s
+operation     190014157.7947 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26093.1559 tx/s
+latency(50%)  2717us
+latency(75%)  3012us
+latency(95%)  3521us
+latency(99%)  4179us2024-04-09 05:23:23.129058401
+duration      2108ms
+commit        26000.9488 tx/s
+execution     30276.5655 tx/s
+operation     188855612.9032 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26000.9488 tx/s
+latency(50%)  2733us
+latency(75%)  3039us
+latency(95%)  3614us
+latency(99%)  4098us2024-04-09 05:23:25.576632120
+duration      2109ms
+commit        26159.3172 tx/s
+execution     30467.9943 tx/s
+operation     189995222.8544 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26159.3172 tx/s
+latency(50%)  2713us
+latency(75%)  3028us
+latency(95%)  3569us
+latency(99%)  4015us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:30:9973:3:TRUE../bench Aria:30:9973:3:TRUE TPCC:1000000:10 2s2024-04-09 05:23:28.046399045
+duration      2111ms
+commit        26134.5334 tx/s
+execution     30377.5462 tx/s
+operation     188195224.5381 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26134.5334 tx/s
+latency(50%)  2716us
+latency(75%)  3012us
+latency(95%)  3575us
+latency(99%)  4191us2024-04-09 05:23:30.489382274
+duration      2104ms
+commit        26178.7072 tx/s
+execution     30363.1179 tx/s
+operation     188281191.5399 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26178.7072 tx/s
+latency(50%)  2693us
+latency(75%)  3041us
+latency(95%)  3689us
+latency(99%)  4271us2024-04-09 05:23:32.927917503
+duration      2106ms
+commit        26111.1111 tx/s
+execution     30354.7009 tx/s
+operation     187694694.6819 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26111.1111 tx/s
+latency(50%)  2730us
+latency(75%)  3013us
+latency(95%)  3516us
+latency(99%)  4221us2024-04-09 05:23:35.369131702
+duration      2104ms
+commit        26478.1369 tx/s
+execution     30754.2776 tx/s
+operation     191296590.7795 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26478.1369 tx/s
+latency(50%)  2678us
+latency(75%)  2942us
+latency(95%)  3431us
+latency(99%)  4207us2024-04-09 05:23:37.819472430
+duration      2113ms
+commit        26109.7965 tx/s
+execution     30349.7397 tx/s
+operation     187445820.1609 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26109.7965 tx/s
+latency(50%)  2697us
+latency(75%)  3022us
+latency(95%)  3648us
+latency(99%)  4175us2024-04-09 05:23:40.270809797
+duration      2114ms
+commit        26182.5922 tx/s
+execution     30562.4409 tx/s
+operation     190797084.2006 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26182.5922 tx/s
+latency(50%)  2744us
+latency(75%)  3047us
+latency(95%)  3574us
+latency(99%)  4014us2024-04-09 05:23:42.714436400
+duration      2104ms
+commit        26349.8099 tx/s
+execution     30668.7262 tx/s
+operation     191182413.9734 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26349.8099 tx/s
+latency(50%)  2684us
+latency(75%)  3000us
+latency(95%)  3713us
+latency(99%)  4237us2024-04-09 05:23:45.169707165
+duration      2112ms
+commit        26079.5455 tx/s
+execution     30357.0076 tx/s
+operation     189649149.1477 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26079.5455 tx/s
+latency(50%)  2738us
+latency(75%)  3086us
+latency(95%)  3575us
+latency(99%)  4098us2024-04-09 05:23:47.614624443
+duration      2108ms
+commit        25787.4763 tx/s
+execution     29961.5750 tx/s
+operation     185519306.4516 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25787.4763 tx/s
+latency(50%)  2777us
+latency(75%)  3105us
+latency(95%)  3661us
+latency(99%)  4258us2024-04-09 05:23:50.057352228
+duration      2108ms
+commit        25744.7818 tx/s
+execution     29909.8672 tx/s
+operation     185199222.0114 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25744.7818 tx/s
+latency(50%)  2774us
+latency(75%)  3115us
+latency(95%)  3705us
+latency(99%)  4352us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:30:9973../bench Sparkle:30:9973 TPCC:1000000:10 2s2024-04-09 05:23:52.415862785
+duration      2005ms
+commit        44329.6758 tx/s
+execution     48314.2145 tx/s
+operation     357984659.3516 op/s
+25us          379.5511 tx/s
+50us          813.9651 tx/s
+100us         884.7880 tx/s
+>100us        42251.3716 tx/s
+latency(50%)  523us
+latency(75%)  920us
+latency(95%)  1024us
+latency(99%)  1777us2024-04-09 05:23:54.762050026
+duration      2005ms
+commit        43815.4613 tx/s
+execution     47946.1347 tx/s
+operation     356593181.0474 op/s
+25us          364.0898 tx/s
+50us          796.5087 tx/s
+100us         866.8329 tx/s
+>100us        41788.0299 tx/s
+latency(50%)  523us
+latency(75%)  916us
+latency(95%)  1217us
+latency(99%)  1494us2024-04-09 05:23:57.102823539
+duration      2004ms
+commit        43812.3752 tx/s
+execution     47894.7106 tx/s
+operation     356292094.3114 op/s
+25us          424.6507 tx/s
+50us          874.7505 tx/s
+100us         904.1916 tx/s
+>100us        41608.7824 tx/s
+latency(50%)  532us
+latency(75%)  934us
+latency(95%)  1287us
+latency(99%)  1851us2024-04-09 05:23:59.449312203
+duration      2005ms
+commit        44082.2943 tx/s
+execution     48088.2793 tx/s
+operation     358533903.7406 op/s
+25us          389.5262 tx/s
+50us          771.0723 tx/s
+100us         818.9526 tx/s
+>100us        42102.7431 tx/s
+latency(50%)  529us
+latency(75%)  921us
+latency(95%)  1316us
+latency(99%)  1492us2024-04-09 05:24:01.811908568
+duration      2004ms
+commit        44032.9341 tx/s
+execution     48010.4790 tx/s
+operation     355883431.6367 op/s
+25us          371.2575 tx/s
+50us          861.2774 tx/s
+100us         929.1417 tx/s
+>100us        41871.2575 tx/s
+latency(50%)  529us
+latency(75%)  926us
+latency(95%)  1197us
+latency(99%)  1698us2024-04-09 05:24:04.155594130
+duration      2005ms
+commit        44360.5985 tx/s
+execution     48362.5935 tx/s
+operation     360507173.5661 op/s
+25us          425.9352 tx/s
+50us          764.0898 tx/s
+100us         865.3367 tx/s
+>100us        42305.2369 tx/s
+latency(50%)  525us
+latency(75%)  921us
+latency(95%)  1079us
+latency(99%)  1456us2024-04-09 05:24:06.502055107
+duration      2004ms
+commit        44189.6208 tx/s
+execution     48186.6267 tx/s
+operation     357074513.9721 op/s
+25us          445.1098 tx/s
+50us          817.3653 tx/s
+100us         895.7086 tx/s
+>100us        42031.4371 tx/s
+latency(50%)  527us
+latency(75%)  922us
+latency(95%)  1080us
+latency(99%)  1662us2024-04-09 05:24:08.846520886
+duration      2005ms
+commit        43782.5436 tx/s
+execution     47878.8030 tx/s
+operation     357679157.6060 op/s
+25us          455.3616 tx/s
+50us          795.5112 tx/s
+100us         782.5436 tx/s
+>100us        41749.1272 tx/s
+latency(50%)  527us
+latency(75%)  929us
+latency(95%)  1333us
+latency(99%)  1617us2024-04-09 05:24:11.193777159
+duration      2005ms
+commit        44147.6309 tx/s
+execution     48145.6359 tx/s
+operation     356803995.0125 op/s
+25us          424.4389 tx/s
+50us          823.4414 tx/s
+100us         831.4214 tx/s
+>100us        42068.3292 tx/s
+latency(50%)  529us
+latency(75%)  932us
+latency(95%)  1268us
+latency(99%)  1897us2024-04-09 05:24:13.534701439
+duration      2004ms
+commit        44316.3673 tx/s
+execution     48350.2994 tx/s
+operation     360912567.3653 op/s
+25us          406.6866 tx/s
+50us          811.3772 tx/s
+100us         863.7725 tx/s
+>100us        42234.5309 tx/s
+latency(50%)  522us
+latency(75%)  915us
+latency(95%)  1256us
+latency(99%)  1491us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:30:9973:COPYONWRITE../bench Spectrum:30:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:24:15.904919462
+duration      2008ms
+commit        49936.2550 tx/s
+execution     52911.3546 tx/s
+operation     364412216.6335 op/s
+25us          52.2908 tx/s
+50us          7.4701 tx/s
+100us         34.3625 tx/s
+>100us        49842.1315 tx/s
+latency(50%)  561us
+latency(75%)  647us
+latency(95%)  882us
+latency(99%)  1024us2024-04-09 05:24:18.292863113
+duration      2006ms
+commit        49906.2812 tx/s
+execution     52895.8126 tx/s
+operation     364023247.2582 op/s
+25us          54.8355 tx/s
+50us          11.9641 tx/s
+100us         60.8175 tx/s
+>100us        49778.6640 tx/s
+latency(50%)  563us
+latency(75%)  650us
+latency(95%)  873us
+latency(99%)  1050us2024-04-09 05:24:20.674232469
+duration      2006ms
+commit        49949.6510 tx/s
+execution     52951.6451 tx/s
+operation     365182796.1117 op/s
+25us          47.3579 tx/s
+50us          10.4686 tx/s
+100us         25.4237 tx/s
+>100us        49866.4008 tx/s
+latency(50%)  561us
+latency(75%)  662us
+latency(95%)  889us
+latency(99%)  1133us2024-04-09 05:24:23.051136830
+duration      2005ms
+commit        50017.9551 tx/s
+execution     53010.4738 tx/s
+operation     365100401.9950 op/s
+25us          34.9127 tx/s
+50us          12.4688 tx/s
+100us         51.3716 tx/s
+>100us        49919.2020 tx/s
+latency(50%)  561us
+latency(75%)  660us
+latency(95%)  887us
+latency(99%)  1026us2024-04-09 05:24:25.431126509
+duration      2005ms
+commit        50063.8404 tx/s
+execution     53052.8678 tx/s
+operation     366253513.2170 op/s
+25us          42.8928 tx/s
+50us          7.9800 tx/s
+100us         63.3416 tx/s
+>100us        49949.6259 tx/s
+latency(50%)  563us
+latency(75%)  642us
+latency(95%)  849us
+latency(99%)  981us2024-04-09 05:24:27.810875621
+duration      2005ms
+commit        49916.7082 tx/s
+execution     52889.7756 tx/s
+operation     364156443.8903 op/s
+25us          23.4414 tx/s
+50us          7.4813 tx/s
+100us         56.3591 tx/s
+>100us        49829.4264 tx/s
+latency(50%)  560us
+latency(75%)  653us
+latency(95%)  871us
+latency(99%)  1036us2024-04-09 05:24:30.194602892
+duration      2005ms
+commit        49900.2494 tx/s
+execution     52938.6534 tx/s
+operation     364563330.1746 op/s
+25us          27.4314 tx/s
+50us          3.9900 tx/s
+100us         27.4314 tx/s
+>100us        49841.3965 tx/s
+latency(50%)  560us
+latency(75%)  637us
+latency(95%)  864us
+latency(99%)  1010us2024-04-09 05:24:32.572051101
+duration      2006ms
+commit        49777.1685 tx/s
+execution     52766.6999 tx/s
+operation     363126229.3121 op/s
+25us          68.7936 tx/s
+50us          10.4686 tx/s
+100us         51.3460 tx/s
+>100us        49646.5603 tx/s
+latency(50%)  562us
+latency(75%)  647us
+latency(95%)  897us
+latency(99%)  1059us2024-04-09 05:24:34.950525533
+duration      2005ms
+commit        50044.3890 tx/s
+execution     53030.4239 tx/s
+operation     363626676.8080 op/s
+25us          55.8603 tx/s
+50us          7.9800 tx/s
+100us         40.8978 tx/s
+>100us        49939.6509 tx/s
+latency(50%)  562us
+latency(75%)  651us
+latency(95%)  866us
+latency(99%)  1034us2024-04-09 05:24:37.330145039
+duration      2006ms
+commit        49801.5952 tx/s
+execution     52812.0638 tx/s
+operation     362939235.7926 op/s
+25us          83.7488 tx/s
+50us          18.4447 tx/s
+100us         31.4058 tx/s
+>100us        49667.9960 tx/s
+latency(50%)  561us
+latency(75%)  655us
+latency(95%)  871us
+latency(99%)  964us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:24:39.734974344
+duration      2000ms
+commit        4481.5000 tx/s
+execution     4481.5000 tx/s
+operation     33129849.0000 op/s
+25us          2230.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2251.0000 tx/s
+latency(50%)  12us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  442us2024-04-09 05:24:41.761886101
+duration      2000ms
+commit        4518.0000 tx/s
+execution     4518.0000 tx/s
+operation     33110227.5000 op/s
+25us          2269.5000 tx/s
+50us          1.5000 tx/s
+100us         0.0000 tx/s
+>100us        2247.0000 tx/s
+latency(50%)  389us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  442us2024-04-09 05:24:43.787983736
+duration      2000ms
+commit        4492.5000 tx/s
+execution     4492.5000 tx/s
+operation     33186835.0000 op/s
+25us          2238.5000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2254.0000 tx/s
+latency(50%)  388us
+latency(75%)  411us
+latency(95%)  432us
+latency(99%)  443us2024-04-09 05:24:45.807184527
+duration      2000ms
+commit        4490.5000 tx/s
+execution     4490.5000 tx/s
+operation     32912375.0000 op/s
+25us          2251.0000 tx/s
+50us          4.5000 tx/s
+100us         0.5000 tx/s
+>100us        2234.5000 tx/s
+latency(50%)  12us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:24:47.830016186
+duration      2000ms
+commit        4557.0000 tx/s
+execution     4557.0000 tx/s
+operation     33100694.5000 op/s
+25us          2296.5000 tx/s
+50us          13.5000 tx/s
+100us         0.5000 tx/s
+>100us        2246.5000 tx/s
+latency(50%)  12us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:24:49.850537814
+duration      2000ms
+commit        4468.5000 tx/s
+execution     4468.5000 tx/s
+operation     33147417.0000 op/s
+25us          2215.5000 tx/s
+50us          1.5000 tx/s
+100us         0.0000 tx/s
+>100us        2251.5000 tx/s
+latency(50%)  12us
+latency(75%)  410us
+latency(95%)  428us
+latency(99%)  443us2024-04-09 05:24:51.873100697
+duration      2000ms
+commit        4481.0000 tx/s
+execution     4481.0000 tx/s
+operation     33175025.5000 op/s
+25us          2225.0000 tx/s
+50us          2.5000 tx/s
+100us         0.5000 tx/s
+>100us        2253.0000 tx/s
+latency(50%)  11us
+latency(75%)  410us
+latency(95%)  430us
+latency(99%)  443us2024-04-09 05:24:53.895260197
+duration      2000ms
+commit        4450.0000 tx/s
+execution     4450.0000 tx/s
+operation     33089173.5000 op/s
+25us          2197.5000 tx/s
+50us          4.5000 tx/s
+100us         0.0000 tx/s
+>100us        2248.0000 tx/s
+latency(50%)  13us
+latency(75%)  412us
+latency(95%)  432us
+latency(99%)  444us2024-04-09 05:24:55.921169727
+duration      2000ms
+commit        4564.0000 tx/s
+execution     4564.0000 tx/s
+operation     33201840.0000 op/s
+25us          2311.5000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  12us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  442us2024-04-09 05:24:57.943652080
+duration      2000ms
+commit        4520.0000 tx/s
+execution     4520.0000 tx/s
+operation     33088064.5000 op/s
+25us          2269.5000 tx/s
+50us          4.0000 tx/s
+100us         0.0000 tx/s
+>100us        2246.5000 tx/s
+latency(50%)  388us
+latency(75%)  412us
+latency(95%)  429us
+latency(99%)  441us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Calvin:36:9973:2../bench Calvin:36:9973:2 TPCC:1000000:10 2s2024-04-09 05:25:00.087901219
+duration      2097ms
+commit        29047.2103 tx/s
+execution     29047.2103 tx/s
+operation     211251170.2432 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29047.2103 tx/s
+latency(50%)  940us
+latency(75%)  1206us
+latency(95%)  1818us
+latency(99%)  2326us2024-04-09 05:25:02.407722893
+duration      2085ms
+commit        31079.1367 tx/s
+execution     31079.1367 tx/s
+operation     224383207.1942 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31079.1367 tx/s
+latency(50%)  916us
+latency(75%)  1105us
+latency(95%)  1763us
+latency(99%)  2152us2024-04-09 05:25:04.733624332
+duration      2082ms
+commit        30881.8444 tx/s
+execution     30881.8444 tx/s
+operation     223009272.8146 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        30881.8444 tx/s
+latency(50%)  923us
+latency(75%)  1108us
+latency(95%)  1755us
+latency(99%)  2237us2024-04-09 05:25:07.065952651
+duration      2087ms
+commit        29910.8769 tx/s
+execution     29910.8769 tx/s
+operation     216038798.7542 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29910.8769 tx/s
+latency(50%)  936us
+latency(75%)  1155us
+latency(95%)  1794us
+latency(99%)  2200us2024-04-09 05:25:09.397459261
+duration      2087ms
+commit        31290.8481 tx/s
+execution     31290.8481 tx/s
+operation     223314396.7417 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31290.8481 tx/s
+latency(50%)  914us
+latency(75%)  1111us
+latency(95%)  1735us
+latency(99%)  2212us2024-04-09 05:25:11.731765291
+duration      2083ms
+commit        31212.6740 tx/s
+execution     31212.6740 tx/s
+operation     225045469.9952 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31212.6740 tx/s
+latency(50%)  928us
+latency(75%)  1107us
+latency(95%)  1706us
+latency(99%)  2080us2024-04-09 05:25:14.062785939
+duration      2085ms
+commit        31079.1367 tx/s
+execution     31079.1367 tx/s
+operation     224142100.2398 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31079.1367 tx/s
+latency(50%)  915us
+latency(75%)  1105us
+latency(95%)  1680us
+latency(99%)  2056us2024-04-09 05:25:16.395850555
+duration      2091ms
+commit        31265.4232 tx/s
+execution     31265.4232 tx/s
+operation     225938574.8446 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31265.4232 tx/s
+latency(50%)  920us
+latency(75%)  1105us
+latency(95%)  1721us
+latency(99%)  2182us2024-04-09 05:25:18.728498603
+duration      2087ms
+commit        31221.8495 tx/s
+execution     31221.8495 tx/s
+operation     224067988.9794 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        31221.8495 tx/s
+latency(50%)  907us
+latency(75%)  1085us
+latency(95%)  1734us
+latency(99%)  2082us2024-04-09 05:25:21.073379392
+duration      2098ms
+commit        29548.1411 tx/s
+execution     29548.1411 tx/s
+operation     211823912.2974 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        29548.1411 tx/s
+latency(50%)  952us
+latency(75%)  1196us
+latency(95%)  1793us
+latency(99%)  2326us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:36:9973:2:FALSE../bench Aria:36:9973:2:FALSE TPCC:1000000:10 2s2024-04-09 05:25:23.431304020
+duration      2102ms
+commit        26443.3873 tx/s
+execution     30088.4872 tx/s
+operation     193499246.9077 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26443.3873 tx/s
+latency(50%)  2131us
+latency(75%)  2345us
+latency(95%)  2795us
+latency(99%)  3132us2024-04-09 05:25:25.874758236
+duration      2104ms
+commit        26041.8251 tx/s
+execution     29714.3536 tx/s
+operation     187841634.0304 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26041.8251 tx/s
+latency(50%)  2199us
+latency(75%)  2417us
+latency(95%)  2876us
+latency(99%)  3201us2024-04-09 05:25:28.310917117
+duration      2100ms
+commit        26022.8571 tx/s
+execution     29570.4762 tx/s
+operation     188436390.9524 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26022.8571 tx/s
+latency(50%)  2172us
+latency(75%)  2381us
+latency(95%)  2794us
+latency(99%)  3123us2024-04-09 05:25:30.746150743
+duration      2101ms
+commit        26455.9733 tx/s
+execution     30081.8658 tx/s
+operation     190989501.1899 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26455.9733 tx/s
+latency(50%)  2152us
+latency(75%)  2359us
+latency(95%)  2755us
+latency(99%)  3167us2024-04-09 05:25:33.184521042
+duration      2102ms
+commit        26169.3625 tx/s
+execution     29766.4129 tx/s
+operation     188396799.2388 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26169.3625 tx/s
+latency(50%)  2169us
+latency(75%)  2366us
+latency(95%)  2805us
+latency(99%)  3205us2024-04-09 05:25:35.614476687
+duration      2096ms
+commit        26038.1679 tx/s
+execution     29660.7824 tx/s
+operation     188079639.7901 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26038.1679 tx/s
+latency(50%)  2203us
+latency(75%)  2434us
+latency(95%)  2894us
+latency(99%)  3181us2024-04-09 05:25:38.054692547
+duration      2107ms
+commit        26004.7461 tx/s
+execution     29646.8913 tx/s
+operation     188316996.2031 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26004.7461 tx/s
+latency(50%)  2174us
+latency(75%)  2418us
+latency(95%)  2822us
+latency(99%)  3194us2024-04-09 05:25:40.491504863
+duration      2101ms
+commit        25839.1242 tx/s
+execution     29452.1656 tx/s
+operation     187427485.0071 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25839.1242 tx/s
+latency(50%)  2191us
+latency(75%)  2383us
+latency(95%)  2836us
+latency(99%)  3226us2024-04-09 05:25:42.920393483
+duration      2096ms
+commit        26519.0840 tx/s
+execution     30188.4542 tx/s
+operation     192838377.8626 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26519.0840 tx/s
+latency(50%)  2120us
+latency(75%)  2337us
+latency(95%)  2785us
+latency(99%)  3165us2024-04-09 05:25:45.367152553
+duration      2105ms
+commit        25995.2494 tx/s
+execution     29593.3492 tx/s
+operation     187480098.8124 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25995.2494 tx/s
+latency(50%)  2177us
+latency(75%)  2403us
+latency(95%)  2848us
+latency(99%)  3290us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Aria:36:9973:2:TRUE../bench Aria:36:9973:2:TRUE TPCC:1000000:10 2s2024-04-09 05:25:47.825470239
+duration      2100ms
+commit        26365.7143 tx/s
+execution     29979.0476 tx/s
+operation     190033192.3810 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26365.7143 tx/s
+latency(50%)  2121us
+latency(75%)  2338us
+latency(95%)  2829us
+latency(99%)  3193us2024-04-09 05:25:50.252827567
+duration      2096ms
+commit        26244.2748 tx/s
+execution     29890.2672 tx/s
+operation     189822324.9046 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26244.2748 tx/s
+latency(50%)  2156us
+latency(75%)  2368us
+latency(95%)  2871us
+latency(99%)  3224us2024-04-09 05:25:52.677139644
+duration      2094ms
+commit        26613.1805 tx/s
+execution     30268.8634 tx/s
+operation     192462073.5435 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26613.1805 tx/s
+latency(50%)  2133us
+latency(75%)  2339us
+latency(95%)  2725us
+latency(99%)  3149us2024-04-09 05:25:55.107568159
+duration      2094ms
+commit        26338.1089 tx/s
+execution     29968.4814 tx/s
+operation     190121372.4928 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26338.1089 tx/s
+latency(50%)  2150us
+latency(75%)  2378us
+latency(95%)  2805us
+latency(99%)  3189us2024-04-09 05:25:57.538727045
+duration      2101ms
+commit        26284.6264 tx/s
+execution     29942.8843 tx/s
+operation     190803839.6002 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26284.6264 tx/s
+latency(50%)  2142us
+latency(75%)  2348us
+latency(95%)  2799us
+latency(99%)  3176us2024-04-09 05:25:59.977955868
+duration      2104ms
+commit        26418.2510 tx/s
+execution     30139.7338 tx/s
+operation     192413375.0000 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26418.2510 tx/s
+latency(50%)  2128us
+latency(75%)  2330us
+latency(95%)  2717us
+latency(99%)  3132us2024-04-09 05:26:02.423024326
+duration      2105ms
+commit        26303.0879 tx/s
+execution     29989.0736 tx/s
+operation     190610091.6865 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26303.0879 tx/s
+latency(50%)  2174us
+latency(75%)  2388us
+latency(95%)  2814us
+latency(99%)  3163us2024-04-09 05:26:04.858996915
+duration      2100ms
+commit        26434.2857 tx/s
+execution     30075.7143 tx/s
+operation     190133272.3810 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26434.2857 tx/s
+latency(50%)  2159us
+latency(75%)  2366us
+latency(95%)  2760us
+latency(99%)  3013us2024-04-09 05:26:07.296593794
+duration      2102ms
+commit        25792.5785 tx/s
+execution     29230.7326 tx/s
+operation     185316064.2245 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        25792.5785 tx/s
+latency(50%)  2179us
+latency(75%)  2413us
+latency(95%)  2853us
+latency(99%)  3210us2024-04-09 05:26:09.722876618
+duration      2100ms
+commit        26605.7143 tx/s
+execution     30296.6667 tx/s
+operation     193280100.4762 op/s
+25us          0.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        26605.7143 tx/s
+latency(50%)  2125us
+latency(75%)  2341us
+latency(95%)  2793us
+latency(99%)  3155us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Sparkle:36:9973../bench Sparkle:36:9973 TPCC:1000000:10 2s2024-04-09 05:26:12.092495508
+duration      2007ms
+commit        48738.4155 tx/s
+execution     54039.3622 tx/s
+operation     402309912.8052 op/s
+25us          351.2706 tx/s
+50us          639.7608 tx/s
+100us         786.2481 tx/s
+>100us        46961.1360 tx/s
+latency(50%)  608us
+latency(75%)  946us
+latency(95%)  1381us
+latency(99%)  1831us2024-04-09 05:26:14.472209964
+duration      2006ms
+commit        48819.5414 tx/s
+execution     54030.4088 tx/s
+operation     402704460.1196 op/s
+25us          316.5503 tx/s
+50us          593.2203 tx/s
+100us         881.3559 tx/s
+>100us        47028.4148 tx/s
+latency(50%)  606us
+latency(75%)  952us
+latency(95%)  1376us
+latency(99%)  1681us2024-04-09 05:26:16.852158990
+duration      2006ms
+commit        49059.8205 tx/s
+execution     54302.5922 tx/s
+operation     405473361.9143 op/s
+25us          276.1715 tx/s
+50us          664.0080 tx/s
+100us         880.8574 tx/s
+>100us        47238.7836 tx/s
+latency(50%)  565us
+latency(75%)  948us
+latency(95%)  1377us
+latency(99%)  1642us2024-04-09 05:26:19.235826305
+duration      2006ms
+commit        48486.5404 tx/s
+execution     53779.1625 tx/s
+operation     400240135.0947 op/s
+25us          339.4816 tx/s
+50us          651.0469 tx/s
+100us         808.0758 tx/s
+>100us        46687.9362 tx/s
+latency(50%)  587us
+latency(75%)  958us
+latency(95%)  1422us
+latency(99%)  1852us2024-04-09 05:26:21.617834261
+duration      2006ms
+commit        48684.4467 tx/s
+execution     53841.9741 tx/s
+operation     400386455.6331 op/s
+25us          309.0728 tx/s
+50us          638.5842 tx/s
+100us         830.5085 tx/s
+>100us        46906.2812 tx/s
+latency(50%)  576us
+latency(75%)  952us
+latency(95%)  1399us
+latency(99%)  1925us2024-04-09 05:26:24.000596539
+duration      2006ms
+commit        48624.1276 tx/s
+execution     53913.2602 tx/s
+operation     403627732.8016 op/s
+25us          304.5862 tx/s
+50us          666.9990 tx/s
+100us         846.4606 tx/s
+>100us        46806.0818 tx/s
+latency(50%)  575us
+latency(75%)  959us
+latency(95%)  1370us
+latency(99%)  1670us2024-04-09 05:26:26.383743007
+duration      2006ms
+commit        48592.2233 tx/s
+execution     53842.9711 tx/s
+operation     402594610.6680 op/s
+25us          338.4845 tx/s
+50us          631.1067 tx/s
+100us         776.6700 tx/s
+>100us        46845.9621 tx/s
+latency(50%)  624us
+latency(75%)  952us
+latency(95%)  1364us
+latency(99%)  1517us2024-04-09 05:26:28.772038252
+duration      2007ms
+commit        48741.4051 tx/s
+execution     54002.4913 tx/s
+operation     402901253.6124 op/s
+25us          383.1589 tx/s
+50us          609.8655 tx/s
+100us         786.2481 tx/s
+>100us        46962.1325 tx/s
+latency(50%)  581us
+latency(75%)  951us
+latency(95%)  1390us
+latency(99%)  1864us2024-04-09 05:26:31.155764976
+duration      2006ms
+commit        48646.0618 tx/s
+execution     53939.1825 tx/s
+operation     403152049.8504 op/s
+25us          271.6849 tx/s
+50us          539.3819 tx/s
+100us         797.6072 tx/s
+>100us        47037.3878 tx/s
+latency(50%)  572us
+latency(75%)  951us
+latency(95%)  1350us
+latency(99%)  1533us2024-04-09 05:26:33.536667253
+duration      2006ms
+commit        48511.9641 tx/s
+execution     53772.6820 tx/s
+operation     401588413.7587 op/s
+25us          367.3978 tx/s
+50us          633.1007 tx/s
+100us         772.6820 tx/s
+>100us        46738.7836 tx/s
+latency(50%)  677us
+latency(75%)  954us
+latency(95%)  1394us
+latency(99%)  1596us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Spectrum:36:9973:COPYONWRITE../bench Spectrum:36:9973:COPYONWRITE TPCC:1000000:10 2s2024-04-09 05:26:35.944024178
+duration      2007ms
+commit        57514.2003 tx/s
+execution     61503.7369 tx/s
+operation     419143229.6961 op/s
+25us          79.2227 tx/s
+50us          13.4529 tx/s
+100us         47.8326 tx/s
+>100us        57373.6921 tx/s
+latency(50%)  573us
+latency(75%)  685us
+latency(95%)  915us
+latency(99%)  1084us2024-04-09 05:26:38.377118508
+duration      2007ms
+commit        57510.2143 tx/s
+execution     61515.6951 tx/s
+operation     421319629.2975 op/s
+25us          55.3064 tx/s
+50us          11.9581 tx/s
+100us         57.7977 tx/s
+>100us        57385.1520 tx/s
+latency(50%)  572us
+latency(75%)  681us
+latency(95%)  887us
+latency(99%)  1010us2024-04-09 05:26:40.815586468
+duration      2007ms
+commit        57801.6941 tx/s
+execution     61779.2725 tx/s
+operation     420912628.7992 op/s
+25us          36.8710 tx/s
+50us          14.4494 tx/s
+100us         39.3622 tx/s
+>100us        57711.0115 tx/s
+latency(50%)  572us
+latency(75%)  684us
+latency(95%)  897us
+latency(99%)  1036us2024-04-09 05:26:43.252293479
+duration      2007ms
+commit        57523.6672 tx/s
+execution     61533.6323 tx/s
+operation     419281889.8854 op/s
+25us          50.3239 tx/s
+50us          6.9756 tx/s
+100us         21.9233 tx/s
+>100us        57444.4444 tx/s
+latency(50%)  578us
+latency(75%)  694us
+latency(95%)  888us
+latency(99%)  1026us2024-04-09 05:26:45.688781153
+duration      2007ms
+commit        57456.4026 tx/s
+execution     61540.1096 tx/s
+operation     420336617.8376 op/s
+25us          37.3692 tx/s
+50us          4.9826 tx/s
+100us         31.3901 tx/s
+>100us        57382.6607 tx/s
+latency(50%)  577us
+latency(75%)  700us
+latency(95%)  915us
+latency(99%)  1025us2024-04-09 05:26:48.126034591
+duration      2007ms
+commit        57580.9666 tx/s
+execution     61606.8759 tx/s
+operation     421477263.0792 op/s
+25us          47.8326 tx/s
+50us          11.9581 tx/s
+100us         37.8675 tx/s
+>100us        57483.3084 tx/s
+latency(50%)  572us
+latency(75%)  684us
+latency(95%)  900us
+latency(99%)  1046us2024-04-09 05:26:50.561873642
+duration      2007ms
+commit        57752.8650 tx/s
+execution     61810.6627 tx/s
+operation     420409836.5720 op/s
+25us          20.4285 tx/s
+50us          25.4111 tx/s
+100us         55.3064 tx/s
+>100us        57651.7190 tx/s
+latency(50%)  580us
+latency(75%)  695us
+latency(95%)  922us
+latency(99%)  1101us2024-04-09 05:26:52.999466904
+duration      2007ms
+commit        57452.9148 tx/s
+execution     61444.4444 tx/s
+operation     420402746.8859 op/s
+25us          38.8640 tx/s
+50us          20.9268 tx/s
+100us         48.3308 tx/s
+>100us        57344.7932 tx/s
+latency(50%)  573us
+latency(75%)  686us
+latency(95%)  906us
+latency(99%)  1068us2024-04-09 05:26:55.436339732
+duration      2006ms
+commit        57465.6032 tx/s
+execution     61535.8923 tx/s
+operation     421537604.6859 op/s
+25us          57.3280 tx/s
+50us          14.4566 tx/s
+100us         45.3639 tx/s
+>100us        57348.4546 tx/s
+latency(50%)  575us
+latency(75%)  696us
+latency(95%)  909us
+latency(99%)  1001us2024-04-09 05:26:57.870529992
+duration      2007ms
+commit        57679.6213 tx/s
+execution     61718.9836 tx/s
+operation     421658346.2880 op/s
+25us          19.9302 tx/s
+50us          5.9791 tx/s
+100us         11.4599 tx/s
+>100us        57642.2521 tx/s
+latency(50%)  575us
+latency(75%)  683us
+latency(95%)  908us
+latency(99%)  1040us#COMMIT-6e086d63e47063132efd1e45c4cf3904e5f64bc0 CONFIG-Serial:BASIC:1../bench Serial:BASIC:1 TPCC:1000000:10 2s2024-04-09 05:27:00.324081099
+duration      2000ms
+commit        4490.0000 tx/s
+execution     4490.0000 tx/s
+operation     33087468.5000 op/s
+25us          2239.0000 tx/s
+50us          4.0000 tx/s
+100us         0.0000 tx/s
+>100us        2247.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:27:02.350096979
+duration      2000ms
+commit        4480.0000 tx/s
+execution     4480.0000 tx/s
+operation     33172779.0000 op/s
+25us          2227.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  12us
+latency(75%)  411us
+latency(95%)  433us
+latency(99%)  444us2024-04-09 05:27:04.371045800
+duration      2000ms
+commit        4525.0000 tx/s
+execution     4525.0000 tx/s
+operation     33182837.0000 op/s
+25us          2270.5000 tx/s
+50us          2.0000 tx/s
+100us         0.0000 tx/s
+>100us        2252.5000 tx/s
+latency(50%)  11us
+latency(75%)  410us
+latency(95%)  428us
+latency(99%)  441us2024-04-09 05:27:06.397093872
+duration      2000ms
+commit        4472.5000 tx/s
+execution     4472.5000 tx/s
+operation     33115564.5000 op/s
+25us          2221.0000 tx/s
+50us          3.0000 tx/s
+100us         0.0000 tx/s
+>100us        2248.5000 tx/s
+latency(50%)  394us
+latency(75%)  412us
+latency(95%)  431us
+latency(99%)  443us2024-04-09 05:27:08.422309957
+duration      2000ms
+commit        4528.0000 tx/s
+execution     4528.0000 tx/s
+operation     33235146.0000 op/s
+25us          2271.5000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2256.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  429us
+latency(99%)  441us2024-04-09 05:27:10.443021633
+duration      2000ms
+commit        4523.5000 tx/s
+execution     4523.5000 tx/s
+operation     33128292.5000 op/s
+25us          2271.5000 tx/s
+50us          3.0000 tx/s
+100us         0.0000 tx/s
+>100us        2249.0000 tx/s
+latency(50%)  11us
+latency(75%)  411us
+latency(95%)  427us
+latency(99%)  441us2024-04-09 05:27:12.468172672
+duration      2000ms
+commit        4578.5000 tx/s
+execution     4578.5000 tx/s
+operation     33075890.5000 op/s
+25us          2328.0000 tx/s
+50us          7.0000 tx/s
+100us         0.0000 tx/s
+>100us        2243.5000 tx/s
+latency(50%)  390us
+latency(75%)  411us
+latency(95%)  432us
+latency(99%)  442us2024-04-09 05:27:14.494116449
+duration      2000ms
+commit        4446.5000 tx/s
+execution     4446.5000 tx/s
+operation     33200099.5000 op/s
+25us          2190.5000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2255.5000 tx/s
+latency(50%)  393us
+latency(75%)  412us
+latency(95%)  429us
+latency(99%)  443us2024-04-09 05:27:16.514776242
+duration      2000ms
+commit        4559.0000 tx/s
+execution     4559.0000 tx/s
+operation     33127479.0000 op/s
+25us          2312.0000 tx/s
+50us          0.0000 tx/s
+100us         0.0000 tx/s
+>100us        2247.0000 tx/s
+latency(50%)  11us
+latency(75%)  412us
+latency(95%)  430us
+latency(99%)  441us2024-04-09 05:27:18.535111001
+duration      2000ms
+commit        4476.0000 tx/s
+execution     4476.0000 tx/s
+operation     33144257.0000 op/s
+25us          2225.0000 tx/s
+50us          0.5000 tx/s
+100us         0.0000 tx/s
+>100us        2250.5000 tx/s
+latency(50%)  394us
+latency(75%)  411us
+latency(95%)  431us
+latency(99%)  443us
