@@ -1,11 +1,11 @@
 ##### run by cmd #####
-HELP = 'python draw_skew_op.py -w workload -t threads'
+HELP = 'python draw_memory.py -w workload -c contention -t threads'
 ##### run by cmd #####
 
 X = "zipf"
-Y = "operation"
-XLABEL = "Contention Degree (Zipf)"
-YLABEL = "Rollbank OPs / Commit"
+Y = "memory"
+XLABEL = "EVM"
+YLABEL = "Memory (Bytes) / Commit"
 
 import pandas as pd
 import argparse
@@ -16,18 +16,19 @@ import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 from Schemas import schemas
 schemas = [
-    ('SpectrumNoPartial'    ,   '#595959'),
-    ('Spectrum'             ,   '#D95353')
+    ('SpectrumSTRAWMAN'     ,   '#5072A7'),
+    ('SpectrumCOPYONWRITE'  ,   '#D95353')
 ]
 
 schemas_dict = {
-    'SpectrumNoPartial'     :   'Spectrum-C',
-    'Spectrum'              :   'Spectrum-P'
+    'SpectrumSTRAWMAN'      :   'EVMStraw',
+    'SpectrumCOPYONWRITE'   :   'EVMCoW'
 }
 
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
+parser.add_argument("-c", "--contention", type=str, required=True, help="contention: uniform or skewed")
 parser.add_argument("-t", "--threads", type=int, required=True, help="threads")
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc']
@@ -35,14 +36,15 @@ workload = args.workload
 if workload == 'tpcc':
     XLABEL = "Number of Items"
 
+assert args.contention in ['uniform', 'skewed']
+contention = args.contention
+
 threads = args.threads
 
-savepath = f'skew-op-{workload}-{threads}.pdf'
+savepath = f'memory-{workload}-{contention}-{threads}.pdf'
 
 #################### 数据准备 ####################
-recs = pd.read_csv(f'./data/{workload}_{threads}.csv')
-# recs = recs[recs['zipf'] >= 0.9].reset_index(drop=True)
-# recs = recs[recs['zipf'] <= 1.3].reset_index(drop=True)
+recs = pd.read_csv(f'./data/{workload}_{contention}_{threads}.csv')
 inner_schemas = recs['protocol'].unique()
 print(inner_schemas)
 
@@ -60,13 +62,15 @@ for idx, (schema, color) in enumerate(schemas):
         xdata=[_ + (idx-0.5) * 0.4 for _ in range(records[X].size)],
         ydata=records[Y] / records['commit'],
         color=color, legend_label=schemas_dict[schema],
-        width=0.4,
-        hatch={'SpectrumNoPartial': '\\\\', 'Spectrum': '//'}[schema],
+        width=0.3,
+        hatch=['\\\\', '//'][idx],
     )
 
-print(type(recs['zipf'].unique()), recs['zipf'].unique())
+ax.set_xlim(-0.7, 0.7)
+
 # 设置X轴标签
-ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
+ax.set_xticks([-0.2, 0.2], [schemas_dict[schema] for schema, _ in schemas])
+# ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
 
 # 自适应Y轴变化
 p.format_yticks(ax, suffix='K', step=180 if workload == 'smallbank' else None)

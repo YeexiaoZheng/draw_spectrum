@@ -1,5 +1,5 @@
 ##### run by cmd #####
-HELP = 'python draw_skew_tps.py -w workload -c contention'
+HELP = 'python draw_skew_tps.py -w workload -t threads'
 ##### run by cmd #####
 
 X = "zipf"
@@ -14,7 +14,7 @@ import sys
 sys.path.extend(['.', '..', '../..'])
 import matplotlib.pyplot as plt
 from plot.plot import MyPlot
-from Schemas import schemas
+from Schemas import schemas, schemas_for_pre
 schemas = [
     ('SpectrumNoPartial'    ,   '#595959'),
     ('Spectrum'             ,   '#D95353')
@@ -30,10 +30,13 @@ parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
 parser.add_argument("-t", "--threads", type=int, required=True, help="threads")
 args = parser.parse_args()
-assert args.workload in ['smallbank', 'ycsb', 'tpcc']
+assert args.workload in ['smallbank', 'ycsb', 'tpcc', 'pre']
 workload = args.workload
 if workload == 'tpcc':
     XLABEL = "Number of Items"
+if workload == 'pre':
+    schemas = schemas_for_pre
+    schemas_dict = {'SpectrumPreSched': 'SpectrumPS'}
 
 threads = args.threads
 
@@ -59,8 +62,8 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=records[X],
         ydata=records[Y],
-        color=color, legend_label=schemas_dict[schema],
-        marker=['s', 'o'][idx]
+        color=color, legend_label=schemas_dict[schema] if schemas_dict.get(schema) else schema,
+        # marker=['s', 'o', ][idx]
     )
 
 print(type(recs['zipf'].unique()), recs['zipf'].unique())
@@ -75,7 +78,7 @@ p.format_yticks(ax, suffix='M' if workload == 'smallbank' else 'K', step=14000 i
 p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.15))
+p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25) if workload == 'pre' else (0.5, 1.15))
 
 # 保存
 p.save(savepath)

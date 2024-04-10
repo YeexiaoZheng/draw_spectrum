@@ -48,7 +48,7 @@ if contention == 'compare':
     ]
     schemas_dict = {
         'SpectrumCOPYONWRITE'       :   'EVMCoW\n (Partial)',
-        'SpectrumSTRAWMAN'          :   'Strawman\n (Partial)',
+        'SpectrumSTRAWMAN'          :   'EVMStraw\n  (Partial)',
         'SpectrumNoPartialBASIC'    :   '     EVM\n(Complete)',
     }
 

@@ -26,3 +26,13 @@ schemas_for_bar = [
     ('Calvin'           ,       '#7a93c1'),  # 蓝色，饱和度降低
     ('Serial'           ,       '#9b8bb9')   # 紫色，饱和度降低
 ]
+
+schemas_for_pre = [
+    # 里面是 (协议名称, 颜色(RGB格式)的元组)
+    ('SpectrumPreSched' ,       '#9400D3'),  # 深紫色
+    ('Spectrum'         ,       '#d62728'),  # 红色
+    ('Sparkle'          ,       '#8c564b'),  # 棕色
+    ('Aria'             ,       '#ff7f0e'),  # 橙色
+    ('AriaFB'           ,       '#2ca02c'),  # 绿色
+    ('Calvin'           ,       '#1f77b4'),  # 蓝色
+]
