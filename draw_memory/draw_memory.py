@@ -4,7 +4,7 @@ HELP = 'python draw_memory.py -w workload -c contention -t threads'
 
 X = "zipf"
 Y = "memory"
-XLABEL = "EVM"
+XLABEL = "Partial Rollback Impl."
 YLABEL = "Memory (Bytes) / Commit"
 
 import pandas as pd
@@ -16,8 +16,9 @@ import matplotlib.pyplot as plt
 from plot.plot import MyPlot
 from Schemas import schemas
 schemas = [
+    ('SpectrumCOPYONWRITE'  ,   '#D95353'),
     ('SpectrumSTRAWMAN'     ,   '#5072A7'),
-    ('SpectrumCOPYONWRITE'  ,   '#D95353')
+    
 ]
 
 schemas_dict = {
@@ -62,11 +63,11 @@ for idx, (schema, color) in enumerate(schemas):
         xdata=[_ + (idx-0.5) * 0.4 for _ in range(records[X].size)],
         ydata=records[Y] / records['commit'],
         color=color, legend_label=schemas_dict[schema],
-        width=0.3,
-        hatch=['\\\\', '//'][idx],
+        width=0.2,
+        hatch=['//', '\\\\', ][idx],
     )
 
-ax.set_xlim(-0.7, 0.7)
+ax.set_xlim(-0.5, 0.5)
 
 # 设置X轴标签
 ax.set_xticks([-0.2, 0.2], [schemas_dict[schema] for schema, _ in schemas])
