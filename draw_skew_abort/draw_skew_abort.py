@@ -50,7 +50,8 @@ p.init(ax)
 
 for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['protocol'] == schema]
-    # print(records[Y])
+    # print(schema)
+    # print(records[Y] / records['commit'])
     p.bar(
         ax,
         xdata=[_ + (idx-2.5) * 0.14 for _ in range(records[X].size)],
@@ -59,6 +60,9 @@ for idx, (schema, color) in enumerate(schemas):
         width=0.14,
         hatch=['xx', '//', '\\\\', '||', '--', '++', ][idx % 6],
     )
+
+# print(recs[recs['protocol'] == 'SpectrumPreSched']['commit'].reset_index(drop=True) / recs[recs['protocol'] == 'Spectrum']['commit'].reset_index(drop=True))
+# print(recs[recs['protocol'] == 'SpectrumPreSched']['commit'].reset_index(drop=True) / recs[recs['protocol'] == 'SpectrumNoPartial']['commit'].reset_index(drop=True))
 
 print(type(recs['zipf'].unique()), recs['zipf'].unique())
 # 设置X轴标签
