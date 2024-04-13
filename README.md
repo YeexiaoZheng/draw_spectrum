@@ -8,10 +8,10 @@ plot.py为MyPlot类，初始化了很多变量，就不需要在每个函数里�
 
 ## py文件运行
 
-文件现只包含-f参数，运行以下命令：
+文件现包含-w -c -t三个参数中其中2个或3个或0个，运行对应的python文件后能获取提示：
 
 ```shell
 python draw_xxx_xxx.py -w workload -c contention -t threads
 ```
 
-即可生成与filename同名的pdf文件，需注意每个图的label是写死在代码中的，参考每个py文件的最上方X, XLABEL等全局变量
+运行命令即可生成与filename同名的pdf文件，需注意每个图的label是写死在代码中的，参考每个py文件的最上方X, XLABEL等全局变量
