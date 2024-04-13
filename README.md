@@ -1,5 +1,8 @@
 # README
 
+## 注意
+文件中不包含zipf的文件，以及plot中Font的字体文件，字体可以自行更改plot.py中的字体类型进行替换
+
 ## 架构
 
 以每个draw_xxx文件夹下的py为画图，画图时数据来源于draw_xxx文件夹下的data，里面是项目中script/python脚本输出的csv文件，重命名了一下，-w 表示workload（也包括一些诸如pre/compare的）， -c 表示contention（也包括一些诸如pre/compare的） -t 表示threads
