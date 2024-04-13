@@ -33,7 +33,7 @@ schemas_for_pre = [
     ('Spectrum'         ,       '#d62728'),  # 红色
     ('SpectrumNoPartial',       '#595959'),  # 灰色
     ('Sparkle'          ,       '#8c564b'),  # 棕色
-    # ('Aria'             ,       '#ff7f0e'),  # 橙色
+    ('Aria'             ,       '#ff7f0e'),  # 橙色
     ('AriaFB'           ,       '#2ca02c'),  # 绿色
     ('Calvin'           ,       '#1f77b4'),  # 蓝色
 ]

@@ -37,7 +37,7 @@ if workload == 'tpcc':
 if workload == 'pre':
     schemas = schemas_for_pre
     schemas_dict = {
-        'SpectrumPreSched': 'Spectrum-PP',
+        'SpectrumPreSched': 'Spectrum-P$_\mathit{Sched}$',
         'Spectrum': 'Spectrum-P',
         'SpectrumNoPartial': 'Spectrum-C',
     }
@@ -88,11 +88,12 @@ p.set_labels(ax, XLABEL, YLABEL)
 # 设置图例
 if workload == 'pre':
     handles, labels = ax.get_legend_handles_labels()
-    label_order = ['Spectrum-PP', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+    # label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+    label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
     handles = [handles[i] for i in [labels.index(label) for label in label_order]]
     labels = label_order
-    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20), columnspacing=0.5,
-            handles=handles, labels=labels, kwargs={ 'size': 11 })
+    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25), columnspacing=0.5,
+            handles=handles, labels=labels, kwargs={ 'size': 10 })
 else:
     p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25) if workload == 'pre' else (0.5, 1.15))
 

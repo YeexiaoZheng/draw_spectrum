@@ -62,8 +62,8 @@ elif contention == 'pres':
         ('SpectrumNoPartial'            ,       '#595959'),  # 灰色
         ('SparklePreSched'              ,       '#2ca02c'),  # 绿色
         ('Sparkle'                      ,       '#8c564b'),  # 棕色
-        ('SpectrumPreSched2'            ,       '#e377c2'),  # 粉色
-        ('SpectrumPreSched3'            ,       '#7f7f7f'),  # 灰色
+        ('SpectrumPreSched3'            ,       '#e377c2'),  # 粉色
+        ('SpectrumPreSched2'            ,       '#7f7f7f'),  # 灰色
     ]
     schemas_dict = {
         'SpectrumPreSched'              : 'Spectrum-P$_\mathit{Sched}$',
@@ -72,8 +72,8 @@ elif contention == 'pres':
         'Sparkle'                       : 'Sparkle-C',
         'SparklePreSched'               : 'Sparkle-P$_\mathit{Sched}$',
         'SpectrumNoPartialPreSched'     : 'Spectrum-C$_\mathit{Sched}$',
-        'SpectrumPreSched2'             : 'Spectrum-P$_\mathit{Sched}$*',
-        'SpectrumPreSched3'             : 'Spectrum-P$_\mathit{Sched}$**',
+        'SpectrumPreSched3'             : 'Spectrum-P$_\mathit{Sched}$*',
+        'SpectrumPreSched2'             : 'Spectrum-P$_\mathit{Sched}$**',
     }
 
 for idx, (schema, color) in enumerate(schemas):

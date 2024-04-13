@@ -19,7 +19,7 @@ from Schemas import schemas, schemas_for_pre
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
-parser.add_argument("-t", "--threads", type=int, required=True, help="threads")
+parser.add_argument("-t", "--threads", type=str, required=True, help="threads")
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc', 'pre']
 workload = args.workload
@@ -28,7 +28,7 @@ if workload == 'tpcc':
 if workload == 'pre':
     schemas = schemas_for_pre
     schemas_dict = {
-        'SpectrumPreSched': 'Spectrum-PP',
+        'SpectrumPreSched': 'Spectrum-P$_\mathit{Sched}$',
         'Spectrum': 'Spectrum-P',
         'SpectrumNoPartial': 'Spectrum-C',
     }
@@ -77,11 +77,12 @@ p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
 handles, labels = ax.get_legend_handles_labels()
-label_order = ['Spectrum-PP', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+# label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
 handles = [handles[i] for i in [labels.index(label) for label in label_order]]
 labels = label_order
 p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20), columnspacing=0.5,
-         handles=handles, labels=labels, kwargs={ 'size': 11 })
+         handles=handles, labels=labels, kwargs={ 'size': 10 })
 
 # 保存
 p.save(savepath)
