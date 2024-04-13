@@ -36,6 +36,14 @@ for file in files:
     recs = pd.DataFrame(dic.items(), columns=['keys', 'count'])
     dfs[file.split('\\')[-1]] = recs
 
+d: pd.DataFrame = dfs['1.1']
+k_d = 2
+k_u = 2
+print(f'sched key between {k_d} and {k_u}')
+d = d[d['keys'] >= k_d]
+d = d[d['keys'] <= k_u]
+print('占比:', d['count'].sum() / 1000000)
+
 #################### 画图 ####################
 p = MyPlot(1, 1)
 ax: plt.Axes = p.axes
@@ -73,4 +81,4 @@ ax.set_xlabel(XLABEL, style='italic')
 p.legend(ax, loc="upper center", ncol=4, anchor=(0.5, 1.15), columnspacing=0.5, kwargs={ 'style' : 'italic'})
 
 # 保存
-p.save(savepath)
+# p.save(savepath)

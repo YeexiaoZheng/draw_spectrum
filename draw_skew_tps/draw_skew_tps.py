@@ -28,7 +28,7 @@ schemas_dict = {
 #################### 参数解析 ####################
 parser = argparse.ArgumentParser(HELP)
 parser.add_argument("-w", "--workload", type=str, required=True, help="workload: smallbank or ycsb")
-parser.add_argument("-t", "--threads", type=int, required=True, help="threads")
+parser.add_argument("-t", "--threads", type=str, required=True, help="threads")
 args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc', 'pre']
 workload = args.workload

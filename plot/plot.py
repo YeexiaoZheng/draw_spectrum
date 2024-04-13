@@ -65,7 +65,7 @@ class MyPlot:
 
     # 点相关
     # marker_list = ['o', 's', 'v', '^', '<', '>', '1', '2', '3', '4']    # 点的形状
-    marker_list = ['>', '<', '^', 'v', 's', 'o']        # 点的形状 pop
+    marker_list = ['X', 'p', '>', '<', '^', 'v', 's', 'o']        # 点的形状 pop
     marker_size = 7                                                      # 点大小
 
     ##### 变量 #####
@@ -100,7 +100,7 @@ class MyPlot:
         # plt.rcParams['font.sans-serif'] = [self.font]
         # rcParams['font.sans-serif'] = self.prop.get_name()  # 根据名称设置字体
         # 'dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom'
-        rcParams['mathtext.fontset'] = 'stix' # stix' if self.language == 'chinese' else 'dejavusans'
+        rcParams['mathtext.fontset'] = 'dejavusans' # stix' if self.language == 'chinese' else 'dejavusans'
         # rcParams['mathtext.default'] = 'regular'
         # rcParams['text.usetex'] = True
         plt.rcParams['font.size'] = self.legend_word_size
