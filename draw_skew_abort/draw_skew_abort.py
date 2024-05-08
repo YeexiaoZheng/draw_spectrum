@@ -4,8 +4,8 @@ HELP = 'python draw_skew_abort.py -w workload -t threads'
 
 X = "zipf"
 Y = "abort"
-XLABEL = "Contention Degree (Zipf)"
-YLABEL = "Aborts / Commit"
+XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
+YLABEL = "中止数 / 交易"
 
 import pandas as pd
 import argparse
@@ -77,11 +77,11 @@ p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
 handles, labels = ax.get_legend_handles_labels()
-label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
-# label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
+# label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
 handles = [handles[i] for i in [labels.index(label) for label in label_order]]
 labels = label_order
-p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20), columnspacing=0.5,
+p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25), columnspacing=0.5,
          handles=handles, labels=labels, kwargs={ 'size': 10 })
 
 # 保存

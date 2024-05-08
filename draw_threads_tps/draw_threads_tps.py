@@ -4,8 +4,8 @@ HELP = 'python draw_threads_tps.py -w workload -c contention'
 
 X = "threads"
 Y = "commit"
-XLABEL = "Threads"
-YLABEL = "Troughput(Txn/s)"
+XLABEL = "工作线程数"
+YLABEL = "吞吐（交易 / 秒）"
 
 import pandas as pd
 import argparse
@@ -115,6 +115,8 @@ p.legend(
     kwargs={ 'size': 10 } if contention == 'compare' else None,
     columnspacing=2
 )
+
+# p.legend(ax, loc="upper center", ncol=3)
 
 # 保存
 p.save(savepath)

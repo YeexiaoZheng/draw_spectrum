@@ -4,8 +4,8 @@ HELP = 'python draw_latency.py -w workload -c contention -t threads'
 
 X = "threads"
 Y = "latency"
-XLABEL = "Percentile"
-YLABEL = "Latency(us)"
+XLABEL = "分位数"
+YLABEL = "延迟（微秒）"
 
 import pandas as pd
 import argparse

@@ -4,7 +4,7 @@ HELP = 'python draw_zipf.py -f zipf'
 
 X = "keys"
 Y = "count"
-XLABEL = "Keys"
+XLABEL = "键值"
 YLABEL = "PMF"
 
 import pandas as pd
@@ -81,4 +81,4 @@ ax.set_xlabel(XLABEL, style='italic')
 p.legend(ax, loc="upper center", ncol=4, anchor=(0.5, 1.15), columnspacing=0.5, kwargs={ 'style' : 'italic'})
 
 # 保存
-# p.save(savepath)
+p.save(savepath)

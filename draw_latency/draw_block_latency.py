@@ -3,8 +3,8 @@ HELP = 'python draw_block_latency.py -w workload -c contention -t threads'
 ##### run by cmd #####
 
 Y = "commit"
-XLABEL = "Execution Schemes"
-YLABEL = "Latency(us)"
+XLABEL = "执行方案"
+YLABEL = "延迟（微秒）"
 
 import pandas as pd
 import argparse
@@ -93,7 +93,7 @@ ax_top.set_yticks([int((1000000 / recs[Y]).max() * 100 * 0.92) // 100 * 100, int
 
 # 设置label
 p.set_labels(ax_bottom, XLABEL, YLABEL)
-ax_bottom.set_ylabel('Latency(us)', loc='top')
+ax_bottom.set_ylabel(YLABEL, loc='top')
 
 # 设置图例
 p.legend(ax_bottom, loc="upper center", ncol=3, anchor=(0.5, 1.7))

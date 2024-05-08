@@ -19,7 +19,7 @@ class MyPlot:
     # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
     # 字体加载
     plot_dir_root = os.path.dirname(os.path.abspath(__file__))
-    font_path = os.path.join(plot_dir_root, 'Fonts', 'msyh.ttc')
+    font_path = os.path.join(plot_dir_root, 'Fonts', 'Times+SimSun.ttf')
     # font_path = r'D:\0-Spectrum/字体合并补全工具/Times+SimSun.ttf'
     font_manager.fontManager.addfont(font_path)
     prop = font_manager.FontProperties(fname=font_path)
@@ -33,7 +33,7 @@ class MyPlot:
     rcParams['axes.unicode_minus'] = False # 使坐标轴刻度标签正常显示正负号
 
     dpi = 300
-    weight = 'bold'
+    weight = 'normal'
 
     # 图例相关
     anchor = (0.5, 1.23)    # 相对位置
@@ -100,7 +100,7 @@ class MyPlot:
         # plt.rcParams['font.sans-serif'] = [self.font]
         # rcParams['font.sans-serif'] = self.prop.get_name()  # 根据名称设置字体
         # 'dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans', 'custom'
-        rcParams['mathtext.fontset'] = 'dejavusans' # stix' if self.language == 'chinese' else 'dejavusans'
+        rcParams['mathtext.fontset'] = 'stix' # stix' if self.language == 'chinese' else 'dejavusans'
         # rcParams['mathtext.default'] = 'regular'
         # rcParams['text.usetex'] = True
         plt.rcParams['font.size'] = self.legend_word_size
@@ -209,6 +209,7 @@ class MyPlot:
             ax.set_yticks(
                 range(0, max_y_data, step), 
                 [str(x // suffix_map[suffix]) + suffix if x >= suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]
+                # [str(round(x / suffix_map[suffix], 2)) + suffix if x != 0 else str(x) for x in range(0, max_y_data, step)]
             )
         else:
             ax.set_yticks(

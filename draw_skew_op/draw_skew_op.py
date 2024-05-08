@@ -4,8 +4,8 @@ HELP = 'python draw_skew_op.py -w workload -t threads'
 
 X = "zipf"
 Y = "operation"
-XLABEL = "Contention Degree (Zipf)"
-YLABEL = "Rollbank OPs / Commit"
+XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
+YLABEL = "回滚指令数 / 交易"
 
 import pandas as pd
 import argparse
@@ -33,7 +33,7 @@ args = parser.parse_args()
 assert args.workload in ['smallbank', 'ycsb', 'tpcc']
 workload = args.workload
 if workload == 'tpcc':
-    XLABEL = "Number of Items"
+    XLABEL = "订单项数量"
 
 threads = args.threads
 
