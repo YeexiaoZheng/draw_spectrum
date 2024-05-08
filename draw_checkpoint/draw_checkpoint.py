@@ -4,7 +4,7 @@ HELP = 'python draw_memory.py -w workload -c contention -t threads'
 
 X = "zipf"
 Y = "cost"
-XLABEL = "部分回滚方案的不同实现"
+XLABEL = "部分回滚实现对比"
 YLABEL = "时间消耗 (微秒) / 检查点"
 
 import pandas as pd
