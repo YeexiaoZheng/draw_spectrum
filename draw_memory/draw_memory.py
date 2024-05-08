@@ -4,8 +4,8 @@ HELP = 'python draw_memory.py -w workload -c contention -t threads'
 
 X = "zipf"
 Y = "memory"
-XLABEL = "Partial Rollback Impl."
-YLABEL = "Memory (Bytes) / Commit"
+XLABEL = "部分回滚方案的不同实现"
+YLABEL = "内存消耗 (字节) / 交易"
 
 import pandas as pd
 import argparse
