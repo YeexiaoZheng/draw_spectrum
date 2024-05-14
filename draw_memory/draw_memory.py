@@ -5,7 +5,7 @@ HELP = 'python draw_memory.py -w workload -c contention -t threads'
 X = "zipf"
 Y = "memory"
 XLABEL = "部分回滚实现对比"
-YLABEL = "内存消耗 (字节) / 交易"
+YLABEL = "内存消耗 (字节) / 提交"
 
 import pandas as pd
 import argparse

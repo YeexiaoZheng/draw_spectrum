@@ -5,7 +5,7 @@ HELP = 'python draw_skew_op.py -w workload -t threads'
 X = "zipf"
 Y = "operation"
 XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
-YLABEL = "回滚指令数 / 交易"
+YLABEL = "回滚指令数 / 提交"
 
 import pandas as pd
 import argparse

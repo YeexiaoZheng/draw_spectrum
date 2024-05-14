@@ -5,7 +5,7 @@ HELP = 'python draw_skew_abort.py -w workload -t threads'
 X = "zipf"
 Y = "abort"
 XLABEL = "倾斜程度 ($\mathit{Zipf}$)"
-YLABEL = "中止数 / 交易"
+YLABEL = "中止数 / 提交"
 
 import pandas as pd
 import argparse
