@@ -33,7 +33,7 @@ class MyPlot:
     rcParams['axes.unicode_minus'] = False # 使坐标轴刻度标签正常显示正负号
 
     dpi = 300
-    weight = 'bold'
+    weight = 'normal'
 
     # 图例相关
     anchor = (0.5, 1.23)    # 相对位置

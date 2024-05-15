@@ -1,0 +1,16 @@
+run experiment! thread is changing!
+keys=100000
+zipf=0
+contract=14
+partition_num=2
+batch_size=100
+@ Spectrum; threads=1
+average commit: 20448.2, average multi commit: 1922.2 abort: 0.3 (0/0.3/0), abort cascade: 0, average operations: 17053909, network size: 5767, multi commit network size: 3844, avg network size: 0.28203, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=5
+average commit: 36608.6, average multi commit: 3453 abort: 1.4 (0/1.4/0), abort cascade: 0, average operations: 30531836, network size: 10359, multi commit network size: 6906, avg network size: 0.28298, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=10
+average commit: 57466.1, average multi commit: 5445 abort: 5.2 (0/5.2/0), abort cascade: 0, average operations: 47927561, network size: 16335, multi commit network size: 10890, avg network size: 0.284262, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=15
+average commit: 64198.3, average multi commit: 6056.4 abort: 5.5 (0/5.5/0), abort cascade: 0, average operations: 53542224, network size: 18169, multi commit network size: 12113, avg network size: 0.283023, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; threads=20
+average commit: 71291.3, average multi commit: 6730.6 abort: 7.9 (0/7.9/0), abort cascade: 0, average operations: 59458297, network size: 20193, multi commit network size: 13461, avg network size: 0.283246, si_in_serializable: 0 0 % , local: 0 %

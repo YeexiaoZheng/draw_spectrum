@@ -1,0 +1,16 @@
+run experiment! thread is changing!
+keys=100000
+zipf=1.1
+contract=10
+partition_num=2
+batch_size=100
+@ Spectrum; cross_ratio=0
+average commit: 216730, average multi commit: 0 abort: 7417.2 (0/7417.2/0), abort cascade: 33.1, average operations: 60353447, network size: 0, multi commit network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; cross_ratio=1
+average commit: 172880, average multi commit: 1121.6 abort: 5897.9 (0/5897.9/0), abort cascade: 26, average operations: 48158059, network size: 3448, multi commit network size: 2292, avg network size: 0.0199474, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; cross_ratio=5
+average commit: 112832, average multi commit: 3648.2 abort: 4022.2 (0/4022.2/0), abort cascade: 18.3, average operations: 31473280, network size: 11215, multi commit network size: 7451, avg network size: 0.0993969, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; cross_ratio=10
+average commit: 82890.5, average multi commit: 5260.8 abort: 3182 (0/3182/0), abort cascade: 13.9, average operations: 23156725, network size: 16178, multi commit network size: 10748, avg network size: 0.195178, si_in_serializable: 0 0 % , local: 0 %
+@ Spectrum; cross_ratio=30
+average commit: 53224.5, average multi commit: 9530 abort: 3026.2 (0/3026.2/0), abort cascade: 6.6, average operations: 14940354, network size: 29309, multi commit network size: 19468, avg network size: 0.550667, si_in_serializable: 0 0 % , local: 0 %
