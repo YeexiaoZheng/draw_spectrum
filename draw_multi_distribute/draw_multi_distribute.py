@@ -25,14 +25,18 @@ workload = args.workload
 #################### 数据准备 ####################
 data = {
     'smallbank': {
-        'Calvin-L':                       [100988,	183022,	221884],
-        NAME + '$_\mathit{origin}$':    [194220,	220590,	276363],
-        NAME + '$_\mathit{batch}$':     [288133,	459277,	538746],
+        'Calvin-L':                         [100988,	183022,	221884],
+        'Sparkle':                          [184272,	246393,	271500],
+        # NAME + '$_\mathit{origin}$':        [194220,	220590,	276363], 
+        NAME + '$_\mathit{origin}$':        [206314,	271487,	284961], 
+        NAME + '$_\mathit{batch}$':         [288133,	459277,	538746],
     },
     'ycsb': {
-        'Calvin-L':                       [62840,	    103078,	113291],
-        NAME + '$_\mathit{origin}$':    [90099,	    101326,	129336],
-        NAME + '$_\mathit{batch}$':     [129777,	239767,	275238],
+        'Calvin-L':                         [62840,	    103078,	113291],
+        'Sparkle':                          [82806,	    114796,	127106],
+        # NAME + '$_\mathit{origin}$':        [90099,	    101326,	129336],
+        NAME + '$_\mathit{origin}$':        [92904,	    129348,	141364],
+        NAME + '$_\mathit{batch}$':         [129777,	239767,	275238],
     }
 }
 data = data[workload]
@@ -45,6 +49,7 @@ for schema in data.keys():
 schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Calvin-L'                     , '#45C686'),
+    ('Sparkle'                      , '#808080'),
     (NAME + '$_\mathit{origin}$'    , '#ED9F54'),
     (NAME + '$_\mathit{batch}$'     , '#8E5344'),
 ]
@@ -58,12 +63,12 @@ ax.set_axisbelow(True)
 for idx, (schema, color) in enumerate(schemas):
     p.bar(
         ax, 
-        [_ + (idx-1) * 0.3 for _ in range(recs[recs['schema'] == schema][X].size)], 
+        [_ + (idx-1.5) * 0.2 for _ in range(recs[recs['schema'] == schema][X].size)], 
         recs[recs['schema'] == schema][Y], 
         schema, 
         color, 
-        width=0.3,
-        hatch=['xx', '//', r'\\'][idx]
+        width=0.2,
+        hatch=['xx', '--', '//', r'\\'][idx]
     )
 
 # 设置X轴标签
@@ -76,7 +81,7 @@ p.format_yticks(ax, suffix='K')
 p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.15))
+p.legend(ax, loc="upper center", ncol=len(schemas) // 2, anchor=(0.5, 1.25))
 
 # 保存
 p.save(workload + '.pdf')
