@@ -82,7 +82,7 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=[_ + (idx-1.5) * 0.2 for _ in range(records[X].size)],
         ydata=(records['network size'] / records['average commit']) * 100,
-        color=color, legend_label=schema + '(提交)',
+        color=color, legend_label=schema + '(C)',
         width=0.2,
         hatch='//'
     )
@@ -92,7 +92,7 @@ for idx, (schema, color) in enumerate(schemas):
         ax,
         xdata=[_ + (idx-1.5) * 0.2 for _ in range(records[X].size)],
         ydata=((records['network size'] - records[Y]) / records['average commit']) * 100,
-        color=color, legend_label=schema + '(读取)',
+        color=color, legend_label=schema + '(R)',
         width=0.2,
         # hatch=['xx', '//', r'\\'][idx]
     )
@@ -110,7 +110,23 @@ p.format_yticks(ax, suffix=None)
 p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.15), columnspacing=0.3, kwargs={ 'size': 7 })
+p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.15), columnspacing=0.3, kwargs={ 'size': 8 })
+# handles, labels = ax.get_legend_handles_labels()
+# print(handles, labels)
+# h1 = ax.bar(0, 0, color='white', ec='black', ls='-', lw=1, label='提交', hatch='//')
+# h2 = ax.bar(0, 0, color='white', ec='black', ls='-', lw=1, label='读取')
+# handles_ = [handle for idx, handle in enumerate(handles) if idx % 2 == 1]# + [h1, h2]
+# labels_ = [label for idx, label in enumerate(labels) if idx % 2 == 1]# + ['提交', '读取']
+# p.legend(
+#     ax, 
+#     handles=handles_,
+#     labels=labels_,
+#     loc="upper center", 
+#     ncol=2, 
+#     anchor=(0.5, 1.20), 
+#     # columnspacing=0.3, 
+#     kwargs={ 'size': 10 }
+# )
 
 # 保存
 p.save(savepath)
