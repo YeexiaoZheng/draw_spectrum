@@ -5,12 +5,12 @@ contract=10
 partition_num=2
 batch_size=100
 @ Spectrum; cross_ratio=0
-average commit: 224423, average multi commit: 0 abort: 2.9 (0/2.9/0), abort cascade: 0, average operations: 61827655, network size: 0, multi commit network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 %
+average commit: 225033, average multi commit: 0 abort: 3.1 (0/3.1/0), abort cascade: 0, average operations: 61995561, network size: 0, multi commit network size: 0, avg network size: 0, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; cross_ratio=1
-average commit: 174938, average multi commit: 1132.9 abort: 2 (0/2/0), abort cascade: 0, average operations: 48205714, network size: 3398, multi commit network size: 2265, avg network size: 0.0194286, si_in_serializable: 0 0 % , local: 0 %
+average commit: 174019, average multi commit: 1127 abort: 2.5 (0/2.5/0), abort cascade: 0, average operations: 47952374, network size: 10143, multi commit network size: 2254, avg network size: 0.0582868, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; cross_ratio=5
-average commit: 111945, average multi commit: 3618.7 abort: 1.3 (0/1.3/0), abort cascade: 0, average operations: 30871569, network size: 10856, multi commit network size: 7237, avg network size: 0.0969807, si_in_serializable: 0 0 % , local: 0 %
+average commit: 110542, average multi commit: 3572.9 abort: 1 (0/1/0), abort cascade: 0, average operations: 30484139, network size: 32156, multi commit network size: 7145, avg network size: 0.290895, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; cross_ratio=10
-average commit: 84836.1, average multi commit: 5379.6 abort: 0.7 (0/0.7/0), abort cascade: 0, average operations: 23417494, network size: 16138, multi commit network size: 10759, avg network size: 0.190236, si_in_serializable: 0 0 % , local: 0 %
+average commit: 84959.1, average multi commit: 5387.5 abort: 1.2 (0/1.2/0), abort cascade: 0, average operations: 23451341, network size: 48489, multi commit network size: 10775, avg network size: 0.570735, si_in_serializable: 0 0 % , local: 0 %
 @ Spectrum; cross_ratio=30
-average commit: 53553.9, average multi commit: 9587.4 abort: 0.5 (0/0.5/0), abort cascade: 0, average operations: 14837205, network size: 28762, multi commit network size: 19174, avg network size: 0.537072, si_in_serializable: 0 0 % , local: 0 %
+average commit: 53605.1, average multi commit: 9596.1 abort: 0.3 (0/0.3/0), abort cascade: 0, average operations: 14851320, network size: 86366, multi commit network size: 19192, avg network size: 1.61116, si_in_serializable: 0 0 % , local: 0 %

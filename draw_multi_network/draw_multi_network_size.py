@@ -74,6 +74,8 @@ ax: plt.Axes = p.axes
 ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
 
+data = {}
+
 for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['schema'] == schema]
     p.bar(
@@ -84,6 +86,7 @@ for idx, (schema, color) in enumerate(schemas):
         width=0.2,
         hatch='//'
     )
+    data[schema + ' all'] = (records[Y] * ((8 + 8 + 8 + 4) if "origin" in schema else (4 + 8 + 5 * 8 + 32)) / records['average commit']) * 100 + (((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100
     
     p.bar(
         ax,
@@ -93,7 +96,8 @@ for idx, (schema, color) in enumerate(schemas):
         width=0.2,
         # hatch=['xx', '//', r'\\'][idx]
     )
-    
+    data[schema + ' read'] = (((records['network size'] - records[Y]) * (32 + 32 + 8 + 8 + 4) / records['average commit'])) * 100
+    data[schema + ' commit'] = data[schema + ' all'] - data[schema + ' read']
 
 # 设置X轴标签
 ax.set_xticks(range(4), [1, 5, 10, 30])
@@ -105,7 +109,14 @@ p.format_yticks(ax, suffix='K')
 p.set_labels(ax, XLABEL, YLABEL)
 
 # 设置图例
-p.legend(ax, loc="upper center", ncol=len(schemas) // 2, anchor=(0.5, 1.35), kwargs={ 'size': 10 })
+p.legend(ax, loc="upper center", ncol=len(schemas), anchor=(0.5, 1.15), columnspacing=0.3, kwargs={ 'size': 7 })
 
 # 保存
 p.save(savepath)
+
+with open(savepath.split(".")[0], 'w') as f:
+    for k, v in data.items():
+        f.write(k + '\n')
+        for i in v:
+            f.write(str(i) + '\n')
+        f.write('\n')
