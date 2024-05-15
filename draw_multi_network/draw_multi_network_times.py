@@ -33,11 +33,13 @@ savepath = 'multi-network-' + workload + '.pdf'
 #################### 数据准备 ####################
 log_files = [
     "./data/calvin-{workload}-uniform".format(workload=workload),
+    "./data/sparkle-{workload}-uniform".format(workload=workload),
     "./data/no-batch-{workload}-uniform".format(workload=workload),
     "./data/batch-{workload}-uniform".format(workload=workload),
 ]
 schemas = [
     "Calvin-L",
+    "Sparkle",
     NAME + "$_\mathit{origin}$",
     NAME + "$_\mathit{batch}$",
 ]
@@ -61,6 +63,7 @@ recs = pd.concat(recses, ignore_index=True)
 schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Calvin-L'                     , '#45C686'),
+    ('Sparkle'                      , '#808080'),
     (NAME + '$_\mathit{origin}$'    , '#ED9F54'),
     (NAME + '$_\mathit{batch}$'     , '#8E5344'),
 ]
@@ -75,18 +78,18 @@ for idx, (schema, color) in enumerate(schemas):
     records = recs[recs['schema'] == schema]
     p.bar(
         ax,
-        xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
+        xdata=[_ + (idx-1.5) * 0.2 for _ in range(records[X].size)],
         ydata=(records['network size'] / records['average commit']) * 100,
         color=color, legend_label=schema + '(提交)',
-        width=0.3,
+        width=0.2,
         hatch='//'
     )
     p.bar(
         ax,
-        xdata=[_ + (idx-1) * 0.3 for _ in range(records[X].size)],
+        xdata=[_ + (idx-1.5) * 0.2 for _ in range(records[X].size)],
         ydata=((records['network size'] - records[Y]) / records['average commit']) * 100,
         color=color, legend_label=schema + '(读取)',
-        width=0.3,
+        width=0.2,
         # hatch=['xx', '//', r'\\'][idx]
     )
     
