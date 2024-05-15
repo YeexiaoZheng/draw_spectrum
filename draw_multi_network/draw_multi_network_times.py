@@ -1,5 +1,5 @@
 ##### run by cmd #####
-HELP = 'python draw_multi_cross_tps.py -w workload'
+HELP = 'python draw_multi_network_times.py -w workload'
 ##### run by cmd #####
 
 X = "cross_ratio"
