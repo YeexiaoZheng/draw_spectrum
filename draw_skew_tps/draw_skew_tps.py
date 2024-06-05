@@ -60,8 +60,9 @@ ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
 
 for idx, (schema, color) in enumerate(schemas):
+    if threads == '36' and schema == 'Aria': continue
     records = recs[recs['protocol'] == schema]
-    # print(records[Y])
+    # print(schema, records[Y])
     p.plot(
         ax,
         xdata=records[X],
@@ -88,11 +89,13 @@ p.set_labels(ax, XLABEL, YLABEL)
 # 设置图例
 if workload == 'pre':
     handles, labels = ax.get_legend_handles_labels()
-    # label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
-    label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
+    if threads == '36':
+        label_order = ['Spectrum-P$_\mathit{Sched}$', 'Sparkle', 'Spectrum-P', 'AriaFB', 'Spectrum-C', 'Calvin']
+    else:
+        label_order = ['Spectrum-P$_\mathit{Sched}$', 'Spectrum-P', 'Spectrum-C', 'AriaFB', 'Aria', 'Sparkle', 'Calvin']
     handles = [handles[i] for i in [labels.index(label) for label in label_order]]
     labels = label_order
-    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25), columnspacing=0.5,
+    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.20) if threads == '36' else (0.5, 1.25), columnspacing=0.5,
             handles=handles, labels=labels, kwargs={ 'size': 10 })
 else:
     p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25) if workload == 'pre' else (0.5, 1.15))

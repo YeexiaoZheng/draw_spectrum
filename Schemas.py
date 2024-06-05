@@ -11,8 +11,8 @@ schemas = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Spectrum'         ,       '#d62728'),  # 红色
     ('Sparkle'          ,       '#8c564b'),  # 棕色
-    ('Aria'             ,       '#ff7f0e'),  # 橙色
-    ('AriaFB'           ,       '#2ca02c'),  # 绿色
+    ('Aria'             ,       '#2ca02c'),  # 绿色
+    ('AriaFB'           ,       '#ff7f0e'),  # 橙色
     ('Calvin'           ,       '#1f77b4'),  # 蓝色
     ('Serial'           ,       '#9467bd')   # 紫色
 ]
@@ -21,8 +21,8 @@ schemas_for_bar = [
     # 里面是 (协议名称, 颜色(RGB格式)的元组)
     ('Spectrum'         ,       '#c85a59'),  # 红色，饱和度降低
     ('Sparkle'          ,       '#8d7876'),  # 棕色，饱和度降低
-    ('Aria'             ,       '#db9e67'),  # 橙色，饱和度降低
-    ('AriaFB'           ,       '#7ab77a'),  # 绿色，饱和度降低
+    ('Aria'             ,       '#7ab77a'),  # 绿色，饱和度降低
+    ('AriaFB'           ,       '#db9e67'),  # 橙色，饱和度降低
     ('Calvin'           ,       '#7a93c1'),  # 蓝色，饱和度降低
     ('Serial'           ,       '#9b8bb9')   # 紫色，饱和度降低
 ]
@@ -33,7 +33,7 @@ schemas_for_pre = [
     ('Spectrum'         ,       '#d62728'),  # 红色
     ('SpectrumNoPartial',       '#595959'),  # 灰色
     ('Sparkle'          ,       '#8c564b'),  # 棕色
-    ('Aria'             ,       '#ff7f0e'),  # 橙色
-    ('AriaFB'           ,       '#2ca02c'),  # 绿色
+    ('Aria'             ,       '#2ca02c'),  # 绿色
+    ('AriaFB'           ,       '#ff7f0e'),  # 橙色
     ('Calvin'           ,       '#1f77b4'),  # 蓝色
 ]

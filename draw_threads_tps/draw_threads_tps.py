@@ -34,7 +34,7 @@ inner_schemas = recs['protocol'].unique()
 print(inner_schemas)
 
 #################### 画图 ####################
-p = MyPlot(1, 1, figsize=(12, 5))
+p = MyPlot(1, 1, figsize=(12, 5) if contention == 'pres' else None)
 ax: plt.Axes = p.axes
 ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
@@ -95,8 +95,8 @@ ax.set_xticks([int(t) for t in recs['threads'].unique()])
 step = None
 if workload == 'smallbank' and contention == 'skewed':
     step = 140000
-elif workload == 'tpcc' and contention == '10orderlines':
-    step = 11000
+# elif workload == 'tpcc' and contention == '10orderlines':
+#     step = 11000
 p.format_yticks(ax, suffix='K', step=step)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
@@ -107,14 +107,17 @@ p.set_labels(ax, XLABEL, YLABEL, fontdict={ 'size': 22, 'weight': 'bold' } if co
 # box2: plt.Bbox = ax.get_tightbbox()
 
 # 设置图例
-p.legend(
-    ax, 
-    loc="upper center", 
-    ncol=4, 
-    anchor=(0.5, 1.18) if contention == 'compare' else (0.5, 1.2), 
-    kwargs={ 'size': 10 } if contention == 'compare' else None,
-    columnspacing=2
-)
+if contention == 'pres':
+    p.legend(
+        ax, 
+        loc="upper center", 
+        ncol=4, 
+        anchor=(0.5, 1.18) if contention == 'compare' else (0.5, 1.2), 
+        kwargs={ 'size': 10 } if contention == 'compare' else None,
+        columnspacing=2
+    )
+else:
+    p.legend(ax, loc="upper center", ncol=3, anchor=(0.5, 1.25))
 
 # 保存
 p.save(savepath)
