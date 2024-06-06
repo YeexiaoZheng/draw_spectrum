@@ -208,7 +208,7 @@ class MyPlot:
             # if step > 5 * suffix_map[suffix]: step =  step // (5 * suffix_map[suffix]) * (5 * suffix_map[suffix])
             ax.set_yticks(
                 range(0, max_y_data, step), 
-                [str(x // suffix_map[suffix]) + suffix if x >= suffix_map[suffix] else str(x) for x in range(0, max_y_data, step)]
+                [str(round(x / suffix_map[suffix], 1)) + suffix if x != 0 else 0 for x in range(0, max_y_data, step)]
             )
         else:
             ax.set_yticks(

@@ -59,6 +59,8 @@ ax: plt.Axes = p.axes
 ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
 
+annotation_points = []
+
 for idx, (schema, color) in enumerate(schemas):
     if threads == '36' and schema == 'Aria': continue
     records = recs[recs['protocol'] == schema]
@@ -70,6 +72,50 @@ for idx, (schema, color) in enumerate(schemas):
         color=color, legend_label=schemas_dict[schema] if schemas_dict.get(schema) else schema,
         # marker=['s', 'o', ][idx]
     )
+    if schema == 'Spectrum':
+        annotation_points = [records[X].values, records[Y].values]
+
+points = [(annotation_points[0][i], annotation_points[1][i]) for i in range(len(annotation_points[0]))]
+label_points = recs[recs['protocol'] == schemas[1][0]][Y].reset_index(drop=True) / recs[recs['protocol'] == schemas[0][0]][Y].reset_index(drop=True)
+print(label_points)
+
+# 只标注0, 2, 4位置
+def position(index, point):
+    match workload:
+        case "ycsb":
+            match index:
+                case 0: return (point[0] + 0.01, point[1] - 10000)
+                case 1: return (point[0] + 0.01, point[1] + 10000)
+                case 2: return (point[0]       , point[1] + 10000)
+                case 3: return (point[0] - 0.01, point[1] + 10000)
+                case 4: return (point[0] - 0.02, point[1] + 15000)
+                case _: return None
+        case "tpcc":
+            match index:
+                case 0: return (point[0] + 1  , point[1] - 1000)
+                case 1: return (point[0] + 0.5, point[1] + 1000)
+                case 2: return (point[0] + 0.3, point[1] + 1200)
+                case 3: return (point[0] - 0.5, point[1] + 2000)
+                case 4: return (point[0] - 1.6, point[1] + 2500)
+                case _: return None
+        case "smallbank":
+            match index:
+                case 0: return (point[0] + 0.015, point[1] - 10000)
+                case 1: return (point[0] + 0.01, point[1] + 10000)
+                case 2: return (point[0] + 0.01, point[1] + 10000)
+                case 3: return (point[0] - 0.01, point[1] + 50000)
+                case 4: return (point[0] - 0.034, point[1] + 70000)
+                case _: return None
+        case _: return None
+
+for i in range(5):
+    point = points[i]
+    plt.annotate(
+        str(round(label_points[i], 2)) + 'x', 
+        xy=(point[0], point[1]), 
+        xytext=position(i, point),
+        color='black',
+    ) 
 
 # print(recs[recs['protocol'] == schemas[0][0]][Y])
 # print(recs[recs['protocol'] == schemas[1][0]][Y])
