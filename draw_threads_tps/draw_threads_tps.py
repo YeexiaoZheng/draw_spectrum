@@ -26,7 +26,7 @@ workload = args.workload
 assert args.contention in ['uniform', 'skewed', '5orderlines', '10orderlines', '20orderlines', 'compare', 'pres']
 contention = args.contention
 
-savepath = f'threads-tps-{workload}-{contention}.pdf'
+savepath = f'threads-tps-{workload}-{contention}.png'
 
 #################### 数据准备 ####################
 recs = pd.read_csv(f'./data/{workload}_{contention}.csv')
@@ -34,7 +34,9 @@ inner_schemas = recs['protocol'].unique()
 print(inner_schemas)
 
 #################### 画图 ####################
-p = MyPlot(1, 1, figsize=(12, 5))
+p = MyPlot(1, 1, figsize=(12, 5) if contention == 'pres' else None)
+p.fig.patch.set_alpha(0)
+p.axes.patch.set_alpha(0)
 ax: plt.Axes = p.axes
 ax.grid(axis=p.grid, linewidth=p.border_width)
 p.init(ax)
@@ -107,16 +109,17 @@ p.set_labels(ax, XLABEL, YLABEL, fontdict={ 'size': 22, 'weight': 'bold' } if co
 # box2: plt.Bbox = ax.get_tightbbox()
 
 # 设置图例
-p.legend(
-    ax, 
-    loc="upper center", 
-    ncol=4, 
-    anchor=(0.5, 1.18) if contention == 'compare' else (0.5, 1.2), 
-    kwargs={ 'size': 10 } if contention == 'compare' else None,
-    columnspacing=2
-)
-
-# p.legend(ax, loc="upper center", ncol=3)
+if contention == 'pres':
+    p.legend(
+        ax, 
+        loc="upper center", 
+        ncol=4, 
+        anchor=(0.5, 1.18) if contention == 'compare' else (0.5, 1.2), 
+        kwargs={ 'size': 10 } if contention == 'compare' else None,
+        columnspacing=2
+    )
+else:
+    p.legend(ax, loc="upper center", ncol=3)
 
 # 保存
 p.save(savepath)
