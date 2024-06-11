@@ -27,7 +27,7 @@ workload = args.workload
 assert args.contention in ['uniform', 'skewed']
 contention = args.contention
 
-savepath = f'block-latency-{workload}-{contention}.pdf'
+savepath = f'block-latency-{workload}-{contention}.png'
 
 #################### 数据准备 ####################
 recs = pd.read_csv(f'./data/{workload}_{contention}.csv')
@@ -40,9 +40,12 @@ print(inner_schemas)
 #################### 画图 ####################
 p = MyPlot(1, 1)
 p.fig.clear()
+p.fig.patch.set_alpha(0)
 gs = p.fig.add_gridspec(4, 4, hspace=0.4)
 ax_bottom: plt.Axes = p.fig.add_subplot(gs[1:, :])
 ax_top: plt.Axes = p.fig.add_subplot(gs[:1, :])
+ax_top.patch.set_alpha(0)
+ax_bottom.patch.set_alpha(0)
 p.init(ax_bottom)
 p.init(ax_top)
 ax_bottom.grid(axis=p.grid, linewidth=p.border_width)
