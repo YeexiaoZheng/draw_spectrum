@@ -64,6 +64,14 @@ for idx, (schema, color) in enumerate(schemas):
         hatch={'SpectrumNoPartial': '\\\\', 'Spectrum': '//'}[schema],
     )
 
+records_n = recs[recs['protocol'] == 'SpectrumNoPartial']
+no = records_n[Y] / records_n['commit']
+
+records_p = recs[recs['protocol'] == 'Spectrum']
+pa = records_p[Y] / records_p['commit']
+
+print([(1 - j / i) for i, j in zip(no, pa)])
+
 print(type(recs['zipf'].unique()), recs['zipf'].unique())
 # 设置X轴标签
 ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
