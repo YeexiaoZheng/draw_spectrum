@@ -95,8 +95,8 @@ ax.set_xticks([int(t) for t in recs['threads'].unique()])
 step = None
 if workload == 'smallbank' and contention == 'skewed':
     step = 140000
-# elif workload == 'tpcc' and contention == '10orderlines':
-#     step = 11000
+elif workload == 'tpcc' and contention == '10orderlines':
+    step = 13000
 p.format_yticks(ax, suffix='K', step=step)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 

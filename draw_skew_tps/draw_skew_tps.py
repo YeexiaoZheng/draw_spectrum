@@ -88,7 +88,7 @@ def position(index, point):
                 case 1: return (point[0] + 0.01, point[1] + 10000)
                 case 2: return (point[0]       , point[1] + 10000)
                 case 3: return (point[0] - 0.01, point[1] + 10000)
-                case 4: return (point[0] - 0.02, point[1] + 15000)
+                case 4: return (point[0] - 0.035, point[1] + 15000)
                 case _: return None
         case "tpcc":
             match index:
@@ -111,7 +111,7 @@ def position(index, point):
 for i in range(5):
     point = points[i]
     plt.annotate(
-        str(round(label_points[i], 2)) + 'x', 
+        str(round(label_points[i], 2)) + 'x' if len(str(round(label_points[i], 2))) >3 else str(round(label_points[i], 2)) + '0x', 
         xy=(point[0], point[1]), 
         xytext=position(i, point),
         color='black',
@@ -126,7 +126,7 @@ print(type(recs['zipf'].unique()), recs['zipf'].unique())
 # ax.set_xticks(range(len(recs['zipf'].unique())), [str(t) for t in recs['zipf'].unique()])
 
 # 自适应Y轴变化
-p.format_yticks(ax, suffix='M' if workload == 'smallbank' else 'K', step=14000 if workload == 'tpcc' else None)
+p.format_yticks(ax, suffix='M' if workload == 'smallbank' else 'K', step=13000 if workload == 'tpcc' else None)
 # ax.set_ylim(None, p.max_y_data * 1.15)       # 折线图的Y轴上限设置为数据最大值的1.15倍
 
 # 设置label
