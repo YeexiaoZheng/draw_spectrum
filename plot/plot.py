@@ -19,15 +19,15 @@ class MyPlot:
     # font = r'E:/spectrum/字体合并补全工具/Times+SimSun.ttf'
     # 字体加载
     plot_dir_root = os.path.dirname(os.path.abspath(__file__))
-    font_path = os.path.join(plot_dir_root, 'Fonts', 'msyh.ttc')
+    # font_path = os.path.join(plot_dir_root, 'Fonts', 'Helvetica', 'H-Helvetica-6.ttc')
     # font_path = r'D:\0-Spectrum/字体合并补全工具/Times+SimSun.ttf'
-    font_manager.fontManager.addfont(font_path)
-    prop = font_manager.FontProperties(fname=font_path)
+    # font_manager.fontManager.addfont(font_path)
+    # prop = font_manager.FontProperties(fname=font_path)
     # print(prop.get_name())  # 显示当前使用字体的名称
 
     # 字体设置
     rcParams['font.family'] = 'sans-serif' # 使用字体中的无衬线体
-    rcParams['font.sans-serif'] = prop.get_name()  # 根据名称设置字体
+    rcParams['font.sans-serif'] = 'Helvetica'  # 根据名称设置字体
     # rcParams['font.weight'] = 'bold' # 设置刻度标签粗细
     # rcParams['font.size'] = 10 # 设置字体大小
     rcParams['axes.unicode_minus'] = False # 使坐标轴刻度标签正常显示正负号
