@@ -41,5 +41,6 @@ python draw_threads_tps.py -w smallbank -c uniform
 python draw_threads_tps.py -w ycsb -c uniform
 python draw_threads_tps.py -w tpcc -c 10orderlines
 python draw_threads_tps.py -w ycsb -c pres
+python draw_threads_tps.py -w ycsb -c compare
 
 cd ..
